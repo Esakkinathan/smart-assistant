@@ -1,1 +1,1 @@
-# smart-assistant
+a smart assistant for system management in ubuntu
