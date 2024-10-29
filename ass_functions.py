@@ -47,12 +47,7 @@ def get_location():
     else:
         return None,None
 
-def get_weathe    save_dir = os.path.expanduser('~/Pictures/Screenshot')
-    os.makedirs(save_dir, exist_ok=True)
-    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    filename = f'screenshot_{timestamp}.png'
-    file_path = os.path.join(save_dir, filename)
-    screenshot = pyautogui.screenshot()r_update():
+def get_weather():
     lat,long=get_location()
     if lat is None or long is None:
         out("Internet connection error")
@@ -66,6 +61,14 @@ def get_weathe    save_dir = os.path.expanduser('~/Pictures/Screenshot')
             speak(out)
         else:
             speak("error occured try later")
+
+def screenshot():
+    save_dir = os.path.expanduser('~/Pictures/Screenshot')
+    os.makedirs(save_dir, exist_ok=True)
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    filename = f'screenshot_{timestamp}.png'
+    file_path = os.path.join(save_dir, filename)
+    screenshot = pyautogui.screenshot()r_update():
 
 def get_current_volume():
     result = subprocess.run(["amixer", "get", "Master"], capture_output=True, text=True)
@@ -89,12 +92,6 @@ def decrease_volume(step=20):
     new_volume = current_volume - step
     set_volume(new_volume)
 
-def mute_volume():
-    set_volume(0)
-
-def unmute_volume():
-    set_volume(100)
-
 def capture_screenshot():
     save_dir = os.path.expanduser('~/Pictures/Screenshot')
     os.makedirs(save_dir, exist_ok=True)
@@ -104,3 +101,5 @@ def capture_screenshot():
     screenshot = pyautogui.screenshot()
     screenshot.save(file_path)
 
+def command_execute(cmd):
+    subprocess.run(['/usr/bin/gnome-terminal', '--', 'bash', '-c', f'echo "The command is {command}"; {command}; exec bash'])
