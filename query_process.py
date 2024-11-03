@@ -11,8 +11,8 @@ def process_the_query(query):
         af.decrease_volume()
         return None
     elif "screenshot" in query:
-        af.screenshot()
-        retun None
+        af.capture_screenshot()
+        return None
     elif "set volume" in query:
         volume=int(query[11:])
         af.set_volume(volume)
@@ -22,11 +22,11 @@ def process_the_query(query):
         return None
     elif "volume unmute" in query:
         af.set_volume(100)
-        retun None 
+        return None 
     elif "spotify" in query:
         song_name=query[8:]
         af.spotify_search(song_name)
-        retun None
+        return None
     elif "youtube" in query:
         video_name=query[8:]
         af.youtube_search(video_name)
@@ -37,6 +37,7 @@ def process_the_query(query):
         return None
     else:
         af.command_execute(query)
+        return None
 
-query="screenshot"
+query="ls -a"
 process_the_query(query)

@@ -62,14 +62,6 @@ def get_weather():
         else:
             speak("error occured try later")
 
-def screenshot():
-    save_dir = os.path.expanduser('~/Pictures/Screenshot')
-    os.makedirs(save_dir, exist_ok=True)
-    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    filename = f'screenshot_{timestamp}.png'
-    file_path = os.path.join(save_dir, filename)
-    screenshot = pyautogui.screenshot()r_update():
-
 def get_current_volume():
     result = subprocess.run(["amixer", "get", "Master"], capture_output=True, text=True)
     volume = re.search(r'\[([0-9]+)%\]', result.stdout)
