@@ -1,0 +1,91 @@
+get chrome running on my machine,sudo apt install google-chrome-stable 
+set up chrome for me,sudo apt install google-chrome-stable 
+bring chrome to its latest version,sudo apt upgrade google-chrome-stable 
+ensure chrome is on its most recent release,sudo apt upgrade google-chrome-stable 
+take chrome off my system,sudo apt remove google-chrome-stable 
+i want to get rid of chrome,sudo apt remove google-chrome-stable 
+get libreoffice running on my machine,sudo apt install libreoffice 
+set up libreoffice for me,sudo apt install libreoffice 
+bring libreoffice to its latest version,sudo apt upgrade libreoffice 
+ensure libreoffice is on its most recent release,sudo apt upgrade libreoffice 
+take libreoffice off my system,sudo apt remove libreoffice* 
+i want to get rid of libreoffice,sudo apt remove libreoffice* 
+set up mongodb for me,sudo apt install mongodb 
+get mongodb running on my machine,sudo apt install mongodb 
+bring mongodb to its latest version,apt upgrade mongodb 
+ensure mongodb is on its most recent release,apt upgrade mongodb 
+i want to get rid of mongodb,sudo apt remove mongodb 
+take mongodb off my system,sudo apt remove mongodb 
+set up python for me,sudo apt install python3 
+get python running on my machine,sudo apt install python3 
+bring python to its latest version,sudo apt upgrade python3 
+ensure python is on its most recent release,sudo apt upgrade python3 
+take python off my system,sudo apt remove python3 
+i want to get rid of python,sudo apt remove python3 
+set up java for me,sudo apt install default-jdk 
+get java running on my machine,sudo apt install default-jdk 
+bring java to its latest version,sudo apt upgrade default-jdk 
+ensure java is on its most recent release,apt upgrade default-jdk 
+take java off my system,sudo apt remove default-jdk 
+i want to get rid of java,sudo apt remove default-jdk 
+set up sqlite for me,sudo apt install sqlite3 
+get sqlite running on my machine,sudo apt install sqlite3 
+bring sqlite to its latest version,sudo apt upgrade sqlite3 
+ensure sqlite is on its most recent release,apt upgrade sqlite3 
+i want to get rid of sqlite,sudo apt remove sqlite3 
+take sqlite off my system,sudo apt remove sqlite3 
+set up c compiler for me,sudo apt install build-essential 
+get c compiler running on my machine,sudo apt install build-essential 
+bring c compiler to its latest version,sudo apt upgrade build-essential 
+ensure c compiler is on its most recent release,apt upgrade build-essential 
+take c compiler off my system,sudo apt remove build-essential 
+i want to get rid of c compiler,sudo apt remove build-essential 
+set up gimp on this system,sudo apt-get install gimp 
+get gimp working on my computer,sudo apt-get install gimp 
+bring gimp up to date on my system,sudo apt-get upgrade gimp 
+get the most recent gimp version,sudo apt-get upgrade gimp 
+get rid of gimp on my ubuntu,sudo apt-get remove gimp
+i no longer need gimp please remove it,sudo apt-get remove gimp
+get obs studio working on my computer,sudo apt-get install obs-studio 
+set up obs studio on this system,sudo apt-get install obs-studio 
+bring obs studio up to date on my system,sudo apt-get upgrade obs-studio 
+make sure i have the latest obs studio release,sudo apt-get upgrade obs-studio 
+get rid of obs studio on my ubuntu,sudo apt-get remove obs-studio
+i no longer need obs studio please remove it,sudo apt-get remove obs-studio
+set up kdenlive on this system,sudo apt-get install kdenlive 
+get kdenlive working on my computer,sudo apt-get install kdenlive 
+bring kdenlive up to date on my system,sudo apt-get upgrade kdenlive 
+get the most recent kdenlive version,sudo apt-get upgrade kdenlive 
+get rid of kdenlive on my ubuntu,sudo apt-get remove kdenlive
+i no longer need kdenlive please remove it,sudo apt-get remove kdenlive
+get virtualbox working on my computer,sudo apt-get install virtualbox 
+set up virtualbox on this system,sudo apt-get install virtualbox 
+bring virtualbox up to date on my system,sudo apt-get upgrade virtualbox 
+get the most recent virtualbox version,sudo apt-get upgrade virtualbox 
+get rid of virtualbox on my ubuntu,sudo apt-get remove virtualbox
+i no longer need virtualbox please remove it,sudo apt-get remove virtualbox
+i no longer need kubernetes please remove it,sudo snap remove microk8s 
+set up wireshark on this system,sudo apt-get install wireshark 
+get wireshark working on my computer,sudo apt-get install wireshark 
+bring wireshark up to date on my system,sudo apt-get upgrade wireshark 
+get the most recent wireshark version,sudo apt-get upgrade wireshark 
+get rid of wireshark on my ubuntu,sudo apt-get remove wireshark
+i no longer need wireshark please remove it,sudo apt-get remove wireshark 
+set up windscribe vpn on my computer,sudo apt-get install windscribe-cli
+get windscribe running on my linux machine,sudo apt-get install windscribe-cli
+check for updates for windscribe,sudo apt-get upgrade windscribe-cli
+i want the latest windscribe how do i update,sudo apt-get upgrade windscribe-cli
+i want to remove windscribe can you guide me through it,sudo apt-get remove windscribe-cli
+can you help me remove windscribe,sudo apt-get remove windscribe-cli
+set up protonvpn on my computer,sudo apt-get install protonvpn-cli
+get protonvpn running on my linux machine,sudo apt-get install protonvpn-cli
+check for updates for protonvpn,sudo apt-get upgrade protonvpn-cli
+i want the latest protonvpn how do i update,sudo apt-get upgrade protonvpn-cli
+i need to get rid of protonvpn what's the process,sudo apt-get remove protonvpn-cli
+can you help me remove protonvpn,sudo apt-get remove protonvpn-cli
+set up expressvpn on my computer,sudo apt-get install expressvpn
+get expressvpn running on my linux machine,sudo apt-get install expressvpn
+i want the latest expressvpn how do i update,sudo apt-get upgrade expressvpn
+check for updates for expressvpn,sudo apt-get upgrade expressvpn
+i want to remove expressvpn can you guide me through it,sudo apt-get remove expressvpn
+i need to get rid of expressvpn what's the process,sudo apt-get remove expressvpn

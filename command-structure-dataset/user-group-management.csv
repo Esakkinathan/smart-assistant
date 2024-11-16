@@ -1,0 +1,153 @@
+in,ou
+
+create a user <username>, sudo useradd <username>
+create a user with home directory <username>, sudo useradd -m <username>
+create a user <username> with home directory, sudo useradd -m <username>
+add a user <username> to system, sudo useradd <username>
+create a user <username> and set the shell to <shell>, sudo useradd -s <shell> <username>
+create user <username> with shell <shell>, sudo useradd -s <shell> <username>
+add user <username> and assign shell <shell>, sudo useradd -s <shell> <username>
+create user <username> with a specific group <groupname>, sudo useradd -g <groupname> <username>
+create user <username> with group <groupname>, sudo useradd -g <groupname> <username>
+create user <username> and set group to <groupname>, sudo useradd -g <groupname> <username>
+create user <username> with additional groups <groupnames>, sudo useradd -G <groupnames> <username>
+create user <username> and add to groups <groupnames>, sudo useradd -G <groupnames> <username>
+create user <username> and assign groups <groupnames>, sudo useradd -G <groupnames> <username>
+create user <username> and set uid to <uid>, sudo useradd -u <uid> <username>
+create user <username> with uid <uid>, sudo useradd -u <uid> <username>
+add user <username> with specific uid <uid>, sudo useradd -u <uid> <username>
+create a user <username> with expiry date <expiredate>, sudo useradd -e <expiredate> <username>
+create user <username> with an expiry date <expiredate>, sudo useradd -e <expiredate> <username>
+create user <username> with account expiry <expiredate>, sudo useradd -e <expiredate> <username>
+create user <username> and make a home directory at <dir>, sudo useradd -d <dir> <username>
+create user <username> with custom home directory <dir>, sudo useradd -d <dir> <username>
+create user <username> with home directory in <dir>, sudo useradd -d <dir> <username>
+create user <username> with password <password>, sudo useradd -p <password> <username>
+create user <username> with a predefined password <password>, sudo useradd -p <password> <username>
+add user <username> and set password <password>, sudo useradd -p <password> <username>
+create user <username> without a group, sudo useradd -N <username>
+create user <username> without user group, sudo useradd -N <username>
+add user <username> without creating a group, sudo useradd -N <username>
+create a user <username> and no home directory, sudo useradd -M <username>
+create user <username> and don't create home directory, sudo useradd -M <username>
+add user <username> without home directory, sudo useradd -M <username>
+create user <username> and do not create a system group, sudo useradd -N -M <username>
+create user <username> and disable users login shell, sudo useradd -s /bin/false <username>
+create user <username> and set shell to /bin/false, sudo useradd -s /bin/false <username>
+add user <username> with no login shell, sudo useradd -s /bin/false <username>
+create user <username> and specify a base directory <basedir>, sudo useradd -b <basedir> <username>
+create user <username> with a base directory <basedir>, sudo useradd -b <basedir> <username>
+create user <username> in the base directory <basedir>, sudo useradd -b <basedir> <username>
+create user <username> and assign a specific selinux user <seuser>, sudo useradd -Z <seuser> <username>
+create user <username> with selinux user <seuser>, sudo useradd -Z <seuser> <username>
+add user <username> and assign selinux user <seuser>, sudo useradd -Z <seuser> <username>
+create user <username> and create a new group with the same name, sudo useradd -U <username>
+create user <username> and make a group with the same name, sudo useradd -U <username>
+add user <username> and create a user group with same name, sudo useradd -U <username>
+
+#usermod
+
+lhs,rhs
+set <user-name>'s shell to <shell>,sudo usermod -s <shell> <user-name>
+update <user-name>'s home directory to <home-dir>,sudo usermod -d <home-dir> <user-name>
+change the UID of <user-name> to <uid>,sudo usermod -u <uid> <user-name>
+modify <user-name>'s GID to <gid>,sudo usermod -g <gid> <user-name>
+add <user-name> to group <group-name>,sudo usermod -G <group-name> <user-name>
+remove <user-name> from group <group-name>,sudo usermod -G <group-name> <user-name>
+set an expiry date for <user-name>'s account to <expiry-date>,sudo usermod -e <expiry-date> <user-name>
+set <user-name>'s account to expire after <inactive-days> days of inactivity,sudo usermod -f <inactive-days> <user-name>
+change password for <user-name> to <password>,sudo usermod -p <password> <user-name>
+lock <user-name>'s account,sudo usermod -L <user-name>
+unlock <user-name>'s account,sudo usermod -U <user-name>
+change login name of <user-name> to <new-name>,sudo usermod -l <new-name> <user-name>
+"add <user-name> to groups <group-name1>, <group-name2>","sudo usermod -G <group-name1>,<group-name2> <user-name>"
+update <user-name>'s shell to <shell> and home directory to <home-dir>,sudo usermod -s <shell> -d <home-dir> <user-name>
+change <user-name>'s UID to <uid> and set expiry date to <expiry-date>,sudo usermod -u <uid> -e <expiry-date> <user-name>
+remove <user-name> from group <group-name> and set inactivity period to <inactive-days>,sudo usermod -G <group-name> -f <inactive-days> <user-name>
+update <user-name>'s shell to <shell> and set UID to <uid>,sudo usermod -s <shell> -u <uid> <user-name>
+set <user-name>'s GID to <gid> and lock the account,sudo usermod -g <gid> -L <user-name>
+remove <user-name> from group <group-name> and unlock the account,sudo usermod -G <group-name> -U <user-name>
+update <user-name>'s home directory to <home-dir> and set expiry date to <expiry-date>,sudo usermod -d <home-dir> -e <expiry-date> <user-name>
+change <user-name>'s login name to <new-name> and add to <group-name> group, sudo usermod -l <new-name> -G <group-name> <user-name>
+update login name of <user-name> to <new-name> and change home directory to <home-dir>,sudo usermod -l <new-name> -d <home-dir> <user-name>
+set <user-name>'s shell to <shell> and set inactivity period to <inactive-days> days, sudo usermod -s <shell> -f <inactive-days> <user-name>
+change password of <user-name> to <password>,sudo usermod -p <password> <user-name>
+modify user <user-name> to change shell to <shell>,sudo usermod -s <shell> <user-name>
+modify user <user-name> to change home directory to <home-dir>,sudo usermod -d <home-dir> <user-name>
+modify user <user-name> to change UID to <uid>,sudo usermod -u <uid> <user-name>
+modify user <user-name> to change GID to <gid>,sudo usermod -g <gid> <user-name>
+modify user <user-name> to add to group <group-name>,sudo usermod -G <group-name> <user-name>
+modify user <user-name> to remove from group <group-name>,sudo usermod -G <group-name> <user-name>
+modify user <user-name> to set expiry date to <expiry-date>,sudo usermod -e <expiry-date> <user-name>
+modify user <user-name> to set inactive days to <inactive-days>,sudo usermod -f <inactive-days> <user-name>
+modify user <user-name> to change password to <password>,sudo usermod -p <password> <user-name>
+modify user <user-name> to lock the account,sudo usermod -L <user-name>
+modify user <user-name> to unlock the account,sudo usermod -U <user-name>
+modify user <user-name> to change login name to <new-name>,sudo usermod -l <new-name> <user-name>
+"modify user <user-name> to add to multiple groups <group-name-1>,<group-name-2>","sudo usermod -G <group-name-1>,<group-name-2> <user-name>"
+modify user <user-name> to change shell to <shell> and home directory to <home-dir>,sudo usermod -s <shell> -d <home-dir> <user-name>
+modify user <user-name> to change UID to <uid> and set expiry date to <expiry-date>,sudo usermod -u <uid> -e <expiry-date> <user-name>
+modify user <user-name> to remove from group <group-name> and set inactive days to <inactive-days>,sudo usermod -G <group-name> -f <inactive-days> <user-name>
+modify user <user-name> to change shell to <shell> and set UID to <uid>,sudo usermod -s <shell> -u <uid> <user-name>
+modify user <user-name> to change GID to <gid> and lock the account,sudo usermod -g <gid> -L <user-name>
+modify user <user-name> to remove from group <group-name> and unlock the account,sudo usermod -G <group-name> -U <user-name>
+modify user <user-name> to change home directory to <home-dir> and set expiry date to <expiry-date>,sudo usermod -d <home-dir> -e <expiry-date> <user-name>
+modify user <user-name> to change login name to <new-name> and add to group <group-name>,sudo usermod -l <new-name> -G <group-name> <user-name>
+change login name of <user-name> to <new-name> and home directory to <home-dir>,sudo usermod -l <new-name> -d <home-dir> <user-name>
+change shell of user <user-name> to <shell> and set inactive days to <inactive-days>,sudo usermod -s <shell> -f <inactive-days> <user-name>
+change password for <user-name> to <password>,sudo usermod -p <password> <user-name>
+remove user <user-name> from group <group-name>,sudo usermod -G <group-name> <user-name>
+change shell of user <user-name> to <shell> and set new UID <uid>,sudo usermod -s <shell> -u <uid> <user-name>
+modify user <user-name> with a new shell <shell> and a new home directory <home-dir>,sudo usermod -s <shell> -d <home-dir> <user-name>
+modify <user-name> account to expire on <expiry-date>,sudo usermod -e <expiry-date> <user-name>
+set account for user <user-name> to be locked,sudo usermod -L <user-name>
+
+#userdel
+delete user <user-name>,sudo userdel <user-name>
+remove <user-name>,sudo userdel <user-name>
+delete <user-name> from system,sudo userdel <user-name>
+remove user <user-name> from system,sudo userdel <user-name>
+force delete user <user-name>,sudo userdel -f <user-name>
+force delete user <user-name> with home,sudo userdel -f -r <user-name>
+remove <user-name> and home directory,sudo userdel -r <user-name>
+delete <user-name> and remove home,sudo userdel -r <user-name>
+force remove <user-name> with home,sudo userdel -f -r <user-name>
+delete user <user-name> with home and mail,sudo userdel -r <user-name>
+delete user <user-name> even if logged in,sudo userdel -f <user-name>
+remove <user-name> forcefully and delete home,sudo userdel -f -r <user-name>
+delete user <user-name> forcefully,sudo userdel -f <user-name>
+
+#groupadd
+
+create group <group-name>, sudo groupadd <group-name>
+add group <group-name>, sudo groupadd <group-name>
+create group <group-name> with id <group-id>, sudo groupadd -g <group-id> <group-name>
+add group <group-name> with id <group-id>, sudo groupadd -g <group-id> <group-name>
+create group <group-name> as system group, sudo groupadd -r <group-name>
+add group <group-name> as system, sudo groupadd -r <group-name>
+create group <group-name> force, sudo groupadd -f <group-name>
+add group <group-name> force, sudo groupadd -f <group-name>
+create group <group-name> with non-unique id, sudo groupadd -o -g <group-id> <group-name>
+add group <group-name> with non-unique id, sudo groupadd -o -g <group-id> <group-name>
+
+# groupdel
+
+delete group <group-name>, sudo groupdel <group-name>
+remove group <group-name>, sudo groupdel <group-name>
+force delete group <group-name>, sudo groupdel -f <group-name>
+remove group <group-name> force, sudo groupdel -f <group-name>
+delete group <group-name> forcefully, sudo groupdel -f <group-name>
+delete group <group-name> even if users are in it, sudo groupdel -f <group-name>
+delete group <group-name> if users are present, sudo groupdel -f <group-name>
+delete group <group-name> and all users, sudo groupdel -f <group-name>
+
+# groupmod
+
+change group <group-name> id to <group-id>, sudo groupmod -g <group-id> <group-name>
+change group <group-name> gid to <group-id>, sudo groupmod -g <group-id> <group-name>
+rename group <group-name> to <new-group-name>, sudo groupmod -n <new-group-name> <group-name>
+change name of group <group-name> to <new-group-name>, sudo groupmod -n <new-group-name> <group-name>
+rename group <group-name> to <new-name>, sudo groupmod -n <new-name> <group-name>
+change group <group-name> name to <new-name>, sudo groupmod -n <new-name> <group-name>
+change group <group-name> id to <group-id> with non-unique gid, sudo groupmod -o -g <group-id> <group-name>
+change group <group-name> gid to <group-id> with non-unique gid, sudo groupmod -o -g <group-id> <group-name>
