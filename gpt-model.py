@@ -3,6 +3,9 @@ from transformers import T5Tokenizer, T5ForConditionalGeneration, Trainer, Train
 from datasets import Dataset
 import torch
 
+# Check if GPU is available
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
 # Load your dataset
 train_data_path = r'dataset/taining-data.csv'
 val_data_path = r'dataset/validation-data.csv'
@@ -16,12 +19,15 @@ val_dataset = Dataset.from_pandas(val_df)
 
 # Load T5 tokenizer and model
 model_name = 't5-small'
-tokenizer = T5Tokenizer.from_pretrained(model_name,legacy=False)
+tokenizer = T5Tokenizer.from_pretrained(model_name, legacy=False)
 model = T5ForConditionalGeneration.from_pretrained(model_name)
+
+# Move model to GPU
+model = model.to(device)
 
 # Tokenize the dataset
 def tokenize_function(example):
-    source =example['nl_cmd']
+    source = example['nl_cmd']
     target = example['bash_cmd']
     model_inputs = tokenizer(source, max_length=128, truncation=True, padding='max_length')
     labels = tokenizer(target, max_length=128, truncation=True, padding='max_length')
@@ -43,6 +49,8 @@ training_args = TrainingArguments(
     weight_decay=0.01,
     logging_dir='./logs',
     save_total_limit=3,
+    # Enable GPU if available
+    fp16=torch.cuda.is_available(),
 )
 
 # Initialize the Trainer
