@@ -7,8 +7,8 @@ import torch
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Load your dataset
-train_data_path = r'dataset/taining-data.csv'
-val_data_path = r'dataset/validation-data.csv'
+train_data_path = r'data/taining-data.csv'
+val_data_path = r'data/validation-data.csv'
 
 train_df = pd.read_csv(train_data_path)
 val_df = pd.read_csv(val_data_path)
