@@ -1,0 +1,1071 @@
+nl_cmd,bash_cmd
+
+# ls command
+
+show files in the current folder,ls
+list contents of this directory,ls
+what are the files here,ls
+show me what is in this folder,ls
+list files in the current directory,ls
+display files in the folder,ls
+list the directory contents,ls
+what does this folder contain,ls
+give me the list of files,ls
+list the files with details,ls -l
+show file details like permissions and size,ls -l
+give a detailed view of the directory,ls -l
+list files along with their details,ls -l
+show files with their info,ls -l
+display file permissions and sizes,ls -l
+list files in a detailed manner,ls -l
+show me the details of each file,ls -l
+show hidden files in the folder,ls -a
+list all files including hidden ones,ls -a
+what are the hidden files here,ls -a
+show everything in the directory including hidden files,ls -a
+list all files visible and hidden,ls -a
+include hidden files in the list,ls -a
+show me all the files here,ls -a
+list files sorted by time,ls -lt
+show the latest modified files first,ls -lt
+sort files by modification time,ls -lt
+list the files in time order,ls -lt
+show files sorted by recent changes,ls -lt
+list everything including subdirectories,ls -R
+show contents of all subfolders,ls -R
+list all files and their nested contents,ls -R
+show everything in the directory and its subfolders,ls -R
+give me a recursive list of files,ls -R
+list everything in the directory structure,ls -R
+
+# default directory
+
+show files in the downloads folder,ls ~/Downloads
+list contents of the downloads directory,ls ~/Downloads
+what are the files in downloads,ls ~/Downloads
+show me the contents of the downloads folder,ls ~/Downloads
+display all files in downloads,ls ~/Downloads
+list files in the documents folder,ls ~/Documents
+show the files in the documents directory,ls ~/Documents
+what is inside the documents folder,ls ~/Documents
+list all files in documents,ls ~/Documents
+show the contents of the documents directory,ls ~/Documents
+show me the files in the home directory,ls ~
+list contents of the home folder,ls ~
+what are the files in my home directory,ls ~
+list all files in the home directory,ls ~
+show contents of the home folder,ls ~
+show files in the desktop directory,ls ~/Desktop
+list the contents of the desktop folder,ls ~/Desktop
+what is inside the desktop folder,ls ~/Desktop
+show me the files on the desktop,ls ~/Desktop
+list all files in the desktop folder,ls ~/Desktop
+show files in the music folder,ls ~/Music
+list contents of the music directory,ls ~/Music
+what files are in music,ls ~/Music
+show me the music files,ls ~/Music
+list all files in the music directory,ls ~/Music
+show files in the pictures folder,ls ~/Pictures
+list contents of the pictures directory,ls ~/Pictures
+what files are in pictures,ls ~/Pictures
+show me the contents of the pictures folder,ls ~/Pictures
+list all files in the pictures folder,ls ~/Pictures
+show files in the videos folder,ls ~/Videos
+list contents of the videos directory,ls ~/Videos
+what are the videos in this folder,ls ~/Videos
+show me the contents of the videos folder,ls ~/Videos
+list all files in the videos directory,ls ~/Videos
+show files in the public folder,ls ~/Public
+list contents of the public directory,ls ~/Public
+what files are in the public folder,ls ~/Public
+show me the contents of the public folder,ls ~/Public
+list all files in the public directory,ls ~/Public
+show hidden files in the downloads folder,ls -a ~/Downloads
+list hidden and visible files in downloads,ls -a ~/Downloads
+show everything including hidden files in the documents folder,ls -a ~/Documents
+list all files including hidden ones in documents,ls -a ~/Documents
+show hidden files in the home directory,ls -a ~
+list hidden files and folders in my home directory,ls -a ~
+show recently modified files in the downloads folder,ls -lt ~/Downloads
+list files sorted by modification time in downloads,ls -lt ~/Downloads
+show latest modified files in the documents directory,ls -lt ~/Documents
+list files by time in the home directory,ls -lt ~
+show files sorted by time in the home folder,ls -lt ~
+list all files and subdirectories in downloads,ls -R ~/Downloads
+show everything recursively in the documents folder,ls -R ~/Documents
+list all files in the directory tree of home,ls -R ~
+show the directory structure for my home folder,ls -R ~
+
+# placeholder ls
+
+show files in the <directory_name> folder,ls ~/<directory_name>
+list contents of the <directory_name> directory,ls ~/<directory_name>
+what are the files in <directory_name>,ls ~/<directory_name>
+show me the contents of the <directory_name> folder,ls ~/<directory_name>
+display all files in <directory_name>,ls ~/<directory_name>
+list files in the <directory_name> folder,ls ~/<directory_name>
+show the files in the <directory_name> directory,ls ~/<directory_name>
+what is inside the <directory_name> folder,ls ~/<directory_name>
+list all files in <directory_name>,ls ~/<directory_name>
+show contents of the <directory_name> directory,ls ~/<directory_name>
+show me the files in the <directory_name> directory,ls ~/<directory_name>
+list contents of the <directory_name> folder,ls ~/<directory_name>
+show hidden files in the <directory_name> folder,ls -a ~/<directory_name>
+list hidden and visible files in <directory_name>,ls -a ~/<directory_name>
+show everything including hidden files in the <directory_name> folder,ls -a ~/<directory_name>
+list all files including hidden ones in <directory_name>,ls -a ~/<directory_name>
+show hidden files in the <directory_name> directory,ls -a ~/<directory_name>
+list hidden files and folders in <directory_name>,ls -a ~/<directory_name>
+show recently modified files in the <directory_name> folder,ls -lt ~/<directory_name>
+list files sorted by modification time in <directory_name>,ls -lt ~/<directory_name>
+show latest modified files in the <directory_name> directory,ls -lt ~/<directory_name>
+list files by time in <directory_name>,ls -lt ~/<directory_name>
+show files sorted by time in the <directory_name> folder,ls -lt ~/<directory_name>
+list all files and subdirectories in <directory_name>,ls -R ~/<directory_name>
+show everything recursively in the <directory_name> folder,ls -R ~/<directory_name>
+list all files in the directory tree of <directory_name>,ls -R ~/<directory_name>
+show the directory structure for the <directory_name> folder,ls -R ~/<directory_name>
+
+# tree command
+
+show directory structure in a tree format,tree
+display the folder hierarchy,tree
+show files and directories in a tree structure,tree
+list files in a tree format in <directory_name>,tree <directory_name>
+display the tree of contents in <directory_name>,tree <directory_name>
+list files and folders hierarchically in <directory_name>,tree <directory_name>
+show hidden files in tree structure,tree -a
+show the directory tree including hidden files,tree -a
+list the files recursively in a tree view,tree -a
+show directory structure with a limit on depth,tree -L 2
+display files in the folder with a limited depth,tree -L 2
+show files up to level <number> in <directory_name>,tree -L <number> <directory_name>
+list directory structure in a tree format up to level <number>,tree -L <number> <directory_name>
+display directory structure up to <number> levels deep,tree -L <number> <directory_name>
+show files in the <directory_name> directory in a tree view,tree <directory_name>
+
+
+#creating file with extentions for about 20 types
+
+create a text file <file_name>.txt,touch <file_name>.txt
+make a new text file <file_name>.txt,touch <file_name>.txt
+create <file_name>.txt file,touch <file_name>.txt
+create a <file_name>.txt file,touch <file_name>.txt
+create a Python file <file_name>.py,touch <file_name>.py
+make a new Python file <file_name>.py,touch <file_name>.py
+create <file_name>.py for Python,touch <file_name>.py
+create a <file_name>.py file for Python,touch <file_name>.py
+create a C file <file_name>.c,touch <file_name>.c
+make a C file <file_name>.c,touch <file_name>.c
+create <file_name>.c file for C programming,touch <file_name>.c
+create a C++ file <file_name>.cpp,touch <file_name>.cpp
+make a C++ file <file_name>.cpp,touch <file_name>.cpp
+create <file_name>.cpp for C++ programming,touch <file_name>.cpp
+create a Java file <file_name>.java,touch <file_name>.java
+make a Java file <file_name>.java,touch <file_name>.java
+create a <file_name>.java file for Java,touch <file_name>.java
+create an HTML file <file_name>.html,touch <file_name>.html
+make a new HTML file <file_name>.html,touch <file_name>.html
+create a <file_name>.html file,touch <file_name>.html
+create a CSS file <file_name>.css,touch <file_name>.css
+make a CSS file <file_name>.css,touch <file_name>.css
+create a <file_name>.css file,touch <file_name>.css
+create a JavaScript file <file_name>.js,touch <file_name>.js
+make a JavaScript file <file_name>.js,touch <file_name>.js
+create a <file_name>.js file for JavaScript,touch <file_name>.js
+create a JSON file <file_name>.json,touch <file_name>.json
+make a JSON file <file_name>.json,touch <file_name>.json
+create <file_name>.json file,touch <file_name>.json
+create a markdown file <file_name>.md,touch <file_name>.md
+make a markdown file <file_name>.md,touch <file_name>.md
+create a <file_name>.md file for markdown,touch <file_name>.md
+create a YAML file <file_name>.yml,touch <file_name>.yml
+make a YAML file <file_name>.yml,touch <file_name>.yml
+create a <file_name>.yml file for YAML,touch <file_name>.yml
+create a PHP file <file_name>.php,touch <file_name>.php
+make a PHP file <file_name>.php,touch <file_name>.php
+create a <file_name>.php file for PHP,touch <file_name>.php
+create a Ruby file <file_name>.rb,touch <file_name>.rb
+make a Ruby file <file_name>.rb,touch <file_name>.rb
+create a <file_name>.rb file for Ruby,touch <file_name>.rb
+create a SQL file <file_name>.sql,touch <file_name>.sql
+make a SQL file <file_name>.sql,touch <file_name>.sql
+create a <file_name>.sql file for SQL,touch <file_name>.sql
+create an image file <file_name>.jpg,touch <file_name>.jpg
+make a new image file <file_name>.jpg,touch <file_name>.jpg
+create a <file_name>.jpg image file,touch <file_name>.jpg
+create a PNG image file <file_name>.png,touch <file_name>.png
+make a PNG image file <file_name>.png,touch <file_name>.png
+create a <file_name>.png image file,touch <file_name>.png
+create a PDF file <file_name>.pdf,touch <file_name>.pdf
+make a PDF file <file_name>.pdf,touch <file_name>.pdf
+create a <file_name>.pdf document,touch <file_name>.pdf
+create a spreadsheet file <file_name>.xls,touch <file_name>.xls
+make a spreadsheet file <file_name>.xls,touch <file_name>.xls
+create a <file_name>.xls spreadsheet,touch <file_name>.xls
+create a CSV file <file_name>.csv,touch <file_name>.csv
+make a CSV file <file_name>.csv,touch <file_name>.csv
+create a <file_name>.csv file,touch <file_name>.csv
+create a log file <file_name>.log,touch <file_name>.log
+make a log file <file_name>.log,touch <file_name>.log
+create a <file_name>.log file for logs,touch <file_name>.log
+
+# create file with path specified
+
+create a text file named <file_name>.txt in <directory_name>,touch <directory_name>/<file_name>.txt
+create a file <file_name>.txt inside <directory_name>,touch <directory_name>/<file_name>.txt
+make a new file <file_name>.txt in <directory_name>,touch <directory_name>/<file_name>.txt
+create a new text file called <file_name>.txt in <directory_name>,touch <directory_name>/<file_name>.txt
+create a python file called <file_name>.py in <directory_name>,touch <directory_name>/<file_name>.py
+make a python file <file_name>.py inside <directory_name>,touch <directory_name>/<file_name>.py
+create <file_name>.py for python inside <directory_name>,touch <directory_name>/<file_name>.py
+create a python file <file_name>.py in <directory_name>,touch <directory_name>/<file_name>.py
+make a c file <file_name>.c inside <directory_name>,touch <directory_name>/<file_name>.c
+create a c program file <file_name>.c in <directory_name>,touch <directory_name>/<file_name>.c
+make a new c file <file_name>.c inside <directory_name>,touch <directory_name>/<file_name>.c
+create a new c++ file named <file_name>.cpp inside <directory_name>,touch <directory_name>/<file_name>.cpp
+create a c++ file <file_name>.cpp in <directory_name>,touch <directory_name>/<file_name>.cpp
+make a c++ file <file_name>.cpp inside <directory_name>,touch <directory_name>/<file_name>.cpp
+create a java program file <file_name>.java inside <directory_name>,touch <directory_name>/<file_name>.java
+make a java file <file_name>.java in <directory_name>,touch <directory_name>/<file_name>.java
+create a <file_name>.java file inside <directory_name>,touch <directory_name>/<file_name>.java
+create an html file <file_name>.html inside <directory_name>,touch <directory_name>/<file_name>.html
+make a new html file <file_name>.html in <directory_name>,touch <directory_name>/<file_name>.html
+create an html file <file_name>.html inside <directory_name>,touch <directory_name>/<file_name>.html
+create a css file <file_name>.css inside <directory_name>,touch <directory_name>/<file_name>.css
+make a <file_name>.css file inside <directory_name>,touch <directory_name>/<file_name>.css
+create a new css file <file_name>.css in <directory_name>,touch <directory_name>/<file_name>.css
+create a javascript file named <file_name>.js inside <directory_name>,touch <directory_name>/<file_name>.js
+create a <file_name>.js file inside <directory_name>,touch <directory_name>/<file_name>.js
+make a javascript file <file_name>.js inside <directory_name>,touch <directory_name>/<file_name>.js
+create a json file <file_name>.json inside <directory_name>,touch <directory_name>/<file_name>.json
+make a json file named <file_name>.json in <directory_name>,touch <directory_name>/<file_name>.json
+create a json file called <file_name>.json inside <directory_name>,touch <directory_name>/<file_name>.json
+create a markdown file named <file_name>.md inside <directory_name>,touch <directory_name>/<file_name>.md
+make a markdown file <file_name>.md inside <directory_name>,touch <directory_name>/<file_name>.md
+create a <file_name>.md file for markdown inside <directory_name>,touch <directory_name>/<file_name>.md
+create a yaml file <file_name>.yml inside <directory_name>,touch <directory_name>/<file_name>.yml
+make a yaml file named <file_name>.yml in <directory_name>,touch <directory_name>/<file_name>.yml
+create a yaml file <file_name>.yml inside <directory_name>,touch <directory_name>/<file_name>.yml
+create a php file <file_name>.php in <directory_name>,touch <directory_name>/<file_name>.php
+make a new php file <file_name>.php inside <directory_name>,touch <directory_name>/<file_name>.php
+create a php file named <file_name>.php in <directory_name>,touch <directory_name>/<file_name>.php
+create a ruby file <file_name>.rb inside <directory_name>,touch <directory_name>/<file_name>.rb
+make a ruby file <file_name>.rb inside <directory_name>,touch <directory_name>/<file_name>.rb
+create a ruby program file <file_name>.rb inside <directory_name>,touch <directory_name>/<file_name>.rb
+create a sql file <file_name>.sql in <directory_name>,touch <directory_name>/<file_name>.sql
+make a sql file <file_name>.sql inside <directory_name>,touch <directory_name>/<file_name>.sql
+create a <file_name>.sql file for sql inside <directory_name>,touch <directory_name>/<file_name>.sql
+create an image file <file_name>.jpg in <directory_name>,touch <directory_name>/<file_name>.jpg
+make a new image file <file_name>.jpg inside <directory_name>,touch <directory_name>/<file_name>.jpg
+create a <file_name>.jpg image file in <directory_name>,touch <directory_name>/<file_name>.jpg
+create a png image file <file_name>.png inside <directory_name>,touch <directory_name>/<file_name>.png
+make a png image file <file_name>.png inside <directory_name>,touch <directory_name>/<file_name>.png
+create a <file_name>.png image file inside <directory_name>,touch <directory_name>/<file_name>.png
+create a pdf file <file_name>.pdf inside <directory_name>,touch <directory_name>/<file_name>.pdf
+make a pdf file <file_name>.pdf inside <directory_name>,touch <directory_name>/<file_name>.pdf
+create a pdf file named <file_name>.pdf inside <directory_name>,touch <directory_name>/<file_name>.pdf
+create a spreadsheet file <file_name>.xls in <directory_name>,touch <directory_name>/<file_name>.xls
+make a spreadsheet file <file_name>.xls inside <directory_name>,touch <directory_name>/<file_name>.xls
+create a <file_name>.xls file in <directory_name>,touch <directory_name>/<file_name>.xls
+create a csv file <file_name>.csv in <directory_name>,touch <directory_name>/<file_name>.csv
+make a csv file <file_name>.csv inside <directory_name>,touch <directory_name>/<file_name>.csv
+create a <file_name>.csv file in <directory_name>,touch <directory_name>/<file_name>.csv
+create a log file <file_name>.log inside <directory_name>,touch <directory_name>/<file_name>.log
+make a log file <file_name>.log inside <directory_name>,touch <directory_name>/<file_name>.log
+create a <file_name>.log file inside <directory_name>,touch <directory_name>/<file_name>.log
+
+# create file with all the extentions
+
+i want to create a text file named <file-name> in <directory>,touch <directory>/<file-name>.txt
+create a text file named <file-name> in <directory>,touch <directory>/<file-name>.txt
+make a text file called <file-name> in <directory>,touch <directory>/<file-name>.txt
+generate a text file named <file-name> in <directory>,touch <directory>/<file-name>.txt
+please create a text file named <file-name> in <directory>,touch <directory>/<file-name>.txt
+i need to create a text file named <file-name> in <directory>,touch <directory>/<file-name>.txt
+create a file of type .txt named <file-name> in <directory>,touch <directory>/<file-name>.txt
+make a .txt file named <file-name> in <directory>,touch <directory>/<file-name>.txt
+create a csv file named <file-name> in <directory>,touch <directory>/<file-name>.csv
+please create a csv file named <file-name> in <directory>,touch <directory>/<file-name>.csv
+make a csv file called <file-name> in <directory>,touch <directory>/<file-name>.csv
+generate a csv file named <file-name> in <directory>,touch <directory>/<file-name>.csv
+i want to create a .csv file named <file-name> in <directory>,touch <directory>/<file-name>.csv
+create a markdown file named <file-name> in <directory>,touch <directory>/<file-name>.md
+make a markdown file named <file-name> in <directory>,touch <directory>/<file-name>.md
+please create a markdown file named <file-name> in <directory>,touch <directory>/<file-name>.md
+generate a markdown file named <file-name> in <directory>,touch <directory>/<file-name>.md
+i need a markdown file named <file-name> in <directory>,touch <directory>/<file-name>.md
+i want to create a .md file named <file-name> in <directory>,touch <directory>/<file-name>.md
+create a rtf file named <file-name> in <directory>,touch <directory>/<file-name>.rtf
+make a rtf file called <file-name> in <directory>,touch <directory>/<file-name>.rtf
+please create a rtf file named <file-name> in <directory>,touch <directory>/<file-name>.rtf
+generate a rtf file named <file-name> in <directory>,touch <directory>/<file-name>.rtf
+i need to create a rtf file named <file-name> in <directory>,touch <directory>/<file-name>.rtf
+create a log file named <file-name> in <directory>,touch <directory>/<file-name>.log
+make a log file named <file-name> in <directory>,touch <directory>/<file-name>.log
+generate a log file named <file-name> in <directory>,touch <directory>/<file-name>.log
+please create a log file named <file-name> in <directory>,touch <directory>/<file-name>.log
+i want a log file named <file-name> in <directory>,touch <directory>/<file-name>.log
+create an xml file named <file-name> in <directory>,touch <directory>/<file-name>.xml
+make an xml file named <file-name> in <directory>,touch <directory>/<file-name>.xml
+generate an xml file named <file-name> in <directory>,touch <directory>/<file-name>.xml
+please create an xml file named <file-name> in <directory>,touch <directory>/<file-name>.xml
+i want to create a json file named <file-name> in <directory>,touch <directory>/<file-name>.json
+make a json file named <file-name> in <directory>,touch <directory>/<file-name>.json
+create a json file named <file-name> in <directory>,touch <directory>/<file-name>.json
+generate a json file named <file-name> in <directory>,touch <directory>/<file-name>.json
+please create a json file named <file-name> in <directory>,touch <directory>/<file-name>.json
+i need a json file named <file-name> in <directory>,touch <directory>/<file-name>.json
+create an html file named <file-name> in <directory>,touch <directory>/<file-name>.html
+make an html file named <file-name> in <directory>,touch <directory>/<file-name>.html
+generate an html file named <file-name> in <directory>,touch <directory>/<file-name>.html
+please create an html file named <file-name> in <directory>,touch <directory>/<file-name>.html
+create a yaml file named <file-name> in <directory>,touch <directory>/<file-name>.yaml
+make a yaml file named <file-name> in <directory>,touch <directory>/<file-name>.yaml
+generate a yaml file named <file-name> in <directory>,touch <directory>/<file-name>.yaml
+please create a yaml file named <file-name> in <directory>,touch <directory>/<file-name>.yaml
+i need a yaml file named <file-name> in <directory>,touch <directory>/<file-name>.yaml
+create an ini file named <file-name> in <directory>,touch <directory>/<file-name>.ini
+make an ini file named <file-name> in <directory>,touch <directory>/<file-name>.ini
+generate an ini file named <file-name> in <directory>,touch <directory>/<file-name>.ini
+please create an ini file named <file-name> in <directory>,touch <directory>/<file-name>.ini
+create a tex file named <file-name> in <directory>,touch <directory>/<file-name>.tex
+make a tex file named <file-name> in <directory>,touch <directory>/<file-name>.tex
+generate a tex file named <file-name> in <directory>,touch <directory>/<file-name>.tex
+please create a tex file named <file-name> in <directory>,touch <directory>/<file-name>.tex
+create a c file named <file-name> in <directory>,touch <directory>/<file-name>.c
+make a c file named <file-name> in <directory>,touch <directory>/<file-name>.c
+generate a c file named <file-name> in <directory>,touch <directory>/<file-name>.c
+please create a c file named <file-name> in <directory>,touch <directory>/<file-name>.c
+i want to create a cpp file named <file-name> in <directory>,touch <directory>/<file-name>.cpp
+make a cpp file named <file-name> in <directory>,touch <directory>/<file-name>.cpp
+generate a cpp file named <file-name> in <directory>,touch <directory>/<file-name>.cpp
+please create a cpp file named <file-name> in <directory>,touch <directory>/<file-name>.cpp
+create a h file named <file-name> in <directory>,touch <directory>/<file-name>.h
+make a h file named <file-name> in <directory>,touch <directory>/<file-name>.h
+generate a h file named <file-name> in <directory>,touch <directory>/<file-name>.h
+please create a h file named <file-name> in <directory>,touch <directory>/<file-name>.h
+create a python file named <file-name> in <directory>,touch <directory>/<file-name>.py
+make a python file named <file-name> in <directory>,touch <directory>/<file-name>.py
+generate a python file named <file-name> in <directory>,touch <directory>/<file-name>.py
+please create a python file named <file-name> in <directory>,touch <directory>/<file-name>.py
+create a java file named <file-name> in <directory>,touch <directory>/<file-name>.java
+make a java file named <file-name> in <directory>,touch <directory>/<file-name>.java
+generate a java file named <file-name> in <directory>,touch <directory>/<file-name>.java
+please create a java file named <file-name> in <directory>,touch <directory>/<file-name>.java
+create a class file named <file-name> in <directory>,touch <directory>/<file-name>.class
+make a class file named <file-name> in <directory>,touch <directory>/<file-name>.class
+generate a class file named <file-name> in <directory>,touch <directory>/<file-name>.class
+please create a class file named <file-name> in <directory>,touch <directory>/<file-name>.class
+create a js file named <file-name> in <directory>,touch <directory>/<file-name>.js
+make a js file named <file-name> in <directory>,touch <directory>/<file-name>.js
+generate a js file named <file-name> in <directory>,touch <directory>/<file-name>.js
+please create a js file named <file-name> in <directory>,touch <directory>/<file-name>.js
+create a php file named <file-name> in <directory>,touch <directory>/<file-name>.php
+make a php file named <file-name> in <directory>,touch <directory>/<file-name>.php
+generate a php file named <file-name> in <directory>,touch <directory>/<file-name>.php
+please create a php file named <file-name> in <directory>,touch <directory>/<file-name>.php
+create a rb file named <file-name> in <directory>,touch <directory>/<file-name>.rb
+make a rb file named <file-name> in <directory>,touch <directory>/<file-name>.rb
+generate a rb file named <file-name> in <directory>,touch <directory>/<file-name>.rb
+please create a rb file named <file-name> in <directory>,touch <directory>/<file-name>.rb
+create a swift file named <file-name> in <directory>,touch <directory>/<file-name>.swift
+make a swift file named <file-name> in <directory>,touch <directory>/<file-name>.swift
+generate a swift file named <file-name> in <directory>,touch <directory>/<file-name>.swift
+please create a swift file named <file-name> in <directory>,touch <directory>/<file-name>.swift
+create a go file named <file-name> in <directory>,touch <directory>/<file-name>.go
+make a go file named <file-name> in <directory>,touch <directory>/<file-name>.go
+generate a go file named <file-name> in <directory>,touch <directory>/<file-name>.go
+please create a go file named <file-name> in <directory>,touch <directory>/<file-name>.go
+create a ts file named <file-name> in <directory>,touch <directory>/<file-name>.ts
+make a ts file named <file-name> in <directory>,touch <directory>/<file-name>.ts
+generate a ts file named <file-name> in <directory>,touch <directory>/<file-name>.ts
+please create a ts file named <file-name> in <directory>,touch <directory>/<file-name>.ts
+create a kt file named <file-name> in <directory>,touch <directory>/<file-name>.kt
+make a kt file named <file-name> in <directory>,touch <directory>/<file-name>.kt
+generate a kt file named <file-name> in <directory>,touch <directory>/<file-name>.kt
+please create a kt file named <file-name> in <directory>,touch <directory>/<file-name>.kt
+create a scala file named <file-name> in <directory>,touch <directory>/<file-name>.scala
+make a scala file named <file-name> in <directory>,touch <directory>/<file-name>.scala
+generate a scala file named <file-name> in <directory>,touch <directory>/<file-name>.scala
+please create a scala file named <file-name> in <directory>,touch <directory>/<file-name>.scala
+create a pl file named <file-name> in <directory>,touch <directory>/<file-name>.pl
+make a pl file named <file-name> in <directory>,touch <directory>/<file-name>.pl
+generate a pl file named <file-name> in <directory>,touch <directory>/<file-name>.pl
+please create a pl file named <file-name> in <directory>,touch <directory>/<file-name>.pl
+create an m file named <file-name> in <directory>,touch <directory>/<file-name>.m
+make an m file named <file-name> in <directory>,touch <directory>/<file-name>.m
+generate an m file named <file-name> in <directory>,touch <directory>/<file-name>.m
+please create an m file named <file-name> in <directory>,touch <directory>/<file-name>.m
+create a lua file named <file-name> in <directory>,touch <directory>/<file-name>.lua
+make a lua file named <file-name> in <directory>,touch <directory>/<file-name>.lua
+generate a lua file named <file-name> in <directory>,touch <directory>/<file-name>.lua
+please create a lua file named <file-name> in <directory>,touch <directory>/<file-name>.lua
+create an asm file named <file-name> in <directory>,touch <directory>/<file-name>.asm
+make an asm file named <file-name> in <directory>,touch <directory>/<file-name>.asm
+generate an asm file named <file-name> in <directory>,touch <directory>/<file-name>.asm
+please create an asm file named <file-name> in <directory>,touch <directory>/<file-name>.asm
+create a cs file named <file-name> in <directory>,touch <directory>/<file-name>.cs
+make a cs file named <file-name> in <directory>,touch <directory>/<file-name>.cs
+generate a cs file named <file-name> in <directory>,touch <directory>/<file-name>.cs
+please create a cs file named <file-name> in <directory>,touch <directory>/<file-name>.cs
+create a vbs file named <file-name> in <directory>,touch <directory>/<file-name>.vbs
+make a vbs file named <file-name> in <directory>,touch <directory>/<file-name>.vbs
+generate a vbs file named <file-name> in <directory>,touch <directory>/<file-name>.vbs
+please create a vbs file named <file-name> in <directory>,touch <directory>/<file-name>.vbs
+create a sh file named <file-name> in <directory>,touch <directory>/<file-name>.sh
+make a sh file named <file-name> in <directory>,touch <directory>/<file-name>.sh
+generate a sh file named <file-name> in <directory>,touch <directory>/<file-name>.sh
+please create a sh file named <file-name> in <directory>,touch <directory>/<file-name>.sh
+create a sql file named <file-name> in <directory>,touch <directory>/<file-name>.sql
+make a sql file named <file-name> in <directory>,touch <directory>/<file-name>.sql
+generate a sql file named <file-name> in <directory>,touch <directory>/<file-name>.sql
+please create a sql file named <file-name> in <directory>,touch <directory>/<file-name>.sql
+create a dart file named <file-name> in <directory>,touch <directory>/<file-name>.dart
+make a dart file named <file-name> in <directory>,touch <directory>/<file-name>.dart
+generate a dart file named <file-name> in <directory>,touch <directory>/<file-name>.dart
+please create a dart file named <file-name> in <directory>,touch <directory>/<file-name>.dart
+create an r file named <file-name> in <directory>,touch <directory>/<file-name>.r
+make an r file named <file-name> in <directory>,touch <directory>/<file-name>.r
+generate an r file named <file-name> in <directory>,touch <directory>/<file-name>.r
+please create an r file named <file-name> in <directory>,touch <directory>/<file-name>.r
+create a clj file named <file-name> in <directory>,touch <directory>/<file-name>.clj
+make a clj file named <file-name> in <directory>,touch <directory>/<file-name>.clj
+generate a clj file named <file-name> in <directory>,touch <directory>/<file-name>.clj
+please create a clj file named <file-name> in <directory>,touch <directory>/<file-name>.clj
+create a sc file named <file-name> in <directory>,touch <directory>/<file-name>.sc
+make a sc file named <file-name> in <directory>,touch <directory>/<file-name>.sc
+generate a sc file named <file-name> in <directory>,touch <directory>/<file-name>.sc
+please create a sc file named <file-name> in <directory>,touch <directory>/<file-name>.sc
+create a f90 file named <file-name> in <directory>,touch <directory>/<file-name>.f90
+make a f90 file named <file-name> in <directory>,touch <directory>/<file-name>.f90
+generate a f90 file named <file-name> in <directory>,touch <directory>/<file-name>.f90
+please create a f90 file named <file-name> in <directory>,touch <directory>/<file-name>.f90
+create a v file named <file-name> in <directory>,touch <directory>/<file-name>.v
+make a v file named <file-name> in <directory>,touch <directory>/<file-name>.v
+generate a v file named <file-name> in <directory>,touch <directory>/<file-name>.v
+please create a v file named <file-name> in <directory>,touch <directory>/<file-name>.v
+create an xsl file named <file-name> in <directory>,touch <directory>/<file-name>.xsl
+make an xsl file named <file-name> in <directory>,touch <directory>/<file-name>.xsl
+generate an xsl file named <file-name> in <directory>,touch <directory>/<file-name>.xsl
+please create an xsl file named <file-name> in <directory>,touch <directory>/<file-name>.xsl
+create a cabal file named <file-name> in <directory>,touch <directory>/<file-name>.cabal
+make a cabal file named <file-name> in <directory>,touch <directory>/<file-name>.cabal
+generate a cabal file named <file-name> in <directory>,touch <directory>/<file-name>.cabal
+please create a cabal file named <file-name> in <directory>,touch <directory>/<file-name>.cabal
+create a zsh file named <file-name> in <directory>,touch <directory>/<file-name>.zsh
+make a zsh file named <file-name> in <directory>,touch <directory>/<file-name>.zsh
+generate a zsh file named <file-name> in <directory>,touch <directory>/<file-name>.zsh
+please create a zsh file named <file-name> in <directory>,touch <directory>/<file-name>.zsh
+create an env file named <file-name> in <directory>,touch <directory>/<file-name>.env
+make an env file named <file-name> in <directory>,touch <directory>/<file-name>.env
+generate an env file named <file-name> in <directory>,touch <directory>/<file-name>.env
+please create an env file named <file-name> in <directory>,touch <directory>/<file-name>.env
+create a conf file named <file-name> in <directory>,touch <directory>/<file-name>.conf
+make a conf file named <file-name> in <directory>,touch <directory>/<file-name>.conf
+generate a conf file named <file-name> in <directory>,touch <directory>/<file-name>.conf
+please create a conf file named <file-name> in <directory>,touch <directory>/<file-name>.conf
+create a toml file named <file-name> in <directory>,touch <directory>/<file-name>.toml
+make a toml file named <file-name> in <directory>,touch <directory>/<file-name>.toml
+generate a toml file named <file-name> in <directory>,touch <directory>/<file-name>.toml
+please create a toml file named <file-name> in <directory>,touch <directory>/<file-name>.toml
+create a dat file named <file-name> in <directory>,touch <directory>/<file-name>.dat
+make a dat file named <file-name> in <directory>,touch <directory>/<file-name>.dat
+generate a dat file named <file-name> in <directory>,touch <directory>/<file-name>.dat
+please create a dat file named <file-name> in <directory>,touch <directory>/<file-name>.dat
+create a db file named <file-name> in <directory>,touch <directory>/<file-name>.db
+make a db file named <file-name> in <directory>,touch <directory>/<file-name>.db
+generate a db file named <file-name> in <directory>,touch <directory>/<file-name>.db
+please create a db file named <file-name> in <directory>,touch <directory>/<file-name>.db
+create a bin file named <file-name> in <directory>,touch <directory>/<file-name>.bin
+make a bin file named <file-name> in <directory>,touch <directory>/<file-name>.bin
+generate a bin file named <file-name> in <directory>,touch <directory>/<file-name>.bin
+please create a bin file named <file-name> in <directory>,touch <directory>/<file-name>.bin
+create a tar file named <file-name> in <directory>,touch <directory>/<file-name>.tar
+make a tar file named <file-name> in <directory>,touch <directory>/<file-name>.tar
+generate a tar file named <file-name> in <directory>,touch <directory>/<file-name>.tar
+please create a tar file named <file-name> in <directory>,touch <directory>/<file-name>.tar
+create a gz file named <file-name> in <directory>,touch <directory>/<file-name>.gz
+make a gz file named <file-name> in <directory>,touch <directory>/<file-name>.gz
+generate a gz file named <file-name> in <directory>,touch <directory>/<file-name>.gz
+please create a gz file named <file-name> in <directory>,touch <directory>/<file-name>.gz
+create an iso file named <file-name> in <directory>,touch <directory>/<file-name>.iso
+make an iso file named <file-name> in <directory>,touch <directory>/<file-name>.iso
+generate an iso file named <file-name> in <directory>,touch <directory>/<file-name>.iso
+please create an iso file named <file-name> in <directory>,touch <directory>/<file-name>.iso
+create an exe file named <file-name> in <directory>,touch <directory>/<file-name>.exe
+make an exe file named <file-name> in <directory>,touch <directory>/<file-name>.exe
+generate an exe file named <file-name> in <directory>,touch <directory>/<file-name>.exe
+please create an exe file named <file-name> in <directory>,touch <directory>/<file-name>.exe
+create a dll file named <file-name> in <directory>,touch <directory>/<file-name>.dll
+make a dll file named <file-name> in <directory>,touch <directory>/<file-name>.dll
+generate a dll file named <file-name> in <directory>,touch <directory>/<file-name>.dll
+please create a dll file named <file-name> in <directory>,touch <directory>/<file-name>.dll
+create an apk file named <file-name> in <directory>,touch <directory>/<file-name>.apk
+make an apk file named <file-name> in <directory>,touch <directory>/<file-name>.apk
+generate an apk file named <file-name> in <directory>,touch <directory>/<file-name>.apk
+please create an apk file named <file-name> in <directory>,touch <directory>/<file-name>.apk
+create an ipa file named <file-name> in <directory>,touch <directory>/<file-name>.ipa
+make an ipa file named <file-name> in <directory>,touch <directory>/<file-name>.ipa
+generate an ipa file named <file-name> in <directory>,touch <directory>/<file-name>.ipa
+please create an ipa file named <file-name> in <directory>,touch <directory>/<file-name>.ipa
+create an a file named <file-name> in <directory>,touch <directory>/<file-name>.a
+make an a file named <file-name> in <directory>,touch <directory>/<file-name>.a
+generate an a file named <file-name> in <directory>,touch <directory>/<file-name>.a
+please create an a file named <file-name> in <directory>,touch <directory>/<file-name>.a
+create a so file named <file-name> in <directory>,touch <directory>/<file-name>.so
+make a so file named <file-name> in <directory>,touch <directory>/<file-name>.so
+generate a so file named <file-name> in <directory>,touch <directory>/<file-name>.so
+please create a so file named <file-name> in <directory>,touch <directory>/<file-name>.so
+create a lib file named <file-name> in <directory>,touch <directory>/<file-name>.lib
+make a lib file named <file-name> in <directory>,touch <directory>/<file-name>.lib
+generate a lib file named <file-name> in <directory>,touch <directory>/<file-name>.lib
+please create a lib file named <file-name> in <directory>,touch <directory>/<file-name>.lib
+create a svg file named <file-name> in <directory>,touch <directory>/<file-name>.svg
+make a svg file named <file-name> in <directory>,touch <directory>/<file-name>.svg
+generate a svg file named <file-name> in <directory>,touch <directory>/<file-name>.svg
+please create a svg file named <file-name> in <directory>,touch <directory>/<file-name>.svg
+create a psd file named <file-name> in <directory>,touch <directory>/<file-name>.psd
+make a psd file named <file-name> in <directory>,touch <directory>/<file-name>.psd
+generate a psd file named <file-name> in <directory>,touch <directory>/<file-name>.psd
+please create a psd file named <file-name> in <directory>,touch <directory>/<file-name>.psd
+create a css file named <file-name> in <directory>,touch <directory>/<file-name>.css
+make a css file named <file-name> in <directory>,touch <directory>/<file-name>.css
+generate a css file named <file-name> in <directory>,touch <directory>/<file-name>.css
+please create a css file named <file-name> in <directory>,touch <directory>/<file-name>.css
+create a scss file named <file-name> in <directory>,touch <directory>/<file-name>.scss
+make a scss file named <file-name> in <directory>,touch <directory>/<file-name>.scss
+generate a scss file named <file-name> in <directory>,touch <directory>/<file-name>.scss
+please create a scss file named <file-name> in <directory>,touch <directory>/<file-name>.scss
+create a json file named <file-name> in <directory>,touch <directory>/<file-name>.json
+make a json file named <file-name> in <directory>,touch <directory>/<file-name>.json
+generate a json file named <file-name> in <directory>,touch <directory>/<file-name>.json
+please create a json file named <file-name> in <directory>,touch <directory>/<file-name>.json
+create an xml file named <file-name> in <directory>,touch <directory>/<file-name>.xml
+make an xml file named <file-name> in <directory>,touch <directory>/<file-name>.xml
+generate an xml file named <file-name> in <directory>,touch <directory>/<file-name>.xml
+please create an xml file named <file-name> in <directory>,touch <directory>/<file-name>.xml
+create a html file named <file-name> in <directory>,touch <directory>/<file-name>.html
+make a html file named <file-name> in <directory>,touch <directory>/<file-name>.html
+generate a html file named <file-name> in <directory>,touch <directory>/<file-name>.html
+please create a html file named <file-name> in <directory>,touch <directory>/<file-name>.html
+create a yaml file named <file-name> in <directory>,touch <directory>/<file-name>.yaml
+make a yaml file named <file-name> in <directory>,touch <directory>/<file-name>.yaml
+generate a yaml file named <file-name> in <directory>,touch <directory>/<file-name>.yaml
+please create a yaml file named <file-name> in <directory>,touch <directory>/<file-name>.yaml
+create a log file named <file-name> in <directory>,touch <directory>/<file-name>.log
+make a log file named <file-name> in <directory>,touch <directory>/<file-name>.log
+generate a log file named <file-name> in <directory>,touch <directory>/<file-name>.log
+please create a log file named <file-name> in <directory>,touch <directory>/<file-name>.log
+create a log1 file named <file-name> in <directory>,touch <directory>/<file-name>.log1
+make a log1 file named <file-name> in <directory>,touch <directory>/<file-name>.log1
+generate a log1 file named <file-name> in <directory>,touch <directory>/<file-name>.log1
+please create a log1 file named <file-name> in <directory>,touch <directory>/<file-name>.log1
+create a md file named <file-name> in <directory>,touch <directory>/<file-name>.md
+make a md file named <file-name> in <directory>,touch <directory>/<file-name>.md
+generate a md file named <file-name> in <directory>,touch <directory>/<file-name>.md
+please create a md file named <file-name> in <directory>,touch <directory>/<file-name>.md
+create a sql file named <file-name> in <directory>,touch <directory>/<file-name>.sql
+make a sql file named <file-name> in <directory>,touch <directory>/<file-name>.sql
+generate a sql file named <file-name> in <directory>,touch <directory>/<file-name>.sql
+please create a sql file named <file-name> in <directory>,touch <directory>/<file-name>.sql
+create a python file named <file-name> in <directory>,touch <directory>/<file-name>.py
+make a python file named <file-name> in <directory>,touch <directory>/<file-name>.py
+generate a python file named <file-name> in <directory>,touch <directory>/<file-name>.py
+please create a python file named <file-name> in <directory>,touch <directory>/<file-name>.py
+create a java file named <file-name> in <directory>,touch <directory>/<file-name>.java
+make a java file named <file-name> in <directory>,touch <directory>/<file-name>.java
+generate a java file named <file-name> in <directory>,touch <directory>/<file-name>.java
+please create a java file named <file-name> in <directory>,touch <directory>/<file-name>.java
+create a ruby file named <file-name> in <directory>,touch <directory>/<file-name>.rb
+make a ruby file named <file-name> in <directory>,touch <directory>/<file-name>.rb
+generate a ruby file named <file-name> in <directory>,touch <directory>/<file-name>.rb
+please create a ruby file named <file-name> in <directory>,touch <directory>/<file-name>.rb
+create a go file named <file-name> in <directory>,touch <directory>/<file-name>.go
+make a go file named <file-name> in <directory>,touch <directory>/<file-name>.go
+generate a go file named <file-name> in <directory>,touch <directory>/<file-name>.go
+please create a go file named <file-name> in <directory>,touch <directory>/<file-name>.go
+create a perl file named <file-name> in <directory>,touch <directory>/<file-name>.pl
+make a perl file named <file-name> in <directory>,touch <directory>/<file-name>.pl
+generate a perl file named <file-name> in <directory>,touch <directory>/<file-name>.pl
+please create a perl file named <file-name> in <directory>,touch <directory>/<file-name>.pl
+create a rust file named <file-name> in <directory>,touch <directory>/<file-name>.rs
+make a rust file named <file-name> in <directory>,touch <directory>/<file-name>.rs
+generate a rust file named <file-name> in <directory>,touch <directory>/<file-name>.rs
+please create a rust file named <file-name> in <directory>,touch <directory>/<file-name>.rs
+create a swift file named <file-name> in <directory>,touch <directory>/<file-name>.swift
+make a swift file named <file-name> in <directory>,touch <directory>/<file-name>.swift
+generate a swift file named <file-name> in <directory>,touch <directory>/<file-name>.swift
+please create a swift file named <file-name> in <directory>,touch <directory>/<file-name>.swift
+create a kotlin file named <file-name> in <directory>,touch <directory>/<file-name>.kt
+make a kotlin file named <file-name> in <directory>,touch <directory>/<file-name>.kt
+generate a kotlin file named <file-name> in <directory>,touch <directory>/<file-name>.kt
+please create a kotlin file named <file-name> in <directory>,touch <directory>/<file-name>.kt
+create a scala file named <file-name> in <directory>,touch <directory>/<file-name>.scala
+make a scala file named <file-name> in <directory>,touch <directory>/<file-name>.scala
+generate a scala file named <file-name> in <directory>,touch <directory>/<file-name>.scala
+please create a scala file named <file-name> in <directory>,touch <directory>/<file-name>.scala
+create a lua file named <file-name> in <directory>,touch <directory>/<file-name>.lua
+make a lua file named <file-name> in <directory>,touch <directory>/<file-name>.lua
+generate a lua file named <file-name> in <directory>,touch <directory>/<file-name>.lua
+please create a lua file named <file-name> in <directory>,touch <directory>/<file-name>.lua
+create a rust file named <file-name> in <directory>,touch <directory>/<file-name>.rs
+make a rust file named <file-name> in <directory>,touch <directory>/<file-name>.rs
+generate a rust file named <file-name> in <directory>,touch <directory>/<file-name>.rs
+please create a rust file named <file-name> in <directory>,touch <directory>/<file-name>.rs
+
+hidden file creation
+
+create a hidden file named <file-name> in <directory>,touch <directory>/.<file-name>
+make a hidden file named <file-name> in <directory>,touch <directory>/.<file-name>
+generate a hidden file named <file-name> in <directory>,touch <directory>/.<file-name>
+please create a hidden file named <file-name> in <directory>,touch <directory>/.<file-name>
+create a hidden .file named <file-name> in <directory>,touch <directory>/.<file-name>
+make a hidden .file named <file-name> in <directory>,touch <directory>/.<file-name>
+generate a hidden .file named <file-name> in <directory>,touch <directory>/.<file-name>
+please create a hidden .file named <file-name> in <directory>,touch <directory>/.<file-name>
+
+# already available directories
+
+create a file named <file-name> in home,touch ~/<file-name>
+make a file named <file-name> in home,touch ~/<file-name>
+generate a file named <file-name> in home,touch ~/<file-name>
+please create a file named <file-name> in home,touch ~/<file-name>
+create a file named <file-name> in root,sudo touch /<file-name>
+make a file named <file-name> in root,sudo touch /<file-name>
+generate a file named <file-name> in root,sudo touch /<file-name>
+please create a file named <file-name> in root,sudo touch /<file-name>
+create a file named <file-name> in documents,touch ~/Documents/<file-name>
+make a file named <file-name> in documents,touch ~/Documents/<file-name>
+generate a file named <file-name> in documents,touch ~/Documents/<file-name>
+please create a file named <file-name> in documents,touch ~/Documents/<file-name>
+create a file named <file-name> in downloads,touch ~/Downloads/<file-name>
+make a file named <file-name> in downloads,touch ~/Downloads/<file-name>
+generate a file named <file-name> in downloads,touch ~/Downloads/<file-name>
+please create a file named <file-name> in downloads,touch ~/Downloads/<file-name>
+create a file named <file-name> in desktop,touch ~/Desktop/<file-name>
+make a file named <file-name> in desktop,touch ~/Desktop/<file-name>
+generate a file named <file-name> in desktop,touch ~/Desktop/<file-name>
+please create a file named <file-name> in desktop,touch ~/Desktop/<file-name>
+
+# directory creations
+
+create a directory named <directory-name> in <location>,mkdir <location>/<directory-name>
+make a directory named <directory-name> in <location>,mkdir <location>/<directory-name>
+generate a directory named <directory-name> in <location>,mkdir <location>/<directory-name>
+please create a directory named <directory-name> in <location>,mkdir <location>/<directory-name>
+create a folder named <directory-name> in <location>,mkdir <location>/<directory-name>
+make a folder named <directory-name> in <location>,mkdir <location>/<directory-name>
+generate a folder named <directory-name> in <location>,mkdir <location>/<directory-name>
+please create a folder named <directory-name> in <location>,mkdir <location>/<directory-name>
+
+create a directory named <directory-name> in home,mkdir ~/ <directory-name>
+make a directory named <directory-name> in home,mkdir ~/ <directory-name>
+generate a directory named <directory-name> in home,mkdir ~/ <directory-name>
+please create a directory named <directory-name> in home,mkdir ~/ <directory-name>
+create a folder named <directory-name> in home,mkdir ~/ <directory-name>
+make a folder named <directory-name> in home,mkdir ~/ <directory-name>
+generate a folder named <directory-name> in home,mkdir ~/ <directory-name>
+please create a folder named <directory-name> in home,mkdir ~/ <directory-name>
+create a directory named <directory-name> in root,sudo mkdir / <directory-name>
+make a directory named <directory-name> in root,sudo mkdir / <directory-name>
+generate a directory named <directory-name> in root,sudo mkdir / <directory-name>
+please create a directory named <directory-name> in root,sudo mkdir / <directory-name>
+create a folder named <directory-name> in root,sudo mkdir / <directory-name>
+make a folder named <directory-name> in root,sudo mkdir / <directory-name>
+generate a folder named <directory-name> in root,sudo mkdir / <directory-name>
+please create a folder named <directory-name> in root,sudo mkdir / <directory-name>
+create a directory named <directory-name> in documents,mkdir ~/Documents/<directory-name>
+make a directory named <directory-name> in documents,mkdir ~/Documents/<directory-name>
+generate a directory named <directory-name> in documents,mkdir ~/Documents/<directory-name>
+please create a directory named <directory-name> in documents,mkdir ~/Documents/<directory-name>
+create a folder named <directory-name> in documents,mkdir ~/Documents/<directory-name>
+make a folder named <directory-name> in documents,mkdir ~/Documents/<directory-name>
+generate a folder named <directory-name> in documents,mkdir ~/Documents/<directory-name>
+please create a folder named <directory-name> in documents,mkdir ~/Documents/<directory-name>
+create a directory named <directory-name> in downloads,mkdir ~/Downloads/<directory-name>
+make a directory named <directory-name> in downloads,mkdir ~/Downloads/<directory-name>
+generate a directory named <directory-name> in downloads,mkdir ~/Downloads/<directory-name>
+please create a directory named <directory-name> in downloads,mkdir ~/Downloads/<directory-name>
+create a folder named <directory-name> in downloads,mkdir ~/Downloads/<directory-name>
+make a folder named <directory-name> in downloads,mkdir ~/Downloads/<directory-name>
+generate a folder named <directory-name> in downloads,mkdir ~/Downloads/<directory-name>
+please create a folder named <directory-name> in downloads,mkdir ~/Downloads/<directory-name>
+create a directory named <directory-name> in desktop,mkdir ~/Desktop/<directory-name>
+make a directory named <directory-name> in desktop,mkdir ~/Desktop/<directory-name>
+generate a directory named <directory-name> in desktop,mkdir ~/Desktop/<directory-name>
+please create a directory named <directory-name> in desktop,mkdir ~/Desktop/<directory-name>
+create a folder named <directory-name> in desktop,mkdir ~/Desktop/<directory-name>
+make a folder named <directory-name> in desktop,mkdir ~/Desktop/<directory-name>
+generate a folder named <directory-name> in desktop,mkdir ~/Desktop/<directory-name>
+please create a folder named <directory-name> in desktop,mkdir ~/Desktop/<directory-name>
+
+create a hidden directory named <directory-name> in <location>,mkdir <location>/.<directory-name>
+make a hidden directory named <directory-name> in <location>,mkdir <location>/.<directory-name>
+generate a hidden directory named <directory-name> in <location>,mkdir <location>/.<directory-name>
+please create a hidden directory named <directory-name> in <location>,mkdir <location>/.<directory-name>
+create a hidden folder named <directory-name> in <location>,mkdir <location>/.<directory-name>
+make a hidden folder named <directory-name> in <location>,mkdir <location>/.<directory-name>
+generate a hidden folder named <directory-name> in <location>,mkdir <location>/.<directory-name>
+please create a hidden folder named <directory-name> in <location>,mkdir <location>/.<directory-name>
+
+# reading the content of textfile
+
+natural_language,bash_command
+show me the content in <file-name>.txt,cat <file-name>.txt
+read the content of <file-name>.csv,cat <file-name>.csv
+display the content of <file-name>.md,cat <file-name>.md
+fetch the content of <file-name>.rtf,cat <file-name>.rtf
+open and read <file-name>.log,cat <file-name>.log
+show the details in <file-name>.xml,cat <file-name>.xml
+read and display <file-name>.json,cat <file-name>.json
+fetch the details from <file-name>.html,cat <file-name>.html
+show the data in <file-name>.yaml,cat <file-name>.yaml
+read the information in <file-name>.ini,cat <file-name>.ini
+show the content from <file-name>.tex,cat <file-name>.tex
+fetch and open <file-name>.c,cat <file-name>.c
+read the file <file-name>.cpp,cat <file-name>.cpp
+display the content in <file-name>.h,cat <file-name>.h
+show me the script in <file-name>.py,cat <file-name>.py
+fetch and display <file-name>.java,cat <file-name>.java
+open and show <file-name>.class,cat <file-name>.class
+display what is in <file-name>.js,cat <file-name>.js
+show the program <file-name>.php,cat <file-name>.php
+read the script in <file-name>.rb,cat <file-name>.rb
+show me the file <file-name>.swift,cat <file-name>.swift
+fetch the program <file-name>.go,cat <file-name>.go
+display <file-name>.ts,cat <file-name>.ts
+read and show <file-name>.kt,cat <file-name>.kt
+fetch the details in <file-name>.scala,cat <file-name>.scala
+open and read <file-name>.pl,cat <file-name>.pl
+show the program <file-name>.m,cat <file-name>.m
+fetch the script in <file-name>.lua,cat <file-name>.lua
+display the content in <file-name>.asm,cat <file-name>.asm
+open <file-name>.cs and display it,cat <file-name>.cs
+read and fetch <file-name>.vbs,cat <file-name>.vbs
+show the shell script <file-name>.sh,cat <file-name>.sh
+fetch the sql code in <file-name>.sql,cat <file-name>.sql
+display the dart code <file-name>.dart,cat <file-name>.dart
+fetch the content of <file-name>.r,cat <file-name>.r
+read the content in <file-name>.clj,cat <file-name>.clj
+display the script in <file-name>.sc,cat <file-name>.sc
+show the details in <file-name>.f90,cat <file-name>.f90
+fetch the verilog code <file-name>.v,cat <file-name>.v
+open <file-name>.xsl and read,cat <file-name>.xsl
+display the content of <file-name>.cabal,cat <file-name>.cabal
+fetch the shell configuration <file-name>.zsh,cat <file-name>.zsh
+read the environment file <file-name>.env,cat <file-name>.env
+fetch and display <file-name>.conf,cat <file-name>.conf
+read the file <file-name>.toml,cat <file-name>.toml
+show the details of <file-name>.dat,cat <file-name>.dat
+open <file-name>.db and display,cat <file-name>.db
+read and show <file-name>.bin,cat <file-name>.bin
+fetch the archive details <file-name>.tar,cat <file-name>.tar
+read the compressed file <file-name>.gz,zcat <file-name>.gz
+fetch the iso details <file-name>.iso,cat <file-name>.iso
+show the binary file <file-name>.exe,cat <file-name>.exe
+read the library <file-name>.dll,cat <file-name>.dll
+fetch the app file <file-name>.apk,cat <file-name>.apk
+display the app package <file-name>.ipa,cat <file-name>.ipa
+open the library file <file-name>.a,cat <file-name>.a
+read the shared object file <file-name>.so,cat <file-name>.so
+fetch the library file <file-name>.lib,cat <file-name>.lib
+show the svg content <file-name>.svg,cat <file-name>.svg
+display the details of <file-name>.psd,cat <file-name>.psd
+read the stylesheet <file-name>.css,cat <file-name>.css
+fetch the stylesheet <file-name>.scss,cat <file-name>.scss
+open the font file <file-name>.woff,cat <file-name>.woff
+
+#copy a file
+
+copy the file from <source> to <destination>,cp <source> <destination>
+duplicate the file <source> to <destination>,cp <source> <destination>
+make a copy of <source> to <destination>,cp <source> <destination>
+copy <source> and save it to <destination>,cp <source> <destination>
+duplicate <source> into <destination>,cp <source> <destination>
+copy <source> file into <destination>,cp <source> <destination>
+move a copy of <source> to <destination>,cp <source> <destination>
+clone <source> to <destination>,cp <source> <destination>
+copy file from <source> into <destination>,cp <source> <destination>
+replicate <source> to <destination>,cp <source> <destination>
+transfer <source> to <destination>,cp <source> <destination>
+backup <source> into <destination>,cp <source> <destination>
+create a copy of <source> at <destination>,cp <source> <destination>
+
+
+copy file.txt to backup.txt,cp file.txt backup.txt
+copy file.txt to ~/documents/backup.txt,cp file.txt ~/documents/backup.txt
+duplicate report.docx as report_copy.docx,cp report.docx report_copy.docx
+copy presentation.pptx to ~/documents/presentation.pptx,cp presentation.pptx ~/documents/presentation.pptx
+can you copy notes.txt to archive.txt?,cp notes.txt archive.txt
+copy sample.txt from ./folder/ to ~/documents/sample.txt,cp ./folder/sample.txt ~/documents/sample.txt
+copy image.jpg from ~/downloads/ to ~/documents/image.jpg,cp ~/downloads/image.jpg ~/documents/image.jpg
+copy document.pdf from ~/downloads to ~/documents/,cp ~/downloads/document.pdf ~/documents/
+copy report.xlsx from ~/documents/ to ~/documents/reports/quarterly_report.xlsx,cp ~/documents/report.xlsx ~/documents/reports/quarterly_report.xlsx
+copy example.txt from ~/downloads to ~/documents,cp ~/downloads/example.txt ~/documents/
+copy photo.png from ~/pictures/ to ~/documents/backup/,cp ~/pictures/photo.png ~/documents/backup/
+copy script.py from ~/downloads/ to ~/documents/scripts.py,cp ~/downloads/script.py ~/documents/scripts.py
+copy annual_report.docx from ~/documents/ to ~/documents/reports/2023_report.docx,cp ~/documents/annual_report.docx ~/documents/reports/2023_report.docx
+copy utility.sh from ~/scripts/ to ~/scripts/backup/,cp ~/scripts/utility.sh ~/scripts/backup/
+replicate config.json to config_backup.json,cp config.json config_backup.json
+transfer data.csv to ~/documents/archived_data.csv,cp data.csv ~/documents/archived_data.csv
+move notes.txt to backup_notes.txt,cp notes.txt backup_notes.txt
+save a copy of research.pdf to ~/documents/research_copy.pdf,cp research.pdf ~/documents/research_copy.pdf
+backup presentation.pptx in ~/documents/backup/,cp presentation.pptx ~/documents/backup/
+create a duplicate of work_log.txt named work_log_backup.txt,cp work_log.txt work_log_backup.txt
+
+# copy a directory 
+
+copy directory <source-dir> to <dest-dir>,cp -r <source-dir> <dest-dir>
+copy <source-dir> directory to ~/documents/<dest-dir>,cp -r <source-dir> ~/documents/<dest-dir>
+duplicate directory <source-dir> as <dest-dir>,cp -r <source-dir> <dest-dir>
+copy directory <source-dir> to ~/documents/<dest-dir>,cp -r <source-dir> ~/documents/<dest-dir>
+can you copy directory <source-dir> to <dest-dir>?,cp -r <source-dir> <dest-dir>
+copy ./folder/<source-dir> to ~/documents/<dest-dir>,cp -r ./folder/<source-dir> ~/documents/<dest-dir>
+copy directory <source-dir> from ~/downloads/ to ~/documents/,cp -r ~/downloads/<source-dir> ~/documents/
+copy directory <source-dir> from ~/downloads/ to ~/documents/<dest-dir>,cp -r ~/downloads/<source-dir> ~/documents/<dest-dir>
+copy directory <source-dir> from ~/documents/ to ~/documents/reports/<dest-dir>,cp -r ~/documents/<source-dir> ~/documents/reports/<dest-dir>
+copy <source-dir> from ~/downloads/ to ~/documents/,cp -r ~/downloads/<source-dir> ~/documents/
+copy folder <source-dir> from ~/pictures/ to ~/documents/backup/,cp -r ~/pictures/<source-dir> ~/documents/backup/
+backup directory <source-dir> to <dest-dir>,cp -r <source-dir> <dest-dir>
+transfer folder <source-dir> to ~/documents/<dest-dir>,cp -r <source-dir> ~/documents/<dest-dir>
+save a copy of <source-dir> directory to ~/documents/<dest-dir>,cp -r <source-dir> ~/documents/<dest-dir>
+create a duplicate of <source-dir> directory named <dest-dir>,cp -r <source-dir> <dest-dir>
+copy entire <source-dir> to <dest-dir>,cp -r <source-dir> <dest-dir>
+replicate <source-dir> folder to <dest-dir>,cp -r <source-dir> <dest-dir>
+archive <source-dir> directory to <dest-dir>,cp -r <source-dir> <dest-dir>
+copy entire <source-dir> directory to <dest-dir>,cp -r <source-dir> <dest-dir>
+make a backup of <source-dir> directory in <dest-dir>,cp -r <source-dir> <dest-dir>
+copy complete <source-dir> to <dest-dir>,cp -r <source-dir> <dest-dir>
+transfer all contents of <source-dir> to <dest-dir>,cp -r <source-dir> <dest-dir>
+duplicate the contents of <source-dir> to <dest-dir>,cp -r <source-dir> <dest-dir>
+create a full copy of <source-dir> in <dest-dir>,cp -r <source-dir> <dest-dir>
+clone <source-dir> directory to <dest-dir>,cp -r <source-dir> <dest-dir>
+reproduce <source-dir> folder to <dest-dir>,cp -r <source-dir> <dest-dir>
+mirror <source-dir> directory in <dest-dir>,cp -r <source-dir> <dest-dir>
+copy <source-dir> recursively to <dest-dir>,cp -r <source-dir> <dest-dir>
+make an exact copy of <source-dir> in <dest-dir>,cp -r <source-dir> <dest-dir>
+copy directory <source-dir> with all its contents to <dest-dir>,cp -r <source-dir> <dest-dir>
+backup all files in <source-dir> to <dest-dir>,cp -r <source-dir> <dest-dir>
+create backup copy of <source-dir> directory,cp -r <source-dir> <source-dir>_backup
+
+# move a file
+
+move file <source-file> to <dest-file>,mv <source-file> <dest-file>
+move <source-file> to ~/documents/<dest-file>,mv <source-file> ~/documents/<dest-file>
+transfer <source-file> to <dest-file>,mv <source-file> <dest-file>
+relocate <source-file> to <dest-file>,mv <source-file> <dest-file>
+can you move <source-file> to <dest-file>?,mv <source-file> <dest-file>
+move <source-file> from ~/downloads/ to ~/documents/,mv ~/downloads/<source-file> ~/documents/
+move <source-file> from ~/downloads/ to ~/documents/<dest-file>,mv ~/downloads/<source-file> ~/documents/<dest-file>
+move <source-file> from ~/documents/ to ~/documents/reports/<dest-file>,mv ~/documents/<source-file> ~/documents/reports/<dest-file>
+transfer <source-file> from ~/downloads/ to ~/documents/,mv ~/downloads/<source-file> ~/documents/
+transfer file <source-file> to <dest-file>,mv <source-file> <dest-file>
+change location of <source-file> to <dest-file>,mv <source-file> <dest-file>
+shift <source-file> to <dest-file>,mv <source-file> <dest-file>
+relocate file <source-file> to <dest-file>,mv <source-file> <dest-file>
+copy and delete <source-file> to <dest-file>,mv <source-file> <dest-file>
+
+# move a direcoty
+
+move directory <source-dir> to <dest-dir>,mv -r <source-dir> <dest-dir>
+move entire <source-dir> to <dest-dir>,mv -r <source-dir> <dest-dir>
+transfer directory <source-dir> to <dest-dir>,mv -r <source-dir> <dest-dir>
+relocate <source-dir> directory to <dest-dir>,mv -r <source-dir> <dest-dir>
+can you move directory <source-dir> to <dest-dir>?,mv -r <source-dir> <dest-dir>
+move <source-dir> from ~/downloads/ to ~/documents/,mv -r ~/downloads/<source-dir> ~/documents/
+move <source-dir> from ~/downloads/ to ~/documents/<dest-dir>,mv -r ~/downloads/<source-dir> ~/documents/<dest-dir>
+move directory <source-dir> from ~/documents/ to ~/documents/reports/<dest-dir>,mv -r ~/documents/<source-dir> ~/documents/reports/<dest-dir>
+transfer folder <source-dir> from ~/downloads/ to ~/documents/,mv -r ~/downloads/<source-dir> ~/documents/
+transfer entire <source-dir> to <dest-dir>,mv -r <source-dir> <dest-dir>
+change location of <source-dir> directory to <dest-dir>,mv -r <source-dir> <dest-dir>
+shift <source-dir> folder to <dest-dir>,mv -r <source-dir> <dest-dir>
+relocate <source-dir> folder to <dest-dir>,mv -r <source-dir> <dest-dir>
+move all contents of <source-dir> to <dest-dir>,mv -r <source-dir> <dest-dir>
+
+#rename 
+
+rename <source-file> to <dest-file>,mv <source-file> <dest-file>
+rename file <source-file> as <dest-file>,mv <source-file> <dest-file>
+change name of <source-file> to <dest-file>,mv <source-file> <dest-file>
+call <source-file> <dest-file> instead,mv <source-file> <dest-file>
+rename <source-file> in current directory to <dest-file>,mv <source-file> <dest-file>
+change filename of <source-file> to <dest-file>,mv <source-file> <dest-file>
+convert <source-file> name to <dest-file>,mv <source-file> <dest-file>
+update name of <source-file> to <dest-file>,mv <source-file> <dest-file>
+rebrand <source-file> as <dest-file>,mv <source-file> <dest-file>
+modify filename <source-file> to <dest-file>,mv <source-file> <dest-file>
+rename file in current directory from <source-file> to <dest-file>,mv <source-file> <dest-file>
+alter name of <source-file> to <dest-file>,mv <source-file> <dest-file>
+switch name of <source-file> to <dest-file>,mv <source-file> <dest-file>
+give <source-file> a new name <dest-file>,mv <source-file> <dest-file>
+relabel <source-file> as <dest-file>,mv <source-file> <dest-file>
+can you rename <source-file> to <dest-file>?,mv <source-file> <dest-file>
+rename <source-file> with extension changed to <dest-file>,mv <source-file> <dest-file>
+transform filename <source-file> to <dest-file>,mv <source-file> <dest-file>
+replace name of <source-file> with <dest-file>,mv <source-file> <dest-file>
+retitle <source-file> as <dest-file>,mv <source-file> <dest-file>
+rename <source-file> in ~/documents/ to <dest-file>,mv ~/documents/<source-file> ~/documents/<dest-file>
+rename <source-file> from ~/downloads/ to <dest-file> in current directory,mv ~/downloads/<source-file> <dest-file>
+
+# delete file
+
+delete file <source-file>,rm <source-file>
+remove <source-file>,rm <source-file>
+erase <source-file>,rm <source-file>
+trash <source-file>,rm <source-file>
+can you delete <source-file>?,rm <source-file>
+delete <source-file> from ~/documents/,rm ~/documents/<source-file>
+remove <source-file> from ~/downloads/,rm ~/downloads/<source-file>
+wipe out <source-file>,rm <source-file>
+eliminate <source-file>,rm <source-file>
+discard <source-file>,rm <source-file>
+clear <source-file>,rm <source-file>
+purge <source-file>,rm <source-file>
+destroy <source-file>,rm <source-file>
+
+delete direcotry
+
+delete directory <source-dir>,rm -r <source-dir>
+remove directory <source-dir>,rm -r <source-dir>
+erase folder <source-dir>,rm -r <source-dir>
+delete entire <source-dir>,rm -r <source-dir>
+remove all contents of <source-dir>,rm -r <source-dir>
+trash directory <source-dir>,rm -r <source-dir>
+can you delete directory <source-dir>?,rm -r <source-dir>
+delete <source-dir> from ~/documents/,rm -r ~/documents/<source-dir>
+remove <source-dir> from ~/downloads/,rm -r ~/downloads/<source-dir>
+wipe out directory <source-dir>,rm -r <source-dir>
+eliminate folder <source-dir>,rm -r <source-dir>
+discard entire <source-dir>,rm -r <source-dir>
+clear directory <source-dir>,rm -r <source-dir>
+purge <source-dir>,rm -r <source-dir>
+destroy folder <source-dir>,rm -r <source-dir>
+delete all files in <source-dir>,rm -r <source-dir>
+remove everything from <source-dir>,rm -r <source-dir>
+delete entire contents of <source-dir>,rm -r <source-dir>
+
+chown and chgrp
+
+change the owner of <file> to <user> and group to <group>,chown <user>:<group> <file>
+can you set <file> to be owned by <user> and group <group>?,chown <user>:<group> <file>
+change ownership of <file> to <user>,chown <user> <file>
+change ownership of <file> to <user>:<group>,chown <user>:<group> <file>
+set owner of <file> as <user>,chown <user> <file>
+set group of <file> to <group>,chown :<group> <file>
+change the owner of the file <file> to <user> no group,chown <user> <file>
+can you change the group of <file> to <group>?,chown :<group> <file>
+change owner and group of <file> from <old-owner>:<old-group> to <new-owner>:<new-group>,chown <new-owner>:<new-group> <file>
+change ownership of <file> recursively to <user>:<group>,chown -r <user>:<group> <file>
+change ownership of <file> to <user> only if it is currently owned by <old-owner>,chown --from=<old-owner> <user> <file>
+change ownership of <file> to <user>:<group> and show verbose output,chown -v <user>:<group> <file>
+change ownership of <file> to the reference file <reference-file>,chown --reference=<reference-file> <file>
+change the group of <file> to <group>,chgrp <group> <file>
+set the group of <file> as <group>,chgrp <group> <file>
+change group ownership of <file> to <group>,chgrp <group> <file>
+can you assign <file> to the group <group>?,chgrp <group> <file>
+change group of <file> to <group>,chgrp <group> <file>
+change the group of <file> recursively to <group>,chgrp -r <group> <file>
+change the group of <file> to <group> and show verbose output,chgrp -v <group> <file>
+
+special access
+
+add super permission to owner for the <file-name>,chmod u+s <file-name>
+add super permission to owner for the <directory-name>,chmod u+s <directory-name>
+grant owner special execute rights for the <file-name>,chmod u+s <file-name>
+enable owner with elevated privileges for the <directory-name>,chmod u+s <directory-name>
+provide owner administrative access to the <file-name>,chmod u+s <file-name>
+give owner root level permissions for the <directory-name>,chmod u+s <directory-name>
+add super permission to group for the <file-name>,chmod g+s <file-name>
+add super permission to group for the <directory-name>,chmod g+s <directory-name>
+grant group special execute rights for the <file-name>,chmod g+s <file-name>
+enable group with elevated privileges for the <directory-name>,chmod g+s <directory-name>
+provide group administrative access to the <file-name>,chmod g+s <file-name>
+give group root level permissions for the <directory-name>,chmod g+s <directory-name>
+remove super permission from owner for the <file-name>,chmod u-s <file-name>
+remove super permission from owner for the <directory-name>,chmod u-s <directory-name>
+disable owner special execute rights for the <file-name>,chmod u-s <file-name>
+revoke owner elevated privileges for the <directory-name>,chmod u-s <directory-name>
+strip owner administrative access from the <file-name>,chmod u-s <file-name>
+remove root level permissions from owner for the <directory-name>,chmod u-s <directory-name>
+remove super permission from group for the <file-name>,chmod g-s <file-name>
+remove super permission from group for the <directory-name>,chmod g-s <directory-name>
+disable group special execute rights for the <file-name>,chmod g-s <file-name>
+revoke group elevated privileges for the <directory-name>,chmod g-s <directory-name>
+strip group administrative access from the <file-name>,chmod g-s <file-name>
+remove root level permissions from group for the <directory-name>,chmod g-s <directory-name>
+
+permission assignment
+
+
+chatgpt
+
+assign read permission to user for <file-name>,chmod u+r <file-name>
+grant read access to user for <file-name>,chmod u+r <file-name>
+allow user to read <file-name>,chmod u+r <file-name>
+assign write permission to user for <file-name>,chmod u+w <file-name>
+grant write access to user for <file-name>,chmod u+w <file-name>
+allow user to write to <file-name>,chmod u+w <file-name>
+assign execute permission to user for <file-name>,chmod u+x <file-name>
+grant execute access to user for <file-name>,chmod u+x <file-name>
+allow user to execute <file-name>,chmod u+x <file-name>
+assign read and write permissions to user for <file-name>,chmod u+rw <file-name>
+grant read and write access to user for <file-name>,chmod u+rw <file-name>
+allow user to read and write <file-name>,chmod u+rw <file-name>
+assign read and execute permissions to user for <file-name>,chmod u+rx <file-name>
+grant read and execute access to user for <file-name>,chmod u+rx <file-name>
+allow user to read and execute <file-name>,chmod u+rx <file-name>
+assign write and execute permissions to user for <file-name>,chmod u+wx <file-name>
+grant write and execute access to user for <file-name>,chmod u+wx <file-name>
+allow user to write and execute <file-name>,chmod u+wx <file-name>
+assign all permissions to user for <file-name>,chmod u+rwx <file-name>
+grant full access to user for <file-name>,chmod u+rwx <file-name>
+allow user to read write and execute <file-name>,chmod u+rwx <file-name>
+assign read permission to group for <file-name>,chmod g+r <file-name>
+grant read access to group for <file-name>,chmod g+r <file-name>
+allow group to read <file-name>,chmod g+r <file-name>
+assign write permission to group for <file-name>,chmod g+w <file-name>
+grant write access to group for <file-name>,chmod g+w <file-name>
+allow group to write to <file-name>,chmod g+w <file-name>
+assign execute permission to group for <file-name>,chmod g+x <file-name>
+grant execute access to group for <file-name>,chmod g+x <file-name>
+allow group to execute <file-name>,chmod g+x <file-name>
+assign read and write permissions to group for <file-name>,chmod g+rw <file-name>
+grant read and write access to group for <file-name>,chmod g+rw <file-name>
+allow group to read and write <file-name>,chmod g+rw <file-name>
+assign read and execute permissions to group for <file-name>,chmod g+rx <file-name>
+grant read and execute access to group for <file-name>,chmod g+rx <file-name>
+allow group to read and execute <file-name>,chmod g+rx <file-name>
+assign write and execute permissions to group for <file-name>,chmod g+wx <file-name>
+grant write and execute access to group for <file-name>,chmod g+wx <file-name>
+allow group to write and execute <file-name>,chmod g+wx <file-name>
+assign all permissions to group for <file-name>,chmod g+rwx <file-name>
+grant full access to group for <file-name>,chmod g+rwx <file-name>
+allow group to read write and execute <file-name>,chmod g+rwx <file-name>
+assign read permission to others for <file-name>,chmod o+r <file-name>
+grant read access to others for <file-name>,chmod o+r <file-name>
+allow others to read <file-name>,chmod o+r <file-name>
+assign write permission to others for <file-name>,chmod o+w <file-name>
+grant write access to others for <file-name>,chmod o+w <file-name>
+allow others to write to <file-name>,chmod o+w <file-name>
+assign execute permission to others for <file-name>,chmod o+x <file-name>
+grant execute access to others for <file-name>,chmod o+x <file-name>
+allow others to execute <file-name>,chmod o+x <file-name>
+assign read and write permissions to others for <file-name>,chmod o+rw <file-name>
+grant read and write access to others for <file-name>,chmod o+rw <file-name>
+allow others to read and write <file-name>,chmod o+rw <file-name>
+assign read and execute permissions to others for <file-name>,chmod o+rx <file-name>
+grant read and execute access to others for <file-name>,chmod o+rx <file-name>
+allow others to read and execute <file-name>,chmod o+rx <file-name>
+assign write and execute permissions to others for <file-name>,chmod o+wx <file-name>
+grant write and execute access to others for <file-name>,chmod o+wx <file-name>
+allow others to write and execute <file-name>,chmod o+wx <file-name>
+assign all permissions to others for <file-name>,chmod o+rwx <file-name>
+grant full access to others for <file-name>,chmod o+rwx <file-name>
+allow others to read write and execute <file-name>,chmod o+rwx <file-name>
+assign permissions recursively to user for <directory>,chmod -R u+rwx <directory>
+grant recursive read write and execute access to user for <directory>,chmod -R u+rwx <directory>
+set all permissions for user on directory and its contents <directory>,chmod -R u+rwx <directory>
+remove read permission from group for <file-name>,chmod g-r <file-name>
+deny write permission to others for <file-name>,chmod o-w <file-name>
+remove all permissions recursively for user from <directory>,chmod -R u-rwx <directory>

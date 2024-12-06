@@ -1,0 +1,100 @@
+nl_cmd,bash_cmd
+create user <username> in the system,sudo adduser <username>
+add new account for <username>,sudo adduser <username>
+make a new user account for <username>,sudo adduser <username>
+add a user with the name <username>,sudo adduser <username>
+add user <username> and assign shell <shell>, sudo useradd -s <shell> <username>
+create user <username> and set group to <groupname>, sudo useradd -g <groupname> <username>
+create user <username> and assign groups <groupnames>, sudo useradd -G <groupnames> <username>
+add user <username> with specific uid <uid>, sudo useradd -u <uid> <username>
+create a user <username> with expiry date <expiredate>, sudo useradd -e <expiredate> <username>
+create user <username> with home directory in <dir>, sudo useradd -d <dir> <username>
+add user <username> and set password <password>, sudo useradd -p <password> <username>
+create user <username> without a group, sudo useradd -N <username>
+add user <username> without home directory, sudo useradd -M <username>
+create user <username> in the base directory <basedir>, sudo useradd -b <basedir> <username>
+create user <username> and assign a specific selinux user <seuser>, sudo useradd -Z <seuser> <username>
+add user <username> with no login shell, sudo useradd -s /bin/false <username>
+add user <username> and create a user group with same name, sudo useradd -U <username>
+delete an account with the name <username>,sudo deluser <username>
+remove user <username>,sudo deluser <username>
+remove <username> account,sudo deluser <username>
+delete user <user-name> with home and mail,sudo userdel -r <user-name>
+delete user <user-name> even if logged in,sudo userdel -f <user-name>
+remove <user-name> forcefully and delete home,sudo userdel -f -r <user-name>
+set a fresh password for <username>,sudo passwd <username>
+update <username> password,sudo passwd <username>
+change the password for <username>,sudo passwd <username>
+lock <username> account,sudo usermod -L <username>
+set <username> account to locked,sudo usermod -L <username>
+unlock <username> account,sudo usermod -U <username>
+set <username> account to unlocked,sudo usermod -U <username>
+expire <username> current password,sudo chage -d 0 <username>
+force password reset for <username>,sudo chage -d 0 <username>
+set password expiration for <username>,sudo chage -d 0 <username>
+change <oldname> username to <newname>,sudo usermod -l <newname> <oldname>
+rename <oldname> to <newname> as the username,sudo usermod -l <newname> <oldname>
+change the location of <username> home directory to <newhome>,sudo usermod -d <newhome> <username>
+set <newhome> as <username> new home directory,sudo usermod -d <newhome> <username>
+set <username> account expiration to <yyyy-mm-dd>, sudo usermod -e <yyyy-mm-dd> <username>
+set account expiration date of <username> to <yyyy-mm-dd>, sudo usermod -e <yyyy-mm-dd> <username>
+add a comment to <username> account <comment>, sudo usermod -c "<comment>" <username>
+set a profile comment for <username> as <comment>", sudo usermod -c "<comment>" <username>
+give <username> superuser access, sudo usermod -aG sudo <username>
+make <username> a sudo user, sudo usermod -aG sudo <username>
+remove <username> from sudo group, sudo deluser <username> sudo
+revoke <username> admin access, sudo deluser <username> sudo
+give me the users on the system, cat /etc/passwd
+get the list of users, cat /etc/passwd
+show all users with admin rights, getent passwd | grep sudo
+get users with sudo rights, getent passwd | grep sudo
+show all users without admin rights, getent passwd | grep -v sudo
+get users without sudo rights, getent passwd | grep -v sudo
+switch to <username> account, sudo su - <username>
+switch over to <username>, sudo su - <username>
+switch to root account, sudo su -
+switch over to root, sudo su -
+display the list of logged-in users, who
+who is currently logged in, who
+get details of <username> last login, last <username>
+show <username> last login history, last <username>
+log off user <username>, pkill -KILL -u <username>
+end <username> session, pkill -KILL -u <username>
+log off from the system, logout
+exit from the system, logout
+get account information of user <username>, id <username>
+display user account info for <username>, id <username>
+show user information of <username>, finger <username>
+create the <groupname> group, sudo groupadd <groupname>
+make a group <groupname>, sudo groupadd <groupname>
+delete group <groupname>, sudo groupdel <groupname>
+remove the group called <groupname>, sudo groupdel <groupname>
+delete group <group-name> and all users, sudo groupdel -f <group-name>
+update the group <oldname> rename it to <newname>, sudo groupmod -n <newname> <oldname>
+set the new name for group <oldname> to <newname>, sudo groupmod -n <newname> <oldname>
+list existing groups, cat /etc/group
+show groups in the system, cat /etc/group
+show me group <groupname> details, getent group <groupname>
+view group <groupname> information, getent group <groupname>
+list users of group <groupname>, getent group <groupname>
+display the list of group members for <groupname>, getent group <groupname>
+assign group <groupname> to user <username>, sudo usermod -aG <groupname> <username>
+include <username> in <groupname> group, sudo usermod -aG <groupname> <username>
+create a new profile <username> within <groupname>,sudo useradd -G <groupname> <username>
+register the new user <username> under <groupname> group,sudo useradd -G <groupname> <username>
+set <username> to be a part of <groupname> on creation,sudo useradd -G <groupname> <username>
+add <username> as part of <groupname> right from setup,sudo useradd -G <groupname> <username>
+"assign <username> to groups <group1> <group2> simultaneously","sudo usermod -aG <group1>,<group2> <username>"
+"add <username> to the following groups <group1> and <group2>","sudo usermod -aG <group1>,<group2> <username>"
+make <groupname> the primary for <username>,sudo usermod -g <groupname> <username>
+set <groupname> as the primary group for user <username>,sudo usermod -g <groupname> <username>
+display all groups <username> belongs to, sudo groups <username>
+fetch groups for <username>, sudo groups <username>
+list the groups and their permissions for <groupname>, sudo getent group <groupname>
+show the group details for <groupname>, sudo getent group <groupname>
+display the users in <groupname>, sudo getent group <groupname>
+check the users in group <groupname>, sudo getent group <groupname>
+list the groups with sudo permission, sudo getent group sudo
+show users in the sudo group, sudo getent group sudo
+show if <username> is a member of <groupname>, sudo getent group <groupname> | grep <username>
+does <username> have group <groupname> access, sudo getent group <groupname> | grep <username>

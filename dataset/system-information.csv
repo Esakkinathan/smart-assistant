@@ -1,0 +1,134 @@
+what is my operating system,uname -a
+get the os version,lsb_release -a
+show the kernel version,uname -a
+what is the system architecture,uname -m
+get system architecture details,uname -m
+display my hostname,hostname
+what is my hostname,hostname
+
+show cpu details,lscpu
+get processor information,lscpu
+display cpu info,lscpu
+what is my cpu model,lscpu
+get the processor architecture,lscpu
+show gpu details,lspci | grep -i vga
+what is my graphics card,lspci | grep -i vga
+get gpu information,lspci | grep -i vga
+display graphics card info,lspci | grep -i vga
+show vga details,lspci | grep -i vga
+
+show disk usage,df -h
+get storage details,df -h
+display disk space,df -h
+how much storage is used,df -h
+show free storage space,df -h
+show memory usage,free -h
+get ram details,free -h
+how much memory is free,free -h
+display memory information,free -h
+show available ram,free -h
+
+show block devices,lsblk
+get storage device details,lsblk
+display disk partitions,lsblk
+what are my storage devices,lsblk
+show disk partition details,lsblk
+list all block devices,lsblk
+get partition information,lsblk
+display storage layout,lsblk
+show mounted partitions,lsblk
+list all storage devices,lsblk
+
+show power consumption,powertop
+get battery usage details,powertop
+display power usage,powertop
+analyze power consumption,powertop
+show energy consumption,powertop
+get power management info,powertop
+check power usage,powertop
+how much power is being consumed,powertop
+show system power details,powertop
+analyze energy efficiency,powertop
+
+
+lhs,rhs
+list running processes,ps aux
+show all processes,ps aux
+display active processes,ps aux
+get process details,ps aux
+what processes are running,ps aux
+show top processes,top
+get system resource usage,top
+display running processes in real time,top
+show resource usage details,top
+what is consuming system resources,top
+
+
+show network configuration,ifconfig
+get ip address details,ifconfig
+display network interfaces,ifconfig
+what is my ip address,ifconfig
+show active network connections,ifconfig
+get network interface details,ifconfig
+display my network settings,ifconfig
+show current ip configuration,ifconfig
+list all network interfaces,ifconfig
+get network status,ifconfig
+
+show connected networks,nmcli connection show
+list all network connections,nmcli connection show
+get wifi connection details,nmcli connection show
+display active network connections,nmcli connection show
+what networks am i connected to,nmcli connection show
+show saved network profiles,nmcli connection show
+get details of available networks,nmcli connection show
+list current network connections,nmcli connection show
+display wifi connection settings,nmcli connection show
+show all network configurations,nmcli connection show
+
+show boot logs,dmesg
+display kernel messages,dmesg
+get system startup logs,dmesg
+list hardware initialization details,dmesg
+show system logs,dmesg
+get detailed boot information,dmesg
+display recent system events,dmesg
+what are my boot logs,dmesg
+show kernel debug messages,dmesg
+get hardware diagnostic logs,dmesg
+
+
+show connected usb devices,lsusb
+list all usb devices,lsusb
+get usb device details,lsusb
+display connected usb peripherals,lsusb
+show usb device information,lsusb
+list usb devices on the system,lsusb
+get details of connected usb devices,lsusb
+show all usb connections,lsusb
+display connected usb hardware,lsusb
+list usb hardware devices,lsusb
+
+show connected usb devices,lsusb
+list all usb devices,lsusb
+get usb device details,lsusb
+display connected usb peripherals,lsusb
+show usb device information,lsusb
+list usb devices on the system,lsusb
+get details of connected usb devices,lsusb
+show all usb connections,lsusb
+display connected usb hardware,lsusb
+list usb hardware devices,lsusb
+
+show storage of folder <directory-name>,du -sh <directory-name>
+get disk usage of <directory-name>,du -sh <directory-name>
+display storage usage of <directory-name>,du -sh <directory-name>
+how much space is <directory-name> using,du -sh <directory-name>
+check storage of folder <directory-name>,du -sh <directory-name>
+show disk usage of <directory-name>,du -sh <directory-name>
+get size of folder <directory-name>,du -sh <directory-name>
+display size of <directory-name>,du -sh <directory-name>
+how much storage is used in <directory-name>,du -sh <directory-name>
+check the size of <directory-name>,du -sh <directory-name>
+
+
