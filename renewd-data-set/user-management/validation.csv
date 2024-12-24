@@ -1,0 +1,45 @@
+nl_cmd,bash_cmd
+create an account for user <username>,sudo useradd <username>
+add new account for <username>,sudo useradd <username>
+add a new user with the name <username> and home directory,sudo useradd -m <username>
+register a new user <username> with uid as <uid>,sudo useradd -u <uid> <username>
+add new account for <username> with home directory <directory-name>,sudo useradd -d <directory-name> <username>
+erase user <username> from system,sudo deluser <username>
+delete the profile of <username>,sudo deluser <username>
+remove the user with the user id named <username>,sudo userdel -r <username>
+change the password for <username>,sudo passwd <username>
+set a new password for <username>,sudo passwd <username>
+set a new password for me,sudo passwd $USER
+lock user <username> out of the system,sudo usermod -L <username>
+block access for <username>,sudo usermod -L <username>
+unlock the account of <username>,sudo usermod -U <username>
+enable user <username> account,sudo usermod -U <username>
+rename the user <old-user-name> to <new-user-name>,sudo usermod -l <new-user-name> <old-user-name>
+modify the username of <old-user-name> to <new-user-name>,sudo usermod -l <new-user-name> <old-user-name>
+modify my username to <new-user-name>,sudo usermod -l <new-user-name> $USER
+modify the user id of <username> to <user-id>,sudo usermod -u <user-id> <username>
+modify my user id to <user-id>,sudo usermod -u <user-id> $USER
+modify the home directory of <username> to <directory-name>,sudo usermod -d <directory-name> <username>
+set a new home directory <directory-name for <username>,sudo usermod -d <directory-name> <username>
+modify the home directory of me to <directory-name>,sudo usermod -d <directory-name> $USER
+set expiry date for user <username> as <yyyy-mm-dd>,sudo usermod -e <yyyy-mm-dd> <username>
+make <username> a sudo user, sudo usermod -aG sudo <username>
+allow <username> to have admin access, sudo usermod -aG sudo <username>
+make me a sudo user, sudo usermod -aG sudo $USER
+allow the current user to have admin access, sudo usermod -aG sudo $USER
+remove sudo privileges from <username>, sudo deluser <username> sudo
+revoke admin privileges from <username>, sudo deluser <username> sudo
+remove sudo privileges from me, sudo deluser $USER sudo
+revoke admin privileges from the current user, sudo deluser $USER sudo
+display the list of users, cat /etc/passwd
+get the list of users, cat /etc/passwd
+display all the users with sudo access, getent group sudo
+show all users with super user access, getent group sudo
+display all the users without sudo access, getent group sudo
+show all users with no super user access, getent group sudo
+swith to user as <username>,sudo su - <username>
+switch to root user,sudo su -
+show who is logged in now,who
+show the last logged in detail of user <username>,last <username>
+logout from current session,logout
+show user information of <username>, id <username>

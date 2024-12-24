@@ -1,0 +1,10 @@
+nl_cmd,bash_cmd
+create a group named developer,sudo groupadd developer
+create a group named developer with group id 1000,sudo groupadd -g 1000 developer
+delete a group named developer,sudo groupdel developer
+cahnge group name from developer to tester,sudo groupmod -n tester developer
+cahnge group id of developer to 1001,sudo groupmod -g 1001 developer
+show the groups on this system, cat /etc/group
+display the information of group developer,getent group developer
+list the users in the group developer,getent group developer
+list the groups i am in ,groups $USER

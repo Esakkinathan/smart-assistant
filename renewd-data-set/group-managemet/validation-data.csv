@@ -1,0 +1,15 @@
+nl_cmd,bash_cmd
+create a nwe group named <group-name>,sudo groupadd <group-name>
+add a group called <group-name>,sudo groupadd <group-name>
+create a group with group id <group-id>,sudo groupadd -g <group-id> <group-name>
+delete the group named <group-name>,sudo groupdel <group-name>
+remove the group called <group-name>,sudo groupdel <group-name>
+change the name of group <old-group-name> to <new-group-name>, sudo groupmod -n <new-group-name> <old-group-name>
+rename group name <old-group-name> to <new-group-name>, sudo groupmod -n <new-group-name> <old-group-name>
+change the id of group named <group-name> to <group-id>, sudo groupmod -g <group-id> <group-name>
+modify group id <group-name> to <group-id>, sudo groupmod -g <group-id> <group-name>
+display the list of groups, cat /etc/group
+get the list of groups, cat /etc/group
+give the information about the group <group-name>,getent group <group-name>
+show number of users in the group <group-name>,getent group <group-name>
+show the groups i joined,groups $USER
