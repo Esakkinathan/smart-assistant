@@ -1,0 +1,37 @@
+nl_cmd,bash_cmd
+show files in the current folder,ls
+list files in a detailed manner,ls -l
+display hidden files in the directory,ls -a
+list files in folder and subfolder,ls -R 
+show files and directories in a tree structure,tree
+create a file named <file-name>,touch <file-name>
+make a text file named <file-name>,touch <file-name>.txt
+i want to create a python file named <file-name>,touch <file-name>.py
+can you create me css file named <file-name>,touch <file-name>.css
+create a html file named <file-name>,touch <file-name>.html
+make a csv file named <file-name>,touch <file-name>.csv
+i want to create a java script file named <file-name>,touch <file-name>.js
+can you create me json file named <file-name>,touch <file-name>.json
+make a java file named <file-name>,touch <file-name>.java
+i want to create a php file named <file-name>,touch <file-name>.php
+can you create me log file named <file-name>,touch <file-name>.log
+create a bin file named <file-name>,touch <file-name>.bin
+make a sh file named <file-name>,touch <file-name>.sh
+i want to create a yaml file named <file-name>,touch <file-name>.yaml
+can you create me c program file named <file-name>,touch <file-name>.c 
+can you create me c++ program file named <file-name>,touch <file-name>.cpp 
+can you create me header file named <file-name>,touch <file-name>.h
+make a kotlin file named <file-name>,touch <file-name>.kt
+i want to create a dart file named <file-name>,touch <file-name>.dart
+can you create me env file named <file-name>,touch <file-name>.env
+create a xml file named <file-name>,touch <file-name>.xml
+create a xls file named <file-name>,touch <file-name>.xls
+create a markdown file named <file-name>,touch <file-name>.md
+make a jupyter file named <file-name>,touch <file-name>.ipynb
+i want to create a word file named <file-name>,touch <file-name>.doc
+create a excel  file named <file-name>,touch <file-name>.xlsx
+make a hidden file named <file-name>,touch .<file-name>
+create a directory named <directory-name>,mkdir <directory-name>
+make a new folder <directory-name> under directory <old-directory-name>,mkdir <old-directory-name>/<directory-name>
+create a hidden directory named <directory-name>,mkdir .<directory-name>
+create all folders in the path <directory-name-1>/<directory-name-2>,mkdir -p <directory-name-1>/<directory-name-2>

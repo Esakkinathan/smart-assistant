@@ -21,7 +21,7 @@ give me superuser access, sudo usermod -aG sudo $USER
 remove superuser privileges from darla, sudo deluser darla sudo
 remove superuser privileges from me, sudo deluser $USER sudo
 show the users on this system, cat /etc/passwd
-list all users without sudo access, getent passwd | grep sudo
+list all users without sudo access, getent group sudo
 switch to user as darla,sudo su - darla
 switch to root user,sudo su -
 who is logged in now,who

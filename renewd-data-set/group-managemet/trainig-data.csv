@@ -55,7 +55,7 @@ i want to check how many groups in this pc,cat /etc/group
 display all the system groups,cat /etc/group
 show all groups in this pc,cat /etc/group
 list all groups in my laptop,cat /etc/group
-show information about the group named <group-name>, etent group <group-name>
+show information about the group named <group-name>,getent group <group-name>
 display details of group <group-name>,getent group <group-name>
 get the group information for <group-name>,getent group <group-name>
 i want to see group info for <group-name>,getent group <group-name>
@@ -75,6 +75,38 @@ show the list of members in group <group-name>,getent group <group-name>
 give me the list of members for group <group-name>,getent group <group-name>
 list users of group <group-name>,getent group <group-name>
 display the list of group members for <group-name>,getent group <group-name>
+check group permissions for <groupname>, sudo getent group <groupname>
+show group permissions for <groupname>, sudo getent group <groupname>
+display permissions of group <groupname>, sudo getent group <groupname>
+find group permissions for <groupname>, sudo getent group <groupname>
+what are the group permissions for <groupname>, sudo getent group <groupname>
+list the permissions of group <groupname>, sudo getent group <groupname>
+show the details of group <groupname>, sudo getent group <groupname>
+fetch the group permissions for <groupname>, sudo getent group <groupname>
+list the groups and their permissions for <groupname>, sudo getent group <groupname>
+show the group details for <groupname>, sudo getent group <groupname>
+is <username> in <groupname>, sudo getent group <groupname>
+check if <username> is a member of <groupname>, sudo getent group <groupname>
+does <username> belong to <groupname>, sudo getent group <groupname>
+check group membership for <username> in <groupname>, sudo getent group <groupname>
+is <username> part of <groupname>, sudo getent group <groupname>
+is <username> in the group <groupname>, sudo getent group <groupname>
+does <username> have access to <groupname>, sudo getent group <groupname>
+verify if <username> is in group <groupname>, sudo getent group <groupname>
+show if <username> is a member of <groupname>, sudo getent group <groupname>
+does <username> have group <groupname> access, sudo getent group <groupname>
+list all groups for <username>, sudo groups <username>
+show groups of <username>, sudo groups <username>
+display groups for <username>, sudo groups <username>
+which groups does <username> belong to, sudo groups <username>
+list groups that <username> is part of, sudo groups <username>
+show the group memberships of <username>, sudo groups <username>
+what groups is <username> in, sudo groups <username>
+get all groups of <username>, sudo groups <username>
+display all groups <username> belongs to, sudo groups <username>
+fetch groups for <username>, sudo groups <username>
+i want to see the group where user <username> is member,sudo groups <username>
+i want to check group user <username> in,sudo groups <username>
 show the groups for the current user,groups $USER
 how can i see the list of groups i am in,groups $USER
 what are all the groups i am in,groups $USER
@@ -86,3 +118,25 @@ provide the information about the groups of me,groups $USER
 list the groups of me,groups $USER
 show the groups where i am member of,groups $USER
 display the groups with me,groups $USER
+
+show groups with sudo access, sudo getent group sudo
+list groups with sudo privileges, sudo getent group sudo
+display groups that have sudo access, sudo getent group sudo
+list all sudo groups, sudo getent group sudo
+show groups with administrative privileges, sudo getent group sudo
+find groups with sudo access, sudo getent group sudo
+which groups have sudo access, sudo getent group sudo
+what are the groups with sudo access, sudo getent group sudo
+list the groups with sudo permission, sudo getent group sudo
+show users in the sudo group, sudo getent group sudo
+
+show groups with no sudo access, sudo getent group sudo
+list groups with no  sudo privileges, sudo getent group sudo
+display groups that dont have sudo access, sudo getent group sudo
+list all the groups with no super user access, sudo getent group sudo
+show groups without administrative privileges, sudo getent group sudo
+find groups without super user access, sudo getent group sudo
+which groups do not have sudo access, sudo getent group sudo
+what are the groups without sudo access, sudo getent group sudo
+list the groups with no super user permission, sudo getent group sudo
+show users in the sudo group, sudo getent group sudo

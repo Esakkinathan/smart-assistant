@@ -1,0 +1,77 @@
+nl_cmd,bash_cmd
+hey can you open firefox browser for me,firefox
+hey can you open chromium browser for me,chromium-browser
+hey can you open chrome browser for me,google-chrome
+hey can you open brave browser for me,brave-browser
+hey can you open opera browser for me,opera
+hey can you open vivaldi browser for me,vivaldi
+hey can you open epiphany browser for me,epiphany
+hey can you open falkon browser for me,falkon
+hey can you open tor browser for me,torbrowser-launcher
+hey can you open libreoffice for me,libreoffice
+hey can you open onlyoffice for me,onlyoffice-desktopeditors
+hey can you open evince for me,evince
+hey can you open okular for me,okular
+hey can you open tusk for me,tusk
+hey can you open joplin for me,joplin
+hey can you open simplenote for me,simplenote
+hey can you open thunderbird for me,thunderbird
+hey can you open evolution for me,evolution
+hey can you open korganizer for me,korganizer
+hey can you open sublime text for me,subl
+hey can you open pycharm community for me,pycharm-community
+hey can you open visual studio code for me,code
+hey can you open vs code for me,code
+hey can you open visual studio for me,code
+hey can you open notepad++ for me,notepad-plus-plus
+hey can you open notepad plus plus for me,notepad-plus-plus
+hey can you open android studio for me,studio
+hey can you open anydesk for me,anydesk
+hey can you open php storm for me,phpstorm
+hey can you open eclipse for me,eclipse
+hey can you open pycharm professional for me,pycharm-professional
+hey can you open intellij idea for me,idea
+hey can you open pycharm application for me,pycharm-community
+hey can you open pycharm for me,pycharm-community
+hey can you open postman for me,postman
+hey can you open intellij idea ultimate for me,idea
+hey can you open webstorm for me,webstorm
+hey can you open rubymine for me,rubymine
+hey can you open apache netbeans for me,netbeans
+hey can you open goland for me,goland
+hey can you open slack for me,slack
+hey can you open telegram for me,telegram-desktop
+hey can you open skype for me,skype
+hey can you open zulip for me,zulip
+hey can you open discord for me,discord
+hey can you open signal-desktop for me,signal-desktop
+hey can you open signal for me,signal-desktop
+hey can you open zenchat for me,zenchat
+hey can you open zen chat for me,zenchat
+hey can you open zoom for me,zoom
+hey can you open whatsapp for me,whatsapp-desktop
+hey can you open scrcpy for me,scrcpy
+hey can you open spotify for me,spotify
+hey can you open gitkraken for me,gitkraken
+hey can you open microsoft teams for me,teams
+hey can you open teams for me,teams
+hey can you open gimp for me,gimp
+hey can you open obs studio for me,obs
+hey can you open obs for me,obs
+hey can you open kdenlive for me,kdenlive
+hey can you open virtualbox for me,virtualbox
+hey can you open virtual box for me,virtualbox
+hey can you open wireshark vpn for me,wireshark
+hey can you open wireshark for me,wireshark
+hey can you open windscribe vpn for me,windscribe
+hey can you open windscribe for me,windscribe
+hey can you open proton for me,protonvpn
+hey can you open proton vpn for me,protonvpn
+hey can you open express vpn for me,expressvpn
+hey can you open express for me,expressvpn
+hey can you open rstudio for me,rstudio
+hey can you open r studio for me,rstudio
+hey can you open calculator for me,gnome-calculator
+hey can you open settings for me,gnome-control-center
+hey can you open clock for me,gnome-clocks
+

@@ -1,0 +1,10 @@
+nl_cmd,bash_cmd
+create a new user with the name darla and add to group called developer,sudo useradd -G developer darla
+add user named darla to developer group,sudo usermod -aG developer darla
+add me to darla group,sudo usermod -aG developer $USER
+add darla to multiple groups developer and tester, sudo usermod -aG developer tester $USER
+add me to multiple groups developer and tester, sudo usermod -aG developer tester $USER
+change the primary group developer to user darla,sudo usermod -g developer darla
+change the primary group developer for me,sudo usermod -g <group-name> $USER
+remove user darla from group developer, sudo gpasswd -d darla developer
+remove me from group developer,sudo gpasswd -d $USER developer

@@ -1,0 +1,1167 @@
+nl_cmd,bash_cmd
+whats the weather like today,weather
+can you tell me the weather right now,weather
+whats the weather forecast,weather
+hows the weather outside,weather
+whats the weather report for today,weather
+whats the weather like at the moment,weather
+can you check the weather for me,weather
+whats the weather prediction,weather
+hows the weather,weather
+tell me the weather for today,weather
+what are the weather conditions right now,weather
+will the weather change throughout the day,weather
+whats the weather like outside,weather
+whats the weather like right now,weather
+can you give me the weather forecast,weather
+whats the weather like today in my area,weather
+can you give me a quick weather update,weather
+hows the weather expected to change throughout the day,weather
+hows the weather looking outside right now,weather
+whats the weather going to be like this evening,weather
+
+what time is it,time
+can you tell me the time,time
+do you know what time it is,time
+hey whats the time right now,time
+whats the current time,time
+tell me the time please,time
+can you give me the time,time
+whats the time at the moment,time
+how late is it,time
+can you check the time for me,time
+whats the time on the clock,time
+id like to know the time,time
+give me the time update please,time
+whats the hour,time
+do you have the time,time
+can i know the time please,time
+whats the local time,time
+what time is it now where i am,time
+whats the current time of day,time
+hey whats the time check,time
+
+whats the time in <specific-location>,time in <specific-location>
+can you tell me the current time in <specific-location>,time in <specific-location>
+what time is it in <specific-location> right now,time in <specific-location>
+please give me the time in <specific-location>,time in <specific-location>
+whats the local time in <specific-location>,time in <specific-location>
+can you check the time for me in <specific-location>,time in <specific-location>
+what time zone is <specific-location> in,time in <specific-location>
+how late is it in <specific-location>,time in <specific-location>
+tell me the time in <specific-location>,time in <specific-location>
+whats the current hour in <specific-location>,time in <specific-location>
+can you give me the time for <specific-location>,time in <specific-location>
+whats the time difference for <specific-location>,time in <specific-location>
+is it morning or evening in <specific-location>,time in <specific-location>
+whats the precise time in <specific-location>,time in <specific-location>
+how many hours ahead is <specific-location>,time in <specific-location>
+can you tell me the exact time in <specific-location>,time in <specific-location>
+whats the time right now in <specific-location>,time in <specific-location>
+how does the time in <specific-location> compare to mine,time in <specific-location>
+whats the clock reading in <specific-location>,time in<specific-location>
+please tell me what time it is in <specific-location> right now,time in<specific-location>
+
+whats todays date,date
+can you tell me the date,date
+whats the date today,date
+what day is it today,date
+do you know todays date,date
+tell me the date please,date
+whats the current date,date
+can you check the date for me,date
+whats the date on the calendar,date
+whats todays day and date,date
+i need to know the date,date
+whats the full date today,date
+could you tell me the date,date
+give me todays date,date
+whats the date right now,date
+can you give me todays date,date
+whats todays calendar date,date
+what date is it today,date
+can you remind me of the date,date
+whats the day and date today,date
+
+whats the latest news,news
+can you tell me todays news,news
+whats happening in the news today,news
+give me the news update,news
+whats going on in the world right now,news
+tell me the top stories today,news
+whats the news right now,news
+can you check the news for me,news
+whats the latest headline,news
+any breaking news today,news
+whats the big news today,news
+can you update me on the news,news
+whats the news this morning,news
+what are the latest headlines,news
+tell me whats going on today,news
+whats new in the world,news
+what are the top stories today,news
+can i get a news update,news
+whats happening in the news right now,news
+whats trending in the news today,news
+
+increase the volume,volume up
+raise the volume please,volume up
+can you make it louder,volume up
+turn the sound up,volume up
+boost the volume,volume up
+volume up,volume up
+crank up the sound,volume up
+can you enhance the volume,volume up
+make it louder,volume up
+turn the audio up,volume up
+set the volume higher,volume up
+please increase the audio level,volume up
+adjust the volume upwards,volume up
+can you pump up the volume,volume up
+amplify the sound,volume up
+give me more volume,volume up
+turn up the audio,volume up
+raise the sound level,volume up
+make the sound louder,volume up
+can you raise the audio,volume up
+
+can you lower the volume,volume down
+please turn down the sound,volume down
+reduce the audio level please,volume down
+make the volume quieter,volume down
+turn the volume down,volume down
+please decrease the sound,volume down
+can you mute the audio slightly,volume down
+lower the sound level,volume down
+please adjust the volume down,volume down
+can you make it less loud,volume down
+turn down the audio,volume down
+can you reduce the sound,volume down
+make the audio softer,volume down
+please bring the volume down,volume down
+can you quiet the speakers,volume down
+lower the volume a bit,volume down
+can you decrease the audio level,volume down
+turn the sound down a notch,volume down
+make the volume less intense,volume down
+please turn the speakers down,volume down
+
+set the volume to <volume-percentage>,set volume <volume-percentage>
+can you increase the volume to <volume-percentage>,set volume <volume-percentage>
+turn the volume up to <volume-percentage>,set volume <volume-percentage>
+adjust the audio level to <volume-percentage>,set volume <volume-percentage>
+please raise the volume to <volume-percentage>,set volume <volume-percentage>
+make the sound level <volume-percentage>,set volume <volume-percentage>
+increase the volume to <volume-percentage>,set volume <volume-percentage>
+can you set the audio to <volume-percentage>,set volume <volume-percentage>
+turn the sound up to <volume-percentage>,set volume <volume-percentage>
+can you boost the volume to <volume-percentage>,set volume <volume-percentage>
+make the volume <volume-percentage>,set volume <volume-percentage>
+please set the volume at <volume-percentage>,set volume <volume-percentage>
+turn the audio level up to <volume-percentage>,set volume <volume-percentage>
+adjust the volume to <volume-percentage> please,set volume <volume-percentage>
+can you put the volume to <volume-percentage>,set volume <volume-percentage>
+raise the sound level to <volume-percentage>,set volume <volume-percentage>
+set the audio volume to <volume-percentage>,set volume <volume-percentage>
+make the audio level <volume-percentage>,set volume <volume-percentage>
+please increase the sound to <volume-percentage>,set volume <volume-percentage>
+turn the volume up to <volume-percentage> please,set volume <volume-percentage>
+
+reduce the volume by <volume-percentage>,set volume <volume-percentage>
+can you lower the volume by <volume-percentage>,set volume <volume-percentage>
+turn the volume down by <volume-percentage>,set volume <volume-percentage>
+adjust the audio down by <volume-percentage>,set volume <volume-percentage>
+please decrease the volume by <volume-percentage>,set volume <volume-percentage>
+make the sound <volume-percentage> quieter,set volume <volume-percentage>
+lower the volume to <volume-percentage> less,set volume <volume-percentage>
+can you set the volume to <volume-percentage> lower,set volume <volume-percentage>
+turn the sound down <volume-percentage>,set volume <volume-percentage>
+can you reduce the audio level by <volume-percentage>,set volume <volume-percentage>
+please bring the set volume by <volume-percentage>,set volume <volume-percentage>
+decrease the audio volume by <volume-percentage>,set volume <volume-percentage>
+can you lower the sound by <volume-percentage>,set volume <volume-percentage>
+turn the audio level down by <volume-percentage>,set volume <volume-percentage>
+make the volume <volume-percentage> less,set volume <volume-percentage>
+adjust the volume to be <volume-percentage> lower,set volume <volume-percentage>
+please reduce the sound to <volume-percentage> less,set volume <volume-percentage>
+lower the audio by <volume-percentage>,set volume <volume-percentage>
+turn the volume down to <volume-percentage> less,set volume <volume-percentage>
+can you make the audio <volume-percentage> quieter,set volume <volume-percentage>
+
+can you mute the audio,volume mute
+please mute the sound,volume mute
+turn off the sound,volume mute
+mute the volume please,volume mute
+silence the audio,volume mute
+can you silence the sound,volume mute
+please turn off the audio,volume mute
+make it silent,volume mute
+disable the sound,volume mute
+can you cut the audio,volume mute
+turn the sound off,volume mute
+mute the speakers,volume mute
+can you hush the sound,volume mute
+please silence the volume,volume mute
+can you quiet the audio,volume mute
+stop the sound,volume mute
+put the audio on mute,volume mute
+make the sound go quiet,volume mute
+turn off the speakers,volume mute
+can you silence everything,volume mute
+
+can you unmute the sound,volume unmute
+please turn the audio back on,volume unmute
+restore the sound,volume unmute
+make the audio audible again,volume unmute
+can you bring the sound back,volume unmute
+turn the volume back up,volume unmute
+please unmute the speakers,volume unmute
+can you enable the audio,volume unmute
+bring back the sound please,volume unmute
+make the sound active again,volume unmute
+please restore the audio,volume unmute
+can you activate the sound,volume unmute
+turn the audio on please,volume unmute
+make it loud again,volume unmute
+unmute the speakers,volume unmute
+can you reactivate the sound,volume unmute
+please put the audio back on,volume unmute
+bring the volume back to normal,volume unmute
+can you unmute everything,volume unmute
+turn the sound on again,volume unmute
+
+can you turn up the brightness,brightness up
+please raise the brightness,brightness up
+adjust the brightness higher,brightness up
+make the screen brighter,brightness up
+increase the screen brightness,brightness up
+can you brighten the display,brightness up
+please enhance the brightness,brightness up
+set the brightness to a higher level,brightness up
+boost the brightness please,brightness up
+can you elevate the brightness,brightness up
+turn the brightness up,brightness up
+make the display brighter,brightness up
+please increase the light level,brightness up
+adjust the brightness to maximum,brightness up
+can you make it shine brighter,brightness up
+raise the display brightness,brightness up
+set the brightness to a higher percentage,brightness up
+please make the screen more luminous,brightness up
+turn the brightness up a notch,brightness up
+can you lighten the screen,brightness up
+
+can you dim the brightness,brightness down
+lower the brightness please,brightness down
+turn down the screen brightness,brightness down
+make the display a bit darker,brightness down
+reduce the brightness please,brightness down
+can you make the screen less bright,brightness down
+dim the screen please,brightness down
+adjust the brightness down,brightness down
+please darken the display,brightness down
+can you lower the light intensity,brightness down
+make it less bright please,brightness down
+can you turn down the brightness,brightness down
+set the brightness lower,brightness down
+please reduce the display brightness,brightness down
+can you make it dimmer,brightness down
+turn down the brightness a little,brightness down
+make the screen darker,brightness down
+please dim the display,brightness down
+adjust the brightness for me,brightness down
+can you make it a bit dimmer,brightness down
+
+can you brighten the screen by <brightness-up-percentage>,brightness up <brightness-up-percentage>
+increase the brightness to <brightness-up-percentage>,brightness up <brightness-up-percentage>
+turn up the brightness by <brightness-up-percentage>,brightness up <brightness-up-percentage>
+make the display <brightness-up-percentage> brighter,brightness up <brightness-up-percentage>
+boost the brightness by <brightness-up-percentage> please,brightness up <brightness-up-percentage>
+can you raise the brightness level by <brightness-up-percentage>,brightness up <brightness-up-percentage>
+set the brightness to <brightness-up-percentage>,brightness up <brightness-up-percentage>
+make the screen lighter by <brightness-up-percentage>,brightness up <brightness-up-percentage>
+please enhance the brightness by <brightness-up-percentage>,brightness up <brightness-up-percentage>
+can you brighten it up by <brightness-up-percentage>,brightness up <brightness-up-percentage>
+turn the brightness up by <brightness-up-percentage> please,brightness up <brightness-up-percentage>
+adjust the brightness up by <brightness-up-percentage>,brightness up <brightness-up-percentage>
+can you increase the light intensity by <brightness-up-percentage>,brightness up <brightness-up-percentage>
+make it <brightness-up-percentage> brighter please,brightness up <brightness-up-percentage>
+can you turn up the display brightness by <brightness-up-percentage>,brightness up <brightness-up-percentage>
+please raise the brightness level by <brightness-up-percentage>,brightness up <brightness-up-percentage>
+make the screen shine <brightness-up-percentage> more,brightness up <brightness-up-percentage>
+can you brighten the display by <brightness-up-percentage>,brightness up <brightness-up-percentage>
+turn the brightness up a notch by <brightness-up-percentage>,brightness up <brightness-up-percentage>
+please enhance the display brightness by <brightness-up-percentage>,brightness up <brightness-up-percentage>
+
+reduce the brightness by <brightness-down-percentage>,brightness down <brightness-down-percentage>
+lower the brightness to <brightness-down-percentage>,brightness down <brightness-down-percentage>
+can you dim the screen by <brightness-down-percentage>,brightness down <brightness-down-percentage>
+turn down the brightness by <brightness-down-percentage>,brightness down <brightness-down-percentage>
+make the display <brightness-down-percentage> darker,brightness down <brightness-down-percentage>
+set the brightness to <brightness-down-percentage>,brightness down <brightness-down-percentage>
+decrease the screen brightness by <brightness-down-percentage>,brightness down <brightness-down-percentage>
+can you reduce the light intensity by <brightness-down-percentage>,brightness down <brightness-down-percentage>
+lower the display brightness by <brightness-down-percentage>,brightness down <brightness-down-percentage>
+turn the brightness down by <brightness-down-percentage>,brightness down <brightness-down-percentage>
+dimming the screen by <brightness-down-percentage> would be great,brightness down <brightness-down-percentage>
+please make the screen <brightness-down-percentage> less bright,brightness down <brightness-down-percentage>
+can you turn off <brightness-down-percentage> of the brightness,brightness down <brightness-down-percentage>
+adjust the brightness down by <brightness-down-percentage> please,brightness down <brightness-down-percentage>
+can you make the display <brightness-down-percentage> dimmer,brightness down <brightness-down-percentage>
+turn the brightness down to <brightness-down-percentage>,brightness down <brightness-down-percentage>
+please darken the screen by <brightness-down-percentage>,brightness down <brightness-down-percentage>
+can you decrease the brightness level by <brightness-down-percentage>,brightness down <brightness-down-percentage>
+make it <brightness-down-percentage> less bright please,brightness down <brightness-down-percentage>
+please lower the brightness to <brightness-down-percentage>,brightness down <brightness-down-percentage>
+
+whats the battery level,battery
+can you tell me my battery percentage,battery
+whats the current battery status,battery
+how much battery is left,battery
+whats the charge level right now,battery
+can you check my battery percentage,battery
+how much battery do i have,battery
+whats my battery status,battery
+whats the current battery percentage,battery
+can you give me the battery percentage,battery
+how much charge is remaining,battery
+whats my battery at,battery
+can you tell me how much battery is left,battery
+how much power does the battery have,battery
+what percentage is the battery at,battery
+whats my battery charge,battery
+how much battery life is remaining,battery
+can you check how much battery is left,battery
+whats the remaining battery level,battery
+can you show me the battery percentage,battery
+
+hey can you take a screenshot of this,screenshot
+could you snap a quick screenshot of this,screenshot
+can you grab a screenshot right here,screenshot
+i need a screenshot of this can you do that,screenshot
+go ahead and capture this screen for me,screenshot
+can you save a screenshot of this right now,screenshot
+i need a quick screen capture of this can you help,screenshot
+can you take a picture of this screen for me,screenshot
+lets take a screenshot of whats here,screenshot
+can you get a screenshot of this display,screenshot
+take a quick shot of this screen for me,screenshot
+how about grabbing a screenshot of this,screenshot
+could you screenshot whats showing on the screen,screenshot
+can you get this screenshot for me,screenshot
+hey lets grab a screenshot of what i see,screenshot
+i need you to capture this screen right now,screenshot
+take a screen grab of this for me,screenshot
+could you save this screen as a screenshot,screenshot
+lets capture this screen together,screenshot
+can you quickly snap a screenshot of this,screenshot
+
+can you show me my ip address,ip address
+what is my ip address,ip address
+please tell me my ip address,ip address
+i need to know my ip address,ip address
+can you find my ip address,ip address
+show me my current ip address,ip address
+whats my ip address right now,ip address
+can you display my ip address,ip address
+let me know my ip address,ip address
+can you tell me what my ip address is,ip address
+what is the ip address im using,ip address
+can you reveal my ip address,ip address
+give me my ip address,ip address
+show my current ip address,ip address
+i want to see my ip address,ip address
+can you fetch my ip address,ip address
+please show my ip address,ip address
+can you check my ip address for me,ip address
+tell me my ip address please,ip address
+whats my current ip address,ip address
+
+can you tell me my current cpu usage,cpu usage
+what is my cpu usage right now,cpu usage
+please show me my cpu usage,cpu usage
+i need to know my cpu usage,cpu usage
+can you find my current cpu usage,cpu usage
+show me how much cpu im using,cpu usage
+whats the cpu usage on my device,cpu usage
+can you display my cpu usage,cpu usage
+let me know my current cpu usage,cpu usage
+can you tell me the cpu usage percentage,cpu usage
+what is the current cpu load,cpu usage
+can you check my cpu usage for me,cpu usage
+give me my current cpu usage,cpu usage
+show my cpu usage right now,cpu usage
+i want to see my cpu usage,cpu usage
+can you fetch my cpu usage,cpu usage
+please tell me my cpu usage,cpu usage
+whats the current cpu usage on my system,cpu usage
+how much cpu am i using,cpu usage
+can you report my current cpu usage,cpu usage
+
+can you tell me how much storage i have left,storage free
+what is my available storage,storage free
+please show me my remaining storage,storage free
+i need to know how much storage is left,storage free
+can you find out my available storage,storage free
+show me my free storage space,storage free
+whats my storage capacity right now,storage free
+can you display my remaining storage,storage free
+let me know how much storage i have left,storage free
+can you tell me the storage i have available,storage free
+how much free storage do i have,storage free
+can you check my remaining storage for me,storage free
+give me my available storage space,storage free
+show my storage space right now,storage free
+i want to see how much storage is left,storage free
+can you fetch my available storage,storage free
+please tell me my remaining storage,storage free
+whats the current storage space i have,storage free
+how much storage is still available,storage free
+can you report my free storage space,storage free
+
+hey can you turn the brightness to maximum,brightness maximum
+set the brightness to full for me,brightness maximum
+can you increase the brightness to 100 percent,brightness maximum
+max out the brightness please,brightness maximum
+lets set the brightness to the highest level,brightness maximum
+can you adjust the brightness to the maximum,brightness maximum
+turn the brightness all the way up,brightness maximum
+could you raise the brightness to its peak,brightness maximum
+set the brightness to the highest setting,brightness maximum
+boost the brightness to the top level,brightness maximum
+i need the brightness at maximum,brightness maximum
+lets put the brightness to full power,brightness maximum
+can you push the brightness to maximum,brightness maximum
+please set the brightness to 100 percent,brightness maximum
+bring the brightness to the highest it can go,brightness maximum
+can you make the brightness the highest possible,brightness maximum
+lets move the brightness to full capacity,brightness maximum
+hey can you set the brightness to maximum,brightness maximum
+crank the brightness up to the max for me,brightness maximum
+can you put the brightness at its top level,brightness maximum
+
+hey can you lock the screen for me,lock screen
+could you lock my screen now,lock screen
+please lock the screen,lock screen
+i need you to lock the screen,lock screen
+can you lock my device,lock screen
+lock the screen for me please,lock screen
+lets lock the screen,lock screen
+lock my screen right now,lock screen
+can you secure the screen for me,lock screen
+hey can you lock the display,lock screen
+lock it up for me,lock screen
+go ahead and lock the screen,lock screen
+can you make sure the screen is locked,lock screen
+i want the screen locked can you do that,lock screen
+can you lock everything up,lock screen
+please lock the screen right away,lock screen
+hey can you activate the lock screen,lock screen
+i need the screen locked now,lock screen
+can you put the screen on lock,lock screen
+could you lock my screen quickly,lock screen
+
+lets bring all the windows down,minimize all window
+can you minimize all the windows for me,minimize all window
+hey can you put all the windows down,minimize all window
+minimize everything on the screen,minimize all window
+can you hide all open windows,minimize all window
+lets get all the windows minimized,minimize all window
+please minimize all the windows,minimize all window
+can you clear the screen by minimizing everything,minimize all window
+go ahead and minimize all windows,minimize all window
+i need all windows minimized can you do that,minimize all window
+hide all windows for me,minimize all window
+can you clear the view by minimizing everything,minimize all window
+minimize everything thats open,minimize all window
+put all the windows away without closing them,minimize all window
+can you reduce all windows to the taskbar,minimize all window
+drop all windows down to the taskbar,minimize all window
+tuck away all the windows without closing,minimize all window
+lets hide all the open windows for now,minimize all window
+minimize every single window please,minimize all window
+can you shrink everything on the screen to the taskbar,minimize all window
+
+can you set an alarm for <time> am,alarm <time>
+i need an alarm at <time> am,alarm <time>
+hey can you wake me up at <time> am,alarm <time>
+lets set an alarm for <time> am,alarm <time>
+could you put an alarm on for <time> pm,alarm <time>
+make sure i have an alarm at <time> am,alarm <time>
+i need an alarm set for <time> oclock am,alarm <time>
+please set an alarm to go off at <time> am,alarm <time>
+can you remind me at <time> am,alarm <time>
+schedule an alarm for <time> pm,alarm <time>
+put an alarm for <time> am for me,alarm <time>
+can i get an alarm set for <time> am,alarm <time>
+make an alarm for <time> am,alarm <time>
+i want an alarm to go off at <time> pm,alarm <time>
+hey can you set a <time> pm alarm,alarm <time>
+schedule my wake-up alarm for <time> am,alarm <time>
+set a morning alarm for <time> am,alarm <time>
+can we set an alarm to ring at <time> am,alarm <time>
+make sure i have a <time> am alarm ready,alarm <time>
+i need an alarm at <time> pm,alarm <time>
+
+set an alarm for <time> in the morning,alarm <time> am
+i need an alarm at <time> in the morning,alarm <time> am
+can you wake me up at <time> in the morning,alarm <time> am
+lets set an alarm for <time> morning time,alarm <time> am
+please make an alarm for <time> early in the day,alarm <time> am
+put an alarm for <time> in the morning,alarm <time> am
+schedule an alarm for <time> morning,alarm <time> am
+i want a morning alarm set for <time>,alarm <time> am
+can you set an alarm for <time> oclock in the morning,alarm <time> am
+create a morning alarm for <time>,alarm <time> am
+add an alarm at <time> in the morning,alarm <time> am
+set a wake-up alarm for <time> in the morning,alarm <time> am
+schedule me an alarm for <time> in the early morning,alarm <time> am
+prepare an alarm for <time> in the morning hours,alarm <time> am
+get an alarm ready for <time> in the morning,alarm <time> am
+start an alarm for <time> tomorrow morning,alarm <time> am
+lets plan an alarm at <time> in the morning,alarm <time> am
+make sure i have an alarm at <time> sharp in the morning,alarm <time> am
+i want an alarm to ring at <time> in the morning,alarm <time> am
+set a morning alarm at <time>,alarm <time> am
+
+
+can you close this window for me,close window
+close the window im on,close window
+go ahead and close the current window,close window
+close this open window please,close window
+can you exit this window,close window
+lets close this window now,close window
+shut down the current window,close window
+close out of this window,close window
+can you get rid of this window,close window
+please close the window i have open,close window
+i need this window closed,close window
+exit the window im using,close window
+can you close the active window,close window
+lets close the window im in,close window
+go ahead and exit this window,close window
+close out the window im viewing,close window
+can you shut this window,close window
+minimize everything except close this window,close window
+take this window down,close window
+close the one i have open,close window
+
+set an alarm for 10 tonight,alarm <time> pm
+i need an alarm at 10 this evening,alarm <time> pm
+can you set an alarm for 10 at night,alarm <time> pm
+lets make an alarm for 10 tonight,alarm <time> pm
+schedule an alarm for 10 later this evening,alarm <time> pm
+put an alarm for 10 at night,alarm <time> pm
+schedule me an alarm for 10 tonight,alarm <time> pm
+create a night-time alarm for 10,alarm <time> pm
+add an alarm at 10 tonight,alarm <time> pm
+set an alarm for 10 pm ,alarm <time> pm
+can you set a night alarm for 10,alarm <time> pm
+prepare an alarm for 10 this evening,alarm <time> pm
+plan an alarm for 10 tonight at night,alarm <time> pm
+get an alarm ready for 10 in the night,alarm <time> pm
+set up an alarm for 10 late tonight,alarm <time> pm
+start an alarm for 10 in the night,alarm <time> pm
+schedule a reminder alarm for 10 at night,alarm <time> pm
+i want a night alarm at 10,alarm <time> pm
+set my alarm for 10 tonight,alarm <time> pm
+
+can you restart my computer,restart
+restart this system for me,restart
+can you reboot the pc,restart
+i want you to restart the machine,restart
+can you help me reboot this,restart
+is it possible to restart the laptop,restart
+i need this system restarted,restart
+could you reboot everything,restart
+can you turn this off and on again,restart
+do a restart for me,restart
+reboot this device please,restart
+can you perform a system restart,restart
+restart my laptop if you can,restart
+can you fresh start the system,restart
+would you mind restarting the computer,restart
+make this pc restart,restart
+can you initiate a reboot,restart
+do you know how to restart this,restart
+restart this device right now,restart
+can you just reboot this system,restart
+
+can you shut down the system,shutdown
+shut this computer off,shutdown
+turn off the system,shutdown
+i need you to shut down the pc,shutdown
+can you power off this device,shutdown
+shut this machine down for me,shutdown
+can you turn off the laptop,shutdown
+i want this system to shut down,shutdown
+power down the computer,shutdown
+can you help me shut this off,shutdown
+switch off the system,shutdown
+would you turn off this machine,shutdown
+can you shut everything down,shutdown
+shut the pc off now,shutdown
+do a complete shutdown,shutdown
+could you power off the system,shutdown
+turn off my computer please,shutdown
+id like to shut this system down,shutdown
+power off the laptop,shutdown
+make this device shut down,shutdown
+
+can you hibernate the system,hibernate
+put my laptop into hibernation,hibernate
+hibernate this machine,hibernate
+i need you to hibernate the system,hibernate
+can you send the computer to hibernation,hibernate
+hibernate my pc,hibernate
+could you hibernate the laptop,hibernate
+lets hibernate the system,hibernate
+can you make this computer hibernate,hibernate
+hibernate the system for me,hibernate
+please put this into hibernation mode,hibernate
+i want you to hibernate this device,hibernate
+turn on hibernation for the system,hibernate
+can you move the computer to hibernate,hibernate
+hibernate this device right now,hibernate
+put the laptop to hibernate mode,hibernate
+activate hibernation on my pc,hibernate
+can we hibernate the system,hibernate
+set the system to hibernate,hibernate
+enable hibernation for this machine,hibernate
+
+can you log me out,logout
+i need to log out now,logout
+log out of my account,logout
+could you log me off,logout
+please log me out of the system,logout
+end this session and log me out,logout
+can you sign me out,logout
+im done log me out,logout
+can we log out now,logout
+help me log out of this system,logout
+time to log off can you do that,logout
+log me out of this account,logout
+would you log me out,logout
+log out my session please,logout
+i want to log out can you handle that,logout
+exit my account and log out,logout
+log me out of this device,logout
+could you handle the log out for me,logout
+lets log out now,logout
+end this account session,logout
+
+what day is it today,day
+can you tell me the day of the week,day
+do you know what day it is,day
+whats todays day,day
+could you check the day for me,day
+tell me the day of the week,day
+what day are we on,day
+can you remind me what day it is,day
+do you know todays day,day
+whats the day today,day
+can you say what day it is,day
+which day is it today,day
+tell me todays day,day
+i need to know the day of the week,day
+can you let me know the day,day
+whats the day right now,day
+what day does the calendar show,day
+is it monday today,day
+can you figure out the day for me,day
+whats the weekday today,day
+
+can you find this song <song-name> for me,spotify <song-name>
+could you search for the song <song-name> for me,spotify <song-name>
+please search for <song-name> on spotify for me,spotify <song-name>
+search the song <song-name> for me,spotify <song-name>
+find this song <song-name> for me,spotify <song-name>
+could you look up <song-name> on spotify for me,spotify <song-name>
+look up the song <song-name> for me,spotify <song-name>
+please look up <song-name> for me,spotify <song-name>
+can you search <song-name> on spotify for me,spotify <song-name>
+can you check for the song <song-name> on spotify for me,spotify <song-name>
+find the song <song-name> for me on spotify,spotify <song-name>
+please check if <song-name> is on spotify for me,spotify <song-name>
+could you find <song-name> for me on spotify,spotify <song-name>
+can you look up <song-name> on spotify for me,spotify <song-name>
+could you search <song-name> on spotify for me,spotify <song-name>
+search for <song-name> for me,spotify <song-name>
+look for the song <song-name> for me on spotify,spotify <song-name>
+find <song-name> for me on spotify,spotify <song-name>
+can you search the song <song-name> for me on spotify,spotify <song-name>
+look for <song-name> on spotify for me,spotify <song-name>
+
+#apps list
+
+please open firefox browser,firefox
+hey can you start firefox browser,firefox
+bring up firefox browser please,firefox
+please launch firefox browser for me,firefox
+i need you to open firefox browser now,firefox
+
+please open chromium browser,chromium-browser
+hey can you start chromium browser,chromium-browser
+bring up chromium browser please,chromium-browser
+please launch chromium browser for me,chromium-browser
+i need you to open chromium browser now,chromium-browser
+
+please open chrome browser,google-chrome
+hey can you start chrome browser,google-chrome
+bring up chrome browser please,google-chrome
+please launch chrome browser for me,google-chrome
+i need you to open chrome browser now,google-chrome
+
+please open brave browser,brave-browser
+hey can you start brave browser,brave-browser
+bring up brave browser please,brave-browser
+please launch brave browser for me,brave-browser
+i need you to open brave browser now,brave-browser
+
+please open opera browser,opera
+hey can you start opera browser,opera
+bring up opera browser please,opera
+please launch opera browser for me,opera
+i need you to open opera browser now,opera
+
+please open vivaldi browser,vivaldi
+hey can you start vivaldi browser,vivaldi
+bring up vivaldi browser please,vivaldi
+please launch vivaldi browser for me,vivaldi
+i need you to open vivaldi browser now,vivaldi
+
+please open epiphany browser,epiphany
+hey can you start epiphany browser,epiphany
+bring up epiphany browser please,epiphany
+please launch epiphany browser for me,epiphany
+i need you to open epiphany browser now,epiphany
+
+please open falkon browser,falkon
+hey can you start falkon browser,falkon
+bring up falkon please browser,falkon
+please launch falkon browser for me,falkon
+i need you to open falkon browser now,falkon
+
+please open tor browser,torbrowser-launcher
+hey can you start tor browser,torbrowser-launcher
+bring up tor browser please,torbrowser-launcher
+please launch tor browser for me,torbrowser-launcher
+i need you to open tor browser now,torbrowser-launcher
+
+please open libreoffice,libreoffice
+hey can you start libreoffice,libreoffice
+bring up libreoffice please,libreoffice
+please launch libreoffice for me,libreoffice
+i need you to open libreoffice now,libreoffice
+
+please open onlyoffice,onlyoffice-desktopeditors
+hey can you start onlyoffice,onlyoffice-desktopeditors
+bring up onlyoffice please,onlyoffice-desktopeditors
+please launch onlyoffice for me,onlyoffice-desktopeditors
+i need you to open onlyoffice now,onlyoffice-desktopeditors
+
+please open evince,evince
+hey can you start evince,evince
+bring up evince please,evince
+please launch evince for me,evince
+i need you to open evince now,evince
+
+please open okular,okular
+hey can you start okular,okular
+bring up okular please,okular
+please launch okular for me,okular
+i need you to open okular now,okular
+
+please open tusk,tusk
+hey can you start tusk,tusk
+bring up tusk please,tusk
+please launch tusk for me,tusk
+i need you to open tusk now,tusk
+
+please open joplin,joplin
+hey can you start joplin,joplin
+bring up joplin please,joplin
+please launch joplin for me,joplin
+i need you to open joplin now,joplin
+
+please open simplenote,simplenote
+hey can you start simplenote,simplenote
+bring up simplenote please,simplenote
+please launch simplenote for me,simplenote
+i need you to open simplenote now,simplenote
+
+please open thunderbird,thunderbird
+hey can you start thunderbird,thunderbird
+bring up thunderbird please,thunderbird
+please launch thunderbird for me,thunderbird
+i need you to open thunderbird now,thunderbird
+
+please open evolution,evolution
+hey can you start evolution,evolution
+bring up evolution please,evolution
+please launch evolution for me,evolution
+i need you to open evolution now,evolution
+
+please open korganizer,korganizer
+hey can you start korganizer,korganizer
+bring up korganizer please,korganizer
+please launch korganizer for me,korganizer
+i need you to open korganizer now,korganizer
+
+please open sublime text,subl
+hey can you start sublime text,subl
+bring up sublime text please,subl
+please launch sublime text for me,subl
+i need you to open sublime text now,subl
+
+please open pycharm community,pycharm-community
+hey can you start pycharm community,pycharm-community
+bring up pycharm community please,pycharm-community
+please launch pycharm community for me,pycharm-community
+i need you to open pycharm community now,pycharm-community
+
+please open visual studio code,code
+hey can you start visual studio code,code
+bring up visual studio code please,code
+please launch visual studio code for me,code
+i need you to open visual studio code now,code
+
+please open vs code,code
+hey can you start vs code,code
+bring up vs code please,code
+please launch vs code for me,code
+i need you to open vs code now,code
+
+please open visual studio,code
+hey can you start visual studio,code
+bring up visual studio please,code
+please launch visual studio for me,code
+i need you to open visual studio now,code
+
+please open notepad++,notepad-plus-plus
+hey can you start notepad++,notepad-plus-plus
+bring up notepad++ please,notepad-plus-plus
+please launch notepad++ for me,notepad-plus-plus
+i need you to open notepad++ now,notepad-plus-plus
+
+please open notepad plus plus,notepad-plus-plus
+hey can you start notepad plus plus,notepad-plus-plus
+bring up notepad plus plus please,notepad-plus-plus
+please launch notepad plus plus for me,notepad-plus-plus
+i need you to open notepad plus plus now,notepad-plus-plus
+
+please open android studio,studio
+hey can you start android studio,studio
+bring up android studio please,studio
+please launch android studio for me,studio
+i need you to open android studio now,studio
+
+please open anydesk,anydesk
+hey can you start anydesk,anydesk
+bring up anydesk please,anydesk
+please launch anydesk for me,anydesk
+i need you to open anydesk now,anydesk
+
+please open php storm,phpstorm
+hey can you start php storm,phpstorm
+bring up php storm please,phpstorm
+please launch php storm for me,phpstorm
+i need you to open php storm now,phpstorm
+
+please open eclipse,eclipse
+hey can you start eclipse,eclipse
+bring up eclipse please,eclipse
+please launch eclipse for me,eclipse
+i need you to open eclipse now,eclipse
+
+please open pycharm professional,pycharm-professional
+hey can you start pycharm professional,pycharm-professional
+bring up pycharm professional please,pycharm-professional
+please launch pycharm professional for me,pycharm-professional
+i need you to open pycharm professional now,pycharm-professional
+
+please open intellij idea,idea
+hey can you start intellij idea,idea
+bring up intellij idea please,idea
+please launch intellij idea for me,idea
+i need you to open intellij idea now,idea
+
+please open pycharm application,pycharm-community
+hey can you start pycharm application,pycharm-community
+bring up pycharm application please,pycharm-community
+please launch pycharm application for me,pycharm-community
+i need you to open pycharm application now,pycharm-community
+
+please open pycharm,pycharm-community
+hey can you start pycharm,pycharm-community
+bring up pycharm please,pycharm-community
+please launch pycharm for me,pycharm-community
+i need you to open pycharm now,pycharm-community
+
+please open postman,
+hey can you start postman,postman
+bring up postman please,postman
+please launch postman for me,postman
+i need you to open postman now,postman
+
+please open intellij idea ultimate,idea
+hey can you start intellij idea ultimate,idea
+bring up intellij idea ultimate please,idea
+please launch intellij idea ultimate for me,idea
+i need you to open intellij idea ultimate now,idea
+
+please open webstorm,webstorm
+hey can you start webstorm,webstorm
+bring up webstorm please,webstorm
+please launch webstorm for me,webstorm
+i need you to open webstorm now,webstorm
+
+please open rubymine,rubymine
+hey can you start rubymine,rubymine
+bring up rubymine please,rubymine
+please launch rubymine for me,rubymine
+i need you to open rubymine now,rubymine
+
+please open apache netbeans,netbeans
+hey can you start apache netbeans,netbeans
+bring up apache netbeans please,netbeans
+please launch apache netbeans for me,netbeans
+i need you to open apache netbeans now,netbeans
+
+please open goland,goland
+hey can you start goland,goland
+bring up goland please,goland
+please launch goland for me,goland
+i need you to open goland now,goland
+
+please open slack,slack
+hey can you start slack,slack
+bring up slack please,slack
+please launch slack for me,slack
+i need you to open slack now,slack
+
+please open telegram,telegram-desktop
+hey can you start telegram,telegram-desktop
+bring up telegram please,telegram-desktop
+please launch telegram for me,telegram-desktop
+i need you to open telegram now,telegram-desktop
+
+please open skype,skype
+hey can you start skype,skype
+bring up skype please,skype
+please launch skype for me,skype
+i need you to open skype now,skype
+
+please open zulip,zulip
+hey can you start zulip,zulip
+bring up zulip please,zulip
+please launch zulip for me,zulip
+i need you to open zulip now,zulip
+
+please open discord,discord
+hey can you start discord,discord
+bring up discord please,discord
+please launch discord for me,discord
+i need you to open discord now,discord
+
+please open signal-desktop,signal-desktop
+hey can you start signal-desktop,signal-desktop
+bring up signal-desktop please,signal-desktop
+please launch signal-desktop for me,signal-desktop
+i need you to open signal-desktop now,signal-desktop
+
+please open signal,signal-desktop
+hey can you start signal,signal-desktop
+bring up signal please,signal-desktop
+please launch signal for me,signal-desktop
+i need you to open signal now,signal-desktop
+
+please open zenchat,zenchat
+hey can you start zenchat,zenchat
+bring up zenchat please,zenchat
+please launch zenchat for me,zenchat
+i need you to open zenchat now,zenchat
+
+please open zen chat,zen chat
+hey can you start zen chat,zenchat
+bring up zen chat please,zenchat
+please launch zen chat for me,zenchat
+i need you to open zen chat now,zenchat
+
+please open zoom,zoom
+hey can you start zoom,zoom
+bring up zoom please,zoom
+please launch zoom for me,zoom
+i need you to open zoom now,zoom
+
+please open whatsapp,whatsapp-desktop
+hey can you start whatsapp,whatsapp-desktop
+bring up whatsapp please,whatsapp-desktop
+please launch whatsapp for me,whatsapp-desktop
+i need you to open whatsapp now,whatsapp-desktop
+
+please open scrcpy,scrcpy
+hey can you start scrcpy,scrcpy
+bring up scrcpy please,scrcpy
+please launch scrcpy for me,scrcpy
+i need you to open scrcpy now,scrcpy
+
+please open spotify,spotify
+hey can you start spotify,spotify
+bring up spotify please,spotify
+please launch spotify for me,spotify
+i need you to open spotify now,spotify
+
+please open gitkraken,gitkraken
+hey can you start gitkraken,gitkraken
+bring up gitkraken please,gitkraken
+please launch gitkraken for me,gitkraken
+i need you to open gitkraken now,gitkraken
+
+please open microsoft teams,teams
+hey can you start microsoft teams,teams
+bring up microsoft teams please,teams
+please launch microsoft teams for me,teams
+i need you to open microsoft teams now,teams
+
+please open teams,teams
+hey can you start teams,teams
+bring up teams please,teams
+please launch teams for me,teams
+i need you to open teams now,teams
+
+please open gimp,gimp
+hey can you start gimp,gimp
+bring up gimp please,gimp
+please launch gimp for me,gimp
+i need you to open gimp now,gimp
+
+please open obs studio,obs
+hey can you start obs studio,obs
+bring up obs studio please,obs
+please launch obs studio for me,obs
+i need you to open obs studio now,obs
+
+please open obs,obs
+hey can you start obs,obs
+bring up obs please,obs
+please launch obs for me,obs
+i need you to open obs now,obs
+
+please open kdenlive,kdenlive
+hey can you start kdenlive,kdenlive
+bring up kdenlive please,kdenlive
+please launch kdenlive for me,kdenlive
+i need you to open kdenlive now,kdenlive
+
+please open virtualbox,virtualbox
+hey can you start virtualbox,virtualbox
+bring up virtualbox please,virtualbox
+please launch virtualbox for me,virtualbox
+i need you to open virtualbox now,virtualbox
+
+please open virtual box,virtualbox
+hey can you start virtual box,virtualbox
+bring up virtual box please,virtualbox
+please launch virtual box for me,virtualbox
+i need you to open virtual box now,virtualbox
+
+please open wireshark vpn,wireshark
+hey can you start wireshark vpn,wireshark
+bring up wireshark vpn please,wireshark
+please launch wireshark vpn for me,wireshark
+i need you to open wireshark vpn now,wireshark
+
+please open wireshark,wireshark
+hey can you start wireshark,wireshark
+bring up wireshark please,wireshark
+please launch wireshark for me,wireshark
+i need you to open wireshark now,wireshark
+
+please open windscribe vpn,windscribe
+hey can you start windscribe vpn,windscribe
+bring up windscribe vpn please,windscribe
+please launch windscribe vpn for me,windscribe
+i need you to open windscribe vpn now,windscribe
+
+please open windscribe,windscribe
+hey can you start windscribe,windscribe
+bring up windscribe please,windscribe
+please launch windscribe for me,windscribe
+i need you to open windscribe now,windscribe
+
+please open proton,protonvpn
+hey can you start proton,protonvpn
+bring up proton please,protonvpn
+please launch proton for me,protonvpn
+i need you to open proton now,protonvpn
+
+please open proton vpn,protonvpn
+hey can you start proton vpn,protonvpn
+bring up proton vpn please,protonvpn
+please launch proton vpn for me,protonvpn
+i need you to open proton vpn now,protonvpn
+
+please open express vpn,expressvpn
+hey can you start express vpn,expressvpn
+bring up express vpn please,expressvpn
+please launch express vpn for me,expressvpn
+i need you to open express vpn now,expressvpn
+
+please open express,expressvpn
+hey can you start express,expressvpn
+bring up express please,expressvpn
+please launch express for me,expressvpn
+i need you to open express now,expressvpn
+
+please open rstudio,rstudio
+hey can you start rstudio,rstudio
+bring up rstudio please,rstudio
+please launch rstudio for me,rstudio
+i need you to open rstudio now,rstudio
+
+please open r studio,rstudio
+hey can you start r studio,rstudio
+bring up r studio please,rstudio
+please launch r studio for me,rstudio
+i need you to open r studio now,rstudio
+
+please open calculator,gnome-calculator
+hey can you start calculator,gnome-calculator
+bring up calculator please,gnome-calculator
+please launch calculator for me,gnome-calculator
+i need you to open calculator now,gnome-calculator
+
+please open settings,gnome-control-center
+hey can you start settings,gnome-control-center
+bring up settings please,gnome-control-center
+please launch settings for me,gnome-control-center
+i need you to open settings now,gnome-control-center
+
+please open clock,gnome-clocks
+hey can you start clock,gnome-clocks
+bring up clock please,gnome-clocks
+please launch clock for me,gnome-clocks
+i need you to open clock now,gnome-clocks
+
+
+hey can you open <app-name> for me,open <app-name>
+could you launch <app-name>,open <app-name>
+can you open <app-name> right now,open <app-name>
+i need you to start <app-name>,open <app-name>
+lets get <app-name> open,open <app-name>
+can you bring up <app-name> for me,open <app-name>
+please open <app-name>,open <app-name>
+can you fire up <app-name>,open <app-name>
+hey can you load <app-name>,open <app-name>
+i want to use <app-name> can you open it,open <app-name>
+can you show me <app-name>,open <app-name>
+open up <app-name> for me,open <app-name>
+hey can you start <app-name>,open <app-name>
+bring up <app-name> please,open <app-name>
+can you access <app-name>,open <app-name>
+lets open <app-name> together,open <app-name>
+can you get <app-name> going,open <app-name>
+please launch <app-name> for me,open <app-name>
+i need you to open <app-name> now,open <app-name>
+can you kick off <app-name> for me,open <app-name>

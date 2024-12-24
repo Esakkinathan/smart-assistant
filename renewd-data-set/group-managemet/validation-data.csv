@@ -12,4 +12,7 @@ display the list of groups, cat /etc/group
 get the list of groups, cat /etc/group
 give the information about the group <group-name>,getent group <group-name>
 show number of users in the group <group-name>,getent group <group-name>
+is <username> in the group named <group-name>,sudo getent group <groupname>
+display all groups <username> belongs to, sudo groups <username>
+display the groups of user <username>,sudo groups <username>
 show the groups i joined,groups $USER
