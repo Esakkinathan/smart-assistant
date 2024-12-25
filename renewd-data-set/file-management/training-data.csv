@@ -269,3 +269,105 @@ create all folders in the path <directory-name-1>/<directory-name-2>,mkdir -p <d
 establish nested folder structure <directory-name-1>/<directory-name-2>/<directory-name-3>,mkdir -p <directory-name-1>/<directory-name-2>/<directory-name-3>
 create all required directories for <directory-name-1>/<directory-name-2>,mkdir -p <directory-name-1>/<directory-name-2>
 make both <directory-name-1> and <directory-name-2> directories at once,mkdir -p <directory-name-1>/<directory-name-2>
+show me the content in the text file <file-name>.txt ,cat <file-name>.txt
+read the code in css file named <file-name>.css,cat <file-name>.css
+show the details of the  <file-name>.html file,cat <file-name>.txt
+fetch the contents in the file named <file-name>.csv,cat <file-name>.csv
+display the  program in java file <file-name>.java,cat <file-name>.java
+what is avaiable in the file <file-name>.json,cat <file-name>.json
+read and show the script in php file <file-name>.php,cat <file-name>.php
+show the information available in the file <file-name>.log,cat <file-name>.log
+read the program in c file <file-name>.c,cat <file-name>.c 
+show the code in c++ file <file-name>.cpp,cat <file-name>.cpp
+what information is available in <file-name>.xls,cat <file-name>.xls
+read the hidden file .<file-name>,cat .<file-name>
+display the info in jupyter file <file-name>.ipynb,cat <file-name>.ipynb
+read the content of the file named <file-name>.bin under folder <directory-name>,cat <directory-name>/<file-name>.bin
+fetch and show the script in shell file <file-name>.sh in the <direcctory-name>,cat <directory-name>/<file-name>sh
+can you read and show the content in <file-name>.h file under the directory <directory-name>,cat <direcctory-name>/<file-name>.h
+display the information on the python file named <file-name>.py in  <directory-name> the directory,cat directory-name>/<file-name>.py
+display the code in the file <file-name>.kt in the folder <directory-name>,cat <directory-name>/<file-name>.kt
+check the directory <directory-name> and display the content of file <file-name>.dart,cat <directory-name>/<file-name>.dart
+look for <file-name>.env file in <directory-name> directory and read it,cat <directory-name>/<file-name>.env
+is there a file named <file-name>.conf under <direcctory-name> directory and show it,cat <directory-name>/<file-name>.conf
+read the <file-name>.xml under <directory-name>,cat <directory-name>/<file-name>.xml
+copy a file from <source-location> to <destination-location>,cp <source-location> <destination-location>
+can you copy the file from <source-location> to <destination-location>,cp <source-location> <destination-location>
+i want to copy <source-location> file to <destination-location>,cp <source-location> <destination-location>
+create a copy of <source-location> in <destination-location>,cp <source-location> <destination-location>
+please copy the <file-name> from <source-location to <destination-location>,cp <source-location>/<file-name> <destination-location>/<file-name>
+can you copy this <file-name>.txt from <source-location> to <destination-location>,cp <source-location>/<file-name>.txt <destination-location>/<file-name>.txt
+copy the <file-name>.html in <source-location> and paste it to <destination-location>,cp <source-location>/<file-name>.html <destination-location>/<file-name>.html
+make a copy of <file-name>.css in <source-location> to <destination-location>,cp <source-location>/<file-name>.css <destination-location>/<file-name>.css
+could you copy <file-name>.py to <destination-location>, cp <file-name>.py <destination-location>/<file-name>.py
+please make a copy of <file-name>.java in <destination-location> directory,cp <file-name>.java <destination-location>/<file-name>.java
+i want to create a copy of <file-name> in <destination-location>,cp <file-name> <destination-location>/<file-name>
+copy the <file-name>.kt file to the <destination-location folder,cp <file-name>.kt <destination-location>/<file-name>.kt
+copy a direcctory from <source-location> to <destination-location>,cp -r <source-location> <destination-location>
+copy the <directory-name> folder in <source-location> and paste it to <destination-location>,cp -r <source-location>/<directory-name> <destination-location>/<directory-name>
+please make a copy of directory <directory-name> in <destination-location> directory,cp -r <directory-name> <destination-location>/<directory-name>
+i want to view the copy of contents from <source-location> directory to <destination-location>,cp -rv <source-location> <destination-location>
+make a copy of <directory-name> directory in <source-location> to <destination-location> and display the contents,cp -rv <source-location>/<directory-name> <destination-location>/<directory-name>
+could you copy and view the contens while copying the <directory-name> to <destination-location>, cp -rv <directory-name> <destination-location>/<directory-name>
+can you copy the folder from <source-location> to <destination-location> forcefully,cp -rf <source-location> <destination-location>
+can you copy this directory <directory-name> from <source-location> to <destination-location> forcefully,cp -rf <source-location>/<file-name>.txt <destination-location>/<file-name>.txt
+i want to create a copy of <directory-name> in <destination-location> forcefully,cp -rf <directory-name> <destination-location>/<directory-name>
+create a copy of <source-location> folder in <destination-location> forcefull and view the contents,cp -rvf <source-location> <destination-location>
+please copy the <directory-name> folder from <source-location to <destination-location> forcefully and view the contents,cp -rvf <source-location>/<file-name> <destination-location>/<file-name>
+copy the <directory-name> folder to the <destination-location folder forcefully and diplay the contents,cp -rvf <directory-name> <destination-location>/<directory-name>
+move the file from <source-location> to <destination-location>,mv <source-location> <destination-location>
+can you move a file from <source-location> to <destination-location> for me,mv <source-location> <destination-location>
+cut and copy the file from <source-location> to <destination-location>,mv <source-location> <destination-location>
+cut the file in <source-location> and paste it to <destination-location>,mv <source-location> <destination-lcoation>
+i want to move the <file-name> in <source-location> to <destination-location>,mv <source-location>/<file-name> <destination-file>/<file-name>
+cut the program file <file-name>.c in <source-file> and store in <destination-location>, mv <source-location>/<file-name>.c <destination-location>/<file-name>.c
+copy the file <file-name> and delete in <source-location> and paste it in <destination-location>,mv <source-location>/<file-name> <destination-location>/<file-name>
+could you move <file-name>.json to <destination-location>,mv <file-name>.json <destination-location>/<file-name>.json
+move the file <file-name>.js to and paste it in <destination-location>.js,mv <file-name>.js <destination-location>/<file-name>.js
+change location of <file-name> to <destintion-location>,mv <file-name> <destination-location>/<file-name>
+move the directory from <source-location> to <destination-location>,mv -r <source-location> <destination-location>
+copy the folder <directory-name> and delete in <source-location> and paste it in <destination-location>,mv -r <source-location>/<directory-name> <destination-location>/<directory-name>
+move the direcctory <directory-name> to and paste it in <destination-location>,mv -r <directory-name> <destination-location>/<directory-name>
+cut and copy the directory from <source-location> to <destination-location> view the contents while pasting,mv -rv<source-location> <destination-location>
+cut the program folder <directory-name> in <source-file> and store in <destination-location and show the contents, mv -rv <source-location>/<directory-name> <destination-location>/<directory-name>
+change location of <directory-name> to <destintion-location> and view it,mv -rv <directory-name> <destination-location>/<directory-name>
+can you move a folder from <source-location> to <destination-location> for me forcefully,mv -rf <source-location> <destination-location>
+i want to move the <directory-name> in <source-location> to <destination-location> forecefully,mv -rf <source-location>/<directory-name> <destination-file>/<directory-name>
+move all the contents of the <directory-name> forcefully to <destination-location>,mv -rf <directory-name> <destination-location>/<directory-name>
+cut the directory in <source-location> and paste it forcefully to <destination-location> and view the contenst,mv -rvf <source-location> <destination-lcoation>
+move the folder <directory-name> forcefully from <source-location> to <destination-location> and view it,mv -rvf <source-location>/<directory-name> <destination-location>/<directory-name>
+could you move <directory-name> to <destination-location> forcefully and display the content,mv -rvf <directory-name> <destination-location>/<file-name>
+rename the file from <old-file-name> to <new-file-name>,mv <old-file-name> <new-file-name>
+i want to rename this <old-file-name> to <new-file-name>,mv <old-file-name> <new-file-name>
+alter the name of the <old-file-name> file to <new-file-name>,mv <old-file-name> <new-file-name>
+switch the file name from <old-file-name> to <new-file-name>,mv <old-file-name> <new-file-name>
+change the name of file <old-file-name> to <new-file-name>,mv <old-file-name> <new-file-name>
+set a new name to <old-directory-name> as <new-directory-name>,mv <old-directory-name>
+change the folder name from <old-directory-name> to <new-directory-name>,mv <old-directory-name> <new-directory-name>
+set <new-directory-name> as name for directory <old-directory-name>,mv <old-directory-name> <new-directory-name>
+please rename the folder <old-directory-name> to <new-directory-name>,mv <old-directory-name> <new-directory-name>
+relabel the directory <old-directory-name> to <new-directory-name>,mv <old-directory-name> <new-directory-name>
+modify the directory name from <old-directory-name> to <new-directory-name>,mv <old-directory-name> <new-directory-name>
+delete the file named <file-name>,rm <file-name>
+remove the <file-name> file from the system,rm <file-name>
+erase the file <file-name>.py from this laptop,rm <file-name>.py
+delete the data in <file-name>,rm <file-name>
+could you please delete the <file-name> file,rm <file-name>
+remove the file <file-name> under the <directory-name> directory,rm <directory-name>/<file-name>
+delete the file <file-name> in folder <directory-name>,rm <directory-name>/<file-name>
+i want to delete the contents in the <file-name> file in the <directory-name>,rm <directory-name>/<file-name>
+can you delete the file <file-name> under <directory-name> folder,rm <directory-name>/<file-name>
+look for <file-name> in <directory-name> and delete it,rm <directory-name>/<file-name>
+delete the directory named <directory-name>,rm -r <directory-name>
+remove the <directory-name> directory from the system,rm -r <directory-name>
+trash directory <directory-name>,rm -r <directory-name>
+could you please delete the <directory-name> directory,rm <directory-name>
+erase the folder <directory-name> from this laptop forcefully,rm -rf <directory-name>
+delete the data in <directory-name>,rm -r <directory-name>
+delete all files in <directory-name>,rm -r <directory-name>
+delete the entire content of <directory-name> forcefully,rm -rf <directory-name>
+remove the directory <directory-name> under the <directory-name> directory,rm -r <directory-name>/<directory-name>
+delete the folder <directory-name> in folder <directory-name>,rm -r <directory-name>/<directory-name>
+i want to delete the contents in the <directory-name> directory in the <directory-name>,rm -r <directory-name>/<directory-name>
+can you delete the directory <directory-name> under <directory-name> folder forcefully,rm -rf <directory-name>/<directory-name>
+look for <directory-name> under <directory-name> and delete it forecefully,rm -rf <directory-name>/<directory-name>

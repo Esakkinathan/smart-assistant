@@ -45,3 +45,23 @@ create a directory named <directory-name>,mkdir <directory-name>
 make a new folder <directory-name> under directory <old-directory-name>,mkdir <old-directory-name>/<directory-name>
 create a hidden directory named <directory-name>,mkdir .<directory-name>
 create all folders in the path <directory-name-1>/<directory-name-2>,mkdir -p <directory-name-1>/<directory-name-2>
+copy the file from <source-location> to <destination-location>,cp <source-location> <destination-location>
+make a copy of <file-name>.py <source-location> to <destination-location>,cp <source-location>/<file-name>.py <destination-location>/<file-name>.py
+create a copy of file <file-name>.txt at <destination-location>,cp <file-name>.txt <destination-location>/<file-name>.txt
+copy the folder from <source-location> to <destination-location>,cp -r <source-location> <destination-location>
+make a copy of <directory-name> <source-location> to <destination-location> and view it,cp -rv <source-location>/<directory-name> <destination-location>/<directory-name>.py
+create a full copy of <source-location> in <destination-location> forcefully,cp -rf <source-location> <destination-location>
+copy the directory <directory-name> at <destination-location> forcefully and display it,cp -rvf <directory-name> <destination-location>/<directory-name>
+move file <source-location> to <destination-location>,mv <source-location> <destination-location>
+move the folder from <source-location> to <destination-location>,mv -r <source-location> <destination-location>
+cut the <directory-name> <source-location> and paste it to <destination-location> and view it,mv -rv <source-location>/<directory-name> <destination-location>/<directory-name>.py
+move the folder <source-location> in <destination-location> forcefully,mv -rf <source-location> <destination-location>
+move the directory <directory-name> at <destination-location> forcefully and display it,mv -rvf <directory-name> <destination-location>/<directory-name>
+can you rename <old-file-name> to <new-file-name>?,mv <old-file-name> <new-file-name>
+modify directory name from <old-directory-name> to <new-directory-name>,mv <old-directory-name> <new-directory-name>
+delete file <file-name>,rm <file-name>,
+remove <file-name> under <directory-name>,rm <directory-name>/<file-name>
+delete folder <directory-name>,rm -r <directory-name>,
+remove <directory-name> under <directory-name> forecefully,rm -rf <directory-name>/<directory-name>
+
+ 
