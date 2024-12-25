@@ -217,6 +217,66 @@ generate a hidden file named <file-name> in <directory>,touch <directory>/.<file
 please create a hidden file named <file-name> in <directory>,touch <directory>/.<file-name>
 create a hidden .file named <file-name> in <directory>,touch <directory>/.<file-name>
 create a hidden file <file-name> under root folder,touch /root/.<file-name>
+identify the file type of <file-name>,file <file-name>
+find out the type of <file-name>,file <file-name>
+determine the type of the file <file-name>,file <file-name>
+check what type of file <file-name> is,file <file-name>
+get the file type of <file-name>,file <file-name>
+analyze the type of <file-name>,file <file-name>
+inspect the file type for <file-name>,file <file-name>
+display the file type of <file-name>,file <file-name>
+check the number of lines words and characters in <file-name>,wc <file-name>
+get the line word and character count of <file-name>,wc <file-name>
+find out how many lines words and characters are in <file-name>,wc <file-name>
+determine the line word and character statistics of <file-name>,wc <file-name>
+show the count of lines words and characters for <file-name>,wc <file-name>
+display line word and character details for <file-name>,wc <file-name>
+calculate the number of lines words and characters in <file-name>,wc <file-name>
+inspect the lines words and characters of <file-name>,wc <file-name>
+analyze the count of lines words and characters in <file-name>,wc <file-name>
+find the details of lines words and characters in <file-name>,wc <file-name>
+show me the content in the text file <file-name>.txt ,cat <file-name>.txt
+read the code in css file named <file-name>.css,cat <file-name>.css
+show the details of the  <file-name>.html file,cat <file-name>.txt
+fetch the contents in the file named <file-name>.csv,cat <file-name>.csv
+display the  program in java file <file-name>.java,cat <file-name>.java
+what is avaiable in the file <file-name>.json,cat <file-name>.json
+read and show the script in php file <file-name>.php,cat <file-name>.php
+show the information available in the file <file-name>.log,cat <file-name>.log
+read the program in c file <file-name>.c,cat <file-name>.c 
+show the code in c++ file <file-name>.cpp,cat <file-name>.cpp
+what information is available in <file-name>.xls,cat <file-name>.xls
+read the hidden file .<file-name>,cat .<file-name>
+display the info in jupyter file <file-name>.ipynb,cat <file-name>.ipynb
+read the content of the file named <file-name>.bin under folder <directory-name>,cat <directory-name>/<file-name>.bin
+fetch and show the script in shell file <file-name>.sh in the <direcctory-name>,cat <directory-name>/<file-name>sh
+can you read and show the content in <file-name>.h file under the directory <directory-name>,cat <direcctory-name>/<file-name>.h
+display the information on the python file named <file-name>.py in  <directory-name> the directory,cat directory-name>/<file-name>.py
+display the code in the file <file-name>.kt in the folder <directory-name>,cat <directory-name>/<file-name>.kt
+check the directory <directory-name> and display the content of file <file-name>.dart,cat <directory-name>/<file-name>.dart
+look for <file-name>.env file in <directory-name> directory and read it,cat <directory-name>/<file-name>.env
+is there a file named <file-name>.conf under <direcctory-name> directory and show it,cat <directory-name>/<file-name>.conf
+read the <file-name>.xml under <directory-name>,cat <directory-name>/<file-name>.xml
+i want to open <file-name> in vim editor,vim <file-name>
+edit <file-name> using vim,vim <file-name>
+please start editing <file-name> in vim,vim <file-name>
+launch vim to edit <file-name>,vim <file-name>
+open the file <file-name> in vim,vim <file-name>
+i need to edit the file <file-name> with vim,vim <file-name>
+open and modify <file-name> in vim,vim <file-name>
+i need to open <file-name> and start editing in vim,vim <file-name>
+load <file-name> into vim for editing,vim <file-name>
+start vim to edit <file-name>,vim <file-name>
+could you please edit the file <file-name> with nano,nano <file-name>
+modify <file-name> in nano editor,nano <file-name>
+use nano to open <file-name>,nano <file-name>
+what is the command to access <file-name> for editing in nano,nano <file-name>
+start nano to edit <file-name>,nano <file-name>
+open and modify <file-name> in nano,nano <file-name>
+load <file-name> into nano for editing,nano <file-name>
+i want to edit the contents of <file-name> with nano,nano <file-name>
+begin editing <file-name> using nano,nano <file-name>
+open <file-name> and start editing in nano,nano <file-name>
 create a new direcotry named <directory-name>,mkdir <directory-name>
 make a folder named <directory-name>,mkdir <directory-name>
 can you help me to create a new folder called <directory-name>,mkdir <directory-name>
@@ -269,28 +329,21 @@ create all folders in the path <directory-name-1>/<directory-name-2>,mkdir -p <d
 establish nested folder structure <directory-name-1>/<directory-name-2>/<directory-name-3>,mkdir -p <directory-name-1>/<directory-name-2>/<directory-name-3>
 create all required directories for <directory-name-1>/<directory-name-2>,mkdir -p <directory-name-1>/<directory-name-2>
 make both <directory-name-1> and <directory-name-2> directories at once,mkdir -p <directory-name-1>/<directory-name-2>
-show me the content in the text file <file-name>.txt ,cat <file-name>.txt
-read the code in css file named <file-name>.css,cat <file-name>.css
-show the details of the  <file-name>.html file,cat <file-name>.txt
-fetch the contents in the file named <file-name>.csv,cat <file-name>.csv
-display the  program in java file <file-name>.java,cat <file-name>.java
-what is avaiable in the file <file-name>.json,cat <file-name>.json
-read and show the script in php file <file-name>.php,cat <file-name>.php
-show the information available in the file <file-name>.log,cat <file-name>.log
-read the program in c file <file-name>.c,cat <file-name>.c 
-show the code in c++ file <file-name>.cpp,cat <file-name>.cpp
-what information is available in <file-name>.xls,cat <file-name>.xls
-read the hidden file .<file-name>,cat .<file-name>
-display the info in jupyter file <file-name>.ipynb,cat <file-name>.ipynb
-read the content of the file named <file-name>.bin under folder <directory-name>,cat <directory-name>/<file-name>.bin
-fetch and show the script in shell file <file-name>.sh in the <direcctory-name>,cat <directory-name>/<file-name>sh
-can you read and show the content in <file-name>.h file under the directory <directory-name>,cat <direcctory-name>/<file-name>.h
-display the information on the python file named <file-name>.py in  <directory-name> the directory,cat directory-name>/<file-name>.py
-display the code in the file <file-name>.kt in the folder <directory-name>,cat <directory-name>/<file-name>.kt
-check the directory <directory-name> and display the content of file <file-name>.dart,cat <directory-name>/<file-name>.dart
-look for <file-name>.env file in <directory-name> directory and read it,cat <directory-name>/<file-name>.env
-is there a file named <file-name>.conf under <direcctory-name> directory and show it,cat <directory-name>/<file-name>.conf
-read the <file-name>.xml under <directory-name>,cat <directory-name>/<file-name>.xml
+change directory to <directory-name>,cd <directory-name>
+i need to open <directory-name>,cd <directory-name>
+move to <directory-name>,cd <directory-name>
+i want to jump to <directory-name>,cd <directory-name>
+navigate to <directory-name>,cd <directory-name>
+can you go back to the parent directory,cd ..
+go one step back,cd ..
+navigate to the previous directory,cd ..
+could you please switch to parent folder,cd ..
+move back a folder,cd ..
+please go to the home directory,cd ~
+switch to home folder,cd ~
+navigate to the home location,cd ~
+open the user home directory,cd ~
+enter the home location,cd ~
 copy a file from <source-location> to <destination-location>,cp <source-location> <destination-location>
 can you copy the file from <source-location> to <destination-location>,cp <source-location> <destination-location>
 i want to copy <source-location> file to <destination-location>,cp <source-location> <destination-location>
@@ -348,6 +401,26 @@ set <new-directory-name> as name for directory <old-directory-name>,mv <old-dire
 please rename the folder <old-directory-name> to <new-directory-name>,mv <old-directory-name> <new-directory-name>
 relabel the directory <old-directory-name> to <new-directory-name>,mv <old-directory-name> <new-directory-name>
 modify the directory name from <old-directory-name> to <new-directory-name>,mv <old-directory-name> <new-directory-name>
+can you compress the <file-name> into <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+pack <file-name> into a tarball <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+archive the <file-name> as <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+bundle these <file-name> into <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+please create tar file <archieve-name>.tar from these <file-name>,tar -cvf <archieve-name>.tar <file-name>
+compress these <file-name> as <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+generate tar archive <archieve-name> to <file-name>,tar -cvf <archieve-name>.tar <file-name>
+tar these <file-name> into <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+store <file-name> in a tar archive named <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+compress <file-name> into <archieve-name>.tar tarball,tar -cvf <archieve-name>.tar <file-name>
+i want to extract the contents of <archieve-name>.tar,tar -xvf <archieve-name>.tar
+unpack <archieve-name>.tar,tar -xvf <archieve-name>.tar
+open the tar archive <archieve-name>.tar,tar -xvf <archieve-name>.tar
+decompress <archieve-name>.tar,tar -xvf <archieve-name>.tar
+i need to extract files from <archieve-name>.tar,tar -xvf <archieve-name>.tar
+retrieve files from <archieve-name>.tar,tar -xvf <archieve-name>.tar
+untangle the tar file <archieve-name>.tar,tar -xvf <archieve-name>.tar
+could you please pull out the files from <archieve-name>.tar,tar -xvf <archieve-name>.tar
+expand <archieve-name>.tar,tar -xvf <archieve-name>.tar
+what is the command to unarchive the tar file <archieve-name>.tar,tar -xvf <archieve-name>.tar
 delete the file named <file-name>,rm <file-name>
 remove the <file-name> file from the system,rm <file-name>
 erase the file <file-name>.py from this laptop,rm <file-name>.py
@@ -371,3 +444,227 @@ delete the folder <directory-name> in folder <directory-name>,rm -r <directory-n
 i want to delete the contents in the <directory-name> directory in the <directory-name>,rm -r <directory-name>/<directory-name>
 can you delete the directory <directory-name> under <directory-name> folder forcefully,rm -rf <directory-name>/<directory-name>
 look for <directory-name> under <directory-name> and delete it forecefully,rm -rf <directory-name>/<directory-name>
+change owner of file <file-name> to user <username>,chown <username> <file-name>
+set the owner of <file-name to user <username>,chown <username> <file-name
+transfer ownership of <file-name> to <username>,chown <username> <file-name>
+make user <username> the owner of <file-name>,chown <username> <file-name>
+assign <file-name> to user <username>,chown <username> <file-name>
+update <file-name> ownership to <username>,chown <username> <file-name>
+set <file-name> owner to <username>,chown <username> <file-name>
+change <file-name> ownership to <username>,chown <username> <file-name>
+change owner of directory <directory-name> to <username>,chown <username> <directory-name>
+set the owner of folder <directory-name> to <username>,chown <username> <directory-name>
+transfer ownership of <directory-name> to <username>,chown <username> <directory-name>
+make user <username> the owner of <directory-name>,chown <username> <directory-name>
+assign <directory-name> directory to <username> recursively,chown -R <username> <directory-name>
+change the owner of <directory-name> and its sub content to <username>,chown -R <username> <directory-name>
+update <directory-name> and its child content ownership to <username>,chown -R <username> <directory-name>
+recursively set <directory-name>  owner to <username>,chown -R <username> <directory-name>
+change group of file <file-name> to <group-name>,chgrp <group-name> <file-name>
+set the group of <file-name> to <group-name>,chgrp <group-name> <file-name>
+transfer group ownership of <file-name> to <group-name>,chgrp <group-name> <file-name>
+make <file-name> belong to group <group-name>,chgrp <group-name> <file-name>
+assign <file-name> to group <group-name>,chgrp <group-name> <file-name>
+change the group of <file-name> to <group-name>,chgrp <group-name> <file-name>
+update <file-name> group to <group-name>,chgrp <group-name> <file-name>
+set <file-name> group to <group-name>,chgrp <group-name> <file-name>
+change group of directory <directory-name> to <group-name>,chgrp <group-name> <directory-name>
+set the group of folder <directory-name> to <group-name>,chgrp <group-name> <directory-name>
+transfer group ownership of <directory-name> to <group-name>,chgrp <group-name> <directory-name>
+make <directory-name> belong to group <group-name>,chgrp <group-name> <directory-name>
+assign <directory-name> directory to <group-name> group recursively,chgrp -R <group-name> <directory-name>
+change the group of <directory-name> and its sub content to <group-name>,chgrp -R <group-name> <directory-name>
+update <directory-name> and its child content group to <group-name>,chgrp -R <group-name> <directory-name>
+recursively set <directory-name> group to <group-name>,chgrp -R <group-name> <directory-name>
+assign owner to <user-name> and <group-name> for the <file-name>,chown <user-name>:<group-name> <file-name>
+set <user-name> and <group-name> ownership for the <file-name>,chown <user-name>:<group-name> <file-name>
+assign ownership of <file-name> to <user-name> and <group-name>,chown <user-name>:<group-name> <file-name>
+set ownership for <user-name> and <group-name> on the <file-name>,chown <user-name>:<group-name> <file-name>
+set <user-name> and <group-name> ownership for the <directory-name>,chown <user-name>:<group-name> <directory-name>
+assign ownership of <directory-name> to <user-name> and <group-name>,chown <user-name>:<group-name> <directory-name>
+set ownership for <user-name> and <group-name> on the <directory-name>,chown <user-name>:<group-name> <directory-name>
+give <directory-name> ownership to <user-name> and <group-name>,chown <user-name>:<group-name> <directory-name>
+assign ownership of <directory-name> and its contents to <user-name> and <group-name>,chown -R <user-name>:<group-name> <directory-name>
+set ownership recursively for <user-name> and <group-name> on the <directory-name>,chown -R <user-name>:<group-name> <directory-name>
+give recursive ownership of <directory-name> to <user-name> and <group-name>,chown -R <user-name>:<group-name> <directory-name>
+assign owner to <user-name> and <group-name> recursively for the <directory-name>,chown -R <user-name>:<group-name> <directory-name>
+i want to assign read permission to user for <file-name> file,chmod u+r <file-name>
+grant read access not wirte and execute permission to user for <file-name>,chmod u+r <file-name>
+provide read permission to user for <directory-name> directory,chmod u+r <directory-name>
+give read only access to user for <directory-name>,chmod u+r <directory-name>
+can you assign read only permissions recursively to user for <directory-name>,chmod -R u+r <directory-name>
+please assign write permission to user for <file-name> file,chmod u+w <file-name>
+grant write access not execute permission to user for <file-name>,chmod u+w <file-name>
+provide write permission to user for <directory-name> directory,chmod u+w <directory-name>
+i want to give write only access to user for <directory-name>,chmod u+w <directory-name>
+assign write only permissions recursively to user for <directory-name>,chmod -R u+w <directory-name>
+assign execute permission to user for <file-name> file,chmod u+o <file-name>
+i need to grant execute access not write permission to user for <file-name>,chmod u+o <file-name>
+provide execute permission to user for <directory-name> directory,chmod u+o <directory-name>
+could you please give execute only access to user for <directory-name>,chmod u+o <directory-name>
+set execute only permissions for user on directory and its contents <directory-name>,chmod -R u+o <directory-name>
+assign read and write permission to user for <file-name> file,chmod u+rw <file-name>
+i have to grant read and write access not execute permission to user for <file-name>,chmod u+rw <file-name>
+provide read and write permission to user for <directory-name> directory,chmod u+rw <directory-name>
+can you set read and write permissions for user on directory and its contents <directory-name>,chmod -R u+rw <directory-name>
+set read and write only permissions for user on directory and its contents <directory-name>,chmod -R u+rw <directory-name>
+assign read and execute permission to user for <file-name> file,chmod u+rx <file-name>
+can you do grant read and execute access not write permission to user for <file-name>,chmod u+rx <file-name>
+provide read and execute permission to user for <directory-name> directory,chmod u+rx <directory-name>
+give read and execute only access to user for <directory-name>,chmod u+rx <directory-name>
+please set read and execute permissions for user on directory and its contents <directory-name>,chmod -R u+rx <directory-name>
+assign read write and execute permission to user for <file-name> file,chmod u+rwx <file-name>
+grant full access to user for <file-name>,chmod u+rwx <file-name>
+provide read write execute permission to user for <directory-name> directory,chmod u+rwx <directory-name>
+give all permission to user for <directory-name>,chmod u+rwx <directory-name>
+grant recursive read write and execute access to user for <directory-name>,chmod -R u+rwx <directory-name>
+assign read permission to group for <file-name> file,chmod g+r <file-name>
+grant read access not wirte and execute permission to group for <file-name>,chmod g+r <file-name>
+provide read permission to group for <directory-name> directory,chmod g+r <directory-name>
+give read only access to group for <directory-name>,chmod g+r <directory-name>
+grant recursive read access to group for <directory-name>,chmod -R g+rwx <directory-name>
+assign write permission to group for <file-name> file,chmod g+w <file-name>
+grant write access not execute permission to group for <file-name>,chmod g+w <file-name>
+provide write permission to group for <directory-name> directory,chmod g+w <directory-name>
+give write only access to group for <directory-name>,chmod g+w <directory-name>
+grant recursive write access to group users for <directory-name>,chmod -R g+w <directory-name>
+assign execute permission to group for <file-name> file,chmod g+o <file-name>
+grant execute access not write permission to group for <file-name>,chmod g+o <file-name>
+provide execute permission to group for <directory-name> directory,chmod g+o <directory-name>
+give execute only access to group for <directory-name>,chmod g+o <directory-name>
+grant recursive execute access to group users for <directory-name>,chmod -R g+x <directory-name>
+assign read and write permission to group for <file-name> file,chmod g+rw <file-name>
+grant read and write access not execute permission to group for <file-name>,chmod g+rw <file-name>
+provide read and write permission to group for <directory-name> directory,chmod g+rw <directory-name>
+give read and write only access to group for <directory-name>,chmod g+rw <directory-name>
+assign read and write permissions recursively to group for <directory-name>,chmod -R g+rw <directory-name>
+assign read and execute permission to group for <file-name> file,chmod g+rx <file-name>
+grant read and execute access not write permission to group for <file-name>,chmod g+rx <file-name>
+provide read and execute permission to group for <directory-name> directory,chmod g+rx <directory-name>
+give read and execute only access to group for <directory-name>,chmod g+rx <directory-name>
+assign read and execute permissions recursively to group user for <directory-name>,chmod -R g+rx <directory-name>
+assign read write and execute permission to group for <file-name> file,chmod g+rwx <file-name>
+grant full access to group for <file-name>,chmod g+rwx <file-name>
+provide read write execute permission to group for <directory-name> directory,chmod g+rwx <directory-name>
+give all permission to group for <directory-name>,chmod g+rwx <directory-name>
+assign read write and execute permissions recursively to user for <directory-name>,chmod -R g+rwx <directory-name>
+assign read permission to others for <file-name> file,chmod o+r <file-name>
+grant read access not wirte and execute permission to other user in the system for <file-name>,chmod o+r <file-name>
+provide read permission to others for <directory-name> directory,chmod o+r <directory-name>
+give read only access to others for <directory-name>,chmod o+r <directory-name>
+grant recursive read access to others for <directory-name>,chmod -R o+r <directory-name>
+assign write permission to other user for <file-name> file,chmod o+w <file-name>
+grant write access not execute permission to other user profile for <file-name>,chmod o+w <file-name>
+provide write permission to other people for <directory-name> directory,chmod o+w <directory-name>
+give write only access to others for <directory-name>,chmod o+w <directory-name>
+grant recursive  write access to other users for <directory-name>,chmod -R o+w <directory-name>
+assign execute permission to for common user for <file-name> file,chmod o+x <file-name>
+grant execute access not write permission to others for <file-name>,chmod o+x <file-name>
+provide execute permission to others for <directory-name> directory,chmod o+x <directory-name>
+give execute only access to other user for <directory-name>,chmod o+x <directory-name>
+grant recursive execute access to others for <directory-name>,chmod -R o+x <directory-name>
+assign read and write permission to others for <file-name> file,chmod o+rw <file-name>
+grant read and write access not execute permission to others for <file-name>,chmod o+rw <file-name>
+provide read and write permission to others for <directory-name> directory,chmod o+rw <directory-name>
+give read and write only access to others for <directory-name>,chmod o+rw <directory-name>
+set read and write permissions for user on directory and its contents <directory-name>,chmod -R o+rw <directory-name>
+assign read and execute permission to other users for <file-name> file,chmod o+rx <file-name>
+grant read and execute access not write permission to other users in the system for <file-name>,chmod o+rx <file-name>
+provide read and execute permission to other users for <directory-name> directory,chmod o+rx <directory-name>
+give read and execute only access to other users in my laptop for <directory-name>,chmod o+rx <directory-name>
+set read and execute permissions for other users on directory and its contents <directory-name>,chmod -R o+rx <directory-name>
+assign read write and execute permission to other user for <file-name> file,chmod o+rwx <file-name>
+grant full access to other user in my pc for <file-name>,chmod o+rwx <file-name>
+provide read write execute permission to other user for <directory-name> directory,chmod o+rwx <directory-name>
+give all permission to other user in this computer for <directory-name>,chmod o+rwx <directory-name>
+set all permissions for other user on directory and its contents <directory-name>,chmod -R o+rwx <directory-name>
+remove read permission to user for <file-name> file,chmod u-r <file-name>
+revoke read access not wirte and execute permission to user for <file-name>,chmod u-r <file-name>
+get read permission to user for <directory-name> directory,chmod u-r <directory-name>
+disable read only access to user for <directory-name>,chmod u-r <directory-name>
+remove read only permissions recursively to user for <directory-name>,chmod -R u-r <directory-name>
+remove write permission to user for <file-name> file,chmod u-w <file-name>
+revoke write access not execute permission to user for <file-name>,chmod u-w <file-name>
+get write permission to user for <directory-name> directory,chmod u-w <directory-name>
+get write only access to user for <directory-name>,chmod u-w <directory-name>
+remove write only permissions recursively to user for <directory-name>,chmod -R u-w <directory-name>
+remove execute permission to user for <file-name> file,chmod u-o <file-name>
+revoke execute access not write permission to user for <file-name>,chmod u-o <file-name>
+get execute permission to user for <directory-name> directory,chmod u-o <directory-name>
+get execute only access to user for <directory-name>,chmod u-o <directory-name>
+remove execute only permissions for user on directory and its contents <directory-name>,chmod -R u-o <directory-name>
+remove read and write permission to user for <file-name> file,chmod u-rw <file-name>
+revoke read and write access not execute permission to user for <file-name>,chmod u-rw <file-name>
+get read and write permission to user for <directory-name> directory,chmod u-rw <directory-name>
+remove read and write permissions for user on directory and its contents <directory-name>,chmod -R u-rw <directory-name>
+remove read and execute permission to user for <file-name> file,chmod u-rx <file-name>
+revoke read and execute access not write permission to user for <file-name>,chmod u-rx <file-name>
+get read and execute permission to user for <directory-name> directory,chmod u-rx <directory-name>
+get read and execute only access to user for <directory-name>,chmod u-rx <directory-name>
+remove read and execute permissions for user on directory and its contents <directory-name>,chmod -R u-rwx <directory-name>
+remove read write and execute permission to user for <file-name> file,chmod u-rwx <file-name>
+revoke full access to user for <file-name>,chmod u-rwx <file-name>
+get read write execute permission to user for <directory-name> directory,chmod u-rwx <directory-name>
+get all permission to user for <directory-name>,chmod u-rwx <directory-name>
+revoke recursive read write and execute access to user for <directory-name>,chmod -R u-rwx <directory-name>
+remove read permission to group for <file-name> file,chmod g-r <file-name>
+revoke read access not wirte and execute permission to group for <file-name>,chmod g-r <file-name>
+get read permission to group for <directory-name> directory,chmod g-r <directory-name>
+get read only access to group for <directory-name>,chmod g-r <directory-name>
+revoke recursive read access to group for <directory-name>,chmod -R g-rwx <directory-name>
+remove write permission to group for <file-name> file,chmod g-w <file-name>
+revoke write access not execute permission to group for <file-name>,chmod g-w <file-name>
+get write permission to group for <directory-name> directory,chmod g-w <directory-name>
+get write only access to group for <directory-name>,chmod g-w <directory-name>
+revoke recursive write access to group users for <directory-name>,chmod -R g-w <directory-name>
+remove execute permission to group for <file-name> file,chmod g-o <file-name>
+revoke execute access not write permission to group for <file-name>,chmod g-o <file-name>
+get execute permission to group for <directory-name> directory,chmod g-o <directory-name>
+get execute only access to group for <directory-name>,chmod g-o <directory-name>
+revoke recursive execute access to group users for <directory-name>,chmod -R g-x <directory-name>
+remove read and write permission to group for <file-name> file,chmod g-rw <file-name>
+revoke read and write access not execute permission to group for <file-name>,chmod g-rw <file-name>
+get read and write permission to group for <directory-name> directory,chmod g-rw <directory-name>
+get read and write only access to group for <directory-name>,chmod g-rw <directory-name>
+remove read and write permissions recursively to group for <directory-name>,chmod -R g-rw <directory-name>
+remove read and execute permission to group for <file-name> file,chmod g-rx <file-name>
+revoke read and execute access not write permission to group for <file-name>,chmod g-rx <file-name>
+get read and execute permission to group for <directory-name> directory,chmod g-rx <directory-name>
+get read and execute only access to group for <directory-name>,chmod g-rx <directory-name>
+remove read and execute permissions recursively to group user for <directory-name>,chmod -R g-rx <directory-name>
+remove read write and execute permission to group for <file-name> file,chmod g-rwx <file-name>
+revoke full access to group for <file-name>,chmod g-rwx <file-name>
+get read write execute permission to group for <directory-name> directory,chmod g-rwx <directory-name>
+get all permission to group for <directory-name>,chmod g-rwx <directory-name>
+remove read write and execute permissions recursively to user for <directory-name>,chmod -R g-rwx <directory-name>
+remove read permission to others for <file-name> file,chmod o-r <file-name>
+revoke read access not wirte and execute permission to other user in the system for <file-name>,chmod o-r <file-name>
+get read permission to others for <directory-name> directory,chmod o-r <directory-name>
+get read only access to others for <directory-name>,chmod o-r <directory-name>
+revoke recursive read access to others for <directory-name>,chmod -R o-r <directory-name>
+remove write permission to other user for <file-name> file,chmod o-w <file-name>
+revoke write access not execute permission to other user profile for <file-name>,chmod o-w <file-name>
+get write permission to other people for <directory-name> directory,chmod o-w <directory-name>
+get write only access to others for <directory-name>,chmod o-w <directory-name>
+revoke recursive  write access to other users for <directory-name>,chmod -R o-w <directory-name>
+remove execute permission to for common user for <file-name> file,chmod o-x <file-name>
+revoke execute access not write permission to others for <file-name>,chmod o-x <file-name>
+get execute permission to others for <directory-name> directory,chmod o-x <directory-name>
+get execute only access to other user for <directory-name>,chmod o-x <directory-name>
+revoke recursive execute access to others for <directory-name>,chmod -R o-x <directory-name>
+remove read and write permission to others for <file-name> file,chmod o-rw <file-name>
+revoke read and write access not execute permission to others for <file-name>,chmod o-rw <file-name>
+get read and write permission to others for <directory-name> directory,chmod o-rw <directory-name>
+get read and write only access to others for <directory-name>,chmod o-rw <directory-name>
+remove read and write permissions for user on directory and its contents <directory-name>,chmod -R o-rw <directory-name>
+remove read and execute permission to other users for <file-name> file,chmod o-rx <file-name>
+revoke read and execute access not write permission to other users in the system for <file-name>,chmod o-rx <file-name>
+get read and execute permission to other users for <directory-name> directory,chmod o-rx <directory-name>
+get read and execute only access to other users in my laptop for <directory-name>,chmod o-rx <directory-name>
+remove read and execute permissions for other users on directory and its contents <directory-name>,chmod -R o-rx <directory-name>
+remove read write and execute permission to other user for <file-name> file,chmod o-rwx <file-name>
+revoke full access to other user in my pc for <file-name>,chmod o-rwx <file-name>
+get read write execute permission to other user for <directory-name> directory,chmod o-rwx <directory-name>
+get all permission to other user in this computer for <directory-name>,chmod o-rwx <directory-name>
+remove all permissions for other user on directory and its contents <directory-name>,chmod -R o-rwx <directory-name>
+
