@@ -1,0 +1,84 @@
+Date: 24.12.2024
+
+android studio - done
+anydesk - done
+php storm - done
+eclipse - done
+pycharm professional - done
+intellij idea - done
+sublime text - done
+pycharm application / PyCharm - done
+vs code - done
+postman - done
+notepad++ - done
+kubectl - can't be opened cause its a package
+powershell -can't be opened cause its a package
+intellij idea ultimate - done
+webstorm -done
+go - can't be opened cause its a package
+nodejs - can't be opened cause its a package
+rubymine - done
+apache ant - can't be opened cause its a package
+apache netbeans - done
+kotlin - can't be opened cause its a package
+ruby - can't be opened cause its a package
+flutter - can't be opened cause its a package
+goland - done
+flutter gallery - can't be opened cause its a package
+nginx - can't be opened cause its a package
+Prometheus - can't be opened cause its a package
+slack - done
+gradle - can't be opened cause its a package
+Jenkins - can't be opened cause its a package
+telegram - done
+skype - done
+zulip - done
+discord - done
+signal desktop - done
+zenchat - done
+thunder - done
+whatsapp for Linux - done
+zoom - done
+brave - done
+firefox - done
+opera - done
+scrcpy - done
+spotify - done
+gitkraken - done
+postman - already done
+microsoft teams - done
+netbeans - already done
+Kubernetes - can't be opened cause its a package
+MySQL - can't be opened cause its a package
+chrome - done
+LibreOffice - done
+mongodb- can't be opened cause its a package
+python- can't be opened cause its a package
+java- can't be opened cause its a package
+SQLite- can't be opened cause its a package
+c compiler- can't be opened cause its a package
+ansible- can't be opened cause its a package
+gimp - done
+obs studio - done
+kdenlive - done
+virtualbox - done
+wireshark - done
+windscribe vpn - done
+protonvpn - done
+expressvpn - done
+
+#Extra added apps (Haven't taken the installation command yet)
+
+Chromium - done
+Vivaldi - done
+Midori - done
+Epiphany (GNOME Web) - done
+Falkon - done
+Tor Browser - done
+onlyoffice - done
+evince - done
+ocular - done
+tusk - done
+Joplin - done
+simplenote - done
+evolution - done  

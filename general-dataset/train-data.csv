@@ -1,4 +1,9 @@
 nl_cmd,bash_cmd
+
+#for-training
+
+#gkqns
+
 whats the weather like today,weather
 can you tell me the weather right now,weather
 whats the weather forecast,weather
@@ -9,17 +14,6 @@ can you check the weather for me,weather
 whats the weather prediction,weather
 hows the weather,weather
 tell me the weather for today,weather
-what are the weather conditions right now,weather
-will the weather change throughout the day,weather
-whats the weather like outside,weather
-whats the weather like right now,weather
-can you give me the weather forecast,weather
-whats the weather like today in my area,weather
-can you give me a quick weather update,weather
-hows the weather expected to change throughout the day,weather
-hows the weather looking outside right now,weather
-whats the weather going to be like this evening,weather
-
 what time is it,time
 can you tell me the time,time
 do you know what time it is,time
@@ -30,59 +24,26 @@ can you give me the time,time
 whats the time at the moment,time
 how late is it,time
 can you check the time for me,time
-whats the time on the clock,time
-id like to know the time,time
-give me the time update please,time
-whats the hour,time
-do you have the time,time
-can i know the time please,time
-whats the local time,time
-what time is it now where i am,time
-whats the current time of day,time
-hey whats the time check,time
-
-whats the time in <specific-location>,time in <specific-location>
-can you tell me the current time in <specific-location>,time in <specific-location>
-what time is it in <specific-location> right now,time in <specific-location>
-please give me the time in <specific-location>,time in <specific-location>
-whats the local time in <specific-location>,time in <specific-location>
-can you check the time for me in <specific-location>,time in <specific-location>
-what time zone is <specific-location> in,time in <specific-location>
-how late is it in <specific-location>,time in <specific-location>
-tell me the time in <specific-location>,time in <specific-location>
-whats the current hour in <specific-location>,time in <specific-location>
-can you give me the time for <specific-location>,time in <specific-location>
-whats the time difference for <specific-location>,time in <specific-location>
-is it morning or evening in <specific-location>,time in <specific-location>
-whats the precise time in <specific-location>,time in <specific-location>
-how many hours ahead is <specific-location>,time in <specific-location>
-can you tell me the exact time in <specific-location>,time in <specific-location>
-whats the time right now in <specific-location>,time in <specific-location>
-how does the time in <specific-location> compare to mine,time in <specific-location>
-whats the clock reading in <specific-location>,time in<specific-location>
-please tell me what time it is in <specific-location> right now,time in<specific-location>
-
+whats the time in <specific-location>,time-in <specific-location>
+can you tell me the current time in <specific-location>,time-in <specific-location>
+what time is it in <specific-location> right now,time-in <specific-location>
+please give me the time in <specific-location>,time-in <specific-location>
+whats the local time in <specific-location>,time-in <specific-location>
+can you check the time for me in <specific-location>,time-in <specific-location>
+what time zone is <specific-location> in,time-in <specific-location>
+how late is it in <specific-location>,time-in <specific-location>
+tell me the time in <specific-location>,time-in <specific-location>
+whats the current hour in <specific-location>,time-in <specific-location>
 whats todays date,date
 can you tell me the date,date
 whats the date today,date
-what day is it today,date
+what date is it today,date
 do you know todays date,date
 tell me the date please,date
 whats the current date,date
 can you check the date for me,date
 whats the date on the calendar,date
-whats todays day and date,date
 i need to know the date,date
-whats the full date today,date
-could you tell me the date,date
-give me todays date,date
-whats the date right now,date
-can you give me todays date,date
-whats todays calendar date,date
-what date is it today,date
-can you remind me of the date,date
-whats the day and date today,date
-
 whats the latest news,news
 can you tell me todays news,news
 whats happening in the news today,news
@@ -93,227 +54,106 @@ whats the news right now,news
 can you check the news for me,news
 whats the latest headline,news
 any breaking news today,news
-whats the big news today,news
-can you update me on the news,news
-whats the news this morning,news
-what are the latest headlines,news
-tell me whats going on today,news
-whats new in the world,news
-what are the top stories today,news
-can i get a news update,news
-whats happening in the news right now,news
-whats trending in the news today,news
-
-increase the volume,volume up
-raise the volume please,volume up
-can you make it louder,volume up
-turn the sound up,volume up
-boost the volume,volume up
-volume up,volume up
-crank up the sound,volume up
-can you enhance the volume,volume up
-make it louder,volume up
-turn the audio up,volume up
-set the volume higher,volume up
-please increase the audio level,volume up
-adjust the volume upwards,volume up
-can you pump up the volume,volume up
-amplify the sound,volume up
-give me more volume,volume up
-turn up the audio,volume up
-raise the sound level,volume up
-make the sound louder,volume up
-can you raise the audio,volume up
-
-can you lower the volume,volume down
-please turn down the sound,volume down
-reduce the audio level please,volume down
-make the volume quieter,volume down
-turn the volume down,volume down
-please decrease the sound,volume down
-can you mute the audio slightly,volume down
-lower the sound level,volume down
-please adjust the volume down,volume down
-can you make it less loud,volume down
-turn down the audio,volume down
-can you reduce the sound,volume down
-make the audio softer,volume down
-please bring the volume down,volume down
-can you quiet the speakers,volume down
-lower the volume a bit,volume down
-can you decrease the audio level,volume down
-turn the sound down a notch,volume down
-make the volume less intense,volume down
-please turn the speakers down,volume down
-
-set the volume to <volume-percentage>,set volume <volume-percentage>
-can you increase the volume to <volume-percentage>,set volume <volume-percentage>
-turn the volume up to <volume-percentage>,set volume <volume-percentage>
-adjust the audio level to <volume-percentage>,set volume <volume-percentage>
-please raise the volume to <volume-percentage>,set volume <volume-percentage>
-make the sound level <volume-percentage>,set volume <volume-percentage>
-increase the volume to <volume-percentage>,set volume <volume-percentage>
-can you set the audio to <volume-percentage>,set volume <volume-percentage>
-turn the sound up to <volume-percentage>,set volume <volume-percentage>
-can you boost the volume to <volume-percentage>,set volume <volume-percentage>
-make the volume <volume-percentage>,set volume <volume-percentage>
-please set the volume at <volume-percentage>,set volume <volume-percentage>
-turn the audio level up to <volume-percentage>,set volume <volume-percentage>
-adjust the volume to <volume-percentage> please,set volume <volume-percentage>
-can you put the volume to <volume-percentage>,set volume <volume-percentage>
-raise the sound level to <volume-percentage>,set volume <volume-percentage>
-set the audio volume to <volume-percentage>,set volume <volume-percentage>
-make the audio level <volume-percentage>,set volume <volume-percentage>
-please increase the sound to <volume-percentage>,set volume <volume-percentage>
-turn the volume up to <volume-percentage> please,set volume <volume-percentage>
-
-reduce the volume by <volume-percentage>,set volume <volume-percentage>
-can you lower the volume by <volume-percentage>,set volume <volume-percentage>
-turn the volume down by <volume-percentage>,set volume <volume-percentage>
-adjust the audio down by <volume-percentage>,set volume <volume-percentage>
-please decrease the volume by <volume-percentage>,set volume <volume-percentage>
-make the sound <volume-percentage> quieter,set volume <volume-percentage>
-lower the volume to <volume-percentage> less,set volume <volume-percentage>
-can you set the volume to <volume-percentage> lower,set volume <volume-percentage>
-turn the sound down <volume-percentage>,set volume <volume-percentage>
-can you reduce the audio level by <volume-percentage>,set volume <volume-percentage>
-please bring the set volume by <volume-percentage>,set volume <volume-percentage>
-decrease the audio volume by <volume-percentage>,set volume <volume-percentage>
-can you lower the sound by <volume-percentage>,set volume <volume-percentage>
-turn the audio level down by <volume-percentage>,set volume <volume-percentage>
-make the volume <volume-percentage> less,set volume <volume-percentage>
-adjust the volume to be <volume-percentage> lower,set volume <volume-percentage>
-please reduce the sound to <volume-percentage> less,set volume <volume-percentage>
-lower the audio by <volume-percentage>,set volume <volume-percentage>
-turn the volume down to <volume-percentage> less,set volume <volume-percentage>
-can you make the audio <volume-percentage> quieter,set volume <volume-percentage>
-
-can you mute the audio,volume mute
-please mute the sound,volume mute
-turn off the sound,volume mute
-mute the volume please,volume mute
-silence the audio,volume mute
-can you silence the sound,volume mute
-please turn off the audio,volume mute
-make it silent,volume mute
-disable the sound,volume mute
-can you cut the audio,volume mute
-turn the sound off,volume mute
-mute the speakers,volume mute
-can you hush the sound,volume mute
-please silence the volume,volume mute
-can you quiet the audio,volume mute
-stop the sound,volume mute
-put the audio on mute,volume mute
-make the sound go quiet,volume mute
-turn off the speakers,volume mute
-can you silence everything,volume mute
-
-can you unmute the sound,volume unmute
-please turn the audio back on,volume unmute
-restore the sound,volume unmute
-make the audio audible again,volume unmute
-can you bring the sound back,volume unmute
-turn the volume back up,volume unmute
-please unmute the speakers,volume unmute
-can you enable the audio,volume unmute
-bring back the sound please,volume unmute
-make the sound active again,volume unmute
-please restore the audio,volume unmute
-can you activate the sound,volume unmute
-turn the audio on please,volume unmute
-make it loud again,volume unmute
-unmute the speakers,volume unmute
-can you reactivate the sound,volume unmute
-please put the audio back on,volume unmute
-bring the volume back to normal,volume unmute
-can you unmute everything,volume unmute
-turn the sound on again,volume unmute
-
-can you turn up the brightness,brightness up
-please raise the brightness,brightness up
-adjust the brightness higher,brightness up
-make the screen brighter,brightness up
-increase the screen brightness,brightness up
-can you brighten the display,brightness up
-please enhance the brightness,brightness up
-set the brightness to a higher level,brightness up
-boost the brightness please,brightness up
-can you elevate the brightness,brightness up
-turn the brightness up,brightness up
-make the display brighter,brightness up
-please increase the light level,brightness up
-adjust the brightness to maximum,brightness up
-can you make it shine brighter,brightness up
-raise the display brightness,brightness up
-set the brightness to a higher percentage,brightness up
-please make the screen more luminous,brightness up
-turn the brightness up a notch,brightness up
-can you lighten the screen,brightness up
-
-can you dim the brightness,brightness down
-lower the brightness please,brightness down
-turn down the screen brightness,brightness down
-make the display a bit darker,brightness down
-reduce the brightness please,brightness down
-can you make the screen less bright,brightness down
-dim the screen please,brightness down
-adjust the brightness down,brightness down
-please darken the display,brightness down
-can you lower the light intensity,brightness down
-make it less bright please,brightness down
-can you turn down the brightness,brightness down
-set the brightness lower,brightness down
-please reduce the display brightness,brightness down
-can you make it dimmer,brightness down
-turn down the brightness a little,brightness down
-make the screen darker,brightness down
-please dim the display,brightness down
-adjust the brightness for me,brightness down
-can you make it a bit dimmer,brightness down
-
-can you brighten the screen by <brightness-up-percentage>,brightness up <brightness-up-percentage>
-increase the brightness to <brightness-up-percentage>,brightness up <brightness-up-percentage>
-turn up the brightness by <brightness-up-percentage>,brightness up <brightness-up-percentage>
-make the display <brightness-up-percentage> brighter,brightness up <brightness-up-percentage>
-boost the brightness by <brightness-up-percentage> please,brightness up <brightness-up-percentage>
-can you raise the brightness level by <brightness-up-percentage>,brightness up <brightness-up-percentage>
-set the brightness to <brightness-up-percentage>,brightness up <brightness-up-percentage>
-make the screen lighter by <brightness-up-percentage>,brightness up <brightness-up-percentage>
-please enhance the brightness by <brightness-up-percentage>,brightness up <brightness-up-percentage>
-can you brighten it up by <brightness-up-percentage>,brightness up <brightness-up-percentage>
-turn the brightness up by <brightness-up-percentage> please,brightness up <brightness-up-percentage>
-adjust the brightness up by <brightness-up-percentage>,brightness up <brightness-up-percentage>
-can you increase the light intensity by <brightness-up-percentage>,brightness up <brightness-up-percentage>
-make it <brightness-up-percentage> brighter please,brightness up <brightness-up-percentage>
-can you turn up the display brightness by <brightness-up-percentage>,brightness up <brightness-up-percentage>
-please raise the brightness level by <brightness-up-percentage>,brightness up <brightness-up-percentage>
-make the screen shine <brightness-up-percentage> more,brightness up <brightness-up-percentage>
-can you brighten the display by <brightness-up-percentage>,brightness up <brightness-up-percentage>
-turn the brightness up a notch by <brightness-up-percentage>,brightness up <brightness-up-percentage>
-please enhance the display brightness by <brightness-up-percentage>,brightness up <brightness-up-percentage>
-
-reduce the brightness by <brightness-down-percentage>,brightness down <brightness-down-percentage>
-lower the brightness to <brightness-down-percentage>,brightness down <brightness-down-percentage>
-can you dim the screen by <brightness-down-percentage>,brightness down <brightness-down-percentage>
-turn down the brightness by <brightness-down-percentage>,brightness down <brightness-down-percentage>
-make the display <brightness-down-percentage> darker,brightness down <brightness-down-percentage>
-set the brightness to <brightness-down-percentage>,brightness down <brightness-down-percentage>
-decrease the screen brightness by <brightness-down-percentage>,brightness down <brightness-down-percentage>
-can you reduce the light intensity by <brightness-down-percentage>,brightness down <brightness-down-percentage>
-lower the display brightness by <brightness-down-percentage>,brightness down <brightness-down-percentage>
-turn the brightness down by <brightness-down-percentage>,brightness down <brightness-down-percentage>
-dimming the screen by <brightness-down-percentage> would be great,brightness down <brightness-down-percentage>
-please make the screen <brightness-down-percentage> less bright,brightness down <brightness-down-percentage>
-can you turn off <brightness-down-percentage> of the brightness,brightness down <brightness-down-percentage>
-adjust the brightness down by <brightness-down-percentage> please,brightness down <brightness-down-percentage>
-can you make the display <brightness-down-percentage> dimmer,brightness down <brightness-down-percentage>
-turn the brightness down to <brightness-down-percentage>,brightness down <brightness-down-percentage>
-please darken the screen by <brightness-down-percentage>,brightness down <brightness-down-percentage>
-can you decrease the brightness level by <brightness-down-percentage>,brightness down <brightness-down-percentage>
-make it <brightness-down-percentage> less bright please,brightness down <brightness-down-percentage>
-please lower the brightness to <brightness-down-percentage>,brightness down <brightness-down-percentage>
-
+increase the volume,volume-up
+raise the volume please,volume-up
+can you make it louder,volume-up
+turn the sound up,volume-up
+boost the volume,volume-up
+volume up,volume-up
+crank up the sound,volume-up
+can you enhance the volume,volume-up
+make it louder,volume-up
+turn the audio up,volume-up
+can you lower the volume,volume-down
+please turn down the sound,volume-down
+reduce the audio level please,volume-down
+make the volume quieter,volume-down
+turn the volume down,volume-down
+please decrease the sound,volume-down
+can you mute the audio slightly,volume-down
+lower the sound level,volume-down
+please adjust the volume down,volume-down
+can you make it less loud,volume-down
+can you increase the volume to <volume-increase-percentage>,set-volume <volume-increase-percentage>
+turn the volume up to <volume-increase-percentage>,set-volume <volume-increase-percentage>
+please raise the volume to <volume-increase-percentage>,set-volume <volume-increase-percentage>
+increase the volume to <volume-increase-percentage>,set-volume <volume-increase-percentage>
+turn the sound up to <volume-increase-percentage>,set-volume <volume-increase-percentage>
+can you boost the volume to <volume-increase-percentage>,set-volume <volume-increase-percentage>
+turn the audio level up to <volume-increase-percentage>,set-volume <volume-increase-percentage>
+can you put the volume to <volume-increase-percentage>,set-volume <volume-increase-percentage>
+raise the sound level to <volume-increase-percentage>,set-volume <volume-increase-percentage>
+please increase the sound to <volume-increase-percentage>,set-volume <volume-increase-percentage>
+reduce the volume by <volume-decrease-percentage>,set-volume <volume-decrease-percentage>
+can you lower the volume by <volume-decrease-percentage>,set-volume <volume-decrease-percentage>
+turn the volume down by <volume-decrease-percentage>,set-volume <volume-decrease-percentage>
+adjust the audio down by <volume-decrease-percentage>,set-volume <volume-decrease-percentage>
+please decrease the volume by <volume-decrease-percentage>,set-volume <volume-decrease-percentage>
+make the sound <volume-decrease-percentage> quieter,set-volume <volume-decrease-percentage>
+lower the volume to <volume-decrease-percentage> less,set-volume <volume-decrease-percentage>
+can you set the volume to <volume-decrease-percentage> lower,set-volume <volume-decrease-percentage>
+turn the sound down <volume-decrease-percentage>,set-volume <volume-decrease-percentage>
+can you reduce the audio level by <volume-decrease-percentage>,set-volume <volume-decrease-percentage>
+can you mute the audio,volume-mute
+please mute the sound,volume-mute
+turn off the sound,volume-mute
+mute the volume please,volume-mute
+silence the audio,volume-mute
+can you silence the sound,volume-mute
+please turn off the audio,volume-mute
+make it silent,volume-mute
+disable the sound,volume-mute
+can you cut the audio,volume-mute
+can you unmute the sound,volume-unmute
+please turn the audio back on,volume-unmute
+restore the sound,volume-unmute
+make the audio audible again,volume-unmute
+can you bring the sound back,volume-unmute
+turn the volume back up,volume-unmute
+please unmute the speakers,volume-unmute
+can you enable the audio,volume-unmute
+bring back the sound please,volume-unmute
+make the sound active again,volume-unmute
+can you turn up the brightness,brightness-up
+please raise the brightness,brightness-up
+adjust the brightness higher,brightness-up
+make the screen brighter,brightness-up
+increase the screen brightness,brightness-up
+can you brighten the display,brightness-up
+please enhance the brightness,brightness-up
+set the brightness to a higher level,brightness-up
+boost the brightness please,brightness-up
+can you elevate the brightness,brightness-up
+can you dim the brightness,brightness-down
+lower the brightness please,brightness-down
+turn down the screen brightness,brightness-down
+make the display a bit darker,brightness-down
+reduce the brightness please,brightness-down
+can you make the screen less bright,brightness-down
+dim the screen please,brightness-down
+adjust the brightness down,brightness-down
+please darken the display,brightness-down
+can you lower the light intensity,brightness-down
+can you brighten the screen by <brightness-up-percentage>,brightness-up <brightness-up-percentage>
+increase the brightness to <brightness-up-percentage>,brightness-up <brightness-up-percentage>
+turn up the brightness by <brightness-up-percentage>,brightness-up <brightness-up-percentage>
+make the display <brightness-up-percentage> brighter,brightness-up <brightness-up-percentage>
+boost the brightness by <brightness-up-percentage> please,brightness-up <brightness-up-percentage>
+can you raise the brightness level by <brightness-up-percentage>,brightness-up <brightness-up-percentage>
+set the brightness to <brightness-up-percentage>,brightness-up <brightness-up-percentage>
+make the screen lighter by <brightness-up-percentage>,brightness-up <brightness-up-percentage>
+please enhance the brightness by <brightness-up-percentage>,brightness-up <brightness-up-percentage>
+can you brighten it up by <brightness-up-percentage>,brightness-up <brightness-up-percentage>
+reduce the brightness by <brightness-down-percentage>,brightness-down <brightness-down-percentage>
+lower the brightness to <brightness-down-percentage>,brightness-down <brightness-down-percentage>
+can you dim the screen by <brightness-down-percentage>,brightness-down <brightness-down-percentage>
+turn down the brightness by <brightness-down-percentage>,brightness-down <brightness-down-percentage>
+make the display <brightness-down-percentage> darker,brightness-down <brightness-down-percentage>
+set the brightness to <brightness-down-percentage>,brightness-down <brightness-down-percentage>
+decrease the screen brightness by <brightness-down-percentage>,brightness-down <brightness-down-percentage>
+can you reduce the light intensity by <brightness-down-percentage>,brightness-down <brightness-down-percentage>
+lower the display brightness by <brightness-down-percentage>,brightness-down <brightness-down-percentage>
+turn the brightness down by <brightness-down-percentage>,brightness-down <brightness-down-percentage>
 whats the battery level,battery
 can you tell me my battery percentage,battery
 whats the current battery status,battery
@@ -323,18 +163,7 @@ can you check my battery percentage,battery
 how much battery do i have,battery
 whats my battery status,battery
 whats the current battery percentage,battery
-can you give me the battery percentage,battery
-how much charge is remaining,battery
-whats my battery at,battery
-can you tell me how much battery is left,battery
 how much power does the battery have,battery
-what percentage is the battery at,battery
-whats my battery charge,battery
-how much battery life is remaining,battery
-can you check how much battery is left,battery
-whats the remaining battery level,battery
-can you show me the battery percentage,battery
-
 hey can you take a screenshot of this,screenshot
 could you snap a quick screenshot of this,screenshot
 can you grab a screenshot right here,screenshot
@@ -345,143 +174,66 @@ i need a quick screen capture of this can you help,screenshot
 can you take a picture of this screen for me,screenshot
 lets take a screenshot of whats here,screenshot
 can you get a screenshot of this display,screenshot
-take a quick shot of this screen for me,screenshot
-how about grabbing a screenshot of this,screenshot
-could you screenshot whats showing on the screen,screenshot
-can you get this screenshot for me,screenshot
-hey lets grab a screenshot of what i see,screenshot
-i need you to capture this screen right now,screenshot
-take a screen grab of this for me,screenshot
-could you save this screen as a screenshot,screenshot
-lets capture this screen together,screenshot
-can you quickly snap a screenshot of this,screenshot
-
-can you show me my ip address,ip address
-what is my ip address,ip address
-please tell me my ip address,ip address
-i need to know my ip address,ip address
-can you find my ip address,ip address
-show me my current ip address,ip address
-whats my ip address right now,ip address
-can you display my ip address,ip address
-let me know my ip address,ip address
-can you tell me what my ip address is,ip address
-what is the ip address im using,ip address
-can you reveal my ip address,ip address
-give me my ip address,ip address
-show my current ip address,ip address
-i want to see my ip address,ip address
-can you fetch my ip address,ip address
-please show my ip address,ip address
-can you check my ip address for me,ip address
-tell me my ip address please,ip address
-whats my current ip address,ip address
-
-can you tell me my current cpu usage,cpu usage
-what is my cpu usage right now,cpu usage
-please show me my cpu usage,cpu usage
-i need to know my cpu usage,cpu usage
-can you find my current cpu usage,cpu usage
-show me how much cpu im using,cpu usage
-whats the cpu usage on my device,cpu usage
-can you display my cpu usage,cpu usage
-let me know my current cpu usage,cpu usage
-can you tell me the cpu usage percentage,cpu usage
-what is the current cpu load,cpu usage
-can you check my cpu usage for me,cpu usage
-give me my current cpu usage,cpu usage
-show my cpu usage right now,cpu usage
-i want to see my cpu usage,cpu usage
-can you fetch my cpu usage,cpu usage
-please tell me my cpu usage,cpu usage
-whats the current cpu usage on my system,cpu usage
-how much cpu am i using,cpu usage
-can you report my current cpu usage,cpu usage
-
-can you tell me how much storage i have left,storage free
-what is my available storage,storage free
-please show me my remaining storage,storage free
-i need to know how much storage is left,storage free
-can you find out my available storage,storage free
-show me my free storage space,storage free
-whats my storage capacity right now,storage free
-can you display my remaining storage,storage free
-let me know how much storage i have left,storage free
-can you tell me the storage i have available,storage free
-how much free storage do i have,storage free
-can you check my remaining storage for me,storage free
-give me my available storage space,storage free
-show my storage space right now,storage free
-i want to see how much storage is left,storage free
-can you fetch my available storage,storage free
-please tell me my remaining storage,storage free
-whats the current storage space i have,storage free
-how much storage is still available,storage free
-can you report my free storage space,storage free
-
-hey can you turn the brightness to maximum,brightness maximum
-set the brightness to full for me,brightness maximum
-can you increase the brightness to 100 percent,brightness maximum
-max out the brightness please,brightness maximum
-lets set the brightness to the highest level,brightness maximum
-can you adjust the brightness to the maximum,brightness maximum
-turn the brightness all the way up,brightness maximum
-could you raise the brightness to its peak,brightness maximum
-set the brightness to the highest setting,brightness maximum
-boost the brightness to the top level,brightness maximum
-i need the brightness at maximum,brightness maximum
-lets put the brightness to full power,brightness maximum
-can you push the brightness to maximum,brightness maximum
-please set the brightness to 100 percent,brightness maximum
-bring the brightness to the highest it can go,brightness maximum
-can you make the brightness the highest possible,brightness maximum
-lets move the brightness to full capacity,brightness maximum
-hey can you set the brightness to maximum,brightness maximum
-crank the brightness up to the max for me,brightness maximum
-can you put the brightness at its top level,brightness maximum
-
-hey can you lock the screen for me,lock screen
-could you lock my screen now,lock screen
-please lock the screen,lock screen
-i need you to lock the screen,lock screen
-can you lock my device,lock screen
-lock the screen for me please,lock screen
-lets lock the screen,lock screen
-lock my screen right now,lock screen
-can you secure the screen for me,lock screen
-hey can you lock the display,lock screen
-lock it up for me,lock screen
-go ahead and lock the screen,lock screen
-can you make sure the screen is locked,lock screen
-i want the screen locked can you do that,lock screen
-can you lock everything up,lock screen
-please lock the screen right away,lock screen
-hey can you activate the lock screen,lock screen
-i need the screen locked now,lock screen
-can you put the screen on lock,lock screen
-could you lock my screen quickly,lock screen
-
-lets bring all the windows down,minimize all window
-can you minimize all the windows for me,minimize all window
-hey can you put all the windows down,minimize all window
-minimize everything on the screen,minimize all window
-can you hide all open windows,minimize all window
-lets get all the windows minimized,minimize all window
-please minimize all the windows,minimize all window
-can you clear the screen by minimizing everything,minimize all window
-go ahead and minimize all windows,minimize all window
-i need all windows minimized can you do that,minimize all window
-hide all windows for me,minimize all window
-can you clear the view by minimizing everything,minimize all window
-minimize everything thats open,minimize all window
-put all the windows away without closing them,minimize all window
-can you reduce all windows to the taskbar,minimize all window
-drop all windows down to the taskbar,minimize all window
-tuck away all the windows without closing,minimize all window
-lets hide all the open windows for now,minimize all window
-minimize every single window please,minimize all window
-can you shrink everything on the screen to the taskbar,minimize all window
-
+can you show me my ip address,ip-address
+what is my ip address,ip-address
+please tell me my ip address,ip-address
+i need to know my ip address,ip-address
+can you find my ip address,ip-address
+show me my current ip address,ip-address
+whats my ip address right now,ip-address
+can you display my ip address,ip-address
+let me know my ip address,ip-address
+can you tell me what my ip address is,ip-address
+can you tell me my current cpu usage,cpu-usage
+what is my cpu usage right now,cpu-usage
+please show me my cpu usage,cpu-usage
+i need to know my cpu usage,cpu-usage
+can you find my current cpu usage,cpu-usage
+show me how much cpu im using,cpu-usage
+whats the cpu usage on my device,cpu-usage
+can you display my cpu usage,cpu-usage
+let me know my current cpu usage,cpu-usage
+can you tell me the cpu usage percentage,cpu-usage
+can you tell me how much storage i have left,storage-free
+what is my available storage,storage-free
+please show me my remaining storage,storage-free
+i need to know how much storage is left,storage-free
+can you find out my available storage,storage-free
+show me my free storage space,storage-free
+whats my storage capacity right now,storage-free
+can you display my remaining storage,storage-free
+let me know how much storage i have left,storage-free
+can you tell me the storage i have available,storage-free
+hey can you turn the brightness to maximum,brightness-maximum
+set the brightness to full for me,brightness-maximum
+can you increase the brightness to 100 percent,brightness-maximum
+max out the brightness please,brightness-maximum
+lets set the brightness to the highest level,brightness-maximum
+can you adjust the brightness to the maximum,brightness-maximum
+turn the brightness all the way up,brightness-maximum
+could you raise the brightness to its peak,brightness-maximum
+set the brightness to the highest setting,brightness-maximum
+boost the brightness to the top level,brightness-maximum
+hey can you lock the screen for me,lock-screen
+could you lock my screen now,lock-screen
+please lock the screen,lock-screen
+i need you to lock the screen,lock-screen
+can you lock my device,lock-screen
+lock the screen for me please,lock-screen
+lets lock the screen,lock-screen
+lock my screen right now,lock-screen
+can you secure the screen for me,lock-screen
+hey can you lock the display,lock-screen
+lets bring all the windows down,minimize-all-window
+can you minimize all the windows for me,minimize-all-window
+hey can you put all the windows down,minimize-all-window
+minimize everything on the screen,minimize-all-window
+can you hide all open windows,minimize-all-window
+lets get all the windows minimized,minimize-all-window
+please minimize all the windows,minimize-all-window
+can you clear the screen by minimizing everything,minimize-all-window
+go ahead and minimize all windows,minimize-all-window
+i need all windows minimized can you do that,minimize-all-window
 can you set an alarm for <time> am,alarm <time>
 i need an alarm at <time> am,alarm <time>
 hey can you wake me up at <time> am,alarm <time>
@@ -492,17 +244,6 @@ i need an alarm set for <time> oclock am,alarm <time>
 please set an alarm to go off at <time> am,alarm <time>
 can you remind me at <time> am,alarm <time>
 schedule an alarm for <time> pm,alarm <time>
-put an alarm for <time> am for me,alarm <time>
-can i get an alarm set for <time> am,alarm <time>
-make an alarm for <time> am,alarm <time>
-i want an alarm to go off at <time> pm,alarm <time>
-hey can you set a <time> pm alarm,alarm <time>
-schedule my wake-up alarm for <time> am,alarm <time>
-set a morning alarm for <time> am,alarm <time>
-can we set an alarm to ring at <time> am,alarm <time>
-make sure i have a <time> am alarm ready,alarm <time>
-i need an alarm at <time> pm,alarm <time>
-
 set an alarm for <time> in the morning,alarm <time> am
 i need an alarm at <time> in the morning,alarm <time> am
 can you wake me up at <time> in the morning,alarm <time> am
@@ -513,80 +254,46 @@ schedule an alarm for <time> morning,alarm <time> am
 i want a morning alarm set for <time>,alarm <time> am
 can you set an alarm for <time> oclock in the morning,alarm <time> am
 create a morning alarm for <time>,alarm <time> am
-add an alarm at <time> in the morning,alarm <time> am
-set a wake-up alarm for <time> in the morning,alarm <time> am
-schedule me an alarm for <time> in the early morning,alarm <time> am
-prepare an alarm for <time> in the morning hours,alarm <time> am
-get an alarm ready for <time> in the morning,alarm <time> am
-start an alarm for <time> tomorrow morning,alarm <time> am
-lets plan an alarm at <time> in the morning,alarm <time> am
-make sure i have an alarm at <time> sharp in the morning,alarm <time> am
-i want an alarm to ring at <time> in the morning,alarm <time> am
-set a morning alarm at <time>,alarm <time> am
-
-
-can you close this window for me,close window
-close the window im on,close window
-go ahead and close the current window,close window
-close this open window please,close window
-can you exit this window,close window
-lets close this window now,close window
-shut down the current window,close window
-close out of this window,close window
-can you get rid of this window,close window
-please close the window i have open,close window
-i need this window closed,close window
-exit the window im using,close window
-can you close the active window,close window
-lets close the window im in,close window
-go ahead and exit this window,close window
-close out the window im viewing,close window
-can you shut this window,close window
-minimize everything except close this window,close window
-take this window down,close window
-close the one i have open,close window
-
-set an alarm for 10 tonight,alarm <time> pm
-i need an alarm at 10 this evening,alarm <time> pm
-can you set an alarm for 10 at night,alarm <time> pm
-lets make an alarm for 10 tonight,alarm <time> pm
-schedule an alarm for 10 later this evening,alarm <time> pm
-put an alarm for 10 at night,alarm <time> pm
-schedule me an alarm for 10 tonight,alarm <time> pm
-create a night-time alarm for 10,alarm <time> pm
-add an alarm at 10 tonight,alarm <time> pm
-set an alarm for 10 pm ,alarm <time> pm
-can you set a night alarm for 10,alarm <time> pm
-prepare an alarm for 10 this evening,alarm <time> pm
-plan an alarm for 10 tonight at night,alarm <time> pm
-get an alarm ready for 10 in the night,alarm <time> pm
-set up an alarm for 10 late tonight,alarm <time> pm
-start an alarm for 10 in the night,alarm <time> pm
-schedule a reminder alarm for 10 at night,alarm <time> pm
-i want a night alarm at 10,alarm <time> pm
-set my alarm for 10 tonight,alarm <time> pm
-
+can you close this window for me,close-window
+close the window im on,close-window
+go ahead and close the current window,close-window
+close this open window please,close-window
+can you exit this window,close-window
+lets close this window now,close-window
+shut down the current window,close-window
+close out of this window,close-window
+can you get rid of this window,close-window
+please close the window i have open,close-window
+close all the tabs for me,close-all-tabs
+can you close all open tabs,close-all-tabs
+please shut down all tabs,close-all-tabs
+exit all the tabs i have open,close-all-tabs
+close out all the tabs,close-all-tabs
+can you get rid of every apps,close-all-tabs
+i need all the apps closed,close-all-tabs
+lets close every apps now,close-all-tabs
+go ahead and close all apps,close-all-tabs
+can you shut all the open apps,close-all-tabs
+set an alarm for <time> tonight,alarm <time> pm
+i need an alarm at <time> this evening,alarm <time> pm
+can you set an alarm for <time> at night,alarm <time> pm
+lets make an alarm for <time> tonight,alarm <time> pm
+schedule an alarm for <time> later this evening,alarm <time> pm
+put an alarm for <time> at night,alarm <time> pm
+schedule me an alarm for <time> tonight,alarm <time> pm
+create a night time alarm for <time>,alarm <time> pm
+add an alarm at <time> tonight,alarm <time> pm
+set an alarm for <time> pm ,alarm <time> pm
 can you restart my computer,restart
 restart this system for me,restart
 can you reboot the pc,restart
 i want you to restart the machine,restart
 can you help me reboot this,restart
-is it possible to restart the laptop,restart
 i need this system restarted,restart
 could you reboot everything,restart
 can you turn this off and on again,restart
 do a restart for me,restart
 reboot this device please,restart
-can you perform a system restart,restart
-restart my laptop if you can,restart
-can you fresh start the system,restart
-would you mind restarting the computer,restart
-make this pc restart,restart
-can you initiate a reboot,restart
-do you know how to restart this,restart
-restart this device right now,restart
-can you just reboot this system,restart
-
 can you shut down the system,shutdown
 shut this computer off,shutdown
 turn off the system,shutdown
@@ -597,38 +304,16 @@ can you turn off the laptop,shutdown
 i want this system to shut down,shutdown
 power down the computer,shutdown
 can you help me shut this off,shutdown
-switch off the system,shutdown
-would you turn off this machine,shutdown
-can you shut everything down,shutdown
-shut the pc off now,shutdown
-do a complete shutdown,shutdown
-could you power off the system,shutdown
-turn off my computer please,shutdown
-id like to shut this system down,shutdown
-power off the laptop,shutdown
-make this device shut down,shutdown
-
 can you hibernate the system,hibernate
 put my laptop into hibernation,hibernate
 hibernate this machine,hibernate
 i need you to hibernate the system,hibernate
-can you send the computer to hibernation,hibernate
-hibernate my pc,hibernate
-could you hibernate the laptop,hibernate
-lets hibernate the system,hibernate
-can you make this computer hibernate,hibernate
-hibernate the system for me,hibernate
-please put this into hibernation mode,hibernate
-i want you to hibernate this device,hibernate
-turn on hibernation for the system,hibernate
-can you move the computer to hibernate,hibernate
-hibernate this device right now,hibernate
-put the laptop to hibernate mode,hibernate
-activate hibernation on my pc,hibernate
-can we hibernate the system,hibernate
-set the system to hibernate,hibernate
-enable hibernation for this machine,hibernate
-
+can you send the computer to sleep,hibernate
+sleep my pc,hibernate
+could you sleep the laptop,hibernate
+lets sleep the system,hibernate
+can you make this computer sleep,hibernate
+sleep the system for me,hibernate
 can you log me out,logout
 i need to log out now,logout
 log out of my account,logout
@@ -639,17 +324,6 @@ can you sign me out,logout
 im done log me out,logout
 can we log out now,logout
 help me log out of this system,logout
-time to log off can you do that,logout
-log me out of this account,logout
-would you log me out,logout
-log out my session please,logout
-i want to log out can you handle that,logout
-exit my account and log out,logout
-log me out of this device,logout
-could you handle the log out for me,logout
-lets log out now,logout
-end this account session,logout
-
 what day is it today,day
 can you tell me the day of the week,day
 do you know what day it is,day
@@ -660,37 +334,275 @@ what day are we on,day
 can you remind me what day it is,day
 do you know todays day,day
 whats the day today,day
-can you say what day it is,day
-which day is it today,day
-tell me todays day,day
-i need to know the day of the week,day
-can you let me know the day,day
-whats the day right now,day
-what day does the calendar show,day
-is it monday today,day
-can you figure out the day for me,day
-whats the weekday today,day
-
 can you find this song <song-name> for me,spotify <song-name>
 could you search for the song <song-name> for me,spotify <song-name>
 please search for <song-name> on spotify for me,spotify <song-name>
 search the song <song-name> for me,spotify <song-name>
 find this song <song-name> for me,spotify <song-name>
-could you look up <song-name> on spotify for me,spotify <song-name>
-look up the song <song-name> for me,spotify <song-name>
-please look up <song-name> for me,spotify <song-name>
-can you search <song-name> on spotify for me,spotify <song-name>
-can you check for the song <song-name> on spotify for me,spotify <song-name>
-find the song <song-name> for me on spotify,spotify <song-name>
-please check if <song-name> is on spotify for me,spotify <song-name>
-could you find <song-name> for me on spotify,spotify <song-name>
-can you look up <song-name> on spotify for me,spotify <song-name>
-could you search <song-name> on spotify for me,spotify <song-name>
-search for <song-name> for me,spotify <song-name>
-look for the song <song-name> for me on spotify,spotify <song-name>
-find <song-name> for me on spotify,spotify <song-name>
-can you search the song <song-name> for me on spotify,spotify <song-name>
-look for <song-name> on spotify for me,spotify <song-name>
+could you look up <song-name> on spotify,spotify <song-name>
+look up the song <song-name> on spotify,spotify <song-name>
+please look up <song-name> on spotify,spotify <song-name>
+can you search <song-name> on spotify,spotify <song-name>
+can you check for the song <song-name> on spotify,spotify <song-name>
+can you find this video <search-query> for me on youtube,youtube <search-query>
+search for <search-query> on youtube for me,youtube <search-query>
+could you search youtube for <search-query> for me,youtube <search-query>
+please look up <search-query> for me on youtube,youtube <search-query>
+can you look up <search-query> on youtube for me,youtube <search-query>
+look up the video <search-query> on youtube,youtube <search-query>
+find <search-query> on youtube,youtube <search-query>
+could you find <search-query> on youtube,youtube <search-query>
+can you check if <search-query> is on youtube,youtube <search-query>
+look for <search-query> on youtube,youtube <search-query>
+search <search-query> for me,browser <search-query>
+can you search for <search-query>,browser <search-query>
+please search for <search-query>,browser <search-query>
+could you search <search-query>,browser <search-query>
+search and find <search-query>,browser <search-query>
+search this query <search-query>,browser <search-query>
+can you search for this <search-query>,browser <search-query>
+please search and show <search-query>,browser <search-query>
+could you search for this term <search-query>,browser <search-query>
+search and look up <search-query>,browser <search-query>
+can you switch to dark mode for me,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+could you change the theme to dark,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+please apply the dark theme now,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+id like the dark theme can you set it up,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+turn on the dark mode please,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+can we go with a dark appearance,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+change to the dark theme for me,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+lets switch everything to dark mode,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+can you make the interface dark,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+i want the dark theme can you enable it,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+can you switch back to light mode for me,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
+could you change the theme to light,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
+please apply the light theme now,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
+id like the light theme can you set it up,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
+turn on the light mode please,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
+can we go with a light appearance,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
+change to the light theme for me,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
+lets switch everything to light mode,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
+switch the theme to light please,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
+please go ahead and activate light mode,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
+can you turn on bluetooth for me,rfkill unblock bluetooth
+please enable the bluetooth now,rfkill unblock bluetooth
+switch on the bluetooth please,rfkill unblock bluetooth
+i need bluetooth on can you do that,rfkill unblock bluetooth
+turn bluetooth on for me,rfkill unblock bluetooth
+activate the bluetooth connection please,rfkill unblock bluetooth
+lets get the bluetooth turned on,rfkill unblock bluetooth
+could you enable bluetooth for me,rfkill unblock bluetooth
+go ahead and switch on bluetooth,rfkill unblock bluetooth
+please power up the bluetooth,rfkill unblock bluetooth
+can you turn off bluetooth for me,rfkill block bluetooth
+please disable the bluetooth now,rfkill block bluetooth
+switch off the bluetooth please,rfkill block bluetooth
+i dont need bluetooth can you turn it off,rfkill block bluetooth
+turn bluetooth off for me,rfkill block bluetooth
+deactivate the bluetooth connection please,rfkill block bluetooth
+can we power down the bluetooth,rfkill block bluetooth
+lets get the bluetooth turned off,rfkill block bluetooth
+could you disable bluetooth for me,rfkill block bluetooth
+go ahead and switch off bluetooth,rfkill block bluetooth
+can you turn on the wi-fi,nmcli radio wifi on
+please activate the wi-fi,nmcli radio wifi on
+lets get the wi-fi working,nmcli radio wifi on
+can you switch on the wi-fi,nmcli radio wifi on
+i need to connect to wi-fi,nmcli radio wifi on
+turn the wi-fi on for me,nmcli radio wifi on
+can you make the wi-fi available,nmcli radio wifi on
+please enable the wireless network,nmcli radio wifi on
+set up the wi-fi,nmcli radio wifi on
+can you make wi-fi active,nmcli radio wifi on
+can you disable the wi-fi,nmcli radio wifi off
+please disconnect the wi-fi,nmcli radio wifi off
+turn off the wireless connection,nmcli radio wifi off
+lets disable wi-fi,nmcli radio wifi off
+can you stop the wi-fi,nmcli radio wifi off
+disconnect the wi-fi for me,nmcli radio wifi off
+can you turn off the wireless network,nmcli radio wifi off
+please stop the wi-fi service,nmcli radio wifi off
+disable the wi-fi connection,nmcli radio wifi off
+can you make the wi-fi inactive,nmcli radio wifi off
+can you turn on airplane mode for me,nmcli radio all off
+please activate airplane mode,nmcli radio all off
+i need airplane mode on,nmcli radio all off
+please put the system in airplane mode,nmcli radio all off
+could you enable airplane mode for me,nmcli radio all off
+can you turn on flight mode,nmcli radio all off
+please activate flight mode,nmcli radio all off
+i need flight mode on,nmcli radio all off
+can you switch on flight mode,nmcli radio all off
+could you activate flight mode,nmcli radio all off
+please disable airplane mode,nmcli radio all on
+can you switch off airplane mode,nmcli radio all on
+please turn off airplane mode,nmcli radio all on
+lets disable airplane mode now,nmcli radio all on
+can you deactivate airplane mode,nmcli radio all on
+can you turn off flight mode,nmcli radio all on
+please disable flight mode,nmcli radio all on
+i need flight mode off,nmcli radio all on
+can you switch off flight mode,nmcli radio all on
+turn off flight mode now,nmcli radio all on
+can you turn on the night light for me,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+please activate the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+i need the night light to be enabled,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+could you switch on the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+turn the night light on for me,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+can you enable the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+lets activate the night light now,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+please make the night light active,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+could you start the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+can you get the night light working,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+can you turn off the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
+please deactivate the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
+i need the night light turned off,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
+can you switch off the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
+turn off the night light for me,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
+please disable the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
+lets turn the night light off,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
+could you make the night light inactive,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
+please stop the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
+could you turn off the night light feature,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
+
+
+#timer
+
+set a timer for 1 second,sleep 60 && notify-send "timer done" "your 1 second timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 2 seconds timer,sleep 2 && notify-send "timer done" "your 2 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 3 seconds,sleep 3 && notify-send "timer done" "your 3 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 4 seconds,sleep 4 && notify-send "timer done" "your 4 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 5 seconds,sleep 5 && notify-send "timer done" "your 5 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 6 seconds timer,sleep 6 && notify-send "timer done" "your 6 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 7 seconds,sleep 7 && notify-send "timer done" "your 7 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 8 seconds,sleep 8 && notify-send "timer done" "your 8 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 9 seconds timer,sleep 9 && notify-send "timer done" "your 9 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 10 seconds,sleep 10 && notify-send "timer done" "your 10 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 11 seconds,sleep 11 && notify-send "timer done" "your 11 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 12 seconds,sleep 12 && notify-send "timer done" "your 12 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 13 seconds timer,sleep 13 && notify-send "timer done" "your 13 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 14 seconds,sleep 14 && notify-send "timer done" "your 14 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 15 seconds,sleep 15 && notify-send "timer done" "your 15 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 16 seconds timer,sleep 16 && notify-send "timer done" "your 16 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 17 seconds,sleep 17 && notify-send "timer done" "your 17 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 18 seconds,sleep 18 && notify-send "timer done" "your 18 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 19 seconds,sleep 19 && notify-send "timer done" "your 19 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 20 seconds timer,sleep 20 && notify-send "timer done" "your 20 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 21 seconds,sleep 21 && notify-send "timer done" "your 21 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 22 seconds,sleep 22 && notify-send "timer done" "your 22 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 23 seconds timer,sleep 23 && notify-send "timer done" "your 23 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 24 seconds,sleep 24 && notify-send "timer done" "your 24 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 25 seconds,sleep 25 && notify-send "timer done" "your 25 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 26 seconds,sleep 26 && notify-send "timer done" "your 26 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 27 seconds timer,sleep 27 && notify-send "timer done" "your 27 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 28 seconds,sleep 28 && notify-send "timer done" "your 28 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 29 seconds,sleep 29 && notify-send "timer done" "your 29 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 30 seconds timer,sleep 30 && notify-send "timer done" "your 30 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 31 seconds,sleep 31 && notify-send "timer done" "your 31 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 32 seconds,sleep 32 && notify-send "timer done" "your 32 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 33 seconds,sleep 33 && notify-send "timer done" "your 33 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 34 seconds timer,sleep 34 && notify-send "timer done" "your 34 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 35 seconds,sleep 35 && notify-send "timer done" "your 35 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 36 seconds,sleep 36 && notify-send "timer done" "your 36 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 37 seconds timer,sleep 37 && notify-send "timer done" "your 37 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 38 seconds,sleep 38 && notify-send "timer done" "your 38 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 39 seconds,sleep 39 && notify-send "timer done" "your 39 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 40 seconds,sleep 40 && notify-send "timer done" "your 40 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 41 seconds timer,sleep 41 && notify-send "timer done" "your 41 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 42 seconds,sleep 42 && notify-send "timer done" "your 42 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 43 seconds,sleep 43 && notify-send "timer done" "your 43 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 44 seconds timer,sleep 44 && notify-send "timer done" "your 44 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 45 seconds,sleep 45 && notify-send "timer done" "your 45 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 46 seconds,sleep 46 && notify-send "timer done" "your 46 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 47 seconds,sleep 47 && notify-send "timer done" "your 47 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 48 seconds timer,sleep 48 && notify-send "timer done" "your 48 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 49 seconds,sleep 49 && notify-send "timer done" "your 49 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 50 seconds,sleep 50 && notify-send "timer done" "your 50 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 51 seconds timer,sleep 51 && notify-send "timer done" "your 51 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 52 seconds,sleep 52 && notify-send "timer done" "your 52 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 53 seconds,sleep 53 && notify-send "timer done" "your 53 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 23 seconds,sleep 54 && notify-send "timer done" "your 54 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 55 seconds timer,sleep 55 && notify-send "timer done" "your 55 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 56 seconds,sleep 56 && notify-send "timer done" "your 56 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 57 seconds,sleep 57 && notify-send "timer done" "your 57 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 58 seconds timer,sleep 58 && notify-send "timer done" "your 58 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 59 seconds,sleep 59 && notify-send "timer done" "your 59 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 60 seconds,sleep 60 && notify-send "timer done" "your 60 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 1 minute,sleep 60 && notify-send "timer done" "your 1 minute timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 2 minute timer,sleep 120 && notify-send "timer done" "your 2 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 3 minutes,sleep 180 && notify-send "timer done" "your 3 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 4 minutes,sleep 240 && notify-send "timer done" "your 4 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 5 minute timer,sleep 300 && notify-send "timer done" "your 5 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 6 minutes,sleep 360 && notify-send "timer done" "your 6 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 7 minutes,sleep 420 && notify-send "timer done" "your 7 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 8 minutes,sleep 480 && notify-send "timer done" "your 8 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 9 minute timer,sleep 540 && notify-send "timer done" "your 9 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 10 minutes,sleep 600 && notify-send "timer done" "your 10 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 11 minutes,sleep 660 && notify-send "timer done" "your 11 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 12 minute timer,sleep 720 && notify-send "timer done" "your 12 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 13 minutes,sleep 780 && notify-send "timer done" "your 13 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 14 minutes,sleep 840 && notify-send "timer done" "your 14 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 15 minutes,sleep 900 && notify-send "timer done" "your 15 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 16 minute timer,sleep 960 && notify-send "timer done" "your 16 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 17 minutes,sleep 1020 && notify-send "timer done" "your 17 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 18 minutes,sleep 1080 && notify-send "timer done" "your 18 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 19 minute timer,sleep 1140 && notify-send "timer done" "your 19 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 20 minutes,sleep 1200 && notify-send "timer done" "your 20 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 21 minutes,sleep 1260 && notify-send "timer done" "your 21 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 22 minutes,sleep 1320 && notify-send "timer done" "your 22 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 23 minute timer,sleep 3240 && notify-send "timer done" "your 23 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 24 minute timer,sleep 1440 && notify-send "timer done" "your 24 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 25 minutes,sleep 1500 && notify-send "timer done" "your 25 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 26 minutes,sleep 1560 && notify-send "timer done" "your 26 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 27 minute timer,sleep 1620 && notify-send "timer done" "your 27 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 28 minutes,sleep 1680 && notify-send "timer done" "your 28 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 29 minutes,sleep 1740 && notify-send "timer done" "your 29 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 30 minutes,sleep 1800 && notify-send "timer done" "your 30 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a half an hour timer,sleep 1800 && notify-send "timer done" "your half an hour timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 31 minutes,sleep 1860 && notify-send "timer done" "your 31 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 32 minutes,sleep 1920 && notify-send "timer done" "your 32 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 33 minute timer,sleep 1980 && notify-send "timer done" "your 33 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 34 minutes,sleep 2040 && notify-send "timer done" "your 34 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 35 minutes,sleep 2100 && notify-send "timer done" "your 35 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 36 minutes,sleep 2160 && notify-send "timer done" "your 36 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 37 minute timer,sleep 2220 && notify-send "timer done" "your 37 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 38 minutes,sleep 2280 && notify-send "timer done" "your 38 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 39 minutes,sleep 2340 && notify-send "timer done" "your 39 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 40 minute timer,sleep 2400 && notify-send "timer done" "your 40 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 41 minutes,sleep 2460 && notify-send "timer done" "your 41 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 42 minutes,sleep 2520 && notify-send "timer done" "your 42 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 43 minutes,sleep 2580 && notify-send "timer done" "your 43 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 44 minute timer,sleep 2640 && notify-send "timer done" "your 44 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 45 minutes,sleep 2700 && notify-send "timer done" "your 45 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 46 minutes,sleep 2760 && notify-send "timer done" "your 46 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 47 minute timer,sleep 2820 && notify-send "timer done" "your 47 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 48 minutes,sleep 2880 && notify-send "timer done" "your 48 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 49 minutes,sleep 2940 && notify-send "timer done" "your 49 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 50 minutes,sleep 3000 && notify-send "timer done" "your 50 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 51 minute timer,sleep 3060 && notify-send "timer done" "your 51 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 52 minutes,sleep 3120 && notify-send "timer done" "your 52 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 53 minutes,sleep 3180 && notify-send "timer done" "your 53 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 54 minute timer,sleep 3240 && notify-send "timer done" "your 54 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 55 minutes,sleep 3300 && notify-send "timer done" "your 55 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 56 minutes,sleep 3360 && notify-send "timer done" "your 56 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 57 minutes,sleep 3420 && notify-send "timer done" "your 57 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 58 minute timer,sleep 3480 && notify-send "timer done" "your 58 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 59 minutes,sleep 3540 && notify-send "timer done" "your 59 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 60 minutes,sleep 3600 && notify-send "timer done" "your 60 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 1 hour timer,sleep 3600 && notify-send "timer done" "your 1 hour timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 1 hour and 5 minutes,sleep 3900 && notify-send "timer done" "your 1 hour 5 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 1 hour and 10 minutes,sleep 4200 && notify-send "timer done" "your 1 hour 10 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 1 hour and 15 minutes,sleep 4500 && notify-send "timer done" "your 1 hour 15 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 1 hour and 20 minutes timer,sleep 4800 && notify-send "timer done" "your 1 hour 20 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 1 hour and 25 minutes,sleep 5100 && notify-send "timer done" "your 1 hour 25 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 1 hour and 30 minutes,sleep 5400 && notify-send "timer done" "your 1 hour 30 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 1 hour and half timer,sleep 5400 && notify-send "timer done" "your 1 hour and half timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 1 hour and 35 minutes,sleep 5700 && notify-send "timer done" "your 1 hour 35 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 1 hour and 40 minutes,sleep 6000 && notify-send "timer done" "your 1 hour 40 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 1 hour and 45 minutes,sleep 6300 && notify-send "timer done" "your 1 hour 45 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 1 hour and 50 minutes timer,sleep 6600 && notify-send "timer done" "your 1 hour 50 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 1 hour and 55 minutes,sleep 6900 && notify-send "timer done" "your 1 hour 55 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 2 hour,sleep 7200 && notify-send "timer done" "your 2 hour timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
 
 #apps list
 
@@ -1144,24 +1056,10 @@ bring up clock please,gnome-clocks
 please launch clock for me,gnome-clocks
 i need you to open clock now,gnome-clocks
 
+please open file manager,nautilus ~
+hey can you start file manager,nautilus ~
+bring up file manager please,nautilus ~
+please launch file manager for me,nautilus ~
+i need you to open file manager now,nautilus ~
 
-hey can you open <app-name> for me,open <app-name>
-could you launch <app-name>,open <app-name>
-can you open <app-name> right now,open <app-name>
-i need you to start <app-name>,open <app-name>
-lets get <app-name> open,open <app-name>
-can you bring up <app-name> for me,open <app-name>
-please open <app-name>,open <app-name>
-can you fire up <app-name>,open <app-name>
-hey can you load <app-name>,open <app-name>
-i want to use <app-name> can you open it,open <app-name>
-can you show me <app-name>,open <app-name>
-open up <app-name> for me,open <app-name>
-hey can you start <app-name>,open <app-name>
-bring up <app-name> please,open <app-name>
-can you access <app-name>,open <app-name>
-lets open <app-name> together,open <app-name>
-can you get <app-name> going,open <app-name>
-please launch <app-name> for me,open <app-name>
-i need you to open <app-name> now,open <app-name>
-can you kick off <app-name> for me,open <app-name>
+

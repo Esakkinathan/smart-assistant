@@ -1,4 +1,63 @@
 nl_cmd,bash_cmd
+
+#for-testing
+
+#gkqns
+
+can you give me the weather forecast,weather
+can i know the time please,time
+whats the precise time in <specific-location>,time-in <specific-location>
+whats the date right now,date
+whats the big news today,news
+set the volume higher,volume-up
+turn down the audio,volume-down
+please increase the sound to <volume-increase-percentage>,set-volume <volume-increase-percentage>
+can you lower the sound by <volume-decrease-percentage>,set-volume <volume-decrease-percentage>
+turn the sound off,volume-mute
+please restore the audio,volume-unmute
+turn the brightness up,brightness-up
+please reduce the display brightness,brightness-down
+turn the brightness up by <brightness-up-percentage> please,brightness-up <brightness-up-percentage>
+can you make the display <brightness-down-percentage> dimmer,brightness-down <brightness-down-percentage>
+whats my battery at,battery
+take a quick shot of this screen for me,screenshot
+what is the ip address im using,ip-address
+can you check my cpu usage for me,cpu-usage
+how much free storage do i have,storage-free
+i need the brightness at maximum,brightness-maximum
+lock it up for me,lock-screen
+can you clear the view by minimizing everything,minimize-all-window
+put an alarm for <time> am for me,alarm <time>
+add an alarm at <time> in the morning,alarm <time> am
+i need this window closed,close-window
+please exit all the tabs im using,close-all-tabs
+can you close out every apps i have open,close-all-tabs
+can you set a night alarm for <time>,alarm <time> pm
+can you perform a system restart,restart
+switch off the system,shutdown
+please put this into hibernation mode,hibernate
+can you move the computer to sleep,hibernate
+time to log off can you do that,logout
+can you say what day it is,day
+find the song <song-name> on spotify,spotify <song-name>
+search youtube for the video <search-query>,youtube <search-query>
+find and search <search-query>,browser <search-query>
+switch the theme to dark please,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
+set the system to light mode for me,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
+turn the bluetooth service on please,rfkill unblock bluetooth
+lets disable bluetooth now,rfkill block bluetooth
+turn on the wi-fi connection,nmcli radio wifi on
+disconnect wi-fi,nmcli radio wifi off
+please enable flight mode,nmcli radio all off
+turn on airplane mode now,nmcli radio all off
+i need airplane mode off,nmcli radio all on
+please deactivate flight mode,nmcli radio all on
+lets turn on the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+can you disable the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
+
+
+#open_apps
+
 hey can you open firefox browser for me,firefox
 hey can you open chromium browser for me,chromium-browser
 hey can you open chrome browser for me,google-chrome
@@ -74,4 +133,44 @@ hey can you open r studio for me,rstudio
 hey can you open calculator for me,gnome-calculator
 hey can you open settings for me,gnome-control-center
 hey can you open clock for me,gnome-clocks
+hey can you open file manager for me,nautilus ~
 
+i need a timer for 5 seconds,sleep 5 && notify-send "timer done" "your 5 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 10 seconds,sleep 10 && notify-send "timer done" "your 10 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 15 seconds timer,sleep 15 && notify-send "timer done" "your 15 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 20 seconds,sleep 20 && notify-send "timer done" "your 20 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 25 seconds,sleep 25 && notify-send "timer done" "your 25 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 30 seconds timer,sleep 30 && notify-send "timer done" "your 30 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 35 seconds,sleep 35 && notify-send "timer done" "your 35 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 40 seconds,sleep 40 && notify-send "timer done" "your 40 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 45 seconds,sleep 45 && notify-send "timer done" "your 45 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 50 seconds timer,sleep 50 && notify-send "timer done" "your 50 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 55 seconds,sleep 55 && notify-send "timer done" "your 55 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 60 seconds,sleep 60 && notify-send "timer done" "your 60 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 5 minute timer,sleep 300 && notify-send "timer done" "your 5 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 10 minutes,sleep 600 && notify-send "timer done" "your 10 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 15 minutes,sleep 900 && notify-send "timer done" "your 15 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 20 minutes,sleep 1200 && notify-send "timer done" "your 20 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 25 minute timer,sleep 1500 && notify-send "timer done" "your 25 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 30 minutes,sleep 1800 && notify-send "timer done" "your 30 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 35 minutes,sleep 2100 && notify-send "timer done" "your 35 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 40 minute timer,sleep 2400 && notify-send "timer done" "your 40 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 45 minutes,sleep 2700 && notify-send "timer done" "your 45 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 50 minutes,sleep 3000 && notify-send "timer done" "your 50 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 55 minutes,sleep 3300 && notify-send "timer done" "your 55 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 60 minute timer,sleep 3600 && notify-send "timer done" "your 60 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 1 hour,sleep 3600 && notify-send "timer done" "your 1 hour timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 1 hour and 5 minutes,sleep 3900 && notify-send "timer done" "your 1 hour 5 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 1 hour and 10 minutes timer,sleep 4200 && notify-send "timer done" "your 1 hour 10 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 1 hour and 15 minutes,sleep 4500 && notify-send "timer done" "your 1 hour 15 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 1 hour and 20 minutes,sleep 4800 && notify-send "timer done" "your 1 hour 20 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 1 hour and 25 minutes,sleep 5100 && notify-send "timer done" "your 1 hour 25 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 1 hour and 30 minutes timer,sleep 5400 && notify-send "timer done" "your 1 hour 30 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown 1 hour and half,sleep 5400 && notify-send "timer done" "your 1 hour and half timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+set a timer for 1 hour and 35 minutes,sleep 5700 && notify-send "timer done" "your 1 hour 35 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+start a 1 hour and 40 minutes timer,sleep 6000 && notify-send "timer done" "your 1 hour 40 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you set a timer for 1 hour and 45 minutes,sleep 6300 && notify-send "timer done" "your 1 hour 45 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+i need a timer for 1 hour and 50 minutes,sleep 6600 && notify-send "timer done" "your 1 hour 50 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+begin a timer for 1 hour and 55 minutes,sleep 6900 && notify-send "timer done" "your 1 hour 55 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+put a 2 hour timer,sleep 7200 && notify-send "timer done" "your 2 hour timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+countdown half an hour,sleep 1800 && notify-send "timer done" "your half an hour timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga

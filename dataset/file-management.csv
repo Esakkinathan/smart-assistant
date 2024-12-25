@@ -13,7 +13,7 @@ what does this folder contain,ls
 give me the list of files,ls
 list the files with details,ls -l
 show file details like permissions and size,ls -l
-give a detailed view of the directory,ls -l
+give a detailed view of the directorxty,ls -l
 list files along with their details,ls -l
 show files with their info,ls -l
 display file permissions and sizes,ls -l
@@ -1069,3 +1069,228 @@ set all permissions for user on directory and its contents <directory>,chmod -R 
 remove read permission from group for <file-name>,chmod g-r <file-name>
 deny write permission to others for <file-name>,chmod o-w <file-name>
 remove all permissions recursively for user from <directory>,chmod -R u-rwx <directory>
+
+
+
+cd  
+
+nl_cmd,bash_cmd
+
+change directory to <directory-name>,cd <directory-name>
+open <directory-name>,cd <directory-name>
+move to <directory-name>,cd <directory-name>
+jump to <directory-name>,cd <directory-name>
+navigate to <directory-name>,cd <directory-name>
+go back to the parent directory,cd ..
+go one step back,cd ..
+navigate to the previous directory,cd ..
+switch to parent folder,cd ..
+move back a folder,cd ..
+go to the home directory,cd ~
+switch to home folder,cd ~
+navigate to the home location,cd ~
+open the user home directory,cd ~
+enter the home location,cd ~
+
+
+go to directory_path,cd directory_path
+navigate back a directory,cd ..
+access the home directory,cd ~
+
+
+switch to directory_path,cd directory_path
+access directory_path,cd directory_path
+enter directory_path,cd directory_path
+navigate inside directory_path,cd directory_path
+move up one level,cd ..
+return to the upper directory,cd ..
+open the directory above,cd ..
+navigate back a directory,cd ..
+move up from here,cd ..
+return to the home directory,cd ~
+move to the root user directory,cd ~
+access the home directory,cd ~
+jump to the home folder,cd ~
+switch back to home,cd ~
+
+
+tar 
+
+nl_cmd,bash_cmd
+
+compress the <file-name> into <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+pack <file-name> into a tarball <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+archive the <file-name> as <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+bundle these <file-name> into <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+create tar file <archieve-name>.tar from these <file-name>,tar -cvf <archieve-name>.tar <file-name>
+compress these <file-name> as <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+generate tar archive <archieve-name> to <file-name>,tar -cvf <archieve-name>.tar <file-name>
+tar these <file-name> into <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+store <file-name> in a tar archive named <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+compress <file-name> into <archieve-name>.tar tarball,tar -cvf <archieve-name>.tar <file-name>
+
+make a compressed archive called <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+make a tar archive with name <archieve-name>.tar for <file-name>,tar -cvf <archieve-name>.tar <file-name>
+create a tar package <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+create a tar archive named <archieve-name>.tar for <file-name>,tar -cvf <archieve-name>.tar <file-name>
+add <file-name> to a tar file <archieve-name>.tar,tar -cvf <archieve-name>.tar <file-name>
+
+
+
+extract the contents of <archieve-name>.tar,tar -xvf <archieve-name>.tar
+unpack <archieve-name>.tar,tar -xvf <archieve-name>.tar
+open the tar archive <archieve-name>.tar,tar -xvf <archieve-name>.tar
+decompress <archieve-name>.tar,tar -xvf <archieve-name>.tar
+extract files from <archieve-name>.tar,tar -xvf <archieve-name>.tar
+retrieve files from <archieve-name>.tar,tar -xvf <archieve-name>.tar
+untangle the tar file <archieve-name>.tar,tar -xvf <archieve-name>.tar
+pull out the files from <archieve-name>.tar,tar -xvf <archieve-name>.tar
+expand <archieve-name>.tar,tar -xvf <archieve-name>.tar
+unarchive the tar file <archieve-name>.tar,tar -xvf <archieve-name>.tar
+unpack the tarball <archieve-name>.tar,tar -xvf <archieve-name>.tar
+get files out of <archieve-name>.tar,tar -xvf <archieve-name>.tar
+open and extract <archieve-name>.tar,tar -xvf <archieve-name>.tar
+restore files from <archieve-name>.tar,tar -xvf <archieve-name>.tar
+extract data from <archieve-name>.tar,tar -xvf <archieve-name>.tar
+
+file type
+
+nl_cmd,bash_cmd
+identify the file type of filename,file filename
+find out the type of filename,file filename
+determine the type of the file filename,file filename
+check what type of file filename is,file filename
+get the file type of filename,file filename
+analyze the type of filename,file filename
+inspect the file type for filename,file filename
+display the file type of filename,file filename
+
+show the type of the file filename,file filename
+check the type of the file filename,file filename
+
+count 
+
+nl_cmd,bash_cmd
+count lines words and characters in filename,wc filename
+check the number of lines words and characters in filename,wc filename
+get the line word and character count of filename,wc filename
+find out how many lines words and characters are in filename,wc filename
+determine the line word and character statistics of filename,wc filename
+show the count of lines words and characters for filename,wc filename
+display line word and character details for filename,wc filename
+calculate the number of lines words and characters in filename,wc filename
+inspect the lines words and characters of filename,wc filename
+analyze the count of lines words and characters in filename,wc filename
+find the details of lines words and characters in filename,wc filename
+show statistics of lines words and characters in filename,wc filename
+list the number of lines words and characters in filename,wc filename
+get a breakdown of lines words and characters in filename,wc filename
+provide a count of lines words and characters in filename,wc filename
+
+vim
+
+nl_cmd,bash_cmd
+open filename in vim editor,vim filename
+edit filename using vim,vim filename
+start editing filename in vim,vim filename
+launch vim to edit filename,vim filename
+open the file filename in vim,vim filename
+edit the file filename with vim,vim filename
+open and modify filename in vim,vim filename
+open filename and start editing in vim,vim filename
+load filename into vim for editing,vim filename
+start vim to edit filename,vim filename
+
+
+modify filename in vim editor,vim filename
+use vim to open filename,vim filename
+access filename for editing in vim,vim filename
+start vim to edit filename,vim filename
+open and modify filename in vim,vim filename
+load filename into vim for editing,vim filename
+edit the contents of filename with vim,vim filename
+begin editing filename using vim,vim filename
+open filename and start editing in vim,vim filename
+
+nano
+
+nl_cmd,bash_cmd
+open filename in nano editor,nano filename
+edit filename using nano,nano filename
+start editing filename in nano,nano filename
+launch nano to edit filename,nano filename
+open the file filename in nano,nano filename
+edit the file filename with nano,nano filename
+modify filename in nano editor,nano filename
+use nano to open filename,nano filename
+access filename for editing in nano,nano filename
+start nano to edit filename,nano filename
+open and modify filename in nano,nano filename
+load filename into nano for editing,nano filename
+edit the contents of filename with nano,nano filename
+begin editing filename using nano,nano filename
+open filename and start editing in nano,nano filename
+
+natural_language,bash_command
+change owner of file <file-name> to user <username>,chown <username> <file-name>
+set the owner of <file-name to user <username>,chown <username> <file-name
+transfer ownership of <file-name> to <username>,chown <username> <file-name>
+make user <username> the owner of <file-name>,chown <username> <file-name>
+assign <file-name> to user <username>,chown <username> <file-name>
+update <file-name> ownership to <username>,chown <username> <file-name>
+set <file-name> owner to <username>,chown <username> <file-name>
+change <file-name> ownership to <username>,chown <username> <file-name>
+change the owner of <file-name> to <username>,chown <username> <file-name>
+make <file-name> owned by <username>,chown <username> <file-name>
+
+change owner of directory <directory-name> to <username>,chown <username> <directory-name>
+set the owner of folder <directory-name> to <username>,chown <username> <directory-name>
+transfer ownership of <directory-name> to <username>,chown <username> <directory-name>
+make user <username> the owner of <directory-name>,chown <username> <directory-name>
+assign <directory-name> directory to <username> recursively,chown -R <username> <directory-name>
+change the owner of <directory-name> and its sub content to <username>,chown -R <username> <directory-name>
+update <directory-name> and its child content ownership to <username>,chown -R <username> <directory-name>
+recursively set <directory-name>  owner to <username>,chown -R <username> <directory-name>
+
+make <directory-name> owned by <username>,chown  <username> <directory-name>
+change <directory-name> ownership recursively to <username>,chown -R <username> <directory-name>
+
+change group of file <file-name> to <group-name>,chgrp <group-name> <file-name>
+set the group of <file-name> to <group-name>,chgrp <group-name> <file-name>
+transfer group ownership of <file-name> to <group-name>,chgrp <group-name> <file-name>
+make <file-name> belong to group <group-name>,chgrp <group-name> <file-name>
+assign <file-name> to group <group-name>,chgrp <group-name> <file-name>
+change the group of <file-name> to <group-name>,chgrp <group-name> <file-name>
+update <file-name> group to <group-name>,chgrp <group-name> <file-name>
+set <file-name> group to <group-name>,chgrp <group-name> <file-name>
+
+make <file-name> belong to group <group-name>,chgrp <group-name> <file-name>
+change <file-name> group to <group-name>,chgrp <group-name> <file-name>
+
+change group of directory <directory-name> to <group-name>,chgrp <group-name> <directory-name>
+set the group of folder <directory-name> to <group-name>,chgrp <group-name> <directory-name>
+transfer group ownership of <directory-name> to <group-name>,chgrp <group-name> <directory-name>
+make <directory-name> belong to group <group-name>,chgrp <group-name> <directory-name>
+assign <directory-name> directory to <group-name> group recursively,chgrp -R <group-name> <directory-name>
+change the group of <directory-name> and its sub content to <group-name>,chgrp -R <group-name> <directory-name>
+update <directory-name> and its child content group to <group-name>,chgrp -R <group-name> <directory-name>
+recursively set <directory-name> group to <group-name>,chgrp -R <group-name> <directory-name>
+
+make <directory-name> belong to group <group-name>,chgrp -R <group-name> <directory-name>
+change <directory-name> recursively group to <group-name>,chgrp <group-name> <directory-name>
+
+assign owner to <user-name> and <group-name> for the <file-name>,chown <user-name>:<group-name> <file-name>
+set <user-name> and <group-name> ownership for the <file-name>,chown <user-name>:<group-name> <file-name>
+assign ownership of <file-name> to <user-name> and <group-name>,chown <user-name>:<group-name> <file-name>
+set ownership for <user-name> and <group-name> on the <file-name>,chown <user-name>:<group-name> <file-name>
+give <file-name> ownership to <user-name> and <group-name>,chown <user-name>:<group-name> <file-name>
+assign owner to <user-name> and <group-name> for the <directory-name>,chown <user-name>:<group-name> <directory-name>
+set <user-name> and <group-name> ownership for the <directory-name>,chown <user-name>:<group-name> <directory-name>
+assign ownership of <directory-name> to <user-name> and <group-name>,chown <user-name>:<group-name> <directory-name>
+set ownership for <user-name> and <group-name> on the <directory-name>,chown <user-name>:<group-name> <directory-name>
+give <directory-name> ownership to <user-name> and <group-name>,chown <user-name>:<group-name> <directory-name>
+assign owner to <user-name> and <group-name> recursively for the <directory-name>,chown -R <user-name>:<group-name> <directory-name>
+set <user-name> and <group-name> ownership recursively for the <directory-name>,chown -R <user-name>:<group-name> <directory-name>
+assign ownership of <directory-name> and its contents to <user-name> and <group-name>,chown -R <user-name>:<group-name> <directory-name>
+set ownership recursively for <user-name> and <group-name> on the <directory-name>,chown -R <user-name>:<group-name> <directory-name>
+give recursive ownership of <directory-name> to <user-name> and <group-name>,chown -R <user-name>:<group-name> <directory-name>
