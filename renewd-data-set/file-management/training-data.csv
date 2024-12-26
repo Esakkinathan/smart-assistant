@@ -746,3 +746,12 @@ deny execute permission for user group and other user to <file-name>,chmod 666 <
 provide no write and execute access for all the three  for <file-name>,chmod 444 <file-name>
 remove full permission permission from <file-name> for all,chmod 000 <file-name>
 
+assign <permission> permission to the file <file-name>,chmod <permission> <file-name>
+set the file <file-name> to have <permission> permissions,chmod <permission> <file-name>
+apply <permission> permissions to the file named <file-name>,chmod <permission> <file-name>
+grant <permission> permission to the directory <directory-name>,chmod <permission> <directory-name>
+set <directory-name> to have <permission> permissions,chmod <permission> <directory-name>
+change the folder <directory-name> to <permission> access,chmod <permission> <directory-name>
+assign <permission> permission to all files and subfolders under <directory-name>,chmod -R <permission> <directory-name>
+set <permission> permissions to every item inside <directory-name>,chmod -R <permission> <directory-name>
+provide <permission> access to everything under the path <directory-name>,chmod -R <permission> <directory-name>

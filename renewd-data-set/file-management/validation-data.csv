@@ -118,3 +118,7 @@ change <directory-name> recursively group to <group-name>,chgrp <group-name> <di
 give <file-name> ownership to <user-name> and <group-name>,chown <user-name>:<group-name> <file-name>
 assign owner to <user-name> and <group-name> for the <directory-name>,chown <user-name>:<group-name> <directory-name>
 set <user-name> and <group-name> ownership recursively for the <directory-name>,chown -R <user-name>:<group-name> <directory-name>
+
+change the access of <file-name> to <permission>,chmod <permission> <file-name>
+apply <permission> permissions to the folder <directory-name>,chmod <permission> <directory-name>
+apply <permission> recursively to the directory <directory-name> and its contents,chmod -R <permission> <directory-name>
