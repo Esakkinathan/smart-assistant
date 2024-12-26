@@ -668,3 +668,81 @@ get read write execute permission to other user for <directory-name> directory,c
 get all permission to other user in this computer for <directory-name>,chmod o-rwx <directory-name>
 remove all permissions for other user on directory and its contents <directory-name>,chmod -R o-rwx <directory-name>
 
+
+assign read permission only for owner of the file named <file-name>,chmod 400 <file-name>
+grant write access for the user to the <file-name> file,chmod 200 <file-name>
+can you provide execute access for the file <file-name>to user,chmod 100 <file-name>
+for the file named <file-name> give read and write access alone to user,chmod 600 <file-name>
+to the <file-name> file provide read and execute permission for user,chmod 500 <file-name>
+give the file named <file-name> provide read write and execute permission to user,chmod 700 <file-name>
+do not assign write access to owner of the fie <file-name>,chmod 500 <file-name>
+please dont give execute access to owner user to <file-name> file,chmod 600 <file-name>
+do not grant write and execute permission to file <file-name> to user,chmod 400 <file-name>
+not provide read write execute permission to the file <file-name> for user,chmod 000 <file-name>
+
+i want to assign read only permission for group user to file <file-name>,chmod 040 <file-name>
+grant write only access to <file-name> to group,chmod 020 <file-name>
+could you please provide execute only accces to the group members to <file-name> file,chmod 010 <file-name>
+i need to assign read and write access to group member for <file-name>,chmod 060 <file-name>
+provide read and execute permission to group <file-name>,chmod 050 <file-name>
+can you assign full permission to the group for the <file-name>,chmod 070 <file-name>
+could you not assign write ability for groups to the <file-name>,chmod 050 <file-name>
+please do not provide execute access to <file-name> for groups members,chmod 060 <file-name>
+no assign write and execute for <file-name> to group,chmod 040 <file-name>
+dont give read write execute access for <file-name> to group,chmod 000 <file-name>
+
+i need to give read access to other user for the <file-name> file,chmod 004 <file-name>
+all other users to write on the file <file-name>,chmod 002 <file-name>
+assign execute access only to other user for the file <file-name>,chmod 001 <file-name>
+will you provide read and write acces to <file-name> for others,chmod 006 <file-name>
+grant read and execute access to <file-name> for common users,chmod 005 <file-name>
+provide all access to other user for <file-name>,chmod 007 <file-name>
+please not give give write permission to other for <file-name>, chmod 005 <file-name>
+deny execute permission for other user to <file-name>,chmod 006 <file-name>
+provide no write and execute access for others for <file-name>,chmod 004 <file-name>
+remove full permission permission from <file-name> for others,chmod 000 <file-name>
+
+assign read permission only for both user and group of the file named <file-name>,chmod 440 <file-name>
+grant write access for the user ang group to the <file-name> file,chmod 220 <file-name>
+can you provide execute access for the file <file-name> to user and group,chmod 110 <file-name>
+for the file named <file-name> give read and write access to group and owner user,chmod 660 <file-name>
+to the <file-name> file provide read and execute permission to user and group members,chmod 550 <file-name>
+give the file named <file-name> provide read write and execute permission to groups and user,chmod 770 <file-name>
+do not assign write access to owner and group of the fie <file-name>,chmod 550 <file-name>
+remove execute access to both owner user and group to <file-name> file,chmod 660 <file-name>
+do not grant write and execute permission to file <file-name> to user and group,chmod 440 <file-name>
+not provide read write execute permission to the file <file-name> for both user and group,chmod 000 <file-name>
+
+i want to assign read only permission for both group and other users to file <file-name>,chmod 044 <file-name>
+grant write only access to <file-name> to others and group,chmod 022 <file-name>
+could you please provide execute only accces to  both group and other members to <file-name> file,chmod 011 <file-name>
+i need to assign read and write access to other group member for <file-name>,chmod 066 <file-name>
+provide read and execute permission to group anf other user <file-name>,chmod 055 <file-name>
+can you assign full permission to the group and common user for the <file-name>,chmod 077 <file-name>
+could you not assign write ability for groups adn others to the <file-name>,chmod 055 <file-name>
+please do not provide execute access to <file-name> for other and groups members,chmod 066 <file-name>
+no assign write and execute for <file-name> to group and other,chmod 044 <file-name>
+dont give read write execute access for <file-name> to both other and group,chmod 000 <file-name>
+
+i need to give read access to other and user for the <file-name> file,chmod 404 <file-name>
+all other users and owner user to write on the file <file-name>,chmod 202 <file-name>
+assign execute access only to other user and user for the file <file-name>,chmod 101 <file-name>
+will you provide read and write acces to <file-name> for both others and owner,chmod 606 <file-name>
+grant read and execute access to <file-name> for owner and common users,chmod 505 <file-name>
+provide all access to both user and other user for <file-name>,chmod 707 <file-name>
+please not give give write permission to user and other for <file-name>, chmod 505 <file-name>
+deny execute permission for owner user and other user to <file-name>,chmod 606 <file-name>
+provide no write and execute access for others and owner for <file-name>,chmod 404 <file-name>
+remove full permission permission from <file-name> for both others and owner user,chmod 000 <file-name>
+
+i need to give read access to user group and others for the <file-name> file,chmod 444 <file-name>
+all other group and owner and others to write on the file <file-name>,chmod 222 <file-name>
+assign execute access only to all of them for the file <file-name>,chmod 111 <file-name>
+will you provide read and write acces to <file-name> for owner group and other users,chmod 666 <file-name>
+grant read and execute access to <file-name> for owner group and others,chmod 555 <file-name>
+provide all access to both user group and other user for <file-name>,chmod 777 <file-name>
+please not give give write permission to group user other for <file-name>, chmod 555 <file-name>
+deny execute permission for user group and other user to <file-name>,chmod 666 <file-name>
+provide no write and execute access for all the three  for <file-name>,chmod 444 <file-name>
+remove full permission permission from <file-name> for all,chmod 000 <file-name>
+

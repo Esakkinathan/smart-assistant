@@ -1,0 +1,202 @@
+nl_cmd,bash_cmd
+how do i set up android studio on my system,sudo snap install android-studio
+check for updates for android studio.,sudo snap refresh android-studio
+can you help me remove android studio,sudo snap remove android-studio
+how do i set up anydesk on my system,sudo snap install anydesk
+check for updates for anydesk,sudo snap refresh anydesk
+can you help me remove anydesk,sudo snap remove anydesk
+how do i set up php storm on my system,sudo snap install phpstorm
+i want the latest php storm how do i update,sudo snap refresh phpstorm
+i need to get rid of php storm what's the process,sudo snap remove phpstorm
+could you help me get eclipse running,sudo snap install eclipse
+i want the latest eclipse how do i update,sudo snap refresh eclipse
+i need to get rid of eclipse what's the process,sudo snap remove eclipse
+fetch the pycharm professional application in my system,sudo snap install pycharm-professional
+is there a new version of pycharm professional please update it,sudo snap refresh pycharm-professional
+i need to get rid of pycharm professional what's the process,sudo snap remove pycharm-professional
+get intellij idea software into my system,sudo snap install intellij-idea-ultimate
+is there a new version of intellij idea please update it,sudo snap refresh intellij-idea-ultimate
+i want to remove intellij idea can you guide me through it,sudo snap remove intellij-idea-ultimate
+could you help me get sublime text running,sudo snap install sublime-text
+please check for and install any updates for sublime text,sudo snap refresh sublime-text
+i want to remove sublime text can you guide me through it,sudo snap remove sublime-text
+how do i set up pycharm on my system,sudo snap install pycharm-community
+is there a new version of pycharm please update it,sudo snap refresh pycharm-community
+i want to remove pycharm can you guide me through it,sudo snap remove pycharm-community
+could you help me get vs code running,sudo snap install code
+is there a new version of vs code please update it,sudo snap refresh code
+i want to remove vs code can you guide me through it,sudo snap remove code
+how do i set up postman on my system,sudo snap install postman
+check for updates for postman,sudo snap refresh postman
+i want to remove postman can you guide me through it,sudo snap remove postman
+how do i set up notepadplus plus on my system,sudo snap install notepad-plus-plus
+is there a new version of notepad plus plus please update it,sudo snap refresh notepad-plus-plus
+i want to remove notepad plus plus can you guide me through it,sudo snap remove notepad-plus-plus
+could you help me to get kubectl running,sudo snap install kubectl
+make sure kubectl is up to date,sudo snap refresh kubectl
+help me uninstall kubectl,sudo snap remove kubectl
+put powershell on my system,sudo snap install powershell
+make sure powershell is current,sudo snap refresh powershell
+get rid of powershell,sudo snap remove powershell
+get intellij idea ultimate running on this machine,sudo snap install intellij-idea-ultimate
+refresh intellij idea ultimate on my system,sudo snap refresh intellij-idea-ultimate
+get rid of intellij idea ultimate,sudo snap remove intellij-idea-ultimate
+get webstorm running on this computer,sudo snap install webstorm
+refresh webstorm on my system,sudo snap refresh webstorm
+get rid of webstorm,sudo snap remove webstorm
+get go running on this machine,sudo snap install go
+refresh go on my system,sudo snap refresh go
+get rid of go,sudo snap remove go
+set up nodejs on this computer,sudo snap install node
+make sure nodejs is up to date,sudo snap refresh node
+take nodejs off my computer,sudo snap remove node
+put rubymine on my system,sudo snap install rubymine
+refresh rubymine on my system,sudo snap refresh rubymine
+get rid of rubymine,sudo snap remove rubymine
+put apache ant on my system,sudo snap install ant-jm
+refresh apache ant on my system,sudo snap refresh ant-jm
+get rid of apache ant,sudo snap remove ant-jm
+get apache netbeans running on this machine,sudo snap install netbeans
+refresh apache netbeans on my system,sudo snap refresh netbeans
+get rid of apache netbeans,sudo snap remove netbeans
+put kotlin on my system,sudo snap install kotlin
+refresh kotlin on my system,sudo snap refresh kotlin
+get rid of kotlin,sudo snap remove kotlin
+put ruby on my system,sudo snap install ruby
+make sure ruby is up to date,sudo snap refresh ruby
+take ruby off my computer,sudo snap remove ruby
+put flutter on my system,sudo snap install flutter
+make sure flutter is current,sudo snap refresh flutter
+get rid of flutter,sudo snap remove flutter
+put goland on my system,sudo snap install goland
+refresh goland on my system,sudo snap refresh goland
+get rid of goland,sudo snap remove goland
+get rid of flutter gallery,sudo snap remove flutter-gallery
+put flutter gallery on my system,sudo snap install flutter-gallery
+refresh flutter gallery on my system,sudo snap refresh flutter-gallery
+put nginx on my system,sudo snap install nginx
+make sure nginx is up to date,sudo snap refresh nginx
+i want nginx gone can you remove it,sudo snap remove nginx
+help me set up prometheus,sudo snap install prometheus
+refresh prometheus on my system,sudo snap refresh prometheus
+get rid of prometheus,sudo snap remove prometheus
+get slack running on this machine,sudo snap install slack
+make sure slack is current,sudo snap refresh slack
+get rid of slack,sudo snap remove slack
+set up gradle for me,sudo snap install gradle
+refresh gradle on my system,sudo snap refresh gradle
+get rid of gradle,sudo snap remove gradle
+put jenkins on my system,sudo snap install jenkins
+make sure jenkins is current,sudo snap refresh jenkins
+get rid of jenkins,sudo snap remove jenkins
+put telegram on my system,sudo snap install telegram-desktop
+make sure telegram is up to date,sudo snap refresh telegram-desktop
+take telegram off my computer,sudo snap remove telegram-desktop
+help me set up skype,sudo snap install skype
+make sure skype is current,sudo snap refresh skype
+get rid of skype,sudo snap remove skype
+get zulip running on this machine,sudo snap install zulip
+make sure zulip is current,sudo snap refresh zulip
+get rid of zulip,sudo snap remove zulip
+get discord running on this computer,sudo snap install discord
+make sure discord is current,sudo snap refresh discord
+get rid of discord,sudo snap remove discord
+get signal running on this machine,sudo snap install signal-desktop
+make sure signal desktop is current,sudo snap refresh signal-desktop
+get rid of signal desktop,sudo snap remove signal-desktop
+set up zenchat for me,sudo snap install zenchat 
+ensure zenchat is on its most recent release,sudo snap refresh zenchat 
+take zenchat off my system,sudo snap remove zenchat 
+get thunder running on my system,sudo snap install thunder 
+ensure thunder is on its most recent release,sudo snap refresh thunder 
+take thunder off my system,sudo snap remove thunder 
+set up whatsapp for me,sudo snap install whatsapp-for-linux 
+bring whatsapp to its latest version,sudo snap refresh whatsapp-for-linux 
+take whatsapp off my system,sudo snap remove whatsapp-for-linux 
+set up zoom for me,sudo snap install zoom-client 
+ensure zoom is on its most recent release,sudo snap refresh zoom-client 
+i want to get rid of zoom,sudo snap remove zoom-client 
+get brave running on my machine,sudo snap install brave 
+ensure brave is on its most recent release,sudo snap refresh brave
+i want to get rid of brave,sudo snap remove brave 
+set up firefox for me,sudo snap install firefox 
+ensure firefox is on its most recent release,sudo snap refresh firefox 
+i want to get rid of firefox,sudo snap remove firefox 
+get opera running on my machine,sudo snap install opera 
+ensure opera is on its most recent release,sudo snap refresh opera 
+i want to get rid of opera,sudo snap remove opera 
+get scrcpy running on my machine,sudo snap install scrcpy 
+ensure scrcpy is on its most recent release,sudo snap refresh scrcpy 
+take scrcpy off my system,sudo snap remove scrcpy 
+get spotify running on my machine,sudo snap install spotify 
+ensure spotify is on its most recent release,sudo snap refresh spotify 
+take spotify off my system,sudo snap remove spotify 
+get gitkraken working on my computer,sudo snap install gitkraken 
+get the most recent gitkraken version,sudo snap refresh gitkraken 
+i no longer need gitkraken please remove it,sudo snap remove gitkraken 
+get postman working on my computer,sudo snap install postman 
+get the most recent postman version,sudo snap refresh postman 
+i no longer need postman please remove it,sudo snap remove postman 
+get microsoft teams working on my computer,sudo snap install teams-for-linux 
+get the most recent microsoft teams version,sudo snap refresh teams-for-linux 
+i no longer need microsoft teams please remove it,sudo snap remove teams-for-linux 
+get netbeans working on my computer,sudo snap install netbeans 
+get the most recent netbeans version,sudo snap refresh netbeans 
+i no longer need netbeans please remove it,sudo snap remove netbeans 
+get kubernetes working on my computer,sudo snap install microk8s 
+get the most recent kubernetes version,sudo snap refresh microk8s 
+i no longer need kubernetes please remove it,sudo snap remove microk8s 
+set up mysql for me,sudo snap install mysql 
+bring mysql to its latest version,sudo snap refresh mysql 
+i want to get rid of mysql,sudo snap remove mysql
+set up chrome for me,sudo apt install google-chrome-stable 
+ensure chrome is on its most recent release,sudo apt upgrade google-chrome-stable 
+i want to get rid of chrome,sudo apt remove google-chrome-stable 
+set up libreoffice for me,sudo apt install libreoffice 
+ensure libreoffice is on its most recent release,sudo apt upgrade libreoffice 
+i want to get rid of libreoffice,sudo apt remove libreoffice* 
+get mongodb running on my machine,sudo apt install mongodb 
+ensure mongodb is on its most recent release,apt upgrade mongodb 
+take mongodb off my system,sudo apt remove mongodb 
+get python running on my machine,sudo apt install python3 
+ensure python is on its most recent release,sudo apt upgrade python3 
+i want to get rid of python,sudo apt remove python3 
+get java running on my machine,sudo apt install default-jdk 
+ensure java is on its most recent release,apt upgrade default-jdk 
+i want to get rid of java,sudo apt remove default-jdk 
+get sqlite running on my machine,sudo apt install sqlite3 
+ensure sqlite is on its most recent release,apt upgrade sqlite3 
+take sqlite off my system,sudo apt remove sqlite3 
+get c compiler running on my machine,sudo apt install build-essential 
+ensure c compiler is on its most recent release,apt upgrade build-essential 
+i want to get rid of c compiler,sudo apt remove build-essential 
+how do i set up vim on my system,sudo apt install vim
+check for updates for vim,sudo apt upgrade vim
+can you help me remove vim,sudo apt remove vim
+could you help me get ansible running,sudo apt install ansible
+check for updates for ansible,sudo apt upgrade ansible
+can you help me remove ansible,sudo apt remove ansible
+get gimp working on my computer,sudo apt-get install gimp 
+get the most recent gimp version,sudo apt-get upgrade gimp 
+i no longer need gimp please remove it,sudo apt-get remove gimp
+set up obs studio on this system,sudo apt-get install obs-studio 
+make sure i have the latest obs studio release,sudo apt-get upgrade obs-studio 
+i no longer need obs studio please remove it,sudo apt-get remove obs-studio
+get kdenlive working on my computer,sudo apt-get install kdenlive 
+get the most recent kdenlive version,sudo apt-get upgrade kdenlive 
+i no longer need kdenlive please remove it,sudo apt-get remove kdenlive
+set up virtualbox on this system,sudo apt-get install virtualbox 
+get the most recent virtualbox version,sudo apt-get upgrade virtualbox 
+i no longer need virtualbox please remove it,sudo apt-get remove virtualbox
+get wireshark working on my computer,sudo apt-get install wireshark 
+get the most recent wireshark version,sudo apt-get upgrade wireshark 
+i no longer need wireshark please remove it,sudo apt-get remove wireshark 
+get windscribe running on my linux machine,sudo apt-get install windscribe-cli
+i want the latest windscribe how do i update,sudo apt-get upgrade windscribe-cli
+can you help me remove windscribe,sudo apt-get remove windscribe-cli
+get protonvpn running on my linux machine,sudo apt-get install protonvpn-cli
+i want the latest protonvpn how do i update,sudo apt-get upgrade protonvpn-cli
+can you help me remove protonvpn,sudo apt-get remove protonvpn-cli
+get expressvpn running on my linux machine,sudo apt-get install expressvpn
+check for updates for expressvpn,sudo apt-get upgrade expressvpn
+i need to get rid of expressvpn what's the process,sudo apt-get remove expressvpn
