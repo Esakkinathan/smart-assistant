@@ -1,9 +1,4 @@
 nl_cmd,bash_cmd
-
-#for-training
-
-#gkqns
-
 whats the weather like today,weather
 can you tell me the weather right now,weather
 whats the weather forecast,weather
@@ -44,6 +39,16 @@ whats the current date,date
 can you check the date for me,date
 whats the date on the calendar,date
 i need to know the date,date
+what day is it today,day
+can you tell me the day of the week,day
+do you know what day it is,day
+whats todays day,day
+could you check the day for me,day
+tell me the day of the week,day
+what day are we on,day
+can you remind me what day it is,day
+do you know todays day,day
+whats the day today,day
 whats the latest news,news
 can you tell me todays news,news
 whats happening in the news today,news
@@ -154,56 +159,6 @@ decrease the screen brightness by <brightness-down-percentage>,brightness-down <
 can you reduce the light intensity by <brightness-down-percentage>,brightness-down <brightness-down-percentage>
 lower the display brightness by <brightness-down-percentage>,brightness-down <brightness-down-percentage>
 turn the brightness down by <brightness-down-percentage>,brightness-down <brightness-down-percentage>
-whats the battery level,battery
-can you tell me my battery percentage,battery
-whats the current battery status,battery
-how much battery is left,battery
-whats the charge level right now,battery
-can you check my battery percentage,battery
-how much battery do i have,battery
-whats my battery status,battery
-whats the current battery percentage,battery
-how much power does the battery have,battery
-hey can you take a screenshot of this,screenshot
-could you snap a quick screenshot of this,screenshot
-can you grab a screenshot right here,screenshot
-i need a screenshot of this can you do that,screenshot
-go ahead and capture this screen for me,screenshot
-can you save a screenshot of this right now,screenshot
-i need a quick screen capture of this can you help,screenshot
-can you take a picture of this screen for me,screenshot
-lets take a screenshot of whats here,screenshot
-can you get a screenshot of this display,screenshot
-can you show me my ip address,ip-address
-what is my ip address,ip-address
-please tell me my ip address,ip-address
-i need to know my ip address,ip-address
-can you find my ip address,ip-address
-show me my current ip address,ip-address
-whats my ip address right now,ip-address
-can you display my ip address,ip-address
-let me know my ip address,ip-address
-can you tell me what my ip address is,ip-address
-can you tell me my current cpu usage,cpu-usage
-what is my cpu usage right now,cpu-usage
-please show me my cpu usage,cpu-usage
-i need to know my cpu usage,cpu-usage
-can you find my current cpu usage,cpu-usage
-show me how much cpu im using,cpu-usage
-whats the cpu usage on my device,cpu-usage
-can you display my cpu usage,cpu-usage
-let me know my current cpu usage,cpu-usage
-can you tell me the cpu usage percentage,cpu-usage
-can you tell me how much storage i have left,storage-free
-what is my available storage,storage-free
-please show me my remaining storage,storage-free
-i need to know how much storage is left,storage-free
-can you find out my available storage,storage-free
-show me my free storage space,storage-free
-whats my storage capacity right now,storage-free
-can you display my remaining storage,storage-free
-let me know how much storage i have left,storage-free
-can you tell me the storage i have available,storage-free
 hey can you turn the brightness to maximum,brightness-maximum
 set the brightness to full for me,brightness-maximum
 can you increase the brightness to 100 percent,brightness-maximum
@@ -214,6 +169,16 @@ turn the brightness all the way up,brightness-maximum
 could you raise the brightness to its peak,brightness-maximum
 set the brightness to the highest setting,brightness-maximum
 boost the brightness to the top level,brightness-maximum
+hey can you take a screenshot of this,screenshot
+could you snap a quick screenshot of this,screenshot
+can you grab a screenshot right here,screenshot
+i need a screenshot of this can you do that,screenshot
+go ahead and capture this screen for me,screenshot
+can you save a screenshot of this right now,screenshot
+i need a quick screen capture of this can you help,screenshot
+can you take a picture of this screen for me,screenshot
+lets take a screenshot of whats here,screenshot
+can you get a screenshot of this display,screenshot
 hey can you lock the screen for me,lock-screen
 could you lock my screen now,lock-screen
 please lock the screen,lock-screen
@@ -254,26 +219,6 @@ schedule an alarm for <time> morning,alarm <time> am
 i want a morning alarm set for <time>,alarm <time> am
 can you set an alarm for <time> oclock in the morning,alarm <time> am
 create a morning alarm for <time>,alarm <time> am
-can you close this window for me,close-window
-close the window im on,close-window
-go ahead and close the current window,close-window
-close this open window please,close-window
-can you exit this window,close-window
-lets close this window now,close-window
-shut down the current window,close-window
-close out of this window,close-window
-can you get rid of this window,close-window
-please close the window i have open,close-window
-close all the tabs for me,close-all-tabs
-can you close all open tabs,close-all-tabs
-please shut down all tabs,close-all-tabs
-exit all the tabs i have open,close-all-tabs
-close out all the tabs,close-all-tabs
-can you get rid of every apps,close-all-tabs
-i need all the apps closed,close-all-tabs
-lets close every apps now,close-all-tabs
-go ahead and close all apps,close-all-tabs
-can you shut all the open apps,close-all-tabs
 set an alarm for <time> tonight,alarm <time> pm
 i need an alarm at <time> this evening,alarm <time> pm
 can you set an alarm for <time> at night,alarm <time> pm
@@ -314,26 +259,6 @@ could you sleep the laptop,hibernate
 lets sleep the system,hibernate
 can you make this computer sleep,hibernate
 sleep the system for me,hibernate
-can you log me out,logout
-i need to log out now,logout
-log out of my account,logout
-could you log me off,logout
-please log me out of the system,logout
-end this session and log me out,logout
-can you sign me out,logout
-im done log me out,logout
-can we log out now,logout
-help me log out of this system,logout
-what day is it today,day
-can you tell me the day of the week,day
-do you know what day it is,day
-whats todays day,day
-could you check the day for me,day
-tell me the day of the week,day
-what day are we on,day
-can you remind me what day it is,day
-do you know todays day,day
-whats the day today,day
 can you find this song <song-name> for me,spotify <song-name>
 could you search for the song <song-name> for me,spotify <song-name>
 please search for <song-name> on spotify for me,spotify <song-name>
@@ -364,26 +289,26 @@ can you search for this <search-query>,browser <search-query>
 please search and show <search-query>,browser <search-query>
 could you search for this term <search-query>,browser <search-query>
 search and look up <search-query>,browser <search-query>
-can you switch to dark mode for me,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
-could you change the theme to dark,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
-please apply the dark theme now,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
-id like the dark theme can you set it up,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
-turn on the dark mode please,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
-can we go with a dark appearance,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
-change to the dark theme for me,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
-lets switch everything to dark mode,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
-can you make the interface dark,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
-i want the dark theme can you enable it,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
-can you switch back to light mode for me,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
-could you change the theme to light,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
-please apply the light theme now,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
-id like the light theme can you set it up,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
-turn on the light mode please,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
-can we go with a light appearance,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
-change to the light theme for me,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
-lets switch everything to light mode,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
-switch the theme to light please,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
-please go ahead and activate light mode,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
+can you switch to dark mode for me,set-theme-dark
+could you change the theme to dark,set-theme-dark
+please apply the dark theme now,set-theme-dark
+id like the dark theme can you set it up,set-theme-dark
+turn on the dark mode please,set-theme-dark
+can we go with a dark appearance,set-theme-dark
+change to the dark theme for me,set-theme-dark
+lets switch everything to dark mode,set-theme-dark
+can you make the interface dark,set-theme-dark
+i want the dark theme can you enable it,set-theme-dark
+can you switch back to light mode for me,set-theme-light
+could you change the theme to light,set-theme-light
+please apply the light theme now,set-theme-light
+id like the light theme can you set it up,set-theme-light
+turn on the light mode please,set-theme-light
+can we go with a light appearance,set-theme-light
+change to the light theme for me,set-theme-light
+lets switch everything to light mode,set-theme-light
+switch the theme to light please,set-theme-light
+please go ahead and activate light mode,set-theme-light
 can you turn on bluetooth for me,rfkill unblock bluetooth
 please enable the bluetooth now,rfkill unblock bluetooth
 switch on the bluetooth please,rfkill unblock bluetooth
@@ -444,31 +369,407 @@ please disable flight mode,nmcli radio all on
 i need flight mode off,nmcli radio all on
 can you switch off flight mode,nmcli radio all on
 turn off flight mode now,nmcli radio all on
-can you turn on the night light for me,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-please activate the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-i need the night light to be enabled,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-could you switch on the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-turn the night light on for me,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-can you enable the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-lets activate the night light now,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-please make the night light active,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-could you start the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-can you get the night light working,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-can you turn off the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
-please deactivate the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
-i need the night light turned off,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
-can you switch off the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
-turn off the night light for me,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
-please disable the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
-lets turn the night light off,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
-could you make the night light inactive,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
-please stop the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
-could you turn off the night light feature,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
-
-
-#timer
-
-set a timer for 1 second,sleep 60 && notify-send "timer done" "your 1 second timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+can you turn on the night light for me,turn-night-light-on
+please activate the night light,turn-night-light-on
+i need the night light to be enabled,turn-night-light-on
+could you switch on the night light,turn-night-light-on
+turn the night light on for me,turn-night-light-on
+can you enable the night light,turn-night-light-on
+lets activate the night light now,turn-night-light-on
+please make the night light active,turn-night-light-on
+could you start the night light,turn-night-light-on
+can you get the night light working,turn-night-light-on
+can you turn off the night light,turn-night-light-off
+please deactivate the night light,turn-night-light-off
+i need the night light turned off,turn-night-light-off
+can you switch off the night light,turn-night-light-off
+turn off the night light for me,turn-night-light-off
+please disable the night light,turn-night-light-off
+lets turn the night light off,turn-night-light-off
+could you make the night light inactive,turn-night-light-off
+please stop the night light,turn-night-light-off
+could you turn off the night light feature,turn-night-light-off
+please open firefox browser,firefox
+hey can you start firefox browser,firefox
+bring up firefox browser please,firefox
+please launch firefox browser for me,firefox
+i need you to open firefox browser now,firefox
+please open chromium browser,chromium-browser
+hey can you start chromium browser,chromium-browser
+bring up chromium browser please,chromium-browser
+please launch chromium browser for me,chromium-browser
+i need you to open chromium browser now,chromium-browser
+please open chrome browser,google-chrome
+hey can you start chrome browser,google-chrome
+bring up chrome browser please,google-chrome
+please launch chrome browser for me,google-chrome
+i need you to open chrome browser now,google-chrome
+please open brave browser,brave-browser
+hey can you start brave browser,brave-browser
+bring up brave browser please,brave-browser
+please launch brave browser for me,brave-browser
+i need you to open brave browser now,brave-browser
+please open opera browser,opera
+hey can you start opera browser,opera
+bring up opera browser please,opera
+please launch opera browser for me,opera
+i need you to open opera browser now,opera
+please open vivaldi browser,vivaldi
+hey can you start vivaldi browser,vivaldi
+bring up vivaldi browser please,vivaldi
+please launch vivaldi browser for me,vivaldi
+i need you to open vivaldi browser now,vivaldi
+please open epiphany browser,epiphany
+hey can you start epiphany browser,epiphany
+bring up epiphany browser please,epiphany
+please launch epiphany browser for me,epiphany
+i need you to open epiphany browser now,epiphany
+please open falkon browser,falkon
+hey can you start falkon browser,falkon
+bring up falkon please browser,falkon
+please launch falkon browser for me,falkon
+i need you to open falkon browser now,falkon
+please open tor browser,torbrowser-launcher
+hey can you start tor browser,torbrowser-launcher
+bring up tor browser please,torbrowser-launcher
+please launch tor browser for me,torbrowser-launcher
+i need you to open tor browser now,torbrowser-launcher
+please open libreoffice,libreoffice
+hey can you start libreoffice,libreoffice
+bring up libreoffice please,libreoffice
+please launch libreoffice for me,libreoffice
+i need you to open libreoffice now,libreoffice
+please open onlyoffice,onlyoffice-desktopeditors
+hey can you start onlyoffice,onlyoffice-desktopeditors
+bring up onlyoffice please,onlyoffice-desktopeditors
+please launch onlyoffice for me,onlyoffice-desktopeditors
+i need you to open onlyoffice now,onlyoffice-desktopeditors
+please open evince,evince
+hey can you start evince,evince
+bring up evince please,evince
+please launch evince for me,evince
+i need you to open evince now,evince
+please open okular,okular
+hey can you start okular,okular
+bring up okular please,okular
+please launch okular for me,okular
+i need you to open okular now,okular
+please open tusk,tusk
+hey can you start tusk,tusk
+bring up tusk please,tusk
+please launch tusk for me,tusk
+i need you to open tusk now,tusk
+please open joplin,joplin
+hey can you start joplin,joplin
+bring up joplin please,joplin
+please launch joplin for me,joplin
+i need you to open joplin now,joplin
+please open simplenote,simplenote
+hey can you start simplenote,simplenote
+bring up simplenote please,simplenote
+please launch simplenote for me,simplenote
+i need you to open simplenote now,simplenote
+please open thunderbird,thunderbird
+hey can you start thunderbird,thunderbird
+bring up thunderbird please,thunderbird
+please launch thunderbird for me,thunderbird
+i need you to open thunderbird now,thunderbird
+please open evolution,evolution
+hey can you start evolution,evolution
+bring up evolution please,evolution
+please launch evolution for me,evolution
+i need you to open evolution now,evolution
+please open korganizer,korganizer
+hey can you start korganizer,korganizer
+bring up korganizer please,korganizer
+please launch korganizer for me,korganizer
+i need you to open korganizer now,korganizer
+please open sublime text,subl
+hey can you start sublime text,subl
+bring up sublime text please,subl
+please launch sublime text for me,subl
+i need you to open sublime text now,subl
+please open pycharm community,pycharm-community
+hey can you start pycharm community,pycharm-community
+bring up pycharm community please,pycharm-community
+please launch pycharm community for me,pycharm-community
+i need you to open pycharm community now,pycharm-community
+please open visual studio code,code
+hey can you start visual studio code,code
+bring up visual studio code please,code
+please launch visual studio code for me,code
+i need you to open visual studio code now,code
+please open vs code,code
+hey can you start vs code,code
+bring up vs code please,code
+please launch vs code for me,code
+i need you to open vs code now,code
+please open visual studio,code
+hey can you start visual studio,code
+bring up visual studio please,code
+please launch visual studio for me,code
+i need you to open visual studio now,code
+please open notepad++,notepad-plus-plus
+hey can you start notepad++,notepad-plus-plus
+bring up notepad++ please,notepad-plus-plus
+please launch notepad++ for me,notepad-plus-plus
+i need you to open notepad++ now,notepad-plus-plus
+please open notepad plus plus,notepad-plus-plus
+hey can you start notepad plus plus,notepad-plus-plus
+bring up notepad plus plus please,notepad-plus-plus
+please launch notepad plus plus for me,notepad-plus-plus
+i need you to open notepad plus plus now,notepad-plus-plus
+please open android studio,studio
+hey can you start android studio,studio
+bring up android studio please,studio
+please launch android studio for me,studio
+i need you to open android studio now,studio
+please open anydesk,anydesk
+hey can you start anydesk,anydesk
+bring up anydesk please,anydesk
+please launch anydesk for me,anydesk
+i need you to open anydesk now,anydesk
+please open php storm,phpstorm
+hey can you start php storm,phpstorm
+bring up php storm please,phpstorm
+please launch php storm for me,phpstorm
+i need you to open php storm now,phpstorm
+please open eclipse,eclipse
+hey can you start eclipse,eclipse
+bring up eclipse please,eclipse
+please launch eclipse for me,eclipse
+i need you to open eclipse now,eclipse
+please open pycharm professional,pycharm-professional
+hey can you start pycharm professional,pycharm-professional
+bring up pycharm professional please,pycharm-professional
+please launch pycharm professional for me,pycharm-professional
+i need you to open pycharm professional now,pycharm-professional
+please open intellij idea,idea
+hey can you start intellij idea,idea
+bring up intellij idea please,idea
+please launch intellij idea for me,idea
+i need you to open intellij idea now,idea
+please open pycharm application,pycharm-community
+hey can you start pycharm application,pycharm-community
+bring up pycharm application please,pycharm-community
+please launch pycharm application for me,pycharm-community
+i need you to open pycharm application now,pycharm-community
+please open pycharm,pycharm-community
+hey can you start pycharm,pycharm-community
+bring up pycharm please,pycharm-community
+please launch pycharm for me,pycharm-community
+i need you to open pycharm now,pycharm-community
+please open postman,
+hey can you start postman,postman
+bring up postman please,postman
+please launch postman for me,postman
+i need you to open postman now,postman
+please open intellij idea ultimate,idea
+hey can you start intellij idea ultimate,idea
+bring up intellij idea ultimate please,idea
+please launch intellij idea ultimate for me,idea
+i need you to open intellij idea ultimate now,idea
+please open webstorm,webstorm
+hey can you start webstorm,webstorm
+bring up webstorm please,webstorm
+please launch webstorm for me,webstorm
+i need you to open webstorm now,webstorm
+please open rubymine,rubymine
+hey can you start rubymine,rubymine
+bring up rubymine please,rubymine
+please launch rubymine for me,rubymine
+i need you to open rubymine now,rubymine
+please open apache netbeans,netbeans
+hey can you start apache netbeans,netbeans
+bring up apache netbeans please,netbeans
+please launch apache netbeans for me,netbeans
+i need you to open apache netbeans now,netbeans
+please open goland,goland
+hey can you start goland,goland
+bring up goland please,goland
+please launch goland for me,goland
+i need you to open goland now,goland
+please open slack,slack
+hey can you start slack,slack
+bring up slack please,slack
+please launch slack for me,slack
+i need you to open slack now,slack
+please open telegram,telegram-desktop
+hey can you start telegram,telegram-desktop
+bring up telegram please,telegram-desktop
+please launch telegram for me,telegram-desktop
+i need you to open telegram now,telegram-desktop
+please open skype,skype
+hey can you start skype,skype
+bring up skype please,skype
+please launch skype for me,skype
+i need you to open skype now,skype
+please open zulip,zulip
+hey can you start zulip,zulip
+bring up zulip please,zulip
+please launch zulip for me,zulip
+i need you to open zulip now,zulip
+please open discord,discord
+hey can you start discord,discord
+bring up discord please,discord
+please launch discord for me,discord
+i need you to open discord now,discord
+please open signal-desktop,signal-desktop
+hey can you start signal-desktop,signal-desktop
+bring up signal-desktop please,signal-desktop
+please launch signal-desktop for me,signal-desktop
+i need you to open signal-desktop now,signal-desktop
+please open signal,signal-desktop
+hey can you start signal,signal-desktop
+bring up signal please,signal-desktop
+please launch signal for me,signal-desktop
+i need you to open signal now,signal-desktop
+please open zenchat,zenchat
+hey can you start zenchat,zenchat
+bring up zenchat please,zenchat
+please launch zenchat for me,zenchat
+i need you to open zenchat now,zenchat
+please open zen chat,zen chat
+hey can you start zen chat,zenchat
+bring up zen chat please,zenchat
+please launch zen chat for me,zenchat
+i need you to open zen chat now,zenchat
+please open zoom,zoom
+hey can you start zoom,zoom
+bring up zoom please,zoom
+please launch zoom for me,zoom
+i need you to open zoom now,zoom
+please open whatsapp,whatsapp-desktop
+hey can you start whatsapp,whatsapp-desktop
+bring up whatsapp please,whatsapp-desktop
+please launch whatsapp for me,whatsapp-desktop
+i need you to open whatsapp now,whatsapp-desktop
+please open scrcpy,scrcpy
+hey can you start scrcpy,scrcpy
+bring up scrcpy please,scrcpy
+please launch scrcpy for me,scrcpy
+i need you to open scrcpy now,scrcpy
+please open spotify,spotify
+hey can you start spotify,spotify
+bring up spotify please,spotify
+please launch spotify for me,spotify
+i need you to open spotify now,spotify
+please open gitkraken,gitkraken
+hey can you start gitkraken,gitkraken
+bring up gitkraken please,gitkraken
+please launch gitkraken for me,gitkraken
+i need you to open gitkraken now,gitkraken
+please open microsoft teams,teams
+hey can you start microsoft teams,teams
+bring up microsoft teams please,teams
+please launch microsoft teams for me,teams
+i need you to open microsoft teams now,teams
+please open teams,teams
+hey can you start teams,teams
+bring up teams please,teams
+please launch teams for me,teams
+i need you to open teams now,teams
+please open gimp,gimp
+hey can you start gimp,gimp
+bring up gimp please,gimp
+please launch gimp for me,gimp
+i need you to open gimp now,gimp
+please open obs studio,obs
+hey can you start obs studio,obs
+bring up obs studio please,obs
+please launch obs studio for me,obs
+i need you to open obs studio now,obs
+please open obs,obs
+hey can you start obs,obs
+bring up obs please,obs
+please launch obs for me,obs
+i need you to open obs now,obs
+please open kdenlive,kdenlive
+hey can you start kdenlive,kdenlive
+bring up kdenlive please,kdenlive
+please launch kdenlive for me,kdenlive
+i need you to open kdenlive now,kdenlive
+please open virtualbox,virtualbox
+hey can you start virtualbox,virtualbox
+bring up virtualbox please,virtualbox
+please launch virtualbox for me,virtualbox
+i need you to open virtualbox now,virtualbox
+please open virtual box,virtualbox
+hey can you start virtual box,virtualbox
+bring up virtual box please,virtualbox
+please launch virtual box for me,virtualbox
+i need you to open virtual box now,virtualbox
+please open wireshark vpn,wireshark
+hey can you start wireshark vpn,wireshark
+bring up wireshark vpn please,wireshark
+please launch wireshark vpn for me,wireshark
+i need you to open wireshark vpn now,wireshark
+please open wireshark,wireshark
+hey can you start wireshark,wireshark
+bring up wireshark please,wireshark
+please launch wireshark for me,wireshark
+i need you to open wireshark now,wireshark
+please open windscribe vpn,windscribe
+hey can you start windscribe vpn,windscribe
+bring up windscribe vpn please,windscribe
+please launch windscribe vpn for me,windscribe
+i need you to open windscribe vpn now,windscribe
+please open windscribe,windscribe
+hey can you start windscribe,windscribe
+bring up windscribe please,windscribe
+please launch windscribe for me,windscribe
+i need you to open windscribe now,windscribe
+please open proton,protonvpn
+hey can you start proton,protonvpn
+bring up proton please,protonvpn
+please launch proton for me,protonvpn
+i need you to open proton now,protonvpn
+please open proton vpn,protonvpn
+hey can you start proton vpn,protonvpn
+bring up proton vpn please,protonvpn
+please launch proton vpn for me,protonvpn
+i need you to open proton vpn now,protonvpn
+please open express vpn,expressvpn
+hey can you start express vpn,expressvpn
+bring up express vpn please,expressvpn
+please launch express vpn for me,expressvpn
+i need you to open express vpn now,expressvpn
+please open express,expressvpn
+hey can you start express,expressvpn
+bring up express please,expressvpn
+please launch express for me,expressvpn
+i need you to open express now,expressvpn
+please open rstudio,rstudio
+hey can you start rstudio,rstudio
+bring up rstudio please,rstudio
+please launch rstudio for me,rstudio
+i need you to open rstudio now,rstudio
+please open r studio,rstudio
+hey can you start r studio,rstudio
+bring up r studio please,rstudio
+please launch r studio for me,rstudio
+i need you to open r studio now,rstudio
+please open calculator,gnome-calculator
+hey can you start calculator,gnome-calculator
+bring up calculator please,gnome-calculator
+please launch calculator for me,gnome-calculator
+i need you to open calculator now,gnome-calculator
+please open settings,gnome-control-center
+hey can you start settings,gnome-control-center
+bring up settings please,gnome-control-center
+please launch settings for me,gnome-control-center
+i need you to open settings now,gnome-control-center
+please open clock,gnome-clocks
+hey can you start clock,gnome-clocks
+bring up clock please,gnome-clocks
+please launch clock for me,gnome-clocks
+i need you to open clock now,gnome-clocks
+please open file manager,nautilus ~
+hey can you start file manager,nautilus ~
+bring up file manager please,nautilus ~
+please launch file manager for me,nautilus ~
+i need you to open file manager now,nautilus ~
+set a timer for 1 second,sleep 1 && notify-send "timer done" "your 1 second timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
 start a 2 seconds timer,sleep 2 && notify-send "timer done" "your 2 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
 can you set a timer for 3 seconds,sleep 3 && notify-send "timer done" "your 3 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
 i need a timer for 4 seconds,sleep 4 && notify-send "timer done" "your 4 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
@@ -603,463 +904,4 @@ begin a timer for 1 hour and 45 minutes,sleep 6300 && notify-send "timer done" "
 put a 1 hour and 50 minutes timer,sleep 6600 && notify-send "timer done" "your 1 hour 50 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
 countdown 1 hour and 55 minutes,sleep 6900 && notify-send "timer done" "your 1 hour 55 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
 set a timer for 2 hour,sleep 7200 && notify-send "timer done" "your 2 hour timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
-
-#apps list
-
-please open firefox browser,firefox
-hey can you start firefox browser,firefox
-bring up firefox browser please,firefox
-please launch firefox browser for me,firefox
-i need you to open firefox browser now,firefox
-
-please open chromium browser,chromium-browser
-hey can you start chromium browser,chromium-browser
-bring up chromium browser please,chromium-browser
-please launch chromium browser for me,chromium-browser
-i need you to open chromium browser now,chromium-browser
-
-please open chrome browser,google-chrome
-hey can you start chrome browser,google-chrome
-bring up chrome browser please,google-chrome
-please launch chrome browser for me,google-chrome
-i need you to open chrome browser now,google-chrome
-
-please open brave browser,brave-browser
-hey can you start brave browser,brave-browser
-bring up brave browser please,brave-browser
-please launch brave browser for me,brave-browser
-i need you to open brave browser now,brave-browser
-
-please open opera browser,opera
-hey can you start opera browser,opera
-bring up opera browser please,opera
-please launch opera browser for me,opera
-i need you to open opera browser now,opera
-
-please open vivaldi browser,vivaldi
-hey can you start vivaldi browser,vivaldi
-bring up vivaldi browser please,vivaldi
-please launch vivaldi browser for me,vivaldi
-i need you to open vivaldi browser now,vivaldi
-
-please open epiphany browser,epiphany
-hey can you start epiphany browser,epiphany
-bring up epiphany browser please,epiphany
-please launch epiphany browser for me,epiphany
-i need you to open epiphany browser now,epiphany
-
-please open falkon browser,falkon
-hey can you start falkon browser,falkon
-bring up falkon please browser,falkon
-please launch falkon browser for me,falkon
-i need you to open falkon browser now,falkon
-
-please open tor browser,torbrowser-launcher
-hey can you start tor browser,torbrowser-launcher
-bring up tor browser please,torbrowser-launcher
-please launch tor browser for me,torbrowser-launcher
-i need you to open tor browser now,torbrowser-launcher
-
-please open libreoffice,libreoffice
-hey can you start libreoffice,libreoffice
-bring up libreoffice please,libreoffice
-please launch libreoffice for me,libreoffice
-i need you to open libreoffice now,libreoffice
-
-please open onlyoffice,onlyoffice-desktopeditors
-hey can you start onlyoffice,onlyoffice-desktopeditors
-bring up onlyoffice please,onlyoffice-desktopeditors
-please launch onlyoffice for me,onlyoffice-desktopeditors
-i need you to open onlyoffice now,onlyoffice-desktopeditors
-
-please open evince,evince
-hey can you start evince,evince
-bring up evince please,evince
-please launch evince for me,evince
-i need you to open evince now,evince
-
-please open okular,okular
-hey can you start okular,okular
-bring up okular please,okular
-please launch okular for me,okular
-i need you to open okular now,okular
-
-please open tusk,tusk
-hey can you start tusk,tusk
-bring up tusk please,tusk
-please launch tusk for me,tusk
-i need you to open tusk now,tusk
-
-please open joplin,joplin
-hey can you start joplin,joplin
-bring up joplin please,joplin
-please launch joplin for me,joplin
-i need you to open joplin now,joplin
-
-please open simplenote,simplenote
-hey can you start simplenote,simplenote
-bring up simplenote please,simplenote
-please launch simplenote for me,simplenote
-i need you to open simplenote now,simplenote
-
-please open thunderbird,thunderbird
-hey can you start thunderbird,thunderbird
-bring up thunderbird please,thunderbird
-please launch thunderbird for me,thunderbird
-i need you to open thunderbird now,thunderbird
-
-please open evolution,evolution
-hey can you start evolution,evolution
-bring up evolution please,evolution
-please launch evolution for me,evolution
-i need you to open evolution now,evolution
-
-please open korganizer,korganizer
-hey can you start korganizer,korganizer
-bring up korganizer please,korganizer
-please launch korganizer for me,korganizer
-i need you to open korganizer now,korganizer
-
-please open sublime text,subl
-hey can you start sublime text,subl
-bring up sublime text please,subl
-please launch sublime text for me,subl
-i need you to open sublime text now,subl
-
-please open pycharm community,pycharm-community
-hey can you start pycharm community,pycharm-community
-bring up pycharm community please,pycharm-community
-please launch pycharm community for me,pycharm-community
-i need you to open pycharm community now,pycharm-community
-
-please open visual studio code,code
-hey can you start visual studio code,code
-bring up visual studio code please,code
-please launch visual studio code for me,code
-i need you to open visual studio code now,code
-
-please open vs code,code
-hey can you start vs code,code
-bring up vs code please,code
-please launch vs code for me,code
-i need you to open vs code now,code
-
-please open visual studio,code
-hey can you start visual studio,code
-bring up visual studio please,code
-please launch visual studio for me,code
-i need you to open visual studio now,code
-
-please open notepad++,notepad-plus-plus
-hey can you start notepad++,notepad-plus-plus
-bring up notepad++ please,notepad-plus-plus
-please launch notepad++ for me,notepad-plus-plus
-i need you to open notepad++ now,notepad-plus-plus
-
-please open notepad plus plus,notepad-plus-plus
-hey can you start notepad plus plus,notepad-plus-plus
-bring up notepad plus plus please,notepad-plus-plus
-please launch notepad plus plus for me,notepad-plus-plus
-i need you to open notepad plus plus now,notepad-plus-plus
-
-please open android studio,studio
-hey can you start android studio,studio
-bring up android studio please,studio
-please launch android studio for me,studio
-i need you to open android studio now,studio
-
-please open anydesk,anydesk
-hey can you start anydesk,anydesk
-bring up anydesk please,anydesk
-please launch anydesk for me,anydesk
-i need you to open anydesk now,anydesk
-
-please open php storm,phpstorm
-hey can you start php storm,phpstorm
-bring up php storm please,phpstorm
-please launch php storm for me,phpstorm
-i need you to open php storm now,phpstorm
-
-please open eclipse,eclipse
-hey can you start eclipse,eclipse
-bring up eclipse please,eclipse
-please launch eclipse for me,eclipse
-i need you to open eclipse now,eclipse
-
-please open pycharm professional,pycharm-professional
-hey can you start pycharm professional,pycharm-professional
-bring up pycharm professional please,pycharm-professional
-please launch pycharm professional for me,pycharm-professional
-i need you to open pycharm professional now,pycharm-professional
-
-please open intellij idea,idea
-hey can you start intellij idea,idea
-bring up intellij idea please,idea
-please launch intellij idea for me,idea
-i need you to open intellij idea now,idea
-
-please open pycharm application,pycharm-community
-hey can you start pycharm application,pycharm-community
-bring up pycharm application please,pycharm-community
-please launch pycharm application for me,pycharm-community
-i need you to open pycharm application now,pycharm-community
-
-please open pycharm,pycharm-community
-hey can you start pycharm,pycharm-community
-bring up pycharm please,pycharm-community
-please launch pycharm for me,pycharm-community
-i need you to open pycharm now,pycharm-community
-
-please open postman,
-hey can you start postman,postman
-bring up postman please,postman
-please launch postman for me,postman
-i need you to open postman now,postman
-
-please open intellij idea ultimate,idea
-hey can you start intellij idea ultimate,idea
-bring up intellij idea ultimate please,idea
-please launch intellij idea ultimate for me,idea
-i need you to open intellij idea ultimate now,idea
-
-please open webstorm,webstorm
-hey can you start webstorm,webstorm
-bring up webstorm please,webstorm
-please launch webstorm for me,webstorm
-i need you to open webstorm now,webstorm
-
-please open rubymine,rubymine
-hey can you start rubymine,rubymine
-bring up rubymine please,rubymine
-please launch rubymine for me,rubymine
-i need you to open rubymine now,rubymine
-
-please open apache netbeans,netbeans
-hey can you start apache netbeans,netbeans
-bring up apache netbeans please,netbeans
-please launch apache netbeans for me,netbeans
-i need you to open apache netbeans now,netbeans
-
-please open goland,goland
-hey can you start goland,goland
-bring up goland please,goland
-please launch goland for me,goland
-i need you to open goland now,goland
-
-please open slack,slack
-hey can you start slack,slack
-bring up slack please,slack
-please launch slack for me,slack
-i need you to open slack now,slack
-
-please open telegram,telegram-desktop
-hey can you start telegram,telegram-desktop
-bring up telegram please,telegram-desktop
-please launch telegram for me,telegram-desktop
-i need you to open telegram now,telegram-desktop
-
-please open skype,skype
-hey can you start skype,skype
-bring up skype please,skype
-please launch skype for me,skype
-i need you to open skype now,skype
-
-please open zulip,zulip
-hey can you start zulip,zulip
-bring up zulip please,zulip
-please launch zulip for me,zulip
-i need you to open zulip now,zulip
-
-please open discord,discord
-hey can you start discord,discord
-bring up discord please,discord
-please launch discord for me,discord
-i need you to open discord now,discord
-
-please open signal-desktop,signal-desktop
-hey can you start signal-desktop,signal-desktop
-bring up signal-desktop please,signal-desktop
-please launch signal-desktop for me,signal-desktop
-i need you to open signal-desktop now,signal-desktop
-
-please open signal,signal-desktop
-hey can you start signal,signal-desktop
-bring up signal please,signal-desktop
-please launch signal for me,signal-desktop
-i need you to open signal now,signal-desktop
-
-please open zenchat,zenchat
-hey can you start zenchat,zenchat
-bring up zenchat please,zenchat
-please launch zenchat for me,zenchat
-i need you to open zenchat now,zenchat
-
-please open zen chat,zen chat
-hey can you start zen chat,zenchat
-bring up zen chat please,zenchat
-please launch zen chat for me,zenchat
-i need you to open zen chat now,zenchat
-
-please open zoom,zoom
-hey can you start zoom,zoom
-bring up zoom please,zoom
-please launch zoom for me,zoom
-i need you to open zoom now,zoom
-
-please open whatsapp,whatsapp-desktop
-hey can you start whatsapp,whatsapp-desktop
-bring up whatsapp please,whatsapp-desktop
-please launch whatsapp for me,whatsapp-desktop
-i need you to open whatsapp now,whatsapp-desktop
-
-please open scrcpy,scrcpy
-hey can you start scrcpy,scrcpy
-bring up scrcpy please,scrcpy
-please launch scrcpy for me,scrcpy
-i need you to open scrcpy now,scrcpy
-
-please open spotify,spotify
-hey can you start spotify,spotify
-bring up spotify please,spotify
-please launch spotify for me,spotify
-i need you to open spotify now,spotify
-
-please open gitkraken,gitkraken
-hey can you start gitkraken,gitkraken
-bring up gitkraken please,gitkraken
-please launch gitkraken for me,gitkraken
-i need you to open gitkraken now,gitkraken
-
-please open microsoft teams,teams
-hey can you start microsoft teams,teams
-bring up microsoft teams please,teams
-please launch microsoft teams for me,teams
-i need you to open microsoft teams now,teams
-
-please open teams,teams
-hey can you start teams,teams
-bring up teams please,teams
-please launch teams for me,teams
-i need you to open teams now,teams
-
-please open gimp,gimp
-hey can you start gimp,gimp
-bring up gimp please,gimp
-please launch gimp for me,gimp
-i need you to open gimp now,gimp
-
-please open obs studio,obs
-hey can you start obs studio,obs
-bring up obs studio please,obs
-please launch obs studio for me,obs
-i need you to open obs studio now,obs
-
-please open obs,obs
-hey can you start obs,obs
-bring up obs please,obs
-please launch obs for me,obs
-i need you to open obs now,obs
-
-please open kdenlive,kdenlive
-hey can you start kdenlive,kdenlive
-bring up kdenlive please,kdenlive
-please launch kdenlive for me,kdenlive
-i need you to open kdenlive now,kdenlive
-
-please open virtualbox,virtualbox
-hey can you start virtualbox,virtualbox
-bring up virtualbox please,virtualbox
-please launch virtualbox for me,virtualbox
-i need you to open virtualbox now,virtualbox
-
-please open virtual box,virtualbox
-hey can you start virtual box,virtualbox
-bring up virtual box please,virtualbox
-please launch virtual box for me,virtualbox
-i need you to open virtual box now,virtualbox
-
-please open wireshark vpn,wireshark
-hey can you start wireshark vpn,wireshark
-bring up wireshark vpn please,wireshark
-please launch wireshark vpn for me,wireshark
-i need you to open wireshark vpn now,wireshark
-
-please open wireshark,wireshark
-hey can you start wireshark,wireshark
-bring up wireshark please,wireshark
-please launch wireshark for me,wireshark
-i need you to open wireshark now,wireshark
-
-please open windscribe vpn,windscribe
-hey can you start windscribe vpn,windscribe
-bring up windscribe vpn please,windscribe
-please launch windscribe vpn for me,windscribe
-i need you to open windscribe vpn now,windscribe
-
-please open windscribe,windscribe
-hey can you start windscribe,windscribe
-bring up windscribe please,windscribe
-please launch windscribe for me,windscribe
-i need you to open windscribe now,windscribe
-
-please open proton,protonvpn
-hey can you start proton,protonvpn
-bring up proton please,protonvpn
-please launch proton for me,protonvpn
-i need you to open proton now,protonvpn
-
-please open proton vpn,protonvpn
-hey can you start proton vpn,protonvpn
-bring up proton vpn please,protonvpn
-please launch proton vpn for me,protonvpn
-i need you to open proton vpn now,protonvpn
-
-please open express vpn,expressvpn
-hey can you start express vpn,expressvpn
-bring up express vpn please,expressvpn
-please launch express vpn for me,expressvpn
-i need you to open express vpn now,expressvpn
-
-please open express,expressvpn
-hey can you start express,expressvpn
-bring up express please,expressvpn
-please launch express for me,expressvpn
-i need you to open express now,expressvpn
-
-please open rstudio,rstudio
-hey can you start rstudio,rstudio
-bring up rstudio please,rstudio
-please launch rstudio for me,rstudio
-i need you to open rstudio now,rstudio
-
-please open r studio,rstudio
-hey can you start r studio,rstudio
-bring up r studio please,rstudio
-please launch r studio for me,rstudio
-i need you to open r studio now,rstudio
-
-please open calculator,gnome-calculator
-hey can you start calculator,gnome-calculator
-bring up calculator please,gnome-calculator
-please launch calculator for me,gnome-calculator
-i need you to open calculator now,gnome-calculator
-
-please open settings,gnome-control-center
-hey can you start settings,gnome-control-center
-bring up settings please,gnome-control-center
-please launch settings for me,gnome-control-center
-i need you to open settings now,gnome-control-center
-
-please open clock,gnome-clocks
-hey can you start clock,gnome-clocks
-bring up clock please,gnome-clocks
-please launch clock for me,gnome-clocks
-i need you to open clock now,gnome-clocks
-
-please open file manager,nautilus ~
-hey can you start file manager,nautilus ~
-bring up file manager please,nautilus ~
-please launch file manager for me,nautilus ~
-i need you to open file manager now,nautilus ~
-
 

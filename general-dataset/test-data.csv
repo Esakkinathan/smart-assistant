@@ -1,13 +1,9 @@
 nl_cmd,bash_cmd
-
-#for-testing
-
-#gkqns
-
 can you give me the weather forecast,weather
 can i know the time please,time
 whats the precise time in <specific-location>,time-in <specific-location>
 whats the date right now,date
+can you say what day it is,day
 whats the big news today,news
 set the volume higher,volume-up
 turn down the audio,volume-down
@@ -19,31 +15,22 @@ turn the brightness up,brightness-up
 please reduce the display brightness,brightness-down
 turn the brightness up by <brightness-up-percentage> please,brightness-up <brightness-up-percentage>
 can you make the display <brightness-down-percentage> dimmer,brightness-down <brightness-down-percentage>
-whats my battery at,battery
-take a quick shot of this screen for me,screenshot
-what is the ip address im using,ip-address
-can you check my cpu usage for me,cpu-usage
-how much free storage do i have,storage-free
 i need the brightness at maximum,brightness-maximum
+take a quick shot of this screen for me,screenshot
 lock it up for me,lock-screen
 can you clear the view by minimizing everything,minimize-all-window
 put an alarm for <time> am for me,alarm <time>
 add an alarm at <time> in the morning,alarm <time> am
-i need this window closed,close-window
-please exit all the tabs im using,close-all-tabs
-can you close out every apps i have open,close-all-tabs
 can you set a night alarm for <time>,alarm <time> pm
 can you perform a system restart,restart
 switch off the system,shutdown
 please put this into hibernation mode,hibernate
 can you move the computer to sleep,hibernate
-time to log off can you do that,logout
-can you say what day it is,day
 find the song <song-name> on spotify,spotify <song-name>
 search youtube for the video <search-query>,youtube <search-query>
 find and search <search-query>,browser <search-query>
-switch the theme to dark please,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
-set the system to light mode for me,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-light'
+switch the theme to dark please,set-theme-dark
+set the system to light mode for me,set-theme-dark
 turn the bluetooth service on please,rfkill unblock bluetooth
 lets disable bluetooth now,rfkill block bluetooth
 turn on the wi-fi connection,nmcli radio wifi on
@@ -52,12 +39,8 @@ please enable flight mode,nmcli radio all off
 turn on airplane mode now,nmcli radio all off
 i need airplane mode off,nmcli radio all on
 please deactivate flight mode,nmcli radio all on
-lets turn on the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-can you disable the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
-
-
-#open_apps
-
+lets turn on the night light,turn-night-light-on
+can you disable the night light,turn-night-light-on
 hey can you open firefox browser for me,firefox
 hey can you open chromium browser for me,chromium-browser
 hey can you open chrome browser for me,google-chrome
@@ -134,7 +117,6 @@ hey can you open calculator for me,gnome-calculator
 hey can you open settings for me,gnome-control-center
 hey can you open clock for me,gnome-clocks
 hey can you open file manager for me,nautilus ~
-
 i need a timer for 5 seconds,sleep 5 && notify-send "timer done" "your 5 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
 begin a timer for 10 seconds,sleep 10 && notify-send "timer done" "your 10 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
 put a 15 seconds timer,sleep 15 && notify-send "timer done" "your 15 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga

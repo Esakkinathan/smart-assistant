@@ -1,9 +1,4 @@
 nl_cmd,bash_cmd
-
-#for-validation
-
-#gkqns
-
 what are the weather conditions right now,weather
 will the weather change throughout the day,weather
 whats the time on the clock,time
@@ -12,6 +7,8 @@ whats the clock reading in <specific-location>,time-in <specific-location>
 please tell me what time it is in <specific-location> right now,time-in <specific-location>
 what date is it today,date
 can you remind me of the date,date
+which day is it today,day
+tell me todays day,day
 can you update me on the news,news
 whats the news this morning,news
 please increase the audio level,volume-up
@@ -34,18 +31,10 @@ adjust the brightness up by <brightness-up-percentage>,brightness-up <brightness
 make it <brightness-up-percentage> brighter please,brightness-up <brightness-up-percentage>
 dimming the screen by <brightness-down-percentage> would be great,brightness-down <brightness-down-percentage>
 please make the screen <brightness-down-percentage> less bright,brightness-down <brightness-down-percentage>
-how much charge is remaining,battery
-can you tell me how much battery is left,battery
-how about grabbing a screenshot of this,screenshot
-could you screenshot whats showing on the screen,screenshot
-can you reveal my ip address,ip-address
-give me my ip address,ip-address
-give me my current cpu usage,cpu-usage
-show my cpu usage right now,cpu-usage
-can you check my remaining storage for me,storage-free
-give me my available storage space,storage-free
 lets put the brightness to full power,brightness-maximum
 can you push the brightness to maximum,brightness-maximum
+how about grabbing a screenshot of this,screenshot
+could you screenshot whats showing on the screen,screenshot
 go ahead and lock the screen,lock-screen
 can you make sure the screen is locked,lock-screen
 minimize everything thats open,minimize-all-window
@@ -54,10 +43,6 @@ can i get an alarm set for <time> am,alarm <time>
 make an alarm for <time> am,alarm <time>
 set a wake-up alarm for <time> in the morning,alarm <time> am
 schedule me an alarm for <time> in the early morning,alarm <time> am
-exit the window im using,close window
-can you close the active window,close window
-take down all the tabs,close-all-tabs
-close every single apps for me,close-all-tabs
 prepare an alarm for <time> this evening,alarm <time> pm
 plan an alarm for <time> tonight at night,alarm <time> pm
 restart my laptop if you can,restart
@@ -66,20 +51,16 @@ would you turn off this machine,shutdown
 can you shut everything down,shutdown
 i want you to hibernate this device,hibernate
 turn on sleep for the system,hibernate
-log me out of this account,logout
-would you log me out,logout
-which day is it today,day
-tell me todays day,day
 please check if <song-name> is on spotify,spotify <song-name>
 could you find <song-name> for me on spotify,spotify <song-name>
 please search youtube for <search-query> for me,youtube <search-query>
 could you check youtube for <search-query>,youtube <search-query>
 search and check for <search-query>,browser <search-query>
 could you search and show <search-query>,browser <search-query>
-apply the dark style for me now,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
-please go ahead and activate dark mode,gsettings set org.gnome.desktop.interface gtk-theme 'Yaru-dark'
-can you make the interface light,gsettings set org.gnome.desktop.interface gtk-theme 'yaru-light'
-i want the light theme can you enable it,gsettings set org.gnome.desktop.interface gtk-theme 'yaru-light'
+apply the dark style for me now,set-theme-dark
+please go ahead and activate dark mode,set-theme-dark
+can you make the interface light,set-theme-dark
+i want the light theme can you enable it,set-theme-dark
 lets enable bluetooth now,rfkill unblock bluetooth
 activate bluetooth so i can use it,rfkill unblock bluetooth
 turn the bluetooth service off please,rfkill block bluetooth
@@ -92,14 +73,10 @@ turn on flight mode for me,nmcli radio all off
 can you switch on airplane mode,nmcli radio all off
 can you turn off airplane mode for me,nmcli radio all on
 can you disable flight mode for me,nmcli radio all on
-please switch on the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-could you make the screen warmer with night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
-lets turn off the night light now,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
-can you make the screen normal again by disabling the night light,gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled false
-
-
-#open_apps
-
+please switch on the night light,turn-night-light-on
+could you make the screen warmer with night light,turn-night-light-on
+lets turn off the night light now,turn-night-light-off
+can you make the screen normal again by disabling the night light,turn-night-light-off
 i want to use firefox browser can you open it,firefox
 i want to use chromium browser can you open it,chromium-browser
 i want to use chrome browser can you open it,google-chrome
@@ -176,7 +153,6 @@ i want to use calculator can you open it,gnome-calculator
 i want to use settings can you open it,gnome-control-center
 i want to use clock can you open it,gnome-clocks
 i want to use file manager can you open it,nautilus ~
-
 can you set a timer for 5 seconds,sleep 5 && notify-send "timer done" "your 5 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
 i need a timer for 10 seconds,sleep 10 && notify-send "timer done" "your 10 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
 begin a timer for 15 seconds,sleep 15 && notify-send "timer done" "your 15 seconds timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
@@ -216,3 +192,4 @@ can you set a timer for 1 hour and 50 minutes,sleep 6600 && notify-send "timer d
 i need a timer for 1 hour and 55 minutes,sleep 6900 && notify-send "timer done" "your 1 hour 55 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
 begin a timer for 2 hour,sleep 7200 && notify-send "timer done" "your 2 hour timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
 put a half an hour timer,sleep 1800 && notify-send "timer done" "your half an hour timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
+
