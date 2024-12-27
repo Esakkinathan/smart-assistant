@@ -5,10 +5,10 @@ import torch
 
 # Check if GPU is available
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
+print("cuda" if torch.cuda.is_available() else "cpu")
 # Load your dataset
-train_data_path = r'data/taining-data.csv'
-val_data_path = r'data/validation-data.csv'
+train_data_path = r'./data/train-data.csv'
+val_data_path = r'./data/validation-data.csv'
 
 train_df = pd.read_csv(train_data_path)
 val_df = pd.read_csv(val_data_path)
@@ -45,7 +45,7 @@ training_args = TrainingArguments(
     learning_rate=5e-5,
     per_device_train_batch_size=8,
     per_device_eval_batch_size=8,
-    num_train_epochs=20,
+    num_train_epochs=30,
     weight_decay=0.01,
     logging_dir='./logs',
     save_total_limit=3,
@@ -66,5 +66,5 @@ trainer = Trainer(
 trainer.train()
 
 # Save the model
-trainer.save_model("./model/t5-small-new-software-installer")
-tokenizer.save_pretrained("./model/t5-small-new-software-installer")
+trainer.save_model("./model/darla-model")
+tokenizer.save_pretrained("./model/darla-model")

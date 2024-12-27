@@ -1,0 +1,1090 @@
+nl_cmd,bash_cmd
+can you give me the weather forecast,weather
+can i know the time please,time
+whats the precise time in <specific-location>,time-in <specific-location>
+whats the date right now,date
+can you say what day it is,day
+whats the big news today,news
+set the volume higher,volume-up
+turn down the audio,volume-down
+please increase the sound to <volume-increase-percentage>,set-volume <volume-increase-percentage>
+can you lower the sound by <volume-decrease-percentage>,set-volume <volume-decrease-percentage>
+turn the sound off,volume-mute
+please restore the audio,volume-unmute
+turn the brightness up,brightness-up
+please reduce the display brightness,brightness-down
+turn the brightness up by <brightness-up-percentage> please,brightness-up <brightness-up-percentage>
+can you make the display <brightness-down-percentage> dimmer,brightness-down <brightness-down-percentage>
+i need the brightness at maximum,brightness-maximum
+take a quick shot of this screen for me,screenshot
+lock it up for me,lock-screen
+can you clear the view by minimizing everything,minimize-all-window
+put an alarm for <time> am for me,alarm <time>
+add an alarm at <time> in the morning,alarm <time> am
+can you set a night alarm for <time>,alarm <time> pm
+can you perform a system restart,restart
+switch off the system,shutdown
+please put this into hibernation mode,hibernate
+can you move the computer to set-timer,hibernate
+find the song <song-name> on spotify,spotify <song-name>
+search youtube for the video <search-query>,youtube <search-query>
+find and search <search-query>,browser <search-query>
+switch the theme to dark please,set-theme-dark
+set the system to light mode for me,set-theme-dark
+turn the bluetooth service on please,rfkill unblock bluetooth
+lets disable bluetooth now,rfkill block bluetooth
+turn on the wi-fi connection,nmcli radio wifi on
+disconnect wi-fi,nmcli radio wifi off
+please enable flight mode,nmcli radio all off
+turn on airplane mode now,nmcli radio all off
+i need airplane mode off,nmcli radio all on
+please deactivate flight mode,nmcli radio all on
+lets turn on the night light,turn-night-light-on
+can you disable the night light,turn-night-light-on
+i need a timer for 5 seconds,set-timer 5 
+begin a timer for 10 seconds,set-timer 10 
+put a 15 seconds timer,set-timer 15 
+countdown 20 seconds,set-timer 20  
+set a timer for 25 seconds,set-timer 25 
+start a 30 seconds timer,set-timer 30 
+can you set a timer for 35 seconds,set-timer 35  
+i need a timer for 40 seconds,set-timer 40 
+begin a timer for 45 seconds,set-timer 45
+put a 50 seconds timer,set-timer 50 
+countdown 55 seconds,set-timer 55 
+set a timer for 60 seconds,set-timer 60 
+start a 5 minute timer,set-timer 300 
+can you set a timer for 10 minutes,set-timer 600 
+i need a timer for 15 minutes,set-timer 900 
+begin a timer for 20 minutes,set-timer 1200 
+put a 25 minute timer,set-timer 1500 
+countdown 30 minutes,set-timer 1800 
+set a timer for 35 minutes,set-timer 2100 
+start a 40 minute timer,set-timer 2400 
+can you set a timer for 45 minutes,set-timer 2700 
+i need a timer for 50 minutes,set-timer 3000 
+begin a timer for 55 minutes,set-timer 3300
+put a 60 minute timer,set-timer 3600 
+countdown 1 hour,set-timer 3600 
+set a timer for 1 hour and 5 minutes,set-timer 3900 
+start a 1 hour and 10 minutes timer,set-timer 4200 
+can you set a timer for 1 hour and 15 minutes,set-timer 4500 
+i need a timer for 1 hour and 20 minutes,set-timer 4800 
+begin a timer for 1 hour and 25 minutes,set-timer 5100 
+put a 1 hour and 30 minutes timer,set-timer 5400  
+countdown 1 hour and half,set-timer 5400 
+set a timer for 1 hour and 35 minutes,set-timer 5700 
+start a 1 hour and 40 minutes timer,set-timer 6000
+can you set a timer for 1 hour and 45 minutes,set-timer 6300 
+i need a timer for 1 hour and 50 minutes,set-timer 6600
+begin a timer for 1 hour and 55 minutes,set-timer 6900
+put a 2 hour timer,set-timer 7200
+countdown half an hour,set-timer 1800
+give me the current system details,uname -a
+give me the cpu architecture details,lscpu
+what is the total memory available,free -h
+give me the disk space details,df -h
+how long has the machine been on,uptime
+give me my system host name,hostname
+how do my ipaddress look,ifconfig
+get details of available networks,nmcli connection show
+get detailed boot information,dmesg
+get details of connected usb devices,lsusb
+give me the battery health information,powertop
+whats the percentage of cpu utilization,top
+whats the list of processes being executed,ps aux
+what hardware components are in my machine,lshw
+what are the available block devices on my system,lsblk
+hey can you open firefox browser for me,firefox
+hey can you open chromium browser for me,chromium-browser
+hey can you open chrome browser for me,google-chrome
+hey can you open brave browser for me,brave-browser
+hey can you open opera browser for me,opera
+hey can you open vivaldi browser for me,vivaldi
+hey can you open epiphany browser for me,epiphany
+hey can you open falkon browser for me,falkon
+hey can you open tor browser for me,torbrowser-launcher
+hey can you open libreoffice for me,libreoffice
+hey can you open onlyoffice for me,onlyoffice-desktopeditors
+hey can you open evince for me,evince
+hey can you open okular for me,okular
+hey can you open tusk for me,tusk
+hey can you open joplin for me,joplin
+hey can you open simplenote for me,simplenote
+hey can you open thunderbird for me,thunderbird
+hey can you open evolution for me,evolution
+hey can you open korganizer for me,korganizer
+hey can you open sublime text for me,subl
+hey can you open pycharm community for me,pycharm-community
+hey can you open visual studio code for me,code
+hey can you open vs code for me,code
+hey can you open visual studio for me,code
+hey can you open notepad++ for me,notepad-plus-plus
+hey can you open notepad plus plus for me,notepad-plus-plus
+hey can you open android studio for me,studio
+hey can you open anydesk for me,anydesk
+hey can you open php storm for me,phpstorm
+hey can you open eclipse for me,eclipse
+hey can you open pycharm professional for me,pycharm-professional
+hey can you open intellij idea for me,idea
+hey can you open pycharm application for me,pycharm-community
+hey can you open pycharm for me,pycharm-community
+hey can you open postman for me,postman
+hey can you open intellij idea ultimate for me,idea
+hey can you open webstorm for me,webstorm
+hey can you open rubymine for me,rubymine
+hey can you open apache netbeans for me,netbeans
+hey can you open goland for me,goland
+hey can you open slack for me,slack
+hey can you open telegram for me,telegram-desktop
+hey can you open skype for me,skype
+hey can you open zulip for me,zulip
+hey can you open discord for me,discord
+hey can you open signal-desktop for me,signal-desktop
+hey can you open signal for me,signal-desktop
+hey can you open zenchat for me,zenchat
+hey can you open zen chat for me,zenchat
+hey can you open zoom for me,zoom
+hey can you open whatsapp for me,whatsapp-desktop
+hey can you open scrcpy for me,scrcpy
+hey can you open spotify for me,spotify
+hey can you open gitkraken for me,gitkraken
+hey can you open microsoft teams for me,teams
+hey can you open teams for me,teams
+hey can you open gimp for me,gimp
+hey can you open obs studio for me,obs
+hey can you open obs for me,obs
+hey can you open kdenlive for me,kdenlive
+hey can you open virtualbox for me,virtualbox
+hey can you open virtual box for me,virtualbox
+hey can you open wireshark vpn for me,wireshark
+hey can you open wireshark for me,wireshark
+hey can you open windscribe vpn for me,windscribe
+hey can you open windscribe for me,windscribe
+hey can you open proton for me,protonvpn
+hey can you open proton vpn for me,protonvpn
+hey can you open express vpn for me,expressvpn
+hey can you open express for me,expressvpn
+hey can you open rstudio for me,rstudio
+hey can you open r studio for me,rstudio
+hey can you open calculator for me,gnome-calculator
+hey can you open settings for me,gnome-control-center
+hey can you open clock for me,gnome-clocks
+hey can you open file manager for me,nautilus ~
+could you help me get android studio running,sudo snap install android-studio
+could you help me get anydesk running,sudo snap install anydesk
+could you help me get php storm running,sudo snap install phpstorm
+how do i set up eclipse on my system,sudo snap install eclipse
+please check for and install any updates for pycharm professional,sudo snap refresh pycharm-professional
+fetch the intellij idea application in my system,sudo snap install intellij-idea-ultimate
+fetch the sublime text application in my system,sudo snap install sublime-text
+fetch the pycharm application in my system,sudo snap install pycharm-community
+fetch the vs code application in my system,sudo snap install code
+fetch the postman application in my system,sudo snap install postman
+fetch the notepad++ application in my system,sudo snap install notepad-plus-plus
+fetch the kubectl application in my system,sudo snap install kubectl
+get powershell running on this computer,sudo snap install powershell
+put intellij idea ultimate on my system,sudo snap install intellij-idea-ultimate
+put webstorm on my system,sudo snap install webstorm
+put go on my system,sudo snap install go
+put nodejs on my system,sudo snap install node
+get rubymine running on this computer,sudo snap install rubymine
+get apache ant running on this machine,sudo snap install ant-jm
+put apache netbeans on my computer,sudo snap install netbeans
+get kotlin running on this machine,sudo snap install kotlin
+get ruby running on my machine,sudo snap install ruby
+get flutter running on this computer,sudo snap install flutter
+get goland running on this computer,sudo snap install goland
+get flutter gallery running on this machine,sudo snap install flutter-gallery
+how do i add nginx to my system,sudo snap install nginx
+put prometheus on my system,sudo snap install prometheus
+set up slack for me,sudo snap install slack
+get gradle running on this computer,sudo snap install gradle
+set up jenkins for me,sudo snap install jenkins
+set up telegram on this computer,sudo snap install telegram-desktop
+put skype on my system,sudo snap install skype
+put zulip on my system,sudo snap install zulip
+put discord on my system,sudo snap install discord
+put signal desktop on my system,sudo snap install signal-desktop
+get zenchat running on my machine,sudo snap install zenchat 
+set up the thunder application,sudo snap install thunder 
+get whatsapp for linux running on my machine,sudo snap install whatsapp-for-linux 
+get zoom running on my machine,sudo snap install zoom-client 
+set up brave for me,sudo snap install brave 
+get firefox running on my machine,sudo snap install firefox 
+set up opera for me,sudo snap install opera 
+set up scrcpy for me,sudo snap install scrcpy 
+set up spotify for me,sudo snap install spotify 
+set up gitkraken on this system,sudo snap install gitkraken 
+set up postman on this system,sudo snap install postman 
+set up microsoft teams on this system,sudo snap install teams-for-linux 
+set up netbeans on this system,sudo snap install netbeans 
+set up kubernetes on this system,sudo snap install microk8s 
+get mysql running on my machine,sudo snap install mysql 
+get chrome running on my machine,sudo apt install google-chrome-stable 
+get libreoffice running on my machine,sudo apt install libreoffice 
+set up mongodb for me,sudo apt install mongodb 
+set up python for me,sudo apt install python3 
+set up java for me,sudo apt install default-jdk 
+set up sqlite for me,sudo apt install sqlite3 
+set up c compiler for me,sudo apt install build-essential 
+could you help me get vim running,sudo apt install vim
+what's the command to install ansible,sudo apt install ansible
+set up gimp on this system,sudo apt-get install gimp 
+get obs studio working on my computer,sudo apt-get install obs-studio 
+set up kdenlive on this system,sudo apt-get install kdenlive 
+get virtualbox working on my computer,sudo apt-get install virtualbox 
+set up wireshark on this system,sudo apt-get install wireshark 
+set up windscribe vpn on my computer,sudo apt-get install windscribe-cli
+set up protonvpn on my computer,sudo apt-get install protonvpn-cli
+set up expressvpn on my computer,sudo apt-get install expressvpn
+i want the latest android studio how do i update,sudo snap refresh android-studio
+i want the latest anydesk how do i update,sudo snap refresh anydesk
+check for updates for php storm,sudo snap refresh phpstorm
+check for updates for eclipse,sudo snap refresh eclipse
+check for updates for pycharm professional,sudo snap refresh pycharm-professional
+check for updates for intellij idea,sudo snap refresh intellij-idea-ultimate
+check for updates for sublime text,sudo snap refresh sublime-text
+check for updates for pycharm,sudo snap refresh pycharm-community
+check for updates for vs code,sudo snap refresh code
+is there a new version of postman please update it,sudo snap refresh postman
+check for updates for notepad++,sudo snap refresh notepad-plus-plus
+refresh my kubectl installation,sudo snap refresh kubectl
+check for powershell updates,sudo snap refresh powershell
+make sure intellij idea ultimate is current,sudo snap refresh intellij-idea-ultimate
+make sure webstorm is current,sudo snap refresh webstorm
+make sure go is current,sudo snap refresh go
+refresh my nodejs installation,sudo snap refresh node
+make sure rubymine is current,sudo snap refresh rubymine
+make sure apache ant is current,sudo snap refresh ant-jm
+make sure apache netbeans is current,sudo snap refresh netbeans
+make sure kotlin is current,sudo snap refresh kotlin
+refresh my ruby installation,sudo snap refresh ruby
+refresh flutter on my system,sudo snap refresh flutter
+make sure goland is current,sudo snap refresh goland
+make sure flutter gallery is current,sudo snap refresh flutter-gallery
+refresh my nginx installation,sudo snap refresh nginx
+make sure prometheus is current,sudo snap refresh prometheus
+refresh slack on my system,sudo snap refresh slack
+make sure gradle is current,sudo snap refresh gradle
+refresh jenkins on my system,sudo snap refresh jenkins
+refresh my telegram installation,sudo snap refresh telegram-desktop
+refresh skype on my system,sudo snap refresh skype
+refresh zulip on my system,sudo snap refresh zulip
+refresh discord on my system,sudo snap refresh discord
+refresh signal on my system,sudo snap refresh signal-desktop
+make sure zenchat is up to date,sudo snap refresh zenchat 
+make sure thunder is up to date,sudo snap refresh thunder 
+ensure whatsapp for linux is on its most recent release,sudo snap refresh whatsapp-for-linux 
+bring zoom to its latest version,sudo snap refresh zoom-client 
+bring brave to its latest version,sudo snap refresh brave
+bring firefox to its latest version,sudo snap refresh firefox 
+bring opera to its latest version,sudo snap refresh opera 
+bring scrcpy to its latest version,sudo snap refresh scrcpy 
+bring spotify to its latest version,sudo snap refresh spotify 
+bring gitkraken up to date on my system,sudo snap refresh gitkraken 
+bring postman up to date on my system,sudo snap refresh postman 
+bring microsoft teams up to date on my system,sudo snap refresh teams-for-linux 
+bring netbeans up to date on my system,sudo snap refresh netbeans 
+bring kubernetes up to date on my system,sudo snap refresh microk8s 
+ensure mysql is on its most recent release,sudo snap refresh mysql 
+bring chrome to its latest version,sudo apt upgrade google-chrome-stable 
+bring libreoffice to its latest version,sudo apt upgrade libreoffice 
+bring mongodb to its latest version,apt upgrade mongodb 
+bring python to its latest version,sudo apt upgrade python3 
+bring java to its latest version,sudo apt upgrade default-jdk 
+bring sqlite to its latest version,sudo apt upgrade sqlite3 
+bring c compiler to its latest version,sudo apt upgrade build-essential 
+i want the latest vim how do i update,sudo apt upgrade vim
+i want the latest ansible how do i update,sudo apt upgrade ansible
+bring gimp up to date on my system,sudo apt-get upgrade gimp 
+bring obs studio up to date on my system,sudo apt-get upgrade obs-studio 
+bring kdenlive up to date on my system,sudo apt-get upgrade kdenlive 
+bring virtualbox up to date on my system,sudo apt-get upgrade virtualbox 
+bring wireshark up to date on my system,sudo apt-get upgrade wireshark 
+check for updates for windscribe,sudo apt-get upgrade windscribe-cli
+check for updates for protonvpn,sudo apt-get upgrade protonvpn-cli
+i want the latest expressvpn how do i update,sudo apt-get upgrade expressvpn
+i need to get rid of android studio what's the process,sudo snap remove android-studio
+i need to get rid of anydesk what's the process,sudo snap remove anydesk
+can you help me remove php storm,sudo snap remove phpstorm
+can you help me remove eclipse,sudo snap remove eclipse
+can you help me remove pycharm professional,sudo snap remove pycharm-professional
+i need to get rid of intellij idea what's the process,sudo snap remove intellij-idea-ultimate
+i need to get rid of sublime text what's the process,sudo snap remove sublime-text
+i need to get rid of pycharm what's the process,sudo snap remove pycharm-community
+i need to get rid of vs code what's the process,sudo snap remove code
+i need to get rid of postman what's the process,sudo snap remove postman
+i need to get rid of notepad++ what's the process,sudo snap remove notepad-plus-plus
+take kubectl off my computer,sudo snap remove kubectl
+take powershell off my computer,sudo snap remove powershell
+take intellij idea ultimate off my computer,sudo snap remove intellij-idea-ultimate
+take webstorm off my computer,sudo snap remove webstorm
+take go off my computer,sudo snap remove go
+how can i get rid of nodejs,sudo snap remove node
+take rubymine off my computer,sudo snap remove rubymine
+take apache ant off my computer,sudo snap remove ant-jm
+take apache netbeans off my computer,sudo snap remove netbeans
+take kotlin off my computer,sudo snap remove kotlin
+how can i get rid of ruby,sudo snap remove ruby
+take flutter off my computer,sudo snap remove flutter
+take goland off my computer,sudo snap remove goland
+take flutter gallery off my computer,sudo snap remove flutter-gallery
+help me uninstall nginx,sudo snap remove nginx
+take prometheus off my computer,sudo snap remove prometheus
+take slack off my computer,sudo snap remove slack
+take gradle off my computer,sudo snap remove gradle
+take jenkins off my computer,sudo snap remove jenkins
+how can i get rid of telegram,sudo snap remove telegram-desktop
+take skype off my computer,sudo snap remove skype
+take zulip off my computer,sudo snap remove zulip
+take discord off my computer,sudo snap remove discord
+take signal  off my computer,sudo snap remove signal-desktop
+i want to get rid of zenchat,sudo snap remove zenchat 
+i want to get rid of thunder,sudo snap remove thunder 
+i want to get rid of whatsapp for linux,sudo snap remove whatsapp-for-linux 
+take zoom off my system,sudo snap remove zoom-client 
+take brave off my system,sudo snap remove brave 
+take firefox off my system,sudo snap remove firefox 
+take opera off my system,sudo snap remove opera 
+i want to get rid of scrcpy,sudo snap remove scrcpy 
+i want to get rid of spotify,sudo snap remove spotify 
+get rid of gitkraken on my ubuntu,sudo snap remove gitkraken 
+get rid of postman on my ubuntu,sudo snap remove postman 
+get rid of microsoft teams on my ubuntu,sudo snap remove teams-for-linux 
+get rid of netbeans on my ubuntu,sudo snap remove netbeans 
+get rid of kubernetes on my ubuntu,sudo snap remove microk8s
+take mysql off my system,sudo snap remove mysql
+take chrome off my system,sudo apt remove google-chrome-stable 
+take libreoffice off my system,sudo apt remove libreoffice* 
+i want to get rid of mongodb,sudo apt remove mongodb 
+take python off my system,sudo apt remove python3 
+take java off my system,sudo apt remove default-jdk 
+i want to get rid of sqlite,sudo apt remove sqlite3 
+take c compiler off my system,sudo apt remove build-essential 
+i need to get rid of vim what's the process,sudo apt remove vim
+i need to get rid of ansible what's the process,sudo apt remove ansible
+get rid of gimp on my ubuntu,sudo apt-get remove gimp
+get rid of obs studio on my ubuntu,sudo apt-get remove obs-studio
+get rid of kdenlive on my ubuntu,sudo apt-get remove kdenlive
+get rid of virtualbox on my ubuntu,sudo apt-get remove virtualbox
+get rid of wireshark on my ubuntu,sudo apt-get remove wireshark
+i want to remove windscribe can you guide me through it,sudo apt-get remove windscribe-cli
+i need to get rid of protonvpn what's the process,sudo apt-get remove protonvpn-cli
+i want to remove expressvpn can you guide me through it,sudo apt-get remove expressvpn
+create a group named developer,sudo groupadd developer
+create a group named developer with group id 1000,sudo groupadd -g 1000 developer
+add a new user called darla,sudo adduser darla
+will please create a new user with home directory for that user named darla,sudo useradd -m darla 
+add user named darla with uid 1000,sudo useradd -u 1000 darla
+create a user named darla with home directory /home/my/darla,sudo useradd -d /home/my/darla darla
+create a new user with the name darla and add to group called developer,sudo useradd -G developer darla
+update password for darla,sudo passwd darla
+update password for me,sudo passwd $USER
+lock user account named darla,sudo usermod -L darla
+unblock the user named darla,sudo usermod -U darla
+change the user name of jarvis to darla,sudo usermod -l darla jarvis
+change my username to darla,sudo usermod -l darla $USER
+change the user id of jarvis to 1001,sudo usermod -u 1001 jarvis
+change my user id to 1001,sudo usermod -u 1001 $USER
+change the home directory for darla to /home/my/darla,sudo usermod -d /home/my/darla darla
+change the home directory of to /home/my/darla,sudo usermod -d /home/my/darla $USER
+change the expiry date as <yyyy-mm-dd> for user darla,sudo usermod -e <yyyy-mm-dd> darla
+add user named darla to developer group,sudo usermod -aG developer darla
+add me to darla group,sudo usermod -aG developer $USER
+add darla to multiple groups developer and tester, sudo usermod -aG developer tester $USER
+add me to multiple groups developer and tester, sudo usermod -aG developer tester $USER
+change the primary group developer to user darla,sudo usermod -g developer darla
+change the primary group developer for me,sudo usermod -g <group-name> $USER
+give darla superuser access, sudo usermod -aG sudo darla
+give me superuser access, sudo usermod -aG sudo $USER
+remove superuser privileges from darla, sudo deluser darla sudo
+remove superuser privileges from me, sudo deluser $USER sudo
+cahnge group name from developer to tester,sudo groupmod -n tester developer
+change group id of developer to 1001,sudo groupmod -g 1001 developer
+delete darla from users list,sudo deluser darla
+remove the user named darla with the user id,sudo userdel -r darla
+delete a group named developer,sudo groupdel developer
+remove user darla from group developer, sudo gpasswd -d darla developer
+remove me from group developer,sudo gpasswd -d $USER developer
+show the groups on this system, cat /etc/group
+list the users in the group developer,getent group developer
+does user darla member of group developer, sudo getent group developer
+list the group of user <username>,sudo groups <username>
+list the groups i am in ,groups $USER
+display the information of group developer,getent group developer
+give me darla details, id darla
+switch to user as darla,sudo su - darla
+switch to root user,sudo su -
+who is logged in now,who
+logout from current session,logout
+show files in the current folder,ls
+list files in a detailed manner,ls -l
+display hidden files in the directory,ls -a
+list files in folder and subfolder,ls -R 
+show files and directories in a tree structure,tree
+create a file named <file-name>,touch <file-name>
+make a text file named <file-name>,touch <file-name>.txt
+i want to create a python file named <file-name>,touch <file-name>.py
+can you create me css file named <file-name>,touch <file-name>.css
+create a html file named <file-name>,touch <file-name>.html
+make a csv file named <file-name>,touch <file-name>.csv
+i want to create a java script file named <file-name>,touch <file-name>.js
+can you create me json file named <file-name>,touch <file-name>.json
+make a java file named <file-name>,touch <file-name>.java
+i want to create a php file named <file-name>,touch <file-name>.php
+can you create me log file named <file-name>,touch <file-name>.log
+create a bin file named <file-name>,touch <file-name>.bin
+make a sh file named <file-name>,touch <file-name>.sh
+i want to create a yaml file named <file-name>,touch <file-name>.yaml
+can you create me c program file named <file-name>,touch <file-name>.c 
+can you create me c++ program file named <file-name>,touch <file-name>.cpp 
+can you create me header file named <file-name>,touch <file-name>.h
+make a kotlin file named <file-name>,touch <file-name>.kt
+i want to create a dart file named <file-name>,touch <file-name>.dart
+can you create me env file named <file-name>,touch <file-name>.env
+create a xml file named <file-name>,touch <file-name>.xml
+create a xls file named <file-name>,touch <file-name>.xls
+create a markdown file named <file-name>,touch <file-name>.md
+make a jupyter file named <file-name>,touch <file-name>.ipynb
+i want to create a word file named <file-name>,touch <file-name>.doc
+create a excel  file named <file-name>,touch <file-name>.xlsx
+make a hidden file named <file-name>,touch .<file-name>
+check the type of the file <file-name>,file <file-name>
+provide a count of lines words and characters in <file-name>,wc <file-name>
+read the content in the file <file-name>,cat <file-name>
+display the information the <file-name> file under <directory-name>,cat <directory-name>/<file-name>
+open and modify <file-name> in vim,vim <file-name>
+start editing <file-name> in nano,nano <file-name>
+create a directory named <directory-name>,mkdir <directory-name>
+make a new folder <directory-name> under directory <old-directory-name>,mkdir <old-directory-name>/<directory-name>
+create a hidden directory named <directory-name>,mkdir .<directory-name>
+create all folders in the path <directory-name-1>/<directory-name-2>,mkdir -p <directory-name-1>/<directory-name-2>
+launch the picture that's in a <file-name>.jpeg format,xdg-open <file-name>.jpeg
+launch the file named <file-name>.jpg,xdg-open <file-name>.jpg
+access the file <file-name>.png,xdg-open <file-name>.png
+show me the <file-name>.gif type file,xdg-open <file-name>.gif
+display the picture <file-name>.raw file,xdg-open <file-name>.raw
+can you display the <file-name>.jpeg picture,xdg-open <file-name>.jpeg
+open the jpg image <file-name>,xdg-open <file-name>.jpg
+i need to open the <file-name>.png image,xdg-open <file-name>.pgn
+show me the gif file <file-name>,xdg-open <file-name>.gif
+please display the raw file <file-name>,xdg-open <file-name>.raw
+open the file <file-name>.jpeg from the directory <directory-name>,xdg-open <directory-name>/<file-name>.jpeg
+launch the photo <file-name>.jpg from the folder <directory-name>,xdg-open <directory-name>/<file-name>.jpg
+open <file-name>.png from the folder <directory-name>,xdg-open <directory-name>/<file-name>.png
+launch the image <file-name>.gif stored in <directory-name>,xdg-open <directory-name>/<file-name>.gif
+show me the photo <file-name>.raw located in <directory-name>,xdg-open <directory-name>/<file-name>.raw
+open the jpeg file <file-name> from the <directory-name> directory,xdg-open <directory-name>/<file-name>.jpeg
+let me view the <file-name>.jpg image inside the <directory-name> folder,xdg-open <directory-name>/<file-name>.jpg
+i want to open the png file <file-name> from the <directory-name> directory,xdg-open <directory-name>/<file-name>.pgn
+please open the gif image <file-name> located in the <directory-name> directory,xdg-open <directory-name>/<file-name>.gif
+can you display the raw image <file-name> located in the <directory-name> folder,xdg-open <directory-name>/<file-name>.raw
+launch <file-name>.mp4 using the video player,xdg-open <file-name>.mp4
+play the mp4 video named <file-name>,xdg-open <file-name>.mp4
+examine the movie titled <file-name>.mov,xdg-open <file-name>.mov
+look at the mov file <file-name> in the list,xdg-open <file-name>.mov
+go through the avi clip <file-name>.avi,xdg-open <file-name>.avi
+browse the avi content labeled <file-name>,xdg-open <file-name>.avi
+play the mp4 video <file-name> from <directory-name>, xdg-open <directory-name>/<file-name>.mp4
+launch <file-name>.mp4 located in <directory-name>, xdg-open <directory-name>/<file-name>.mp4
+launch the mov video <file-name> from <directory-name>, xdg-open <directory-name>/<file-name>.mov
+play the file <file-name>.mov located in <directory-name>, xdg-open <directory-name>/<file-name>.mov
+play the avi video <file-name> from <directory-name>, xdg-open <directory-name>/<file-name>.avi
+launch the video <file-name>.avi from <directory-name>, xdg-open <directory-name>/<file-name>.avi
+let me check out the pdf file <file-name>,xdg-open <file-name>.pdf
+open <file-name>.pdf for me,xdg-open <file-name>.pdf
+please open <file-name>.pdf thats in the <directory-name> directory,xdg-open <directory-name>/<file-name>.pdf
+let me see the pdf file <file-name> from the <directory-name> folder,xdg-open <directory-name>/<file-name>.pdf
+please access <file-name>.docx,xdg-open <file-name>.docx
+let me view the document <file-name>,xdg-open <file-name>.docx
+please access the <file-name>.pptx file,xdg-open <file-name>.pptx
+can you show me a ppt file called <file-name>,xdg-open <file-name>.pptx
+open <file-name>.pptx from the <directory-name>,xdg-open <directory-name>/<file-name>.pptx
+can you display a ppt file named <file-name> in the <directory-name>,xdg-open <directory-name>/<file-name>.pptx
+open <file-name>.mp3 for me,xdg-open <file-name>.mp3
+Can you play the mp3 file <file-name> for me,xdg-open <file-name>.mp3
+please open the <file-name>.wav file,xdg-open <file-name>.wav
+show me the wav file <file-name>,xdg-open <file-name>.wav
+let me listen to the <file-name>.mp3 from the <directory-name> folder,xdg-open <directory-name>/<file-name>.mp3
+show me the mp3 file <file-name> located in the <directory-name> directory,xdg-open <directory-name>/<file-name>.mp3
+please open the <file-name>.wav file inside the <directory-name> folder,xdg-open <directory-name>/<file-name>.wav
+let me hear the wav file <file-name> from the <directory-name> folder,xdg-open <directory-name>/<file-name>.wav
+go to directory_path,cd directory_path
+navigate back a directory,cd ..
+access the home directory,cd ~
+display size of <directory-name>,du -sh <directory-name>
+show me the content in <file-name>.txt,cat <file-name>.txt
+copy the file from <source-location> to <destination-location>,cp <source-location> <destination-location>
+make a copy of <fil-name> <source-location> to <destination-location>,cp <source-location>/<file-name> <destination-location>/<file-name>
+create a copy of file <file-name>.txt at <destination-location>,cp <file-name>.txt <destination-location>/<file-name>.txt
+copy the folder from <source-location> to <destination-location>,cp -r <source-location> <destination-location>
+make a copy of <directory-name> <source-location> to <destination-location> and view it,cp -rv <source-location>/<directory-name> <destination-location>/<directory-name>.py
+create a full copy of <source-location> in <destination-location> forcefully,cp -rf <source-location> <destination-location>
+copy the directory <directory-name> at <destination-location> forcefully and display it,cp -rvf <directory-name> <destination-location>/<directory-name>
+move file <source-location> to <destination-location>,mv <source-location> <destination-location>
+move the folder from <source-location> to <destination-location>,mv -r <source-location> <destination-location>
+cut the <directory-name> <source-location> and paste it to <destination-location> and view it,mv -rv <source-location>/<directory-name> <destination-location>/<directory-name>.py
+move the folder <source-location> in <destination-location> forcefully,mv -rf <source-location> <destination-location>
+move the directory <directory-name> at <destination-location> forcefully and display it,mv -rvf <directory-name> <destination-location>/<directory-name>
+can you rename <old-file-name> to <new-file-name>?,mv <old-file-name> <new-file-name>
+modify directory name from <old-directory-name> to <new-directory-name>,mv <old-directory-name> <new-directory-name>
+create a tar archive named <archieve-name>.tar for <file-name>,tar -cvf <archieve-name>.tar <file-name>
+open and extract <archieve-name>.tar,tar -xvf <archieve-name>.tar
+delete file <file-name>,rm <file-name>,
+remove <file-name> under <directory-name>,rm <directory-name>/<file-name>
+delete folder <directory-name>,rm -r <directory-name>,
+remove <directory-name> under <directory-name> forecefully,rm -rf <directory-name>/<directory-name>
+assign read permission to user for <file-name>,chmod u+r <file-name>
+assign write permission to user for <file-name>,chmod u+w <file-name>
+assign execute permission to user for <file-name>,chmod u+x <file-name>
+assign read and write permissions to user for <file-name>,chmod u+rw <file-name>
+assign read and execute permissions to user for <file-name>,chmod u+rx <file-name>
+assign write and execute permissions to user for <file-name>,chmod u+wx <file-name>
+assign all permissions to user for <file-name>,chmod u+rwx <file-name>
+assign read permission to group for <file-name>,chmod g+r <file-name>
+assign write permission to group for <file-name>,chmod g+w <file-name>
+assign execute permission to group for <file-name>,chmod g+x <file-name>
+assign read and write permissions to group for <file-name>,chmod g+rw <file-name>
+assign read and execute permissions to group for <file-name>,chmod g+rx <file-name>
+assign write and execute permissions to group for <file-name>,chmod g+wx <file-name>
+assign all permissions to group for <file-name>,chmod g+rwx <file-name>
+assign read permission to others for <file-name>,chmod o+r <file-name>
+assign write permission to others for <file-name>,chmod o+w <file-name>
+assign execute permission to others for <file-name>,chmod o+x <file-name>
+assign read and write permissions to others for <file-name>,chmod o+rw <file-name>
+assign read and execute permissions to others for <file-name>,chmod o+rx <file-name>
+assign write and execute permissions to others for <file-name>,chmod o+wx <file-name>
+assign all permissions to others for <file-name>,chmod o+rwx <file-name>
+assign permissions recursively to user for <directory-name>,chmod -R u+rwx <directory-name>
+grant recursive read write and execute access to group for <directory-name>,chmod -R g+rwx <directory-name>
+set all permissions for others on directory and its contents <directory-name>,chmod -R g+rwx <directory-name>
+remove read permission from group for <file-name>,chmod g-r <file-name>
+deny write permission to others for <file-name>,chmod o-w <file-name>
+remove all permissions recursively for user from <directory-name>,chmod -R u-rwx <directory-name>
+change the owner of <file-name> to <username>,chown <username> <file-name>
+make <directory-name> owned by <username>,chown  <username> <directory-name>
+change <directory-name> ownership recursively to <username>,chown -R <username> <directory-name>
+change <file-name> group to <group-name>,chgrp <group-name> <file-name>
+make <directory-name> belong to group <group-name>,chgrp -R <group-name> <directory-name>
+change <directory-name> recursively group to <group-name>,chgrp <group-name> <directory-name>
+change <directory-name> recursively group to <group-name>,chgrp <group-name> <directory-name>
+give <file-name> ownership to <user-name> and <group-name>,chown <user-name>:<group-name> <file-name>
+assign owner to <user-name> and <group-name> for the <directory-name>,chown <user-name>:<group-name> <directory-name>
+set <user-name> and <group-name> ownership recursively for the <directory-name>,chown -R <user-name>:<group-name> <directory-name>
+update the file <file-name> with <permission> permission,chmod <permission> <file-name>
+configure <permission> access rights to the directory <directory-name>,chmod <permission> <directory-name>
+change all files and folders inside <directory-name> to have <permission> permissions,chmod -R <permission> <directory-name>
+"allow none for user, none for group, and none for others on file <file-name>"," chmod 000 <file-name>"
+"allow none for user, none for group, and execute for others on file <file-name>"," chmod 001 <file-name>"
+"allow none for user, none for group, and write for others on file <file-name>"," chmod 002 <file-name>"
+"assign none permission to user, none permission to group, and write and execute permission to others for <file-name>"," chmod 003 <file-name>"
+"provide none for user, none to group, and read to others for <file-name>"," chmod 004 <file-name>"
+"allow none for user, none for group, and read and execute for others on file <file-name>"," chmod 005 <file-name>"
+"set permissions to none for owner, none for group members, and read and write for others on <file-name>"," chmod 006 <file-name>"
+"assign none permission to user, none permission to group, and all permission to others for <file-name>"," chmod 007 <file-name>"
+"provide none for user, execute to group, and none to others for <file-name>"," chmod 010 <file-name>"
+"grant none access for user, execute for group, and execute to others for <file-name>"," chmod 011 <file-name>"
+"assign none permission to user, execute permission to group, and write permission to others for <file-name>"," chmod 012 <file-name>"
+"allow none for user, execute for group, and write and execute for others on file <file-name>"," chmod 013 <file-name>"
+"set permissions to none for owner, execute for group members, and read for others on <file-name>"," chmod 014 <file-name>"
+"grant none access for user, execute for group, and read and execute to others for <file-name>"," chmod 015 <file-name>"
+"provide none for user, execute to group, and read and write to others for <file-name>"," chmod 016 <file-name>"
+"set permissions to none for owner, execute for group members, and all for others on <file-name>"," chmod 017 <file-name>"
+"allow none for user, write for group, and none for others on file <file-name>"," chmod 020 <file-name>"
+"assign none permission to user, write permission to group, and execute permission to others for <file-name>"," chmod 021 <file-name>"
+"grant none access for user, write for group, and write to others for <file-name>"," chmod 022 <file-name>"
+"provide none for user, write to group, and write and execute to others for <file-name>"," chmod 023 <file-name>"
+"allow none for user, write for group, and read for others on file <file-name>"," chmod 024 <file-name>"
+"set permissions to none for owner, write for group members, and read and execute for others on <file-name>"," chmod 025 <file-name>"
+"provide none for user, write to group, and read and write to others for <file-name>"," chmod 026 <file-name>"
+"assign none permission to user, write permission to group, and all permission to others for <file-name>"," chmod 027 <file-name>"
+"grant none access for user, write and execute for group, and none to others for <file-name>"," chmod 030 <file-name>"
+"assign none permission to user, write and execute permission to group, and execute permission to others for <file-name>"," chmod 031 <file-name>"
+"provide none for user, write and execute to group, and write to others for <file-name>"," chmod 032 <file-name>"
+"allow none for user, write and execute for group, and write and execute for others on file <file-name>"," chmod 033 <file-name>"
+"assign none permission to user, write and execute permission to group, and read permission to others for <file-name>"," chmod 034 <file-name>"
+"allow none for user, write and execute for group, and read and execute for others on file <file-name>"," chmod 035 <file-name>"
+"assign none permission to user, write and execute permission to group, and read and write permission to others for <file-name>"," chmod 036 <file-name>"
+"provide none for user, write and execute to group, and all to others for <file-name>"," chmod 037 <file-name>"
+"allow none for user, read for group, and none for others on file <file-name>"," chmod 040 <file-name>"
+"set permissions to none for owner, read for group members, and execute for others on <file-name>"," chmod 041 <file-name>"
+"provide none for user, read to group, and write to others for <file-name>"," chmod 042 <file-name>"
+"grant none access for user, read for group, and write and execute to others for <file-name>"," chmod 043 <file-name>"
+"grant none access for user, read for group, and read to others for <file-name>"," chmod 044 <file-name>"
+"set permissions to none for owner, read for group members, and read and execute for others on <file-name>"," chmod 045 <file-name>"
+"set permissions to none for owner, read for group members, and read and write for others on <file-name>"," chmod 046 <file-name>"
+"set permissions to none for owner, read for group members, and all for others on <file-name>"," chmod 047 <file-name>"
+"grant none access for user, read and execute for group, and none to others for <file-name>"," chmod 050 <file-name>"
+"allow none for user, read and execute for group, and execute for others on file <file-name>"," chmod 051 <file-name>"
+"grant none access for user, read and execute for group, and write to others for <file-name>"," chmod 052 <file-name>"
+"allow none for user, read and execute for group, and write and execute for others on file <file-name>"," chmod 053 <file-name>"
+"grant none access for user, read and execute for group, and read to others for <file-name>"," chmod 054 <file-name>"
+"provide none for user, read and execute to group, and read and execute to others for <file-name>"," chmod 055 <file-name>"
+"allow none for user, read and execute for group, and read and write for others on file <file-name>"," chmod 056 <file-name>"
+"assign none permission to user, read and execute permission to group, and all permission to others for <file-name>"," chmod 057 <file-name>"
+"assign none permission to user, read and write permission to group, and none permission to others for <file-name>"," chmod 060 <file-name>"
+"provide none for user, read and write to group, and execute to others for <file-name>"," chmod 061 <file-name>"
+"grant none access for user, read and write for group, and write to others for <file-name>"," chmod 062 <file-name>"
+"assign none permission to user, read and write permission to group, and write and execute permission to others for <file-name>"," chmod 063 <file-name>"
+"set permissions to none for owner, read and write for group members, and read for others on <file-name>"," chmod 064 <file-name>"
+"provide none for user, read and write to group, and read and execute to others for <file-name>"," chmod 065 <file-name>"
+"grant none access for user, read and write for group, and read and write to others for <file-name>"," chmod 066 <file-name>"
+"grant none access for user, read and write for group, and all to others for <file-name>"," chmod 067 <file-name>"
+"assign none permission to user, all permission to group, and none permission to others for <file-name>"," chmod 070 <file-name>"
+"provide none for user, all to group, and execute to others for <file-name>"," chmod 071 <file-name>"
+"set permissions to none for owner, all for group members, and write for others on <file-name>"," chmod 072 <file-name>"
+"grant none access for user, all for group, and write and execute to others for <file-name>"," chmod 073 <file-name>"
+"allow none for user, all for group, and read for others on file <file-name>"," chmod 074 <file-name>"
+"grant none access for user, all for group, and read and execute to others for <file-name>"," chmod 075 <file-name>"
+"provide none for user, all to group, and read and write to others for <file-name>"," chmod 076 <file-name>"
+"provide none for user, all to group, and all to others for <file-name>"," chmod 077 <file-name>"
+"set permissions to execute for owner, none for group members, and none for others on <file-name>"," chmod 100 <file-name>"
+"grant execute access for user, none for group, and execute to others for <file-name>"," chmod 101 <file-name>"
+"set permissions to execute for owner, none for group members, and write for others on <file-name>"," chmod 102 <file-name>"
+"grant execute access for user, none for group, and write and execute to others for <file-name>"," chmod 103 <file-name>"
+"provide execute for user, none to group, and read to others for <file-name>"," chmod 104 <file-name>"
+"allow execute for user, none for group, and read and execute for others on file <file-name>"," chmod 105 <file-name>"
+"provide execute for user, none to group, and read and write to others for <file-name>"," chmod 106 <file-name>"
+"set permissions to execute for owner, none for group members, and all for others on <file-name>"," chmod 107 <file-name>"
+"allow execute for user, execute for group, and none for others on file <file-name>"," chmod 110 <file-name>"
+"grant execute access for user, execute for group, and execute to others for <file-name>"," chmod 111 <file-name>"
+"grant execute access for user, execute for group, and write to others for <file-name>"," chmod 112 <file-name>"
+"assign execute permission to user, execute permission to group, and write and execute permission to others for <file-name>"," chmod 113 <file-name>"
+"allow execute for user, execute for group, and read for others on file <file-name>"," chmod 114 <file-name>"
+"assign execute permission to user, execute permission to group, and read and execute permission to others for <file-name>"," chmod 115 <file-name>"
+"set permissions to execute for owner, execute for group members, and read and write for others on <file-name>"," chmod 116 <file-name>"
+"assign execute permission to user, execute permission to group, and all permission to others for <file-name>"," chmod 117 <file-name>"
+"allow execute for user, write for group, and none for others on file <file-name>"," chmod 120 <file-name>"
+"provide execute for user, write to group, and execute to others for <file-name>"," chmod 121 <file-name>"
+"assign execute permission to user, write permission to group, and write permission to others for <file-name>"," chmod 122 <file-name>"
+"assign execute permission to user, write permission to group, and write and execute permission to others for <file-name>"," chmod 123 <file-name>"
+"grant execute access for user, write for group, and read to others for <file-name>"," chmod 124 <file-name>"
+"grant execute access for user, write for group, and read and execute to others for <file-name>"," chmod 125 <file-name>"
+"allow execute for user, write for group, and read and write for others on file <file-name>"," chmod 126 <file-name>"
+"grant execute access for user, write for group, and all to others for <file-name>"," chmod 127 <file-name>"
+"allow execute for user, write and execute for group, and none for others on file <file-name>"," chmod 130 <file-name>"
+"allow execute for user, write and execute for group, and execute for others on file <file-name>"," chmod 131 <file-name>"
+"set permissions to execute for owner, write and execute for group members, and write for others on <file-name>"," chmod 132 <file-name>"
+"set permissions to execute for owner, write and execute for group members, and write and execute for others on <file-name>"," chmod 133 <file-name>"
+"allow execute for user, write and execute for group, and read for others on file <file-name>"," chmod 134 <file-name>"
+"allow execute for user, write and execute for group, and read and execute for others on file <file-name>"," chmod 135 <file-name>"
+"grant execute access for user, write and execute for group, and read and write to others for <file-name>"," chmod 136 <file-name>"
+"set permissions to execute for owner, write and execute for group members, and all for others on <file-name>"," chmod 137 <file-name>"
+"allow execute for user, read for group, and none for others on file <file-name>"," chmod 140 <file-name>"
+"grant execute access for user, read for group, and execute to others for <file-name>"," chmod 141 <file-name>"
+"grant execute access for user, read for group, and write to others for <file-name>"," chmod 142 <file-name>"
+"grant execute access for user, read for group, and write and execute to others for <file-name>"," chmod 143 <file-name>"
+"provide execute for user, read to group, and read to others for <file-name>"," chmod 144 <file-name>"
+"provide execute for user, read to group, and read and execute to others for <file-name>"," chmod 145 <file-name>"
+"provide execute for user, read to group, and read and write to others for <file-name>"," chmod 146 <file-name>"
+"set permissions to execute for owner, read for group members, and all for others on <file-name>"," chmod 147 <file-name>"
+"assign execute permission to user, read and execute permission to group, and none permission to others for <file-name>"," chmod 150 <file-name>"
+"assign execute permission to user, read and execute permission to group, and execute permission to others for <file-name>"," chmod 151 <file-name>"
+"grant execute access for user, read and execute for group, and write to others for <file-name>"," chmod 152 <file-name>"
+"assign execute permission to user, read and execute permission to group, and write and execute permission to others for <file-name>"," chmod 153 <file-name>"
+"assign execute permission to user, read and execute permission to group, and read permission to others for <file-name>"," chmod 154 <file-name>"
+"set permissions to execute for owner, read and execute for group members, and read and execute for others on <file-name>"," chmod 155 <file-name>"
+"grant execute access for user, read and execute for group, and read and write to others for <file-name>"," chmod 156 <file-name>"
+"provide execute for user, read and execute to group, and all to others for <file-name>"," chmod 157 <file-name>"
+"allow execute for user, read and write for group, and none for others on file <file-name>"," chmod 160 <file-name>"
+"assign execute permission to user, read and write permission to group, and execute permission to others for <file-name>"," chmod 161 <file-name>"
+"provide execute for user, read and write to group, and write to others for <file-name>"," chmod 162 <file-name>"
+"assign execute permission to user, read and write permission to group, and write and execute permission to others for <file-name>"," chmod 163 <file-name>"
+"grant execute access for user, read and write for group, and read to others for <file-name>"," chmod 164 <file-name>"
+"provide execute for user, read and write to group, and read and execute to others for <file-name>"," chmod 165 <file-name>"
+"grant execute access for user, read and write for group, and read and write to others for <file-name>"," chmod 166 <file-name>"
+"assign execute permission to user, read and write permission to group, and all permission to others for <file-name>"," chmod 167 <file-name>"
+"allow execute for user, all for group, and none for others on file <file-name>"," chmod 170 <file-name>"
+"allow execute for user, all for group, and execute for others on file <file-name>"," chmod 171 <file-name>"
+"allow execute for user, all for group, and write for others on file <file-name>"," chmod 172 <file-name>"
+"assign execute permission to user, all permission to group, and write and execute permission to others for <file-name>"," chmod 173 <file-name>"
+"assign execute permission to user, all permission to group, and read permission to others for <file-name>"," chmod 174 <file-name>"
+"grant execute access for user, all for group, and read and execute to others for <file-name>"," chmod 175 <file-name>"
+"provide execute for user, all to group, and read and write to others for <file-name>"," chmod 176 <file-name>"
+"allow execute for user, all for group, and all for others on file <file-name>"," chmod 177 <file-name>"
+"allow write for user, none for group, and none for others on file <file-name>"," chmod 200 <file-name>"
+"provide write for user, none to group, and execute to others for <file-name>"," chmod 201 <file-name>"
+"allow write for user, none for group, and write for others on file <file-name>"," chmod 202 <file-name>"
+"grant write access for user, none for group, and write and execute to others for <file-name>"," chmod 203 <file-name>"
+"grant write access for user, none for group, and read to others for <file-name>"," chmod 204 <file-name>"
+"provide write for user, none to group, and read and execute to others for <file-name>"," chmod 205 <file-name>"
+"provide write for user, none to group, and read and write to others for <file-name>"," chmod 206 <file-name>"
+"provide write for user, none to group, and all to others for <file-name>"," chmod 207 <file-name>"
+"set permissions to write for owner, execute for group members, and none for others on <file-name>"," chmod 210 <file-name>"
+"allow write for user, execute for group, and execute for others on file <file-name>"," chmod 211 <file-name>"
+"set permissions to write for owner, execute for group members, and write for others on <file-name>"," chmod 212 <file-name>"
+"assign write permission to user, execute permission to group, and write and execute permission to others for <file-name>"," chmod 213 <file-name>"
+"set permissions to write for owner, execute for group members, and read for others on <file-name>"," chmod 214 <file-name>"
+"assign write permission to user, execute permission to group, and read and execute permission to others for <file-name>"," chmod 215 <file-name>"
+"grant write access for user, execute for group, and read and write to others for <file-name>"," chmod 216 <file-name>"
+"assign write permission to user, execute permission to group, and all permission to others for <file-name>"," chmod 217 <file-name>"
+"provide write for user, write to group, and none to others for <file-name>"," chmod 220 <file-name>"
+"provide write for user, write to group, and execute to others for <file-name>"," chmod 221 <file-name>"
+"allow write for user, write for group, and write for others on file <file-name>"," chmod 222 <file-name>"
+"assign write permission to user, write permission to group, and write and execute permission to others for <file-name>"," chmod 223 <file-name>"
+"provide write for user, write to group, and read to others for <file-name>"," chmod 224 <file-name>"
+"set permissions to write for owner, write for group members, and read and execute for others on <file-name>"," chmod 225 <file-name>"
+"provide write for user, write to group, and read and write to others for <file-name>"," chmod 226 <file-name>"
+"assign write permission to user, write permission to group, and all permission to others for <file-name>"," chmod 227 <file-name>"
+"assign write permission to user, write and execute permission to group, and none permission to others for <file-name>"," chmod 230 <file-name>"
+"provide write for user, write and execute to group, and execute to others for <file-name>"," chmod 231 <file-name>"
+"allow write for user, write and execute for group, and write for others on file <file-name>"," chmod 232 <file-name>"
+"provide write for user, write and execute to group, and write and execute to others for <file-name>"," chmod 233 <file-name>"
+"allow write for user, write and execute for group, and read for others on file <file-name>"," chmod 234 <file-name>"
+"set permissions to write for owner, write and execute for group members, and read and execute for others on <file-name>"," chmod 235 <file-name>"
+"grant write access for user, write and execute for group, and read and write to others for <file-name>"," chmod 236 <file-name>"
+"set permissions to write for owner, write and execute for group members, and all for others on <file-name>"," chmod 237 <file-name>"
+"provide write for user, read to group, and none to others for <file-name>"," chmod 240 <file-name>"
+"provide write for user, read to group, and execute to others for <file-name>"," chmod 241 <file-name>"
+"allow write for user, read for group, and write for others on file <file-name>"," chmod 242 <file-name>"
+"allow write for user, read for group, and write and execute for others on file <file-name>"," chmod 243 <file-name>"
+"allow write for user, read for group, and read for others on file <file-name>"," chmod 244 <file-name>"
+"grant write access for user, read for group, and read and execute to others for <file-name>"," chmod 245 <file-name>"
+"assign write permission to user, read permission to group, and read and write permission to others for <file-name>"," chmod 246 <file-name>"
+"grant write access for user, read for group, and all to others for <file-name>"," chmod 247 <file-name>"
+"grant write access for user, read and execute for group, and none to others for <file-name>"," chmod 250 <file-name>"
+"set permissions to write for owner, read and execute for group members, and execute for others on <file-name>"," chmod 251 <file-name>"
+"allow write for user, read and execute for group, and write for others on file <file-name>"," chmod 252 <file-name>"
+"set permissions to write for owner, read and execute for group members, and write and execute for others on <file-name>"," chmod 253 <file-name>"
+"allow write for user, read and execute for group, and read for others on file <file-name>"," chmod 254 <file-name>"
+"provide write for user, read and execute to group, and read and execute to others for <file-name>"," chmod 255 <file-name>"
+"allow write for user, read and execute for group, and read and write for others on file <file-name>"," chmod 256 <file-name>"
+"grant write access for user, read and execute for group, and all to others for <file-name>"," chmod 257 <file-name>"
+"set permissions to write for owner, read and write for group members, and none for others on <file-name>"," chmod 260 <file-name>"
+"allow write for user, read and write for group, and execute for others on file <file-name>"," chmod 261 <file-name>"
+"set permissions to write for owner, read and write for group members, and write for others on <file-name>"," chmod 262 <file-name>"
+"assign write permission to user, read and write permission to group, and write and execute permission to others for <file-name>"," chmod 263 <file-name>"
+"grant write access for user, read and write for group, and read to others for <file-name>"," chmod 264 <file-name>"
+"provide write for user, read and write to group, and read and execute to others for <file-name>"," chmod 265 <file-name>"
+"allow write for user, read and write for group, and read and write for others on file <file-name>"," chmod 266 <file-name>"
+"assign write permission to user, read and write permission to group, and all permission to others for <file-name>"," chmod 267 <file-name>"
+"assign write permission to user, all permission to group, and none permission to others for <file-name>"," chmod 270 <file-name>"
+"grant write access for user, all for group, and execute to others for <file-name>"," chmod 271 <file-name>"
+"set permissions to write for owner, all for group members, and write for others on <file-name>"," chmod 272 <file-name>"
+"set permissions to write for owner, all for group members, and write and execute for others on <file-name>"," chmod 273 <file-name>"
+"provide write for user, all to group, and read to others for <file-name>"," chmod 274 <file-name>"
+"grant write access for user, all for group, and read and execute to others for <file-name>"," chmod 275 <file-name>"
+"set permissions to write for owner, all for group members, and read and write for others on <file-name>"," chmod 276 <file-name>"
+"provide write for user, all to group, and all to others for <file-name>"," chmod 277 <file-name>"
+"assign write and execute permission to user, none permission to group, and none permission to others for <file-name>"," chmod 300 <file-name>"
+"allow write and execute for user, none for group, and execute for others on file <file-name>"," chmod 301 <file-name>"
+"assign write and execute permission to user, none permission to group, and write permission to others for <file-name>"," chmod 302 <file-name>"
+"set permissions to write and execute for owner, none for group members, and write and execute for others on <file-name>"," chmod 303 <file-name>"
+"provide write and execute for user, none to group, and read to others for <file-name>"," chmod 304 <file-name>"
+"allow write and execute for user, none for group, and read and execute for others on file <file-name>"," chmod 305 <file-name>"
+"provide write and execute for user, none to group, and read and write to others for <file-name>"," chmod 306 <file-name>"
+"grant write and execute access for user, none for group, and all to others for <file-name>"," chmod 307 <file-name>"
+"grant write and execute access for user, execute for group, and none to others for <file-name>"," chmod 310 <file-name>"
+"provide write and execute for user, execute to group, and execute to others for <file-name>"," chmod 311 <file-name>"
+"grant write and execute access for user, execute for group, and write to others for <file-name>"," chmod 312 <file-name>"
+"provide write and execute for user, execute to group, and write and execute to others for <file-name>"," chmod 313 <file-name>"
+"set permissions to write and execute for owner, execute for group members, and read for others on <file-name>"," chmod 314 <file-name>"
+"assign write and execute permission to user, execute permission to group, and read and execute permission to others for <file-name>"," chmod 315 <file-name>"
+"allow write and execute for user, execute for group, and read and write for others on file <file-name>"," chmod 316 <file-name>"
+"set permissions to write and execute for owner, execute for group members, and all for others on <file-name>"," chmod 317 <file-name>"
+"grant write and execute access for user, write for group, and none to others for <file-name>"," chmod 320 <file-name>"
+"assign write and execute permission to user, write permission to group, and execute permission to others for <file-name>"," chmod 321 <file-name>"
+"assign write and execute permission to user, write permission to group, and write permission to others for <file-name>"," chmod 322 <file-name>"
+"allow write and execute for user, write for group, and write and execute for others on file <file-name>"," chmod 323 <file-name>"
+"grant write and execute access for user, write for group, and read to others for <file-name>"," chmod 324 <file-name>"
+"provide write and execute for user, write to group, and read and execute to others for <file-name>"," chmod 325 <file-name>"
+"grant write and execute access for user, write for group, and read and write to others for <file-name>"," chmod 326 <file-name>"
+"assign write and execute permission to user, write permission to group, and all permission to others for <file-name>"," chmod 327 <file-name>"
+"grant write and execute access for user, write and execute for group, and none to others for <file-name>"," chmod 330 <file-name>"
+"assign write and execute permission to user, write and execute permission to group, and execute permission to others for <file-name>"," chmod 331 <file-name>"
+"provide write and execute for user, write and execute to group, and write to others for <file-name>"," chmod 332 <file-name>"
+"allow write and execute for user, write and execute for group, and write and execute for others on file <file-name>"," chmod 333 <file-name>"
+"grant write and execute access for user, write and execute for group, and read to others for <file-name>"," chmod 334 <file-name>"
+"allow write and execute for user, write and execute for group, and read and execute for others on file <file-name>"," chmod 335 <file-name>"
+"grant write and execute access for user, write and execute for group, and read and write to others for <file-name>"," chmod 336 <file-name>"
+"set permissions to write and execute for owner, write and execute for group members, and all for others on <file-name>"," chmod 337 <file-name>"
+"allow write and execute for user, read for group, and none for others on file <file-name>"," chmod 340 <file-name>"
+"grant write and execute access for user, read for group, and execute to others for <file-name>"," chmod 341 <file-name>"
+"provide write and execute for user, read to group, and write to others for <file-name>"," chmod 342 <file-name>"
+"allow write and execute for user, read for group, and write and execute for others on file <file-name>"," chmod 343 <file-name>"
+"assign write and execute permission to user, read permission to group, and read permission to others for <file-name>"," chmod 344 <file-name>"
+"assign write and execute permission to user, read permission to group, and read and execute permission to others for <file-name>"," chmod 345 <file-name>"
+"grant write and execute access for user, read for group, and read and write to others for <file-name>"," chmod 346 <file-name>"
+"provide write and execute for user, read to group, and all to others for <file-name>"," chmod 347 <file-name>"
+"assign write and execute permission to user, read and execute permission to group, and none permission to others for <file-name>"," chmod 350 <file-name>"
+"allow write and execute for user, read and execute for group, and execute for others on file <file-name>"," chmod 351 <file-name>"
+"assign write and execute permission to user, read and execute permission to group, and write permission to others for <file-name>"," chmod 352 <file-name>"
+"assign write and execute permission to user, read and execute permission to group, and write and execute permission to others for <file-name>"," chmod 353 <file-name>"
+"allow write and execute for user, read and execute for group, and read for others on file <file-name>"," chmod 354 <file-name>"
+"assign write and execute permission to user, read and execute permission to group, and read and execute permission to others for <file-name>"," chmod 355 <file-name>"
+"grant write and execute access for user, read and execute for group, and read and write to others for <file-name>"," chmod 356 <file-name>"
+"assign write and execute permission to user, read and execute permission to group, and all permission to others for <file-name>"," chmod 357 <file-name>"
+"grant write and execute access for user, read and write for group, and none to others for <file-name>"," chmod 360 <file-name>"
+"provide write and execute for user, read and write to group, and execute to others for <file-name>"," chmod 361 <file-name>"
+"set permissions to write and execute for owner, read and write for group members, and write for others on <file-name>"," chmod 362 <file-name>"
+"grant write and execute access for user, read and write for group, and write and execute to others for <file-name>"," chmod 363 <file-name>"
+"set permissions to write and execute for owner, read and write for group members, and read for others on <file-name>"," chmod 364 <file-name>"
+"assign write and execute permission to user, read and write permission to group, and read and execute permission to others for <file-name>"," chmod 365 <file-name>"
+"set permissions to write and execute for owner, read and write for group members, and read and write for others on <file-name>"," chmod 366 <file-name>"
+"assign write and execute permission to user, read and write permission to group, and all permission to others for <file-name>"," chmod 367 <file-name>"
+"assign write and execute permission to user, all permission to group, and none permission to others for <file-name>"," chmod 370 <file-name>"
+"assign write and execute permission to user, all permission to group, and execute permission to others for <file-name>"," chmod 371 <file-name>"
+"set permissions to write and execute for owner, all for group members, and write for others on <file-name>"," chmod 372 <file-name>"
+"allow write and execute for user, all for group, and write and execute for others on file <file-name>"," chmod 373 <file-name>"
+"assign write and execute permission to user, all permission to group, and read permission to others for <file-name>"," chmod 374 <file-name>"
+"grant write and execute access for user, all for group, and read and execute to others for <file-name>"," chmod 375 <file-name>"
+"set permissions to write and execute for owner, all for group members, and read and write for others on <file-name>"," chmod 376 <file-name>"
+"allow write and execute for user, all for group, and all for others on file <file-name>"," chmod 377 <file-name>"
+"set permissions to read for owner, none for group members, and none for others on <file-name>"," chmod 400 <file-name>"
+"allow read for user, none for group, and execute for others on file <file-name>"," chmod 401 <file-name>"
+"allow read for user, none for group, and write for others on file <file-name>"," chmod 402 <file-name>"
+"assign read permission to user, none permission to group, and write and execute permission to others for <file-name>"," chmod 403 <file-name>"
+"allow read for user, none for group, and read for others on file <file-name>"," chmod 404 <file-name>"
+"grant read access for user, none for group, and read and execute to others for <file-name>"," chmod 405 <file-name>"
+"set permissions to read for owner, none for group members, and read and write for others on <file-name>"," chmod 406 <file-name>"
+"grant read access for user, none for group, and all to others for <file-name>"," chmod 407 <file-name>"
+"allow read for user, execute for group, and none for others on file <file-name>"," chmod 410 <file-name>"
+"set permissions to read for owner, execute for group members, and execute for others on <file-name>"," chmod 411 <file-name>"
+"provide read for user, execute to group, and write to others for <file-name>"," chmod 412 <file-name>"
+"provide read for user, execute to group, and write and execute to others for <file-name>"," chmod 413 <file-name>"
+"allow read for user, execute for group, and read for others on file <file-name>"," chmod 414 <file-name>"
+"assign read permission to user, execute permission to group, and read and execute permission to others for <file-name>"," chmod 415 <file-name>"
+"allow read for user, execute for group, and read and write for others on file <file-name>"," chmod 416 <file-name>"
+"set permissions to read for owner, execute for group members, and all for others on <file-name>"," chmod 417 <file-name>"
+"set permissions to read for owner, write for group members, and none for others on <file-name>"," chmod 420 <file-name>"
+"allow read for user, write for group, and execute for others on file <file-name>"," chmod 421 <file-name>"
+"assign read permission to user, write permission to group, and write permission to others for <file-name>"," chmod 422 <file-name>"
+"provide read for user, write to group, and write and execute to others for <file-name>"," chmod 423 <file-name>"
+"allow read for user, write for group, and read for others on file <file-name>"," chmod 424 <file-name>"
+"allow read for user, write for group, and read and execute for others on file <file-name>"," chmod 425 <file-name>"
+"provide read for user, write to group, and read and write to others for <file-name>"," chmod 426 <file-name>"
+"assign read permission to user, write permission to group, and all permission to others for <file-name>"," chmod 427 <file-name>"
+"assign read permission to user, write and execute permission to group, and none permission to others for <file-name>"," chmod 430 <file-name>"
+"provide read for user, write and execute to group, and execute to others for <file-name>"," chmod 431 <file-name>"
+"allow read for user, write and execute for group, and write for others on file <file-name>"," chmod 432 <file-name>"
+"grant read access for user, write and execute for group, and write and execute to others for <file-name>"," chmod 433 <file-name>"
+"assign read permission to user, write and execute permission to group, and read permission to others for <file-name>"," chmod 434 <file-name>"
+"assign read permission to user, write and execute permission to group, and read and execute permission to others for <file-name>"," chmod 435 <file-name>"
+"provide read for user, write and execute to group, and read and write to others for <file-name>"," chmod 436 <file-name>"
+"allow read for user, write and execute for group, and all for others on file <file-name>"," chmod 437 <file-name>"
+"allow read for user, read for group, and none for others on file <file-name>"," chmod 440 <file-name>"
+"assign read permission to user, read permission to group, and execute permission to others for <file-name>"," chmod 441 <file-name>"
+"provide read for user, read to group, and write to others for <file-name>"," chmod 442 <file-name>"
+"allow read for user, read for group, and write and execute for others on file <file-name>"," chmod 443 <file-name>"
+"allow read for user, read for group, and read for others on file <file-name>"," chmod 444 <file-name>"
+"set permissions to read for owner, read for group members, and read and execute for others on <file-name>"," chmod 445 <file-name>"
+"set permissions to read for owner, read for group members, and read and write for others on <file-name>"," chmod 446 <file-name>"
+"set permissions to read for owner, read for group members, and all for others on <file-name>"," chmod 447 <file-name>"
+"set permissions to read for owner, read and execute for group members, and none for others on <file-name>"," chmod 450 <file-name>"
+"provide read for user, read and execute to group, and execute to others for <file-name>"," chmod 451 <file-name>"
+"grant read access for user, read and execute for group, and write to others for <file-name>"," chmod 452 <file-name>"
+"provide read for user, read and execute to group, and write and execute to others for <file-name>"," chmod 453 <file-name>"
+"assign read permission to user, read and execute permission to group, and read permission to others for <file-name>"," chmod 454 <file-name>"
+"provide read for user, read and execute to group, and read and execute to others for <file-name>"," chmod 455 <file-name>"
+"allow read for user, read and execute for group, and read and write for others on file <file-name>"," chmod 456 <file-name>"
+"assign read permission to user, read and execute permission to group, and all permission to others for <file-name>"," chmod 457 <file-name>"
+"grant read access for user, read and write for group, and none to others for <file-name>"," chmod 460 <file-name>"
+"assign read permission to user, read and write permission to group, and execute permission to others for <file-name>"," chmod 461 <file-name>"
+"assign read permission to user, read and write permission to group, and write permission to others for <file-name>"," chmod 462 <file-name>"
+"grant read access for user, read and write for group, and write and execute to others for <file-name>"," chmod 463 <file-name>"
+"allow read for user, read and write for group, and read for others on file <file-name>"," chmod 464 <file-name>"
+"allow read for user, read and write for group, and read and execute for others on file <file-name>"," chmod 465 <file-name>"
+"grant read access for user, read and write for group, and read and write to others for <file-name>"," chmod 466 <file-name>"
+"provide read for user, read and write to group, and all to others for <file-name>"," chmod 467 <file-name>"
+"grant read access for user, all for group, and none to others for <file-name>"," chmod 470 <file-name>"
+"allow read for user, all for group, and execute for others on file <file-name>"," chmod 471 <file-name>"
+"grant read access for user, all for group, and write to others for <file-name>"," chmod 472 <file-name>"
+"set permissions to read for owner, all for group members, and write and execute for others on <file-name>"," chmod 473 <file-name>"
+"set permissions to read for owner, all for group members, and read for others on <file-name>"," chmod 474 <file-name>"
+"provide read for user, all to group, and read and execute to others for <file-name>"," chmod 475 <file-name>"
+"set permissions to read for owner, all for group members, and read and write for others on <file-name>"," chmod 476 <file-name>"
+"provide read for user, all to group, and all to others for <file-name>"," chmod 477 <file-name>"
+"allow read and execute for user, none for group, and none for others on file <file-name>"," chmod 500 <file-name>"
+"assign read and execute permission to user, none permission to group, and execute permission to others for <file-name>"," chmod 501 <file-name>"
+"allow read and execute for user, none for group, and write for others on file <file-name>"," chmod 502 <file-name>"
+"set permissions to read and execute for owner, none for group members, and write and execute for others on <file-name>"," chmod 503 <file-name>"
+"grant read and execute access for user, none for group, and read to others for <file-name>"," chmod 504 <file-name>"
+"assign read and execute permission to user, none permission to group, and read and execute permission to others for <file-name>"," chmod 505 <file-name>"
+"allow read and execute for user, none for group, and read and write for others on file <file-name>"," chmod 506 <file-name>"
+"grant read and execute access for user, none for group, and all to others for <file-name>"," chmod 507 <file-name>"
+"set permissions to read and execute for owner, execute for group members, and none for others on <file-name>"," chmod 510 <file-name>"
+"allow read and execute for user, execute for group, and execute for others on file <file-name>"," chmod 511 <file-name>"
+"provide read and execute for user, execute to group, and write to others for <file-name>"," chmod 512 <file-name>"
+"grant read and execute access for user, execute for group, and write and execute to others for <file-name>"," chmod 513 <file-name>"
+"allow read and execute for user, execute for group, and read for others on file <file-name>"," chmod 514 <file-name>"
+"provide read and execute for user, execute to group, and read and execute to others for <file-name>"," chmod 515 <file-name>"
+"allow read and execute for user, execute for group, and read and write for others on file <file-name>"," chmod 516 <file-name>"
+"assign read and execute permission to user, execute permission to group, and all permission to others for <file-name>"," chmod 517 <file-name>"
+"set permissions to read and execute for owner, write for group members, and none for others on <file-name>"," chmod 520 <file-name>"
+"provide read and execute for user, write to group, and execute to others for <file-name>"," chmod 521 <file-name>"
+"allow read and execute for user, write for group, and write for others on file <file-name>"," chmod 522 <file-name>"
+"grant read and execute access for user, write for group, and write and execute to others for <file-name>"," chmod 523 <file-name>"
+"allow read and execute for user, write for group, and read for others on file <file-name>"," chmod 524 <file-name>"
+"assign read and execute permission to user, write permission to group, and read and execute permission to others for <file-name>"," chmod 525 <file-name>"
+"provide read and execute for user, write to group, and read and write to others for <file-name>"," chmod 526 <file-name>"
+"assign read and execute permission to user, write permission to group, and all permission to others for <file-name>"," chmod 527 <file-name>"
+"assign read and execute permission to user, write and execute permission to group, and none permission to others for <file-name>"," chmod 530 <file-name>"
+"provide read and execute for user, write and execute to group, and execute to others for <file-name>"," chmod 531 <file-name>"
+"provide read and execute for user, write and execute to group, and write to others for <file-name>"," chmod 532 <file-name>"
+"grant read and execute access for user, write and execute for group, and write and execute to others for <file-name>"," chmod 533 <file-name>"
+"provide read and execute for user, write and execute to group, and read to others for <file-name>"," chmod 534 <file-name>"
+"set permissions to read and execute for owner, write and execute for group members, and read and execute for others on <file-name>"," chmod 535 <file-name>"
+"grant read and execute access for user, write and execute for group, and read and write to others for <file-name>"," chmod 536 <file-name>"
+"provide read and execute for user, write and execute to group, and all to others for <file-name>"," chmod 537 <file-name>"
+"provide read and execute for user, read to group, and none to others for <file-name>"," chmod 540 <file-name>"
+"provide read and execute for user, read to group, and execute to others for <file-name>"," chmod 541 <file-name>"
+"provide read and execute for user, read to group, and write to others for <file-name>"," chmod 542 <file-name>"
+"allow read and execute for user, read for group, and write and execute for others on file <file-name>"," chmod 543 <file-name>"
+"allow read and execute for user, read for group, and read for others on file <file-name>"," chmod 544 <file-name>"
+"provide read and execute for user, read to group, and read and execute to others for <file-name>"," chmod 545 <file-name>"
+"assign read and execute permission to user, read permission to group, and read and write permission to others for <file-name>"," chmod 546 <file-name>"
+"grant read and execute access for user, read for group, and all to others for <file-name>"," chmod 547 <file-name>"
+"grant read and execute access for user, read and execute for group, and none to others for <file-name>"," chmod 550 <file-name>"
+"provide read and execute for user, read and execute to group, and execute to others for <file-name>"," chmod 551 <file-name>"
+"set permissions to read and execute for owner, read and execute for group members, and write for others on <file-name>"," chmod 552 <file-name>"
+"allow read and execute for user, read and execute for group, and write and execute for others on file <file-name>"," chmod 553 <file-name>"
+"set permissions to read and execute for owner, read and execute for group members, and read for others on <file-name>"," chmod 554 <file-name>"
+"provide read and execute for user, read and execute to group, and read and execute to others for <file-name>"," chmod 555 <file-name>"
+"provide read and execute for user, read and execute to group, and read and write to others for <file-name>"," chmod 556 <file-name>"
+"provide read and execute for user, read and execute to group, and all to others for <file-name>"," chmod 557 <file-name>"
+"allow read and execute for user, read and write for group, and none for others on file <file-name>"," chmod 560 <file-name>"
+"provide read and execute for user, read and write to group, and execute to others for <file-name>"," chmod 561 <file-name>"
+"assign read and execute permission to user, read and write permission to group, and write permission to others for <file-name>"," chmod 562 <file-name>"
+"set permissions to read and execute for owner, read and write for group members, and write and execute for others on <file-name>"," chmod 563 <file-name>"
+"provide read and execute for user, read and write to group, and read to others for <file-name>"," chmod 564 <file-name>"
+"assign read and execute permission to user, read and write permission to group, and read and execute permission to others for <file-name>"," chmod 565 <file-name>"
+"set permissions to read and execute for owner, read and write for group members, and read and write for others on <file-name>"," chmod 566 <file-name>"
+"allow read and execute for user, read and write for group, and all for others on file <file-name>"," chmod 567 <file-name>"
+"allow read and execute for user, all for group, and none for others on file <file-name>"," chmod 570 <file-name>"
+"grant read and execute access for user, all for group, and execute to others for <file-name>"," chmod 571 <file-name>"
+"provide read and execute for user, all to group, and write to others for <file-name>"," chmod 572 <file-name>"
+"assign read and execute permission to user, all permission to group, and write and execute permission to others for <file-name>"," chmod 573 <file-name>"
+"allow read and execute for user, all for group, and read for others on file <file-name>"," chmod 574 <file-name>"
+"grant read and execute access for user, all for group, and read and execute to others for <file-name>"," chmod 575 <file-name>"
+"allow read and execute for user, all for group, and read and write for others on file <file-name>"," chmod 576 <file-name>"
+"set permissions to read and execute for owner, all for group members, and all for others on <file-name>"," chmod 577 <file-name>"
+"grant read and write access for user, none for group, and none to others for <file-name>"," chmod 600 <file-name>"
+"grant read and write access for user, none for group, and execute to others for <file-name>"," chmod 601 <file-name>"
+"grant read and write access for user, none for group, and write to others for <file-name>"," chmod 602 <file-name>"
+"allow read and write for user, none for group, and write and execute for others on file <file-name>"," chmod 603 <file-name>"
+"provide read and write for user, none to group, and read to others for <file-name>"," chmod 604 <file-name>"
+"grant read and write access for user, none for group, and read and execute to others for <file-name>"," chmod 605 <file-name>"
+"allow read and write for user, none for group, and read and write for others on file <file-name>"," chmod 606 <file-name>"
+"grant read and write access for user, none for group, and all to others for <file-name>"," chmod 607 <file-name>"
+"assign read and write permission to user, execute permission to group, and none permission to others for <file-name>"," chmod 610 <file-name>"
+"grant read and write access for user, execute for group, and execute to others for <file-name>"," chmod 611 <file-name>"
+"grant read and write access for user, execute for group, and write to others for <file-name>"," chmod 612 <file-name>"
+"provide read and write for user, execute to group, and write and execute to others for <file-name>"," chmod 613 <file-name>"
+"provide read and write for user, execute to group, and read to others for <file-name>"," chmod 614 <file-name>"
+"grant read and write access for user, execute for group, and read and execute to others for <file-name>"," chmod 615 <file-name>"
+"assign read and write permission to user, execute permission to group, and read and write permission to others for <file-name>"," chmod 616 <file-name>"
+"allow read and write for user, execute for group, and all for others on file <file-name>"," chmod 617 <file-name>"
+"assign read and write permission to user, write permission to group, and none permission to others for <file-name>"," chmod 620 <file-name>"
+"grant read and write access for user, write for group, and execute to others for <file-name>"," chmod 621 <file-name>"
+"set permissions to read and write for owner, write for group members, and write for others on <file-name>"," chmod 622 <file-name>"
+"allow read and write for user, write for group, and write and execute for others on file <file-name>"," chmod 623 <file-name>"
+"grant read and write access for user, write for group, and read to others for <file-name>"," chmod 624 <file-name>"
+"provide read and write for user, write to group, and read and execute to others for <file-name>"," chmod 625 <file-name>"
+"assign read and write permission to user, write permission to group, and read and write permission to others for <file-name>"," chmod 626 <file-name>"
+"grant read and write access for user, write for group, and all to others for <file-name>"," chmod 627 <file-name>"
+"set permissions to read and write for owner, write and execute for group members, and none for others on <file-name>"," chmod 630 <file-name>"
+"assign read and write permission to user, write and execute permission to group, and execute permission to others for <file-name>"," chmod 631 <file-name>"
+"grant read and write access for user, write and execute for group, and write to others for <file-name>"," chmod 632 <file-name>"
+"set permissions to read and write for owner, write and execute for group members, and write and execute for others on <file-name>"," chmod 633 <file-name>"
+"provide read and write for user, write and execute to group, and read to others for <file-name>"," chmod 634 <file-name>"
+"allow read and write for user, write and execute for group, and read and execute for others on file <file-name>"," chmod 635 <file-name>"
+"grant read and write access for user, write and execute for group, and read and write to others for <file-name>"," chmod 636 <file-name>"
+"provide read and write for user, write and execute to group, and all to others for <file-name>"," chmod 637 <file-name>"
+"assign read and write permission to user, read permission to group, and none permission to others for <file-name>"," chmod 640 <file-name>"
+"assign read and write permission to user, read permission to group, and execute permission to others for <file-name>"," chmod 641 <file-name>"
+"provide read and write for user, read to group, and write to others for <file-name>"," chmod 642 <file-name>"
+"provide read and write for user, read to group, and write and execute to others for <file-name>"," chmod 643 <file-name>"
+"set permissions to read and write for owner, read for group members, and read for others on <file-name>"," chmod 644 <file-name>"
+"set permissions to read and write for owner, read for group members, and read and execute for others on <file-name>"," chmod 645 <file-name>"
+"assign read and write permission to user, read permission to group, and read and write permission to others for <file-name>"," chmod 646 <file-name>"
+"provide read and write for user, read to group, and all to others for <file-name>"," chmod 647 <file-name>"
+"allow read and write for user, read and execute for group, and none for others on file <file-name>"," chmod 650 <file-name>"
+"set permissions to read and write for owner, read and execute for group members, and execute for others on <file-name>"," chmod 651 <file-name>"
+"allow read and write for user, read and execute for group, and write for others on file <file-name>"," chmod 652 <file-name>"
+"grant read and write access for user, read and execute for group, and write and execute to others for <file-name>"," chmod 653 <file-name>"
+"grant read and write access for user, read and execute for group, and read to others for <file-name>"," chmod 654 <file-name>"
+"allow read and write for user, read and execute for group, and read and execute for others on file <file-name>"," chmod 655 <file-name>"
+"assign read and write permission to user, read and execute permission to group, and read and write permission to others for <file-name>"," chmod 656 <file-name>"
+"allow read and write for user, read and execute for group, and all for others on file <file-name>"," chmod 657 <file-name>"
+"assign read and write permission to user, read and write permission to group, and none permission to others for <file-name>"," chmod 660 <file-name>"
+"grant read and write access for user, read and write for group, and execute to others for <file-name>"," chmod 661 <file-name>"
+"allow read and write for user, read and write for group, and write for others on file <file-name>"," chmod 662 <file-name>"
+"assign read and write permission to user, read and write permission to group, and write and execute permission to others for <file-name>"," chmod 663 <file-name>"
+"assign read and write permission to user, read and write permission to group, and read permission to others for <file-name>"," chmod 664 <file-name>"
+"provide read and write for user, read and write to group, and read and execute to others for <file-name>"," chmod 665 <file-name>"
+"assign read and write permission to user, read and write permission to group, and read and write permission to others for <file-name>"," chmod 666 <file-name>"
+"grant read and write access for user, read and write for group, and all to others for <file-name>"," chmod 667 <file-name>"
+"allow read and write for user, all for group, and none for others on file <file-name>"," chmod 670 <file-name>"
+"set permissions to read and write for owner, all for group members, and execute for others on <file-name>"," chmod 671 <file-name>"
+"provide read and write for user, all to group, and write to others for <file-name>"," chmod 672 <file-name>"
+"assign read and write permission to user, all permission to group, and write and execute permission to others for <file-name>"," chmod 673 <file-name>"
+"allow read and write for user, all for group, and read for others on file <file-name>"," chmod 674 <file-name>"
+"allow read and write for user, all for group, and read and execute for others on file <file-name>"," chmod 675 <file-name>"
+"provide read and write for user, all to group, and read and write to others for <file-name>"," chmod 676 <file-name>"
+"set permissions to read and write for owner, all for group members, and all for others on <file-name>"," chmod 677 <file-name>"
+"allow all for user, none for group, and none for others on file <file-name>"," chmod 700 <file-name>"
+"grant all access for user, none for group, and execute to others for <file-name>"," chmod 701 <file-name>"
+"allow all for user, none for group, and write for others on file <file-name>"," chmod 702 <file-name>"
+"grant all access for user, none for group, and write and execute to others for <file-name>"," chmod 703 <file-name>"
+"assign all permission to user, none permission to group, and read permission to others for <file-name>"," chmod 704 <file-name>"
+"set permissions to all for owner, none for group members, and read and execute for others on <file-name>"," chmod 705 <file-name>"
+"allow all for user, none for group, and read and write for others on file <file-name>"," chmod 706 <file-name>"
+"assign all permission to user, none permission to group, and all permission to others for <file-name>"," chmod 707 <file-name>"
+"allow all for user, execute for group, and none for others on file <file-name>"," chmod 710 <file-name>"
+"assign all permission to user, execute permission to group, and execute permission to others for <file-name>"," chmod 711 <file-name>"
+"assign all permission to user, execute permission to group, and write permission to others for <file-name>"," chmod 712 <file-name>"
+"set permissions to all for owner, execute for group members, and write and execute for others on <file-name>"," chmod 713 <file-name>"
+"assign all permission to user, execute permission to group, and read permission to others for <file-name>"," chmod 714 <file-name>"
+"grant all access for user, execute for group, and read and execute to others for <file-name>"," chmod 715 <file-name>"
+"grant all access for user, execute for group, and read and write to others for <file-name>"," chmod 716 <file-name>"
+"set permissions to all for owner, execute for group members, and all for others on <file-name>"," chmod 717 <file-name>"
+"assign all permission to user, write permission to group, and none permission to others for <file-name>"," chmod 720 <file-name>"
+"allow all for user, write for group, and execute for others on file <file-name>"," chmod 721 <file-name>"
+"grant all access for user, write for group, and write to others for <file-name>"," chmod 722 <file-name>"
+"set permissions to all for owner, write for group members, and write and execute for others on <file-name>"," chmod 723 <file-name>"
+"provide all for user, write to group, and read to others for <file-name>"," chmod 724 <file-name>"
+"assign all permission to user, write permission to group, and read and execute permission to others for <file-name>"," chmod 725 <file-name>"
+"allow all for user, write for group, and read and write for others on file <file-name>"," chmod 726 <file-name>"
+"allow all for user, write for group, and all for others on file <file-name>"," chmod 727 <file-name>"
+"allow all for user, write and execute for group, and none for others on file <file-name>"," chmod 730 <file-name>"
+"assign all permission to user, write and execute permission to group, and execute permission to others for <file-name>"," chmod 731 <file-name>"
+"provide all for user, write and execute to group, and write to others for <file-name>"," chmod 732 <file-name>"
+"allow all for user, write and execute for group, and write and execute for others on file <file-name>"," chmod 733 <file-name>"
+"assign all permission to user, write and execute permission to group, and read permission to others for <file-name>"," chmod 734 <file-name>"
+"assign all permission to user, write and execute permission to group, and read and execute permission to others for <file-name>"," chmod 735 <file-name>"
+"set permissions to all for owner, write and execute for group members, and read and write for others on <file-name>"," chmod 736 <file-name>"
+"provide all for user, write and execute to group, and all to others for <file-name>"," chmod 737 <file-name>"
+"provide all for user, read to group, and none to others for <file-name>"," chmod 740 <file-name>"
+"set permissions to all for owner, read for group members, and execute for others on <file-name>"," chmod 741 <file-name>"
+"allow all for user, read for group, and write for others on file <file-name>"," chmod 742 <file-name>"
+"provide all for user, read to group, and write and execute to others for <file-name>"," chmod 743 <file-name>"
+"grant all access for user, read for group, and read to others for <file-name>"," chmod 744 <file-name>"
+"allow all for user, read for group, and read and execute for others on file <file-name>"," chmod 745 <file-name>"
+"grant all access for user, read for group, and read and write to others for <file-name>"," chmod 746 <file-name>"
+"grant all access for user, read for group, and all to others for <file-name>"," chmod 747 <file-name>"
+"set permissions to all for owner, read and execute for group members, and none for others on <file-name>"," chmod 750 <file-name>"
+"assign all permission to user, read and execute permission to group, and execute permission to others for <file-name>"," chmod 751 <file-name>"
+"allow all for user, read and execute for group, and write for others on file <file-name>"," chmod 752 <file-name>"
+"grant all access for user, read and execute for group, and write and execute to others for <file-name>"," chmod 753 <file-name>"
+"allow all for user, read and execute for group, and read for others on file <file-name>"," chmod 754 <file-name>"
+"set permissions to all for owner, read and execute for group members, and read and execute for others on <file-name>"," chmod 755 <file-name>"
+"grant all access for user, read and execute for group, and read and write to others for <file-name>"," chmod 756 <file-name>"
+"grant all access for user, read and execute for group, and all to others for <file-name>"," chmod 757 <file-name>"
+"provide all for user, read and write to group, and none to others for <file-name>"," chmod 760 <file-name>"
+"provide all for user, read and write to group, and execute to others for <file-name>"," chmod 761 <file-name>"
+"assign all permission to user, read and write permission to group, and write permission to others for <file-name>"," chmod 762 <file-name>"
+"assign all permission to user, read and write permission to group, and write and execute permission to others for <file-name>"," chmod 763 <file-name>"
+"grant all access for user, read and write for group, and read to others for <file-name>"," chmod 764 <file-name>"
+"provide all for user, read and write to group, and read and execute to others for <file-name>"," chmod 765 <file-name>"
+"allow all for user, read and write for group, and read and write for others on file <file-name>"," chmod 766 <file-name>"
+"set permissions to all for owner, read and write for group members, and all for others on <file-name>"," chmod 767 <file-name>"
+"allow all for user, all for group, and none for others on file <file-name>"," chmod 770 <file-name>"
+"provide all for user, all to group, and execute to others for <file-name>"," chmod 771 <file-name>"
+"provide all for user, all to group, and write to others for <file-name>"," chmod 772 <file-name>"
+"grant all access for user, all for group, and write and execute to others for <file-name>"," chmod 773 <file-name>"
+"assign all permission to user, all permission to group, and read permission to others for <file-name>"," chmod 774 <file-name>"
+"allow all for user, all for group, and read and execute for others on file <file-name>"," chmod 775 <file-name>"
+"provide all for user, all to group, and read and write to others for <file-name>"," chmod 776 <file-name>"
+"grant all access for user, all for group, and all to others for <file-name>"," chmod 777 <file-name>"
+

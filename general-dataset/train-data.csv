@@ -905,3 +905,66 @@ put a 1 hour and 50 minutes timer,sleep 6600 && notify-send "timer done" "your 1
 countdown 1 hour and 55 minutes,sleep 6900 && notify-send "timer done" "your 1 hour 55 minutes timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
 set a timer for 2 hour,sleep 7200 && notify-send "timer done" "your 2 hour timer is up!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga
 
+
+open the photo <file-name>.jpeg,xdg-open <file-name>.jpeg
+show me the image saved as <file-name>.jpeg,xdg-open <file-name>.jpeg
+access the picture <file-name>.jpg,xdg-open <file-name>.jpg
+show the image named <file-name>.jpg,xdg-open <file-name>.jpg
+open the image saved as <file-name>.png,xdg-open <file-name>.png
+display the picture that named <file-name>.png,xdg-open <file-name>.png
+play the image file <file-name>.gif,xdg-open <file-name>.gif
+launch the picture saved as a <file-name>.gif,xdg-open <file-name>.gif
+open the photo stored as <file-name>.raw,xdg-open <file-name>.raw
+access the file <file-name>.raw,xdg-open <file-name>.raw
+open the jpeg image <file-name>,xdg-open <file-name>.jpeg
+can you display the <file-name>.jpg picture,xdg-open <file-name>.jpg
+please open the <file-name>.png file,xdg-open <file-name>.pgn
+let me open the gif file <file-name>,xdg-open <file-name>.gif
+i want to open the raw file <file-name>,xdg-open <file-name>.raw
+show me <file-name>.jpeg located in <directory-name>,xdg-open <directory-name>/<file-name>.jpeg
+display the .jpeg file <file-name> from <directory-name>,xdg-open <directory-name>/<file-name>.jpeg
+open the .jpg file <file-name> found in <directory-name>,xdg-open <directory-name>/<file-name>.jpg
+show <file-name>.jpg stored in <directory-name>,xdg-open <directory-name>/<file-name>.jpg
+launch the .png image <file-name> from <directory-name>,xdg-open <directory-name>/<file-name>.png
+show me the file <file-name>.png in <directory-name>,xdg-open <directory-name>/<file-name>.png
+play <file-name>.gif located in <directory-name>,xdg-open <directory-name>/<file-name>.gif
+open the .gif file <file-name> from <directory-name>,xdg-open <directory-name>/<file-name>.gif
+access <file-name>.raw from the folder <directory-name>,xdg-open <directory-name>/<file-name>.raw
+open the raw file <file-name> inside <directory-name>,xdg-open <directory-name>/<file-name>.raw
+open the jpeg file <file-name> from the <directory-name> directory,xdg-open <directory-name>/<file-name>.jpeg
+can you show the <file-name>.jpg image located in the <directory-name> folder,xdg-open <directory-name>/<file-name>.jpg
+please show the png file <file-name> located in the <directory-name> directory,xdg-open <directory-name>/<file-name>.pgn
+let me view the <file-name>.gif file inside the <directory-name> folder,xdg-open <directory-name>/<file-name>.gif
+i want to view the raw file <file-name> located in the <directory-name> directory,xdg-open <directory-name>/<file-name>.raw
+open the video file <file-name>.mp4,xdg-open <file-name>.mp4
+launch the mp4 video stored as <file-name>,xdg-open <file-name>.mp4
+check out the video file <file-name>.mov,xdg-open <file-name>.mov
+load the mov video saved as <file-name>,xdg-open <file-name>.mov
+locate the avi file <file-name>.avi,xdg-open <file-name>.avi
+uncover the avi movie titled <file-name>,xdg-open <file-name>.avi
+access <file-name>.mp4 from the <directory-name>, xdg-open <directory-name>/<file-name>.mp4
+open the mp4 file <file-name> inside the directory, xdg-open <directory-name>/<file-name>.mp4
+access <file-name>.mov from the <directory-name>, xdg-open <directory-name>/<file-name>.mov
+open the mov file <file-name> inside <directory-name>, xdg-open <directory-name>/<file-name>.mov
+access <file-name>.avi from the <directory-name>, xdg-open <directory-name>/<file-name>.avi
+open the avi file named <file-name> in <directory-name>, xdg-open <directory-name>/<file-name>.avi
+open <file-name>.pdf for me,xdg-open <file-name>.pdf
+can you open the pdf file <file-name>,xdg-open <file-name>.pdf
+open the <file-name>.pdf from the <directory-name> directory,xdg-open <directory-name>/<file-name>.pdf
+can you open a pdf file named <file-name> from the <directory-name> folder,xdg-open <directory-name>/<file-name>.pdf
+open <file-name>.docx for me,xdg-open <file-name>.docx
+can you display the document <file-name>,xdg-open <file-name>.docx
+can you open the <file-name>.pptx presentation,xdg-open <file-name>.pptx
+let me view a ppt file named <file-name>,xdg-open <file-name>.pptx
+can you show me <file-name>.pptx from the <directory-name> folder,xdg-open <directory-name>/<file-name>.pptx
+please open the ppt file <file-name> from the <directory-name> folder,xdg-open <directory-name>/<file-name>.pptx
+can you play the <file-name>.mp3 audio file,xdg-open <file-name>.mp3
+Please open the mp3 named <file-name> audio file,xdg-open <file-name>.mp3
+open <file-name>.wav audio file,xdg-open <file-name>.wav
+can you play the wav file <file-name> for me,xdg-open <file-name>.wav
+open the <file-name>.mp3 from the <directory-name> directory,xdg-open <directory-name>/<file-name>.mp3
+can you play the mp3 file <file-name> from the <directory-name> folderxdg-open <directory-name>/<file-name>.mp3
+let me hear the <file-name>.wav from the <directory-name> folder,xdg-open <directory-name>/<file-name>.wav
+show me the wav file <file-name> from the <directory-name>,xdg-open <directory-name>/<file-name>.wav
+
+
