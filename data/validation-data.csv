@@ -625,9 +625,9 @@ make a tar archive with name <archieve-name>.tar for <file-name>,tar -cvf <archi
 create a tar archive named <archieve-name>.tar for <file-name>,tar -cvf <archieve-name>.tar <file-name>
 restore files from <archieve-name>.tar,tar -xvf <archieve-name>.tar
 extract data from <archieve-name>.tar,tar -xvf <archieve-name>.tar
-delete file <file-name>,rm <file-name>,
+delete file <file-name>,rm <file-name>
 remove <file-name> under <directory-name>,rm <directory-name>/<file-name>
-delete folder <directory-name>,rm -r <directory-name>,
+delete folder <directory-name>,rm -r <directory-name>
 remove <directory-name> under <directory-name> forecefully,rm -rf <directory-name>/<directory-name>
 assign read permission to user for <file-name>,chmod u+r <file-name>
 assign write permission to user for <file-name>,chmod u+w <file-name>
