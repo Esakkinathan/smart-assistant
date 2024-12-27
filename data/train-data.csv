@@ -844,7 +844,7 @@ hey can you start pycharm,pycharm-community
 bring up pycharm please,pycharm-community
 please launch pycharm for me,pycharm-community
 i need you to open pycharm now,pycharm-community
-please open postman,
+please open postman,postman
 hey can you start postman,postman
 bring up postman please,postman
 please launch postman for me,postman
@@ -2578,7 +2578,7 @@ Please open the mp3 named <file-name> audio file,xdg-open <file-name>.mp3
 open <file-name>.wav audio file,xdg-open <file-name>.wav
 can you play the wav file <file-name> for me,xdg-open <file-name>.wav
 open the <file-name>.mp3 from the <directory-name> directory,xdg-open <directory-name>/<file-name>.mp3
-can you play the mp3 file <file-name> from the <directory-name> folderxdg-open <directory-name>/<file-name>.mp3
+can you play the mp3 file <file-name> from the <directory-name> folder,xdg-open <directory-name>/<file-name>.mp3
 let me hear the <file-name>.wav from the <directory-name> folder,xdg-open <directory-name>/<file-name>.wav
 show me the wav file <file-name> from the <directory-name>,xdg-open <directory-name>/<file-name>.wav
 change directory to <directory-name>,cd <directory-name>
