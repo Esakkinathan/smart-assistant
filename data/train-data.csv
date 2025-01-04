@@ -19,16 +19,6 @@ can you give me the time,time
 whats the time at the moment,time
 how late is it,time
 can you check the time for me,time
-whats the time in <specific-location>,time-in <specific-location>
-can you tell me the current time in <specific-location>,time-in <specific-location>
-what time is it in <specific-location> right now,time-in <specific-location>
-please give me the time in <specific-location>,time-in <specific-location>
-whats the local time in <specific-location>,time-in <specific-location>
-can you check the time for me in <specific-location>,time-in <specific-location>
-what time zone is <specific-location> in,time-in <specific-location>
-how late is it in <specific-location>,time-in <specific-location>
-tell me the time in <specific-location>,time-in <specific-location>
-whats the current hour in <specific-location>,time-in <specific-location>
 whats todays date,date
 can you tell me the date,date
 whats the date today,date

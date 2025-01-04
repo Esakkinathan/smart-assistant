@@ -3,8 +3,6 @@ what are the weather conditions right now,weather
 will the weather change throughout the day,weather
 whats the time on the clock,time
 id like to know the time,time
-whats the clock reading in <specific-location>,time-in <specific-location>
-please tell me what time it is in <specific-location> right now,time-in <specific-location>
 what date is it today,date
 can you remind me of the date,date
 which day is it today,day
@@ -59,8 +57,8 @@ search and check for <search-query>,browser <search-query>
 could you search and show <search-query>,browser <search-query>
 apply the dark style for me now,set-theme-dark
 please go ahead and activate dark mode,set-theme-dark
-can you make the interface light,set-theme-dark
-i want the light theme can you enable it,set-theme-dark
+can you make the interface light,set-theme-light
+i want the light theme can you enable it,set-theme-light
 lets enable bluetooth now,rfkill unblock bluetooth
 activate bluetooth so i can use it,rfkill unblock bluetooth
 turn the bluetooth service off please,rfkill block bluetooth
