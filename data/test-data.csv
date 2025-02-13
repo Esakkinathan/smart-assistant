@@ -35,45 +35,36 @@ i need airplane mode off,nmcli radio all on
 please deactivate flight mode,nmcli radio all on
 lets turn on the night light,turn-night-light-on
 can you disable the night light,turn-night-light-off
-i need a timer for 5 seconds,set-timer 5 
-begin a timer for 10 seconds,set-timer 10 
-put a 15 seconds timer,set-timer 15 
-countdown 20 seconds,set-timer 20  
-set a timer for 25 seconds,set-timer 25 
-start a 30 seconds timer,set-timer 30 
-can you set a timer for 35 seconds,set-timer 35  
-i need a timer for 40 seconds,set-timer 40 
-begin a timer for 45 seconds,set-timer 45
-put a 50 seconds timer,set-timer 50 
-countdown 55 seconds,set-timer 55 
-set a timer for 60 seconds,set-timer 60 
-start a 5 minute timer,set-timer 300 
-can you set a timer for 10 minutes,set-timer 600 
-i need a timer for 15 minutes,set-timer 900 
-begin a timer for 20 minutes,set-timer 1200 
-put a 25 minute timer,set-timer 1500 
-countdown 30 minutes,set-timer 1800 
-set a timer for 35 minutes,set-timer 2100 
-start a 40 minute timer,set-timer 2400 
-can you set a timer for 45 minutes,set-timer 2700 
-i need a timer for 50 minutes,set-timer 3000 
-begin a timer for 55 minutes,set-timer 3300
-put a 60 minute timer,set-timer 3600 
-countdown 1 hour,set-timer 3600 
-set a timer for 1 hour and 5 minutes,set-timer 3900 
-start a 1 hour and 10 minutes timer,set-timer 4200 
-can you set a timer for 1 hour and 15 minutes,set-timer 4500 
-i need a timer for 1 hour and 20 minutes,set-timer 4800 
-begin a timer for 1 hour and 25 minutes,set-timer 5100 
-put a 1 hour and 30 minutes timer,set-timer 5400  
-countdown 1 hour and half,set-timer 5400 
-set a timer for 1 hour and 35 minutes,set-timer 5700 
-start a 1 hour and 40 minutes timer,set-timer 6000
-can you set a timer for 1 hour and 45 minutes,set-timer 6300 
-i need a timer for 1 hour and 50 minutes,set-timer 6600
-begin a timer for 1 hour and 55 minutes,set-timer 6900
-put a 2 hour timer,set-timer 7200
-countdown half an hour,set-timer 1800
+begin a countdown for 31 seconds,set-timer 31 seconds
+create a countdown for 32 seconds,set-timer 32 seconds
+start counting down from 33 seconds,set-timer 33 seconds
+run a countdown for 34 seconds,set-timer 34 seconds
+schedule a countdown for 35 seconds,set-timer 35 seconds
+activate a timer for 36 seconds,set-timer 36 seconds
+set a countdown for 37 seconds,set-timer 37 seconds
+initiate a timer for 38 seconds,set-timer 38 seconds
+run a timer for 39 seconds,set-timer 39 seconds
+start a countdown for 40 seconds,set-timer 40 seconds
+schedule a timer for 41 seconds,set-timer 41 seconds
+set a countdown for 42 seconds,set-timer 42 seconds
+begin a timer for 43 seconds,set-timer 43 seconds
+activate a countdown for 44 seconds,set-timer 44 seconds
+run a timer for 46 minutes,set-timer 46 minutes
+schedule a countdown for 51 minutes,set-timer 51 minutes
+set a timer for 57 minutes,set-timer 57 minutes
+start a countdown for 63 minutes,set-timer 63 minutes
+activate a timer for 67 minutes,set-timer 67 minutes
+create a countdown for 71 minutes,set-timer 71 minutes
+run a timer for 1 hour 2 minutes,set-timer 1 hour 2 minutes
+set a countdown for 1 hour 8 minutes,set-timer 1 hour 8 minutes
+initiate a timer for 1 hour 16 minutes,set-timer 1 hour 16 minutes
+activate a countdown for 1 hour 25 minutes,set-timer 1 hour 25 minutes
+schedule a timer for 1 hour 45 minutes,set-timer 1 hour 45 minutes
+set a countdown for 2 hours 15 minutes,set-timer 2 hours 15 minutes
+run a timer for 3 hours 25 minutes,set-timer 3 hours 25 minutes
+schedule a countdown for 4 hours 30 minutes,set-timer 4 hours 30 minutes
+start a timer for 5 hours 10 minutes,set-timer 5 hours 10 minutes
+initiate a countdown for 6 hours 15 minutes,set-timer 6 hours 15 minutes
 give me the current system details,uname -a
 give me the cpu architecture details,lscpu
 what is the total memory available,free -h

@@ -67,45 +67,72 @@ please switch on the night light,turn-night-light-on
 could you make the screen warmer with night light,turn-night-light-on
 lets turn off the night light now,turn-night-light-off
 can you make the screen normal again by disabling the night light,turn-night-light-off
-can you set a timer for 5 seconds,set-timer 5 
-i need a timer for 10 seconds,set-timer 10  
-begin a timer for 15 seconds,set-timer 15  
-put a 20 seconds timer,set-timer 20  
-countdown 25 seconds,set-timer 25  
-set a timer for 30 seconds,set-timer 30  
-start a 35 seconds timer,set-timer 35  
-can you set a timer for 40 seconds,set-timer 40  
-i need a timer for 45 seconds,set-timer 45  
-begin a timer for 50 seconds,set-timer 50  
-put a 55 seconds timer,set-timer 55  
-countdown 60 seconds,set-timer 60  
-set a timer for 5 minutes,set-timer 300 
-start a 10 minute timer,set-timer 600  
-can you set a timer for 15 minutes,set-timer 900  
-i need a timer for 20 minutes,set-timer 1200  
-begin a timer for 25 minutes,set-timer 1500  
-put a 30 minute timer,set-timer 1800  
-countdown 35 minutes,set-timer 2100  
-set a timer for 40 minutes,set-timer 2400  
-start a 45 minute timer,set-timer 2700  
-can you set a timer for 50 minutes,set-timer 3000  
-i need a timer for 55 minutes,set-timer 3300  
-begin a timer for 60 minutes,set-timer 3600  
-put a 1 hour timer,set-timer 3600 
-countdown 1 hour and 5 minutes,set-timer 3900
-set a timer for 1 hour and 10 minutes,set-timer 4200 
-start a 1 hour and 15 minutes timer,set-timer 4500
-can you set a timer for 1 hour and 20 minutes,set-timer 4800
-i need a timer for 1 hour and 25 minutes,set-timer 5100
-begin a timer for 1 hour and 30 minutes,set-timer 5400
-put a 1 hour and half timer,set-timer 5400
-countdown 1 hour and 35 minutes,set-timer 5700
-set a timer for 1 hour and 40 minutes,set-timer 6000
-start a 1 hour and 45 minutes timer,set-timer 6300
-can you set a timer for 1 hour and 50 minutes,set-timer 6600
-i need a timer for 1 hour and 55 minutes,set-timer 6900
-begin a timer for 2 hour,set-timer 7200
-put a half an hour timer,set-timer 1800
+countdown from 13 seconds,set-timer 13 seconds
+set a countdown for 14 seconds,set-timer 14 seconds
+initiate a countdown for 15 seconds,set-timer 15 seconds
+start a timer for 16 seconds,set-timer 16 seconds
+activate a timer for 17 seconds,set-timer 17 seconds
+run a countdown for 18 seconds,set-timer 18 seconds
+begin counting down from 19 seconds,set-timer 19 seconds
+create a timer for 20 seconds,set-timer 20 seconds
+launch a countdown for 21 seconds,set-timer 21 seconds
+schedule a timer for 22 seconds,set-timer 22 seconds
+set a countdown for 23 seconds,set-timer 23 seconds
+activate a timer for 24 seconds,set-timer 24 seconds
+start counting down from 25 seconds,set-timer 25 seconds
+run a countdown for 26 seconds,set-timer 26 seconds
+schedule a timer for 27 seconds,set-timer 27 seconds
+set a countdown for 28 seconds,set-timer 28 seconds
+start a timer for 29 seconds,set-timer 29 seconds
+begin a countdown for 30 seconds,set-timer 30 seconds
+schedule a timer for 45 minutes,set-timer 45 minutes
+start a timer for 50 minutes,set-timer 50 minutes
+create a countdown for 55 minutes,set-timer 55 minutes
+run a timer for 62 minutes,set-timer 62 minutes
+set a timer for 65 minutes,set-timer 65 minutes
+initiate a countdown for 70 minutes,set-timer 70 minutes
+schedule a timer for 1 minute 15 seconds,set-timer 1 minute 15 seconds
+activate a timer for 1 minute 30 seconds,set-timer 1 minute 30 seconds
+start a countdown for 2 minutes 20 seconds,set-timer 2 minutes 20 seconds
+run a timer for 2 minutes 40 seconds,set-timer 2 minutes 40 seconds
+begin a countdown for 3 minutes 10 seconds,set-timer 3 minutes 10 seconds
+create a timer for 3 minutes 50 seconds,set-timer 3 minutes 50 seconds
+set a countdown for 4 minutes 5 seconds,set-timer 4 minutes 5 seconds
+activate a timer for 4 minutes 25 seconds,set-timer 4 minutes 25 seconds
+schedule a timer for 5 minutes 10 seconds,set-timer 5 minutes 10 seconds
+start a countdown for 6 minutes 35 seconds,set-timer 6 minutes 35 seconds
+run a timer for 7 minutes 15 seconds,set-timer 7 minutes 15 seconds
+set a countdown for 8 minutes 45 seconds,set-timer 8 minutes 45 seconds
+initiate a timer for 9 minutes 20 seconds,set-timer 9 minutes 20 seconds
+activate a countdown for 10 minutes 5 seconds,set-timer 10 minutes 5 seconds
+schedule a timer for 11 minutes 30 seconds,set-timer 11 minutes 30 seconds
+set a countdown for 12 minutes 50 seconds,set-timer 12 minutes 50 seconds
+start a timer for 13 minutes 15 seconds,set-timer 13 minutes 15 seconds
+run a timer for 14 minutes 40 seconds,set-timer 14 minutes 40 seconds
+begin a countdown for 15 minutes 10 seconds,set-timer 15 minutes 10 seconds
+schedule a timer for 16 minutes 55 seconds,set-timer 16 minutes 55 seconds
+activate a timer for 17 minutes 30 seconds,set-timer 17 minutes 30 seconds
+start a countdown for 18 minutes 5 seconds,set-timer 18 minutes 5 seconds
+set a timer for 19 minutes 45 seconds,set-timer 19 minutes 45 seconds
+create a countdown for 20 minutes 20 seconds,set-timer 20 minutes 20 seconds
+schedule a timer for 25 minutes 35 seconds,set-timer 25 minutes 35 seconds
+set a countdown for 30 minutes 50 seconds,set-timer 30 minutes 50 seconds
+initiate a timer for 35 minutes 15 seconds,set-timer 35 minutes 15 seconds
+activate a countdown for 40 minutes 5 seconds,set-timer 40 minutes 5 seconds
+start a timer for 45 minutes 30 seconds,set-timer 45 minutes 30 seconds
+run a timer for 50 minutes 10 seconds,set-timer 50 minutes 10 seconds
+schedule a countdown for 55 minutes 55 seconds,set-timer 55 minutes 55 seconds
+set a timer for 1 hour 3 minutes,set-timer 1 hour 3 minutes
+start a countdown for 1 hour 7 minutes,set-timer 1 hour 7 minutes
+activate a timer for 1 hour 15 minutes,set-timer 1 hour 15 minutes
+create a timer for 1 hour 20 minutes,set-timer 1 hour 20 minutes
+set a countdown for 1 hour 35 minutes,set-timer 1 hour 35 minutes
+schedule a timer for 2 hours 10 minutes,set-timer 2 hours 10 minutes
+run a countdown for 2 hours 30 minutes,set-timer 2 hours 30 minutes
+initiate a timer for 3 hours 5 minutes,set-timer 3 hours 5 minutes
+activate a countdown for 3 hours 20 minutes,set-timer 3 hours 20 minutes
+start a timer for 4 hours 15 minutes,set-timer 4 hours 15 minutes
+schedule a countdown for 4 hours 40 minutes,set-timer 4 hours 40 minutes
 whats the version of the system im using,uname -a
 show full system specifications,uname -a
 get cpu information,lscpu
