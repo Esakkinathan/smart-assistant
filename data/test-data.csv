@@ -12,21 +12,16 @@ turn the sound off,volume-mute
 please restore the audio,volume-unmute
 turn the brightness up,brightness-up
 please reduce the display brightness,brightness-down
-turn the brightness up by 53 please,brightness-up 53
-can you make the display 12 dimmer,brightness-down 12
+turn the brightness up by 53 please,set-brightness 53
+can you make the display 12 dimmer,set-brightness 12
 i need the brightness at maximum,brightness-maximum
 take a quick shot of this screen for me,screenshot
 lock it up for me,lock-screen
-can you clear the view by minimizing everything,minimize-all-window
-put an alarm for 10 am for me,alarm 10
-add an alarm at 5 in the morning,alarm 5 am
-can you set a night alarm for 9,alarm 9 pm
+can you clear the view by minimizing everything,minimize
 can you perform a system restart,restart
 switch off the system,shutdown
-please put this into hibernation mode,hibernate
-can you move the computer to set-timer,hibernate
-find the song perfect on spotify,spotify perfect
-search youtube for the video epic games,youtube epic games
+find the song mottu ondru on spotify,spotify mottu ondru
+search youtube for the video dsa tutorials,youtube dsa tutorials
 find and search top 5 marvel characters,browser top 5 marvel characters
 switch the theme to dark please,set-theme-dark
 set the system theme to light mode for me,set-theme-light
@@ -39,7 +34,7 @@ turn on airplane mode now,nmcli radio all off
 i need airplane mode off,nmcli radio all on
 please deactivate flight mode,nmcli radio all on
 lets turn on the night light,turn-night-light-on
-can you disable the night light,turn-night-light-on
+can you disable the night light,turn-night-light-off
 i need a timer for 5 seconds,set-timer 5 
 begin a timer for 10 seconds,set-timer 10 
 put a 15 seconds timer,set-timer 15 

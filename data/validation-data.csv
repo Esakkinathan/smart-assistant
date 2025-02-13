@@ -13,10 +13,10 @@ please increase the audio level,volume-up
 adjust the volume upwards,volume-up
 can you reduce the sound,volume-down
 make the audio softer,volume-down
-turn the volume up to <volume-increase-percentage> please,set-volume <volume-increase-percentage>
-increase the volume to <volume-increase-percentage>,set-volume <volume-increase-percentage>
-turn the volume down to <volume-decrease-percentage> less,set-volume <volume-decrease-percentage>
-adjust the volume to be <volume-decrease-percentage> lower,set-volume <volume-decrease-percentage>
+turn the volume up to 39 please,set-volume 39
+increase the volume to 99 percentage,set-volume 99
+turn the volume down to 12 less,set-volume 12
+adjust the volume to be 68 lower,set-volume 68
 can you quiet the audio,volume-mute
 can you silence everything,volume-mute
 can you activate the sound,volume-unmute
@@ -25,36 +25,28 @@ make the display brighter,brightness-up
 please increase the light level,brightness-up
 can you turn down the brightness,brightness-down
 set the brightness lower,brightness-down
-adjust the brightness up by <brightness-up-percentage>,brightness-up <brightness-up-percentage>
-make it <brightness-up-percentage> brighter please,brightness-up <brightness-up-percentage>
-dimming the screen by <brightness-down-percentage> would be great,brightness-down <brightness-down-percentage>
-please make the screen <brightness-down-percentage> less bright,brightness-down <brightness-down-percentage>
+adjust the brightness up by 87,set-brightness 87
+make it 52 brighter please,set-brightness 52
+dimming the screen by 29 would be great,set-brightness 29
+please make the screen 18 less bright,set-brightness 18
 lets put the brightness to full power,brightness-maximum
 can you push the brightness to maximum,brightness-maximum
 how about grabbing a screenshot of this,screenshot
 could you screenshot whats showing on the screen,screenshot
 go ahead and lock the screen,lock-screen
 can you make sure the screen is locked,lock-screen
-minimize everything thats open,minimize-all-window
-put all the windows away without closing them,minimize-all-window
-can i get an alarm set for <time> am,alarm <time>
-make an alarm for <time> am,alarm <time>
-set a wake-up alarm for <time> in the morning,alarm <time> am
-schedule me an alarm for <time> in the early morning,alarm <time> am
-prepare an alarm for <time> this evening,alarm <time> pm
-plan an alarm for <time> tonight at night,alarm <time> pm
+minimize everything thats open,minimize
+put all the windows away without closing them,minimize
 restart my laptop if you can,restart
 can you fresh start the system,restart
 would you turn off this machine,shutdown
 can you shut everything down,shutdown
-i want you to hibernate this device,hibernate
-turn on set-timer for the system,hibernate
-please check if <song-name> is on spotify,spotify <song-name>
-could you find <song-name> for me on spotify,spotify <song-name>
-please search youtube for <search-query> for me,youtube <search-query>
-could you check youtube for <search-query>,youtube <search-query>
-search and check for <search-query>,browser <search-query>
-could you search and show <search-query>,browser <search-query>
+please check if perfect is on spotify,spotify perfect  
+could you find ale ale for me on spotify,spotify ale ale  
+please search youtube for python vs java for me,youtube python vs java  
+could you check youtube for vikram movie trailer,youtube vikram movie trailer  
+search and check for python tutorials,browser python tutorials  
+could you search and show kollywood news,browser kollywood news  
 apply the dark style for me now,set-theme-dark
 please go ahead and activate dark mode,set-theme-dark
 can you make the interface light,set-theme-light
@@ -419,80 +411,80 @@ i no longer need wireshark please remove it,sudo apt-get remove wireshark
 can you help me remove windscribe,sudo apt-get remove windscribe-cli
 can you help me remove protonvpn,sudo apt-get remove protonvpn-cli
 i need to get rid of expressvpn what's the process,sudo apt-get remove expressvpn
-create a nwe group named <group-name>,sudo groupadd <group-name>
-add a group called <group-name>,sudo groupadd <group-name>
-create a group with group id <group-id>,sudo groupadd -g <group-id> <group-name>
-create an account for user <username>,sudo useradd <username>
-add new account for <username>,sudo useradd <username>
-add a new user with the name <username> and home directory,sudo useradd -m <username>
-register a new user <username> with uid as <uid>,sudo useradd -u <uid> <username>
-add new account for <username> with home directory <directory-name>,sudo useradd -d <directory-name> <username>
-add a new user named <username> and also add to <group-name>,sudo useradd -G <group-name> <username>
-create a new user called <username> and add to <group-name>,sudo useradd -G <group-name> <username>
-change the password for <username>,sudo passwd <username>
-set a new password for <username>,sudo passwd <username>
+add a group called devops,sudo groupadd devops
+create a new group named hrteam,sudo groupadd hrteam
+create a group named operations with group id 1355,sudo groupadd -g 1355 operations
+create an account for user raja,sudo useradd raja
+add new account for haneesh,sudo useradd haneesh
+add a new user with the name guru and home directory,sudo useradd -m guru
+register a new user vinoth with uid as 2344,sudo useradd -u 2344 vinoth
+add new account for paul with home directory /home/paulakash,sudo useradd -d /home/paulakash paul
+add a new user named jothi and also add to tester,sudo useradd -G tester jothi
+create a new user called vincent and add to developers,sudo useradd -G developers vincent
+change the password for mohammed,sudo passwd mohammed
+set a new password for mohan,sudo passwd mohan
 set a new password for me,sudo passwd $USER
-lock user <username> out of the system,sudo usermod -L <username>
-block access for <username>,sudo usermod -L <username>
-unlock the account of <username>,sudo usermod -U <username>
-enable user <username> account,sudo usermod -U <username>
-rename the user <old-user-name> to <new-user-name>,sudo usermod -l <new-user-name> <old-user-name>
-modify the username of <old-user-name> to <new-user-name>,sudo usermod -l <new-user-name> <old-user-name>
-modify my username to <new-user-name>,sudo usermod -l <new-user-name> $USER
-modify the user id of <username> to <user-id>,sudo usermod -u <user-id> <username>
-modify my user id to <user-id>,sudo usermod -u <user-id> $USER
-modify the home directory of <username> to <directory-name>,sudo usermod -d <directory-name> <username>
-set a new home directory <directory-name for <username>,sudo usermod -d <directory-name> <username>
-modify the home directory of me to <directory-name>,sudo usermod -d <directory-name> $USER
-set expiry date for user <username> as <yyyy-mm-dd>,sudo usermod -e <yyyy-mm-dd> <username>
-add a user named <username> to group named <group-name>,sudo usermod -aG <groupname> <username>
-assign a new group <group-name> to user <username>,sudo usermod -aG <groupname> <username>
-assign a new group <group-name> to me,sudo usermod -aG <groupname> $USER
-assign <username> to groups <group1> <group2> simultaneously,sudo usermod -aG <group1> <group2> <username>
-add <username> to the following groups <group1> and <group2>,sudo usermod -aG <group1> <group2> <username>
-add me to the following groups <group1> and <group2>,sudo usermod -aG <group1> <group2> $USER
-change the primary group of user <username> to <group-name>,sudo usermod -g <group-name> <username>
-change my primary group to <group-name>,sudo usermod -g <group-name> $USER
-make <username> a sudo user, sudo usermod -aG sudo <username>
-allow <username> to have admin access, sudo usermod -aG sudo <username>
+lock user rajendran out of the system,sudo usermod -L rajendran
+block access for mano,sudo usermod -L mano
+unlock the account of vijay,sudo usermod -U vijay
+enable user vinith account,sudo usermod -U vinith
+rename the user veenoth to vinoth,sudo usermod -l vinoth veenoth
+modify the username of eva to adam,sudo usermod -l adam eva
+modify my username to chris,sudo usermod -l chris $USER
+modify the user id of noal to 9645,sudo usermod -u 9645 noal
+modify my user id to 1235,sudo usermod -u 1235 $USER
+modify the home directory of arjun to /home/arjun_new,sudo usermod -d /home/arjun_new arjun  
+set a new home directory /data/rahul for rahul,sudo usermod -d /data/rahul rahul  
+modify the home directory of me to /users/myhome,sudo usermod -d /users/myhome $USER  
+set expiry date for user praveen as 2024-10-15,sudo usermod -e 2024-10-15 praveen  
+add a user named balaji to group named finance,sudo usermod -aG finance balaji  
+assign a new group support to user kishore,sudo usermod -aG support kishore  
+assign a new group support to user charlotte,sudo usermod -aG support charlotte  
+assign mason to groups developers testers simultaneously,sudo usermod -aG developers testers mason  
+add lily to the following groups research and innovation,sudo usermod -aG research innovation lily  
+add me to the following groups audio and video,sudo usermod -aG audio video $USER
+change the primary group of user sanjay to render,sudo usermod -g render sanjay
+change my primary group to operations,sudo usermod -g operations $USER
+make deepak a sudo user,sudo usermod -aG sudo deepak
+allow sanjana to have admin access,sudo usermod -aG sudo sanjana
 make me a sudo user, sudo usermod -aG sudo $USER
 allow the current user to have admin access, sudo usermod -aG sudo $USER
-remove sudo privileges from <username>, sudo deluser <username> sudo
-revoke admin privileges from <username>, sudo deluser <username> sudo
+delete super user permissions for gabriella,sudo deluser gabriella sudo
+remove admin rights from sebastian,sudo deluser sebastian sudo
 remove sudo privileges from me, sudo deluser $USER sudo
 revoke admin privileges from the current user, sudo deluser $USER sudo
-change the name of group <old-group-name> to <new-group-name>, sudo groupmod -n <new-group-name> <old-group-name>
-rename group name <old-group-name> to <new-group-name>, sudo groupmod -n <new-group-name> <old-group-name>
-change the id of group named <group-name> to <group-id>, sudo groupmod -g <group-id> <group-name>
-modify group id <group-name> to <group-id>, sudo groupmod -g <group-id> <group-name>
-erase user <username> from system,sudo deluser <username>
-delete the profile of <username>,sudo deluser <username>
-remove the user with the user id named <username>,sudo userdel -r <username>
-delete the group named <group-name>,sudo groupdel <group-name>
-remove the group called <group-name>,sudo groupdel <group-name>
-remove user <username> from group <group-name>,sudo gpasswd -d <username> <groupname>
-remove me from group <group-name>,sudo gpasswd -d $USER <groupname>
+change the name of group tech_support to it_team,sudo groupmod -n it_team tech_support
+rename group name logistics to supply_chain,sudo groupmod -n supply_chain logistics
+assign a new group id 1101 to students,sudo groupmod -g 1101 students
+rename the gid 1203 to faculty,sudo groupmod -g 1203 faculty
+erase user diego from system,sudo deluser diego  
+delete the profile of amal,sudo deluser amal  
+remove the user with the user id named samantha,sudo userdel -r samantha
+delete the group named research,sudo groupdel research  
+remove the group called support,sudo groupdel support  
+remove user benjamin from group research,sudo gpasswd -d benjamin research  
+remove me from group caffeine-dependent,sudo gpasswd -d $USER caffeine-dependent  
 display the list of users, cat /etc/passwd
 get the list of users, cat /etc/passwd
 show the users on this system, cat /etc/passwd
 display the list of groups, cat /etc/group
 get the list of groups, cat /etc/group
-display all the users with sudo access, getent group sudo
-show all users with super user access, getent group sudo
-display all the users without sudo access, getent group sudo
-show all users with no super user access, getent group sudo
-list all users without sudo access, getent group sudo
-show number of users in the group <group-name>,getent group <group-name>
-is <username> in the group named <group-name>,sudo getent group <groupname>
-display all groups <username> belongs to, sudo groups <username>
-display the groups of user <username>,sudo groups <username>
+display all the users with sudo access,sudo getent group sudo  
+show all users with super user access,sudo getent group sudo  
+display all the users without sudo access,sudo getent group sudo  
+show all users with no super user access,sudo getent group sudo  
+list all users without sudo access,sudo getent group sudo  
+show number of users in the group keyboard-smashers,sudo getent group keyboard-smashers  
+display all groups quincy belongs to, sudo groups quincy  
+display the groups of user rachel, sudo groups rachel  
 show the groups i joined,groups $USER
-give the information about the group <group-name>,getent group <group-name>
-show user information of <username>, id <username>
-swith to user as <username>,sudo su - <username>
+give the information about the group hr,getent group hr  
+show user information of leila, id leila  
+give the information about me, id $USER
+switch to user as tarik, sudo su - tarik  
 switch to root user,sudo su -
 show who is logged in now,who
-show the last logged in detail of user <username>,last <username>
+show the last logged in detail of user johan, last johan  
 logout from current session,logout
 list files in the current directory,ls
 show me the details of each file,ls -l
@@ -505,679 +497,655 @@ what files are in pictures,ls ~/Pictures
 what are the files in this folder,ls ~/Videos
 list the files in root folder,ls /root
 display the files in home direcotry,ls ~
-show files in the <directory_name> folder,ls <directory_name>
-show files in the <directory_name> folder under home direcotry,ls ~/<directory_name>
-show files in the <directory_name> folder in current folder,ls ./<directory_name>
+show files in the etc folder,ls /etc
+show files in the logs folder under home directory,ls ~/logs
+show files in the scripts folder in current folder,ls ./scripts
 show files and directories in a tree structure,tree
-create a file named <file-name>,touch <file-name>
-make a text file named <file-name>,touch <file-name>.txt
-i want to create a python file named <file-name>,touch <file-name>.py
-can you create me css file named <file-name>,touch <file-name>.css
-create a html file named <file-name>,touch <file-name>.html
-make a csv file named <file-name>,touch <file-name>.csv
-i want to create a java script file named <file-name>,touch <file-name>.js
-can you create me json file named <file-name>,touch <file-name>.json
-make a java file named <file-name>,touch <file-name>.java
-i want to create a php file named <file-name>,touch <file-name>.php
-can you create me log file named <file-name>,touch <file-name>.log
-create a bin file named <file-name>,touch <file-name>.bin
-make a sh file named <file-name>,touch <file-name>.sh
-i want to create a yaml file named <file-name>,touch <file-name>.yaml
-can you create me c program file named <file-name>,touch <file-name>.c 
-can you create me c++ program file named <file-name>,touch <file-name>.cpp 
-can you create me header file named <file-name>,touch <file-name>.h
-make a kotlin file named <file-name>,touch <file-name>.kt
-i want to create a dart file named <file-name>,touch <file-name>.dart
-can you create me env file named <file-name>,touch <file-name>.env
-create a xml file named <file-name>,touch <file-name>.xml
-create a xls file named <file-name>,touch <file-name>.xls
-create a markdown file named <file-name>,touch <file-name>.md
-make a jupyter file named <file-name>,touch <file-name>.ipynb
-i want to create a word file named <file-name>,touch <file-name>.doc
-create a excel  file named <file-name>,touch <file-name>.xlsx
-make a hidden file named <file-name>,touch .<file-name>
-show the type of the file <file-name>,file <file-name>
-check the type of the file <file-name>,file <file-name>
-count lines words and characters in <file-name>,wc <file-name>
-list the number of lines words and characters in <file-name>,wc <file-name>
-read the content in the file <file-name>,cat <file-name>
-display the information the <file-name> file under <directory-name>,cat <directory-name>/<file-name>
-use vim to open <file-name>,vim <file-name>
-access <file-name> for editing in vim,vim <file-name>
-launch nano to edit <file-name>,nano <file-name>
-open the file <file-name> in nano,nano <file-name>
-create a directory named <directory-name>,mkdir <directory-name>
-make a new folder <directory-name> under directory <old-directory-name>,mkdir <old-directory-name>/<directory-name>
-create a hidden directory named <directory-name>,mkdir .<directory-name>
-create all folders in the path <directory-name-1>/<directory-name-2>,mkdir -p <directory-name-1>/<directory-name-2>
-display the file with the <file-name>.jpeg type,xdg-open <file-name>.jpeg
-open up the photo <file-name>.jpg format,xdg-open <file-name>.jpg
-show the photo stored named as <file-name>.png,xdg-open <file-name>.png
-open the photo that's named <file-name>.gif,xdg-open <file-name>.gif
-launch the image that's saved as <file-name>.raw,xdg-open <file-name>.raw
-i want to open the <file-name>.jpeg file,xdg-open <file-name>.jpeg
-let me open the jpg file <file-name>,xdg-open <file-name>.jpg
-please open the <file-name>.png file,xdg-open <file-name>.pgn
-can you show the <file-name>.gif animation,xdg-open <file-name>.gif
-open the raw image <file-name>,xdg-open <file-name>.raw
-launch the image <file-name>.jpeg from <directory-name>,xdg-open <directory-name>/<file-name>.jpeg
-display <file-name>.jpg inside <directory-name>,xdg-open <directory-name>/<file-name>.jpg
-access the .png file <file-name> in <directory-name>,xdg-open <directory-name>/<file-name>.png
-show me the file <file-name>.gif in the directory <directory-name>,xdg-open <directory-name>/<file-name>.gif
-display <file-name>.raw stored in the directory <directory-name>,xdg-open <directory-name>/<file-name>.raw
-i want to open the jpeg file <file-name> from the <directory-name> directory,xdg-open <directory-name>/<file-name>.jpeg
-please open the <file-name>.jpg file from the <directory-name> directory,xdg-open <directory-name>/<file-name>.jpg
-let me view the <file-name>.png file inside the <directory-name> folder,xdg-open <directory-name>/<file-name>.pgn
-can you show the <file-name>.gif from the <directory-name> folder,xdg-open <directory-name>/<file-name>.gif
-open the raw file <file-name> from the <directory-name> directory,xdg-open <directory-name>/<file-name>.raw
-play <file-name>.mp4 located in the folder,xdg-open <file-name>.mp4
-open the mp4 file named <file-name>,xdg-open <file-name>.mp4
-see the clip <file-name>.mov,xdg-open <file-name>.mov
-preview the mov media named <file-name>,xdg-open <file-name>.mov
-inspect the video <file-name>.avi for playback,xdg-open <file-name>.avi
-scroll to the avi file stored as <file-name>,xdg-open <file-name>.avi
-view the file <file-name>.mp4 in the <directory-name>, xdg-open <directory-name>/<file-name>.mp4
-access the mp4 media <file-name> from <directory-name>, xdg-open <directory-name>/<file-name>.mp4
-play the mov video <file-name> from the folder <directory-name>, xdg-open <directory-name>/<file-name>.mov
-view <file-name>.mov in the directory <directory-name>, xdg-open <directory-name>/<file-name>.mov
-launch the avi video <file-name> from <directory-name>, xdg-open <directory-name>/<file-name>.avi
-view the file <file-name>.avi in the directory <directory-name>, xdg-open <directory-name>/<file-name>.avi
-please show me the file <file-name>.pdf,xdg-open <file-name>.pdf
-open the pdf document <file-name> for me,xdg-open <file-name>.pdf
-can you show me the file <file-name>.pdf from the <directory-name> folder?,xdg-open <directory-name>/<file-name>.pdf
-please show me the pdf file <file-name> inside the <directory-name> directory,xdg-open <directory-name>/<file-name>.pdf
-could you launch the <file-name>.docx file?,xdg-open <file-name>.docx
-please bring up the document <file-name>,xdg-open <file-name>.docx
-please show me the <file-name>.pptx file,xdg-open <file-name>.pptx
-please display a ppt file titled <file-name>,xdg-open <file-name>.pptx
-let me view <file-name>.pptx located in <directory-name>,xdg-open <directory-name>/<file-name>.pptx
-let me access the ppt file <file-name> from the <directory-name>,xdg-open <directory-name>/<file-name>.pptx
-let me listen to <file-name>.mp3,xdg-open <file-name>.mp3
-Let me hear the mp3 <file-name>,xdg-open <file-name>.mp3
-can you play the <file-name>.wav for me,xdg-open <file-name>.wav
-please open the wav <file-name> audio file,xdg-open <file-name>.wav
-can you play the <file-name>.mp3 file from the <directory-name> folder,xdg-open <directory-name>/<file-name>.mp3
-please open the mp3 file <file-name> in the <directory-name> directory,xdg-open <directory-name>/<file-name>.mp3
-open the <file-name>.wav from the <directory-name> folder,xdg-open <directory-name>/<file-name>.wav
-can you play the wav file <file-name> from the <directory-name> directory,xdg-open <directory-name>/<file-name>.wav
-go to directory_path,cd directory_path
+create a file named notes,touch notes
+make a text file named document,touch document.txt
+i want to create a python file named script,touch script.py
+can you create me css file named styles,touch styles.css
+create a html file named index,touch index.html
+make a csv file named data,touch data.csv
+i want to create a java script file named app,touch app.js
+can you create me json file named config,touch config.json
+make a java file named main,touch main.java
+i want to create a php file named server,touch server.php
+can you create me log file named error,touch error.log
+create a bin file named executable,touch executable.bin
+make a sh file named setup,touch setup.sh
+i want to create a yaml file named config,touch config.yaml
+can you create me c program file named program,touch program.c
+can you create me c++ program file named module,touch module.cpp
+can you create me header file named definitions,touch definitions.h
+make a kotlin file named application,touch application.kt
+i want to create a dart file named widget,touch widget.dart
+can you create me env file named settings,touch settings.env
+create a xml file named manifest,touch manifest.xml
+create a xls file named finance,touch finance.xls
+create a markdown file named readme,touch readme.md
+make a jupyter file named analysis,touch analysis.ipynb
+i want to create a word file named report,touch report.doc
+create a excel file named sales,touch sales.xlsx
+make a hidden file named secret,touch .secret
+check the type of the file sitemap.xml,file sitemap.xml
+identify the file type of budget.xls,file budget.xls
+calculate the number of lines words and characters in users.json,wc users.json  
+inspect the lines words and characters of utility.java,wc utility.java  
+read the content in the file details.txt,cat details.txt
+display the information the subtract.py file under mnt direcctory,cat /mnt/subtract.py
+use vim to open draft.py,vim draft.py  
+access presentation.ppt for editing in vim,vim presentation.ppt  
+launch nano to edit presentation.csv,nano presentation.csv  
+open the file notes.java in nano,nano notes.java  
+create a directory named archives,mkdir archives  
+make a new folder drafts under directory records,mkdir records/drafts  
+create a hidden directory named .configs,mkdir .configs  
+create all folders in the path logs/errors,mkdir -p logs/errors 
+display the file with the scenery.jpeg type,xdg-open scenery.jpeg  
+show the photo stored named as texture.png,xdg-open texture.png  
+open the photo that's named icon.gif,xdg-open icon.gif  
+launch the image that's saved as backup.raw,xdg-open backup.raw  
+i want to open the portrait.jpeg file,xdg-open portrait.jpeg  
+let me open the jpg file skyline,xdg-open skyline.jpg  
+launch the image artwork.jpeg from snapshots,xdg-open snapshots/artwork.jpeg  
+display mountain.jpg inside albums,xdg-open albums/mountain.jpg  
+access the .png file wallpaper in pictures,xdg-open pictures/wallpaper.png  
+show me the file banner.gif in the directory animations,xdg-open animations/banner.gif  
+display chart.raw stored in the directory data,xdg-open data/chart.raw  
+play highlight.mp4 located in the folder,xdg-open highlight.mp4  
+preview the mov media named trailer,xdg-open trailer.mov  
+inspect the video footage.avi for playback,xdg-open footage.avi  
+view the file documentary.mp4 in the films, xdg-open films/documentary.mp4  
+view recording.mov in the directory media, xdg-open media/recording.mov  
+view the file archive.avi in the directory clips, xdg-open clips/archive.avi  
+please show me the file report.pdf,xdg-open report.pdf  
+please show me the pdf file manual inside the docs directory,xdg-open docs/manual.pdf  
+could you launch the resume.docx file?,xdg-open resume.docx  
+please show me the presentation.pptx file,xdg-open presentation.pptx  
+let me access the ppt file slides from the meetings,xdg-open meetings/slides.pptx  
+let me listen to podcast.mp3,xdg-open podcast.mp3  
+please open the wav interview audio file,xdg-open interview.wav  
+can you play the melody.mp3 file from the music folder,xdg-open music/melody.mp3  
+can you play the wav file speech from the recordings directory,xdg-open recordings/speech.wav
+go to /dev,cd /dev
 navigate back a directory,cd ..
 access the home directory,cd ~
-show disk usage of <directory-name>,du -sh <directory-name>
-get size of folder <directory-name>,du -sh <directory-name>
-copy the file from <source-location> to <destination-location>,cp <source-location> <destination-location>
-make a copy of <file-name>.py <source-location> to <destination-location>,cp <source-location>/<file-name>.py <destination-location>/<file-name>.py
-create a copy of file <file-name>.txt at <destination-location>,cp <file-name>.txt <destination-location>/<file-name>.txt
-copy the folder from <source-location> to <destination-location>,cp -r <source-location> <destination-location>
-make a copy of <directory-name> <source-location> to <destination-location> and view it,cp -rv <source-location>/<directory-name> <destination-location>/<directory-name>.py
-create a full copy of <source-location> in <destination-location> forcefully,cp -rf <source-location> <destination-location>
-copy the directory <directory-name> at <destination-location> forcefully and display it,cp -rvf <directory-name> <destination-location>/<directory-name>
-move file <source-location> to <destination-location>,mv <source-location> <destination-location>
-move the folder from <source-location> to <destination-location>,mv -r <source-location> <destination-location>
-cut the <directory-name> <source-location> and paste it to <destination-location> and view it,mv -rv <source-location>/<directory-name> <destination-location>/<directory-name>.py
-move the folder <source-location> in <destination-location> forcefully,mv -rf <source-location> <destination-location>
-move the directory <directory-name> at <destination-location> forcefully and display it,mv -rvf <directory-name> <destination-location>/<directory-name>
-can you rename <old-file-name> to <new-file-name>?,mv <old-file-name> <new-file-name>
-modify directory name from <old-directory-name> to <new-directory-name>,mv <old-directory-name> <new-directory-name>
-make a tar archive with name <archieve-name>.tar for <file-name>,tar -cvf <archieve-name>.tar <file-name>
-create a tar archive named <archieve-name>.tar for <file-name>,tar -cvf <archieve-name>.tar <file-name>
-restore files from <archieve-name>.tar,tar -xvf <archieve-name>.tar
-extract data from <archieve-name>.tar,tar -xvf <archieve-name>.tar
-delete file <file-name>,rm <file-name>
-remove <file-name> under <directory-name>,rm <directory-name>/<file-name>
-delete folder <directory-name>,rm -r <directory-name>
-remove <directory-name> under <directory-name> forecefully,rm -rf <directory-name>/<directory-name>
-assign read permission to user for <file-name>,chmod u+r <file-name>
-assign write permission to user for <file-name>,chmod u+w <file-name>
-assign execute permission to user for <file-name>,chmod u+x <file-name>
-assign read and write permissions to user for <file-name>,chmod u+rw <file-name>
-assign read and execute permissions to user for <file-name>,chmod u+rx <file-name>
-assign write and execute permissions to user for <file-name>,chmod u+wx <file-name>
-assign all permissions to user for <file-name>,chmod u+rwx <file-name>
-assign read permission to group for <file-name>,chmod g+r <file-name>
-assign write permission to group for <file-name>,chmod g+w <file-name>
-assign execute permission to group for <file-name>,chmod g+x <file-name>
-assign read and write permissions to group for <file-name>,chmod g+rw <file-name>
-assign read and execute permissions to group for <file-name>,chmod g+rx <file-name>
-assign write and execute permissions to group for <file-name>,chmod g+wx <file-name>
-assign all permissions to group for <file-name>,chmod g+rwx <file-name>
-assign read permission to others for <file-name>,chmod o+r <file-name>
-assign write permission to others for <file-name>,chmod o+w <file-name>
-assign execute permission to others for <file-name>,chmod o+x <file-name>
-assign read and write permissions to others for <file-name>,chmod o+rw <file-name>
-assign read and execute permissions to others for <file-name>,chmod o+rx <file-name>
-assign write and execute permissions to others for <file-name>,chmod o+wx <file-name>
-assign all permissions to others for <file-name>,chmod o+rwx <file-name>
-assign permissions recursively to user for <directory-name>,chmod -R u+rwx <directory-name>
-grant recursive read write and execute access to group for <directory-name>,chmod -R g+rwx <directory-name>
-set all permissions for others on directory and its contents <directory-name>,chmod -R g+rwx <directory-name>
-remove read permission from group for <file-name>,chmod g-r <file-name>
-deny write permission to others for <file-name>,chmod o-w <file-name>
-remove all permissions recursively for user from <directory-name>,chmod -R u-rwx <directory-name>
-change the owner of <file-name> to <username>,chown <username> <file-name>
-make <file-name> owned by <username>,chown <username> <file-name>
-make <directory-name> owned by <username>,chown  <username> <directory-name>
-change <directory-name> ownership recursively to <username>,chown -R <username> <directory-name>
-make <file-name> belong to group <group-name>,chgrp <group-name> <file-name>
-change <file-name> group to <group-name>,chgrp <group-name> <file-name>
-make <directory-name> belong to group <group-name>,chgrp -R <group-name> <directory-name>
-change <directory-name> recursively group to <group-name>,chgrp <group-name> <directory-name>
-give <file-name> ownership to <user-name> and <group-name>,chown <user-name>:<group-name> <file-name>
-assign owner to <user-name> and <group-name> for the <directory-name>,chown <user-name>:<group-name> <directory-name>
-set <user-name> and <group-name> ownership recursively for the <directory-name>,chown -R <user-name>:<group-name> <directory-name>
-change the access of <file-name> to <permission>,chmod <permission> <file-name>
-apply <permission> permissions to the folder <directory-name>,chmod <permission> <directory-name>
-apply <permission> recursively to the directory <directory-name> and its contents,chmod -R <permission> <directory-name>
-"grant none access for user, none for group, and none to others for <file-name>"," chmod 000 <file-name>"
-"provide none for user, none to group, and execute to others for <file-name>"," chmod 001 <file-name>"
-"grant none access for user, none for group, and write to others for <file-name>"," chmod 002 <file-name>"
-"allow none for user, none for group, and write and execute for others on file <file-name>"," chmod 003 <file-name>"
-"assign none permission to user, none permission to group, and read permission to others for <file-name>"," chmod 004 <file-name>"
-"provide none for user, none to group, and read and execute to others for <file-name>"," chmod 005 <file-name>"
-"assign none permission to user, none permission to group, and read and write permission to others for <file-name>"," chmod 006 <file-name>"
-"grant none access for user, none for group, and all to others for <file-name>"," chmod 007 <file-name>"
-"grant none access for user, execute for group, and none to others for <file-name>"," chmod 010 <file-name>"
-"allow none for user, execute for group, and execute for others on file <file-name>"," chmod 011 <file-name>"
-"allow none for user, execute for group, and write for others on file <file-name>"," chmod 012 <file-name>"
-"set permissions to none for owner, execute for group members, and write and execute for others on <file-name>"," chmod 013 <file-name>"
-"grant none access for user, execute for group, and read to others for <file-name>"," chmod 014 <file-name>"
-"set permissions to none for owner, execute for group members, and read and execute for others on <file-name>"," chmod 015 <file-name>"
-"grant none access for user, execute for group, and read and write to others for <file-name>"," chmod 016 <file-name>"
-"provide none for user, execute to group, and all to others for <file-name>"," chmod 017 <file-name>"
-"set permissions to none for owner, write for group members, and none for others on <file-name>"," chmod 020 <file-name>"
-"set permissions to none for owner, write for group members, and execute for others on <file-name>"," chmod 021 <file-name>"
-"provide none for user, write to group, and write to others for <file-name>"," chmod 022 <file-name>"
-"assign none permission to user, write permission to group, and write and execute permission to others for <file-name>"," chmod 023 <file-name>"
-"assign none permission to user, write permission to group, and read permission to others for <file-name>"," chmod 024 <file-name>"
-"provide none for user, write to group, and read and execute to others for <file-name>"," chmod 025 <file-name>"
-"assign none permission to user, write permission to group, and read and write permission to others for <file-name>"," chmod 026 <file-name>"
-"provide none for user, write to group, and all to others for <file-name>"," chmod 027 <file-name>"
-"provide none for user, write and execute to group, and none to others for <file-name>"," chmod 030 <file-name>"
-"set permissions to none for owner, write and execute for group members, and execute for others on <file-name>"," chmod 031 <file-name>"
-"set permissions to none for owner, write and execute for group members, and write for others on <file-name>"," chmod 032 <file-name>"
-"assign none permission to user, write and execute permission to group, and write and execute permission to others for <file-name>"," chmod 033 <file-name>"
-"allow none for user, write and execute for group, and read for others on file <file-name>"," chmod 034 <file-name>"
-"assign none permission to user, write and execute permission to group, and read and execute permission to others for <file-name>"," chmod 035 <file-name>"
-"set permissions to none for owner, write and execute for group members, and read and write for others on <file-name>"," chmod 036 <file-name>"
-"allow none for user, write and execute for group, and all for others on file <file-name>"," chmod 037 <file-name>"
-"grant none access for user, read for group, and none to others for <file-name>"," chmod 040 <file-name>"
-"assign none permission to user, read permission to group, and execute permission to others for <file-name>"," chmod 041 <file-name>"
-"set permissions to none for owner, read for group members, and write for others on <file-name>"," chmod 042 <file-name>"
-"provide none for user, read to group, and write and execute to others for <file-name>"," chmod 043 <file-name>"
-"provide none for user, read to group, and read to others for <file-name>"," chmod 044 <file-name>"
-"allow none for user, read for group, and read and execute for others on file <file-name>"," chmod 045 <file-name>"
-"provide none for user, read to group, and read and write to others for <file-name>"," chmod 046 <file-name>"
-"provide none for user, read to group, and all to others for <file-name>"," chmod 047 <file-name>"
-"provide none for user, read and execute to group, and none to others for <file-name>"," chmod 050 <file-name>"
-"assign none permission to user, read and execute permission to group, and execute permission to others for <file-name>"," chmod 051 <file-name>"
-"provide none for user, read and execute to group, and write to others for <file-name>"," chmod 052 <file-name>"
-"grant none access for user, read and execute for group, and write and execute to others for <file-name>"," chmod 053 <file-name>"
-"set permissions to none for owner, read and execute for group members, and read for others on <file-name>"," chmod 054 <file-name>"
-"grant none access for user, read and execute for group, and read and execute to others for <file-name>"," chmod 055 <file-name>"
-"set permissions to none for owner, read and execute for group members, and read and write for others on <file-name>"," chmod 056 <file-name>"
-"allow none for user, read and execute for group, and all for others on file <file-name>"," chmod 057 <file-name>"
-"allow none for user, read and write for group, and none for others on file <file-name>"," chmod 060 <file-name>"
-"allow none for user, read and write for group, and execute for others on file <file-name>"," chmod 061 <file-name>"
-"set permissions to none for owner, read and write for group members, and write for others on <file-name>"," chmod 062 <file-name>"
-"provide none for user, read and write to group, and write and execute to others for <file-name>"," chmod 063 <file-name>"
-"provide none for user, read and write to group, and read to others for <file-name>"," chmod 064 <file-name>"
-"grant none access for user, read and write for group, and read and execute to others for <file-name>"," chmod 065 <file-name>"
-"set permissions to none for owner, read and write for group members, and read and write for others on <file-name>"," chmod 066 <file-name>"
-"assign none permission to user, read and write permission to group, and all permission to others for <file-name>"," chmod 067 <file-name>"
-"grant none access for user, all for group, and none to others for <file-name>"," chmod 070 <file-name>"
-"assign none permission to user, all permission to group, and execute permission to others for <file-name>"," chmod 071 <file-name>"
-"assign none permission to user, all permission to group, and write permission to others for <file-name>"," chmod 072 <file-name>"
-"set permissions to none for owner, all for group members, and write and execute for others on <file-name>"," chmod 073 <file-name>"
-"assign none permission to user, all permission to group, and read permission to others for <file-name>"," chmod 074 <file-name>"
-"assign none permission to user, all permission to group, and read and execute permission to others for <file-name>"," chmod 075 <file-name>"
-"set permissions to none for owner, all for group members, and read and write for others on <file-name>"," chmod 076 <file-name>"
-"set permissions to none for owner, all for group members, and all for others on <file-name>"," chmod 077 <file-name>"
-"allow execute for user, none for group, and none for others on file <file-name>"," chmod 100 <file-name>"
-"allow execute for user, none for group, and execute for others on file <file-name>"," chmod 101 <file-name>"
-"allow execute for user, none for group, and write for others on file <file-name>"," chmod 102 <file-name>"
-"assign execute permission to user, none permission to group, and write and execute permission to others for <file-name>"," chmod 103 <file-name>"
-"set permissions to execute for owner, none for group members, and read for others on <file-name>"," chmod 104 <file-name>"
-"provide execute for user, none to group, and read and execute to others for <file-name>"," chmod 105 <file-name>"
-"assign execute permission to user, none permission to group, and read and write permission to others for <file-name>"," chmod 106 <file-name>"
-"provide execute for user, none to group, and all to others for <file-name>"," chmod 107 <file-name>"
-"provide execute for user, execute to group, and none to others for <file-name>"," chmod 110 <file-name>"
-"set permissions to execute for owner, execute for group members, and execute for others on <file-name>"," chmod 111 <file-name>"
-"assign execute permission to user, execute permission to group, and write permission to others for <file-name>"," chmod 112 <file-name>"
-"provide execute for user, execute to group, and write and execute to others for <file-name>"," chmod 113 <file-name>"
-"set permissions to execute for owner, execute for group members, and read for others on <file-name>"," chmod 114 <file-name>"
-"allow execute for user, execute for group, and read and execute for others on file <file-name>"," chmod 115 <file-name>"
-"assign execute permission to user, execute permission to group, and read and write permission to others for <file-name>"," chmod 116 <file-name>"
-"provide execute for user, execute to group, and all to others for <file-name>"," chmod 117 <file-name>"
-"provide execute for user, write to group, and none to others for <file-name>"," chmod 120 <file-name>"
-"set permissions to execute for owner, write for group members, and execute for others on <file-name>"," chmod 121 <file-name>"
-"set permissions to execute for owner, write for group members, and write for others on <file-name>"," chmod 122 <file-name>"
-"provide execute for user, write to group, and write and execute to others for <file-name>"," chmod 123 <file-name>"
-"allow execute for user, write for group, and read for others on file <file-name>"," chmod 124 <file-name>"
-"assign execute permission to user, write permission to group, and read and execute permission to others for <file-name>"," chmod 125 <file-name>"
-"set permissions to execute for owner, write for group members, and read and write for others on <file-name>"," chmod 126 <file-name>"
-"assign execute permission to user, write permission to group, and all permission to others for <file-name>"," chmod 127 <file-name>"
-"assign execute permission to user, write and execute permission to group, and none permission to others for <file-name>"," chmod 130 <file-name>"
-"set permissions to execute for owner, write and execute for group members, and execute for others on <file-name>"," chmod 131 <file-name>"
-"grant execute access for user, write and execute for group, and write to others for <file-name>"," chmod 132 <file-name>"
-"assign execute permission to user, write and execute permission to group, and write and execute permission to others for <file-name>"," chmod 133 <file-name>"
-"provide execute for user, write and execute to group, and read to others for <file-name>"," chmod 134 <file-name>"
-"assign execute permission to user, write and execute permission to group, and read and execute permission to others for <file-name>"," chmod 135 <file-name>"
-"provide execute for user, write and execute to group, and read and write to others for <file-name>"," chmod 136 <file-name>"
-"assign execute permission to user, write and execute permission to group, and all permission to others for <file-name>"," chmod 137 <file-name>"
-"grant execute access for user, read for group, and none to others for <file-name>"," chmod 140 <file-name>"
-"allow execute for user, read for group, and execute for others on file <file-name>"," chmod 141 <file-name>"
-"assign execute permission to user, read permission to group, and write permission to others for <file-name>"," chmod 142 <file-name>"
-"provide execute for user, read to group, and write and execute to others for <file-name>"," chmod 143 <file-name>"
-"allow execute for user, read for group, and read for others on file <file-name>"," chmod 144 <file-name>"
-"assign execute permission to user, read permission to group, and read and execute permission to others for <file-name>"," chmod 145 <file-name>"
-"allow execute for user, read for group, and read and write for others on file <file-name>"," chmod 146 <file-name>"
-"assign execute permission to user, read permission to group, and all permission to others for <file-name>"," chmod 147 <file-name>"
-"set permissions to execute for owner, read and execute for group members, and none for others on <file-name>"," chmod 150 <file-name>"
-"grant execute access for user, read and execute for group, and execute to others for <file-name>"," chmod 151 <file-name>"
-"set permissions to execute for owner, read and execute for group members, and write for others on <file-name>"," chmod 152 <file-name>"
-"allow execute for user, read and execute for group, and write and execute for others on file <file-name>"," chmod 153 <file-name>"
-"allow execute for user, read and execute for group, and read for others on file <file-name>"," chmod 154 <file-name>"
-"assign execute permission to user, read and execute permission to group, and read and execute permission to others for <file-name>"," chmod 155 <file-name>"
-"set permissions to execute for owner, read and execute for group members, and read and write for others on <file-name>"," chmod 156 <file-name>"
-"grant execute access for user, read and execute for group, and all to others for <file-name>"," chmod 157 <file-name>"
-"grant execute access for user, read and write for group, and none to others for <file-name>"," chmod 160 <file-name>"
-"allow execute for user, read and write for group, and execute for others on file <file-name>"," chmod 161 <file-name>"
-"assign execute permission to user, read and write permission to group, and write permission to others for <file-name>"," chmod 162 <file-name>"
-"set permissions to execute for owner, read and write for group members, and write and execute for others on <file-name>"," chmod 163 <file-name>"
-"set permissions to execute for owner, read and write for group members, and read for others on <file-name>"," chmod 164 <file-name>"
-"allow execute for user, read and write for group, and read and execute for others on file <file-name>"," chmod 165 <file-name>"
-"allow execute for user, read and write for group, and read and write for others on file <file-name>"," chmod 166 <file-name>"
-"set permissions to execute for owner, read and write for group members, and all for others on <file-name>"," chmod 167 <file-name>"
-"set permissions to execute for owner, all for group members, and none for others on <file-name>"," chmod 170 <file-name>"
-"provide execute for user, all to group, and execute to others for <file-name>"," chmod 171 <file-name>"
-"assign execute permission to user, all permission to group, and write permission to others for <file-name>"," chmod 172 <file-name>"
-"provide execute for user, all to group, and write and execute to others for <file-name>"," chmod 173 <file-name>"
-"set permissions to execute for owner, all for group members, and read for others on <file-name>"," chmod 174 <file-name>"
-"assign execute permission to user, all permission to group, and read and execute permission to others for <file-name>"," chmod 175 <file-name>"
-"grant execute access for user, all for group, and read and write to others for <file-name>"," chmod 176 <file-name>"
-"grant execute access for user, all for group, and all to others for <file-name>"," chmod 177 <file-name>"
-"grant write access for user, none for group, and none to others for <file-name>"," chmod 200 <file-name>"
-"set permissions to write for owner, none for group members, and execute for others on <file-name>"," chmod 201 <file-name>"
-"set permissions to write for owner, none for group members, and write for others on <file-name>"," chmod 202 <file-name>"
-"assign write permission to user, none permission to group, and write and execute permission to others for <file-name>"," chmod 203 <file-name>"
-"allow write for user, none for group, and read for others on file <file-name>"," chmod 204 <file-name>"
-"allow write for user, none for group, and read and execute for others on file <file-name>"," chmod 205 <file-name>"
-"assign write permission to user, none permission to group, and read and write permission to others for <file-name>"," chmod 206 <file-name>"
-"set permissions to write for owner, none for group members, and all for others on <file-name>"," chmod 207 <file-name>"
-"assign write permission to user, execute permission to group, and none permission to others for <file-name>"," chmod 210 <file-name>"
-"set permissions to write for owner, execute for group members, and execute for others on <file-name>"," chmod 211 <file-name>"
-"provide write for user, execute to group, and write to others for <file-name>"," chmod 212 <file-name>"
-"allow write for user, execute for group, and write and execute for others on file <file-name>"," chmod 213 <file-name>"
-"grant write access for user, execute for group, and read to others for <file-name>"," chmod 214 <file-name>"
-"set permissions to write for owner, execute for group members, and read and execute for others on <file-name>"," chmod 215 <file-name>"
-"allow write for user, execute for group, and read and write for others on file <file-name>"," chmod 216 <file-name>"
-"provide write for user, execute to group, and all to others for <file-name>"," chmod 217 <file-name>"
-"allow write for user, write for group, and none for others on file <file-name>"," chmod 220 <file-name>"
-"assign write permission to user, write permission to group, and execute permission to others for <file-name>"," chmod 221 <file-name>"
-"provide write for user, write to group, and write to others for <file-name>"," chmod 222 <file-name>"
-"grant write access for user, write for group, and write and execute to others for <file-name>"," chmod 223 <file-name>"
-"grant write access for user, write for group, and read to others for <file-name>"," chmod 224 <file-name>"
-"assign write permission to user, write permission to group, and read and execute permission to others for <file-name>"," chmod 225 <file-name>"
-"grant write access for user, write for group, and read and write to others for <file-name>"," chmod 226 <file-name>"
-"allow write for user, write for group, and all for others on file <file-name>"," chmod 227 <file-name>"
-"allow write for user, write and execute for group, and none for others on file <file-name>"," chmod 230 <file-name>"
-"assign write permission to user, write and execute permission to group, and execute permission to others for <file-name>"," chmod 231 <file-name>"
-"provide write for user, write and execute to group, and write to others for <file-name>"," chmod 232 <file-name>"
-"grant write access for user, write and execute for group, and write and execute to others for <file-name>"," chmod 233 <file-name>"
-"provide write for user, write and execute to group, and read to others for <file-name>"," chmod 234 <file-name>"
-"assign write permission to user, write and execute permission to group, and read and execute permission to others for <file-name>"," chmod 235 <file-name>"
-"assign write permission to user, write and execute permission to group, and read and write permission to others for <file-name>"," chmod 236 <file-name>"
-"allow write for user, write and execute for group, and all for others on file <file-name>"," chmod 237 <file-name>"
-"grant write access for user, read for group, and none to others for <file-name>"," chmod 240 <file-name>"
-"assign write permission to user, read permission to group, and execute permission to others for <file-name>"," chmod 241 <file-name>"
-"set permissions to write for owner, read for group members, and write for others on <file-name>"," chmod 242 <file-name>"
-"set permissions to write for owner, read for group members, and write and execute for others on <file-name>"," chmod 243 <file-name>"
-"grant write access for user, read for group, and read to others for <file-name>"," chmod 244 <file-name>"
-"allow write for user, read for group, and read and execute for others on file <file-name>"," chmod 245 <file-name>"
-"grant write access for user, read for group, and read and write to others for <file-name>"," chmod 246 <file-name>"
-"provide write for user, read to group, and all to others for <file-name>"," chmod 247 <file-name>"
-"provide write for user, read and execute to group, and none to others for <file-name>"," chmod 250 <file-name>"
-"assign write permission to user, read and execute permission to group, and execute permission to others for <file-name>"," chmod 251 <file-name>"
-"grant write access for user, read and execute for group, and write to others for <file-name>"," chmod 252 <file-name>"
-"grant write access for user, read and execute for group, and write and execute to others for <file-name>"," chmod 253 <file-name>"
-"provide write for user, read and execute to group, and read to others for <file-name>"," chmod 254 <file-name>"
-"allow write for user, read and execute for group, and read and execute for others on file <file-name>"," chmod 255 <file-name>"
-"grant write access for user, read and execute for group, and read and write to others for <file-name>"," chmod 256 <file-name>"
-"allow write for user, read and execute for group, and all for others on file <file-name>"," chmod 257 <file-name>"
-"allow write for user, read and write for group, and none for others on file <file-name>"," chmod 260 <file-name>"
-"provide write for user, read and write to group, and execute to others for <file-name>"," chmod 261 <file-name>"
-"assign write permission to user, read and write permission to group, and write permission to others for <file-name>"," chmod 262 <file-name>"
-"grant write access for user, read and write for group, and write and execute to others for <file-name>"," chmod 263 <file-name>"
-"set permissions to write for owner, read and write for group members, and read for others on <file-name>"," chmod 264 <file-name>"
-"allow write for user, read and write for group, and read and execute for others on file <file-name>"," chmod 265 <file-name>"
-"grant write access for user, read and write for group, and read and write to others for <file-name>"," chmod 266 <file-name>"
-"allow write for user, read and write for group, and all for others on file <file-name>"," chmod 267 <file-name>"
-"provide write for user, all to group, and none to others for <file-name>"," chmod 270 <file-name>"
-"provide write for user, all to group, and execute to others for <file-name>"," chmod 271 <file-name>"
-"provide write for user, all to group, and write to others for <file-name>"," chmod 272 <file-name>"
-"grant write access for user, all for group, and write and execute to others for <file-name>"," chmod 273 <file-name>"
-"grant write access for user, all for group, and read to others for <file-name>"," chmod 274 <file-name>"
-"allow write for user, all for group, and read and execute for others on file <file-name>"," chmod 275 <file-name>"
-"allow write for user, all for group, and read and write for others on file <file-name>"," chmod 276 <file-name>"
-"grant write access for user, all for group, and all to others for <file-name>"," chmod 277 <file-name>"
-"allow write and execute for user, none for group, and none for others on file <file-name>"," chmod 300 <file-name>"
-"assign write and execute permission to user, none permission to group, and execute permission to others for <file-name>"," chmod 301 <file-name>"
-"provide write and execute for user, none to group, and write to others for <file-name>"," chmod 302 <file-name>"
-"assign write and execute permission to user, none permission to group, and write and execute permission to others for <file-name>"," chmod 303 <file-name>"
-"set permissions to write and execute for owner, none for group members, and read for others on <file-name>"," chmod 304 <file-name>"
-"grant write and execute access for user, none for group, and read and execute to others for <file-name>"," chmod 305 <file-name>"
-"grant write and execute access for user, none for group, and read and write to others for <file-name>"," chmod 306 <file-name>"
-"assign write and execute permission to user, none permission to group, and all permission to others for <file-name>"," chmod 307 <file-name>"
-"assign write and execute permission to user, execute permission to group, and none permission to others for <file-name>"," chmod 310 <file-name>"
-"set permissions to write and execute for owner, execute for group members, and execute for others on <file-name>"," chmod 311 <file-name>"
-"assign write and execute permission to user, execute permission to group, and write permission to others for <file-name>"," chmod 312 <file-name>"
-"allow write and execute for user, execute for group, and write and execute for others on file <file-name>"," chmod 313 <file-name>"
-"allow write and execute for user, execute for group, and read for others on file <file-name>"," chmod 314 <file-name>"
-"grant write and execute access for user, execute for group, and read and execute to others for <file-name>"," chmod 315 <file-name>"
-"set permissions to write and execute for owner, execute for group members, and read and write for others on <file-name>"," chmod 316 <file-name>"
-"assign write and execute permission to user, execute permission to group, and all permission to others for <file-name>"," chmod 317 <file-name>"
-"allow write and execute for user, write for group, and none for others on file <file-name>"," chmod 320 <file-name>"
-"grant write and execute access for user, write for group, and execute to others for <file-name>"," chmod 321 <file-name>"
-"provide write and execute for user, write to group, and write to others for <file-name>"," chmod 322 <file-name>"
-"set permissions to write and execute for owner, write for group members, and write and execute for others on <file-name>"," chmod 323 <file-name>"
-"provide write and execute for user, write to group, and read to others for <file-name>"," chmod 324 <file-name>"
-"assign write and execute permission to user, write permission to group, and read and execute permission to others for <file-name>"," chmod 325 <file-name>"
-"set permissions to write and execute for owner, write for group members, and read and write for others on <file-name>"," chmod 326 <file-name>"
-"set permissions to write and execute for owner, write for group members, and all for others on <file-name>"," chmod 327 <file-name>"
-"allow write and execute for user, write and execute for group, and none for others on file <file-name>"," chmod 330 <file-name>"
-"allow write and execute for user, write and execute for group, and execute for others on file <file-name>"," chmod 331 <file-name>"
-"grant write and execute access for user, write and execute for group, and write to others for <file-name>"," chmod 332 <file-name>"
-"assign write and execute permission to user, write and execute permission to group, and write and execute permission to others for <file-name>"," chmod 333 <file-name>"
-"provide write and execute for user, write and execute to group, and read to others for <file-name>"," chmod 334 <file-name>"
-"assign write and execute permission to user, write and execute permission to group, and read and execute permission to others for <file-name>"," chmod 335 <file-name>"
-"assign write and execute permission to user, write and execute permission to group, and read and write permission to others for <file-name>"," chmod 336 <file-name>"
-"allow write and execute for user, write and execute for group, and all for others on file <file-name>"," chmod 337 <file-name>"
-"grant write and execute access for user, read for group, and none to others for <file-name>"," chmod 340 <file-name>"
-"allow write and execute for user, read for group, and execute for others on file <file-name>"," chmod 341 <file-name>"
-"set permissions to write and execute for owner, read for group members, and write for others on <file-name>"," chmod 342 <file-name>"
-"assign write and execute permission to user, read permission to group, and write and execute permission to others for <file-name>"," chmod 343 <file-name>"
-"grant write and execute access for user, read for group, and read to others for <file-name>"," chmod 344 <file-name>"
-"set permissions to write and execute for owner, read for group members, and read and execute for others on <file-name>"," chmod 345 <file-name>"
-"set permissions to write and execute for owner, read for group members, and read and write for others on <file-name>"," chmod 346 <file-name>"
-"allow write and execute for user, read for group, and all for others on file <file-name>"," chmod 347 <file-name>"
-"grant write and execute access for user, read and execute for group, and none to others for <file-name>"," chmod 350 <file-name>"
-"set permissions to write and execute for owner, read and execute for group members, and execute for others on <file-name>"," chmod 351 <file-name>"
-"allow write and execute for user, read and execute for group, and write for others on file <file-name>"," chmod 352 <file-name>"
-"set permissions to write and execute for owner, read and execute for group members, and write and execute for others on <file-name>"," chmod 353 <file-name>"
-"grant write and execute access for user, read and execute for group, and read to others for <file-name>"," chmod 354 <file-name>"
-"allow write and execute for user, read and execute for group, and read and execute for others on file <file-name>"," chmod 355 <file-name>"
-"provide write and execute for user, read and execute to group, and read and write to others for <file-name>"," chmod 356 <file-name>"
-"set permissions to write and execute for owner, read and execute for group members, and all for others on <file-name>"," chmod 357 <file-name>"
-"set permissions to write and execute for owner, read and write for group members, and none for others on <file-name>"," chmod 360 <file-name>"
-"grant write and execute access for user, read and write for group, and execute to others for <file-name>"," chmod 361 <file-name>"
-"allow write and execute for user, read and write for group, and write for others on file <file-name>"," chmod 362 <file-name>"
-"set permissions to write and execute for owner, read and write for group members, and write and execute for others on <file-name>"," chmod 363 <file-name>"
-"assign write and execute permission to user, read and write permission to group, and read permission to others for <file-name>"," chmod 364 <file-name>"
-"provide write and execute for user, read and write to group, and read and execute to others for <file-name>"," chmod 365 <file-name>"
-"provide write and execute for user, read and write to group, and read and write to others for <file-name>"," chmod 366 <file-name>"
-"provide write and execute for user, read and write to group, and all to others for <file-name>"," chmod 367 <file-name>"
-"allow write and execute for user, all for group, and none for others on file <file-name>"," chmod 370 <file-name>"
-"set permissions to write and execute for owner, all for group members, and execute for others on <file-name>"," chmod 371 <file-name>"
-"assign write and execute permission to user, all permission to group, and write permission to others for <file-name>"," chmod 372 <file-name>"
-"set permissions to write and execute for owner, all for group members, and write and execute for others on <file-name>"," chmod 373 <file-name>"
-"grant write and execute access for user, all for group, and read to others for <file-name>"," chmod 374 <file-name>"
-"set permissions to write and execute for owner, all for group members, and read and execute for others on <file-name>"," chmod 375 <file-name>"
-"assign write and execute permission to user, all permission to group, and read and write permission to others for <file-name>"," chmod 376 <file-name>"
-"set permissions to write and execute for owner, all for group members, and all for others on <file-name>"," chmod 377 <file-name>"
-"assign read permission to user, none permission to group, and none permission to others for <file-name>"," chmod 400 <file-name>"
-"provide read for user, none to group, and execute to others for <file-name>"," chmod 401 <file-name>"
-"assign read permission to user, none permission to group, and write permission to others for <file-name>"," chmod 402 <file-name>"
-"set permissions to read for owner, none for group members, and write and execute for others on <file-name>"," chmod 403 <file-name>"
-"provide read for user, none to group, and read to others for <file-name>"," chmod 404 <file-name>"
-"set permissions to read for owner, none for group members, and read and execute for others on <file-name>"," chmod 405 <file-name>"
-"grant read access for user, none for group, and read and write to others for <file-name>"," chmod 406 <file-name>"
-"allow read for user, none for group, and all for others on file <file-name>"," chmod 407 <file-name>"
-"provide read for user, execute to group, and none to others for <file-name>"," chmod 410 <file-name>"
-"grant read access for user, execute for group, and execute to others for <file-name>"," chmod 411 <file-name>"
-"assign read permission to user, execute permission to group, and write permission to others for <file-name>"," chmod 412 <file-name>"
-"set permissions to read for owner, execute for group members, and write and execute for others on <file-name>"," chmod 413 <file-name>"
-"provide read for user, execute to group, and read to others for <file-name>"," chmod 414 <file-name>"
-"grant read access for user, execute for group, and read and execute to others for <file-name>"," chmod 415 <file-name>"
-"grant read access for user, execute for group, and read and write to others for <file-name>"," chmod 416 <file-name>"
-"grant read access for user, execute for group, and all to others for <file-name>"," chmod 417 <file-name>"
-"allow read for user, write for group, and none for others on file <file-name>"," chmod 420 <file-name>"
-"grant read access for user, write for group, and execute to others for <file-name>"," chmod 421 <file-name>"
-"allow read for user, write for group, and write for others on file <file-name>"," chmod 422 <file-name>"
-"assign read permission to user, write permission to group, and write and execute permission to others for <file-name>"," chmod 423 <file-name>"
-"provide read for user, write to group, and read to others for <file-name>"," chmod 424 <file-name>"
-"provide read for user, write to group, and read and execute to others for <file-name>"," chmod 425 <file-name>"
-"set permissions to read for owner, write for group members, and read and write for others on <file-name>"," chmod 426 <file-name>"
-"allow read for user, write for group, and all for others on file <file-name>"," chmod 427 <file-name>"
-"allow read for user, write and execute for group, and none for others on file <file-name>"," chmod 430 <file-name>"
-"allow read for user, write and execute for group, and execute for others on file <file-name>"," chmod 431 <file-name>"
-"grant read access for user, write and execute for group, and write to others for <file-name>"," chmod 432 <file-name>"
-"assign read permission to user, write and execute permission to group, and write and execute permission to others for <file-name>"," chmod 433 <file-name>"
-"provide read for user, write and execute to group, and read to others for <file-name>"," chmod 434 <file-name>"
-"set permissions to read for owner, write and execute for group members, and read and execute for others on <file-name>"," chmod 435 <file-name>"
-"assign read permission to user, write and execute permission to group, and read and write permission to others for <file-name>"," chmod 436 <file-name>"
-"provide read for user, write and execute to group, and all to others for <file-name>"," chmod 437 <file-name>"
-"grant read access for user, read for group, and none to others for <file-name>"," chmod 440 <file-name>"
-"grant read access for user, read for group, and execute to others for <file-name>"," chmod 441 <file-name>"
-"set permissions to read for owner, read for group members, and write for others on <file-name>"," chmod 442 <file-name>"
-"set permissions to read for owner, read for group members, and write and execute for others on <file-name>"," chmod 443 <file-name>"
-"assign read permission to user, read permission to group, and read permission to others for <file-name>"," chmod 444 <file-name>"
-"provide read for user, read to group, and read and execute to others for <file-name>"," chmod 445 <file-name>"
-"allow read for user, read for group, and read and write for others on file <file-name>"," chmod 446 <file-name>"
-"provide read for user, read to group, and all to others for <file-name>"," chmod 447 <file-name>"
-"grant read access for user, read and execute for group, and none to others for <file-name>"," chmod 450 <file-name>"
-"allow read for user, read and execute for group, and execute for others on file <file-name>"," chmod 451 <file-name>"
-"allow read for user, read and execute for group, and write for others on file <file-name>"," chmod 452 <file-name>"
-"grant read access for user, read and execute for group, and write and execute to others for <file-name>"," chmod 453 <file-name>"
-"set permissions to read for owner, read and execute for group members, and read for others on <file-name>"," chmod 454 <file-name>"
-"allow read for user, read and execute for group, and read and execute for others on file <file-name>"," chmod 455 <file-name>"
-"set permissions to read for owner, read and execute for group members, and read and write for others on <file-name>"," chmod 456 <file-name>"
-"provide read for user, read and execute to group, and all to others for <file-name>"," chmod 457 <file-name>"
-"allow read for user, read and write for group, and none for others on file <file-name>"," chmod 460 <file-name>"
-"provide read for user, read and write to group, and execute to others for <file-name>"," chmod 461 <file-name>"
-"provide read for user, read and write to group, and write to others for <file-name>"," chmod 462 <file-name>"
-"set permissions to read for owner, read and write for group members, and write and execute for others on <file-name>"," chmod 463 <file-name>"
-"assign read permission to user, read and write permission to group, and read permission to others for <file-name>"," chmod 464 <file-name>"
-"grant read access for user, read and write for group, and read and execute to others for <file-name>"," chmod 465 <file-name>"
-"allow read for user, read and write for group, and read and write for others on file <file-name>"," chmod 466 <file-name>"
-"set permissions to read for owner, read and write for group members, and all for others on <file-name>"," chmod 467 <file-name>"
-"set permissions to read for owner, all for group members, and none for others on <file-name>"," chmod 470 <file-name>"
-"assign read permission to user, all permission to group, and execute permission to others for <file-name>"," chmod 471 <file-name>"
-"allow read for user, all for group, and write for others on file <file-name>"," chmod 472 <file-name>"
-"provide read for user, all to group, and write and execute to others for <file-name>"," chmod 473 <file-name>"
-"allow read for user, all for group, and read for others on file <file-name>"," chmod 474 <file-name>"
-"assign read permission to user, all permission to group, and read and execute permission to others for <file-name>"," chmod 475 <file-name>"
-"provide read for user, all to group, and read and write to others for <file-name>"," chmod 476 <file-name>"
-"grant read access for user, all for group, and all to others for <file-name>"," chmod 477 <file-name>"
-"assign read and execute permission to user, none permission to group, and none permission to others for <file-name>"," chmod 500 <file-name>"
-"allow read and execute for user, none for group, and execute for others on file <file-name>"," chmod 501 <file-name>"
-"assign read and execute permission to user, none permission to group, and write permission to others for <file-name>"," chmod 502 <file-name>"
-"grant read and execute access for user, none for group, and write and execute to others for <file-name>"," chmod 503 <file-name>"
-"provide read and execute for user, none to group, and read to others for <file-name>"," chmod 504 <file-name>"
-"provide read and execute for user, none to group, and read and execute to others for <file-name>"," chmod 505 <file-name>"
-"grant read and execute access for user, none for group, and read and write to others for <file-name>"," chmod 506 <file-name>"
-"set permissions to read and execute for owner, none for group members, and all for others on <file-name>"," chmod 507 <file-name>"
-"grant read and execute access for user, execute for group, and none to others for <file-name>"," chmod 510 <file-name>"
-"assign read and execute permission to user, execute permission to group, and execute permission to others for <file-name>"," chmod 511 <file-name>"
-"allow read and execute for user, execute for group, and write for others on file <file-name>"," chmod 512 <file-name>"
-"assign read and execute permission to user, execute permission to group, and write and execute permission to others for <file-name>"," chmod 513 <file-name>"
-"set permissions to read and execute for owner, execute for group members, and read for others on <file-name>"," chmod 514 <file-name>"
-"allow read and execute for user, execute for group, and read and execute for others on file <file-name>"," chmod 515 <file-name>"
-"set permissions to read and execute for owner, execute for group members, and read and write for others on <file-name>"," chmod 516 <file-name>"
-"set permissions to read and execute for owner, execute for group members, and all for others on <file-name>"," chmod 517 <file-name>"
-"grant read and execute access for user, write for group, and none to others for <file-name>"," chmod 520 <file-name>"
-"grant read and execute access for user, write for group, and execute to others for <file-name>"," chmod 521 <file-name>"
-"set permissions to read and execute for owner, write for group members, and write for others on <file-name>"," chmod 522 <file-name>"
-"set permissions to read and execute for owner, write for group members, and write and execute for others on <file-name>"," chmod 523 <file-name>"
-"set permissions to read and execute for owner, write for group members, and read for others on <file-name>"," chmod 524 <file-name>"
-"allow read and execute for user, write for group, and read and execute for others on file <file-name>"," chmod 525 <file-name>"
-"assign read and execute permission to user, write permission to group, and read and write permission to others for <file-name>"," chmod 526 <file-name>"
-"grant read and execute access for user, write for group, and all to others for <file-name>"," chmod 527 <file-name>"
-"set permissions to read and execute for owner, write and execute for group members, and none for others on <file-name>"," chmod 530 <file-name>"
-"set permissions to read and execute for owner, write and execute for group members, and execute for others on <file-name>"," chmod 531 <file-name>"
-"set permissions to read and execute for owner, write and execute for group members, and write for others on <file-name>"," chmod 532 <file-name>"
-"allow read and execute for user, write and execute for group, and write and execute for others on file <file-name>"," chmod 533 <file-name>"
-"assign read and execute permission to user, write and execute permission to group, and read permission to others for <file-name>"," chmod 534 <file-name>"
-"allow read and execute for user, write and execute for group, and read and execute for others on file <file-name>"," chmod 535 <file-name>"
-"allow read and execute for user, write and execute for group, and read and write for others on file <file-name>"," chmod 536 <file-name>"
-"allow read and execute for user, write and execute for group, and all for others on file <file-name>"," chmod 537 <file-name>"
-"grant read and execute access for user, read for group, and none to others for <file-name>"," chmod 540 <file-name>"
-"allow read and execute for user, read for group, and execute for others on file <file-name>"," chmod 541 <file-name>"
-"set permissions to read and execute for owner, read for group members, and write for others on <file-name>"," chmod 542 <file-name>"
-"provide read and execute for user, read to group, and write and execute to others for <file-name>"," chmod 543 <file-name>"
-"assign read and execute permission to user, read permission to group, and read permission to others for <file-name>"," chmod 544 <file-name>"
-"allow read and execute for user, read for group, and read and execute for others on file <file-name>"," chmod 545 <file-name>"
-"allow read and execute for user, read for group, and read and write for others on file <file-name>"," chmod 546 <file-name>"
-"allow read and execute for user, read for group, and all for others on file <file-name>"," chmod 547 <file-name>"
-"assign read and execute permission to user, read and execute permission to group, and none permission to others for <file-name>"," chmod 550 <file-name>"
-"set permissions to read and execute for owner, read and execute for group members, and execute for others on <file-name>"," chmod 551 <file-name>"
-"provide read and execute for user, read and execute to group, and write to others for <file-name>"," chmod 552 <file-name>"
-"assign read and execute permission to user, read and execute permission to group, and write and execute permission to others for <file-name>"," chmod 553 <file-name>"
-"provide read and execute for user, read and execute to group, and read to others for <file-name>"," chmod 554 <file-name>"
-"allow read and execute for user, read and execute for group, and read and execute for others on file <file-name>"," chmod 555 <file-name>"
-"grant read and execute access for user, read and execute for group, and read and write to others for <file-name>"," chmod 556 <file-name>"
-"set permissions to read and execute for owner, read and execute for group members, and all for others on <file-name>"," chmod 557 <file-name>"
-"assign read and execute permission to user, read and write permission to group, and none permission to others for <file-name>"," chmod 560 <file-name>"
-"allow read and execute for user, read and write for group, and execute for others on file <file-name>"," chmod 561 <file-name>"
-"grant read and execute access for user, read and write for group, and write to others for <file-name>"," chmod 562 <file-name>"
-"allow read and execute for user, read and write for group, and write and execute for others on file <file-name>"," chmod 563 <file-name>"
-"assign read and execute permission to user, read and write permission to group, and read permission to others for <file-name>"," chmod 564 <file-name>"
-"grant read and execute access for user, read and write for group, and read and execute to others for <file-name>"," chmod 565 <file-name>"
-"grant read and execute access for user, read and write for group, and read and write to others for <file-name>"," chmod 566 <file-name>"
-"set permissions to read and execute for owner, read and write for group members, and all for others on <file-name>"," chmod 567 <file-name>"
-"provide read and execute for user, all to group, and none to others for <file-name>"," chmod 570 <file-name>"
-"set permissions to read and execute for owner, all for group members, and execute for others on <file-name>"," chmod 571 <file-name>"
-"assign read and execute permission to user, all permission to group, and write permission to others for <file-name>"," chmod 572 <file-name>"
-"provide read and execute for user, all to group, and write and execute to others for <file-name>"," chmod 573 <file-name>"
-"assign read and execute permission to user, all permission to group, and read permission to others for <file-name>"," chmod 574 <file-name>"
-"set permissions to read and execute for owner, all for group members, and read and execute for others on <file-name>"," chmod 575 <file-name>"
-"grant read and execute access for user, all for group, and read and write to others for <file-name>"," chmod 576 <file-name>"
-"assign read and execute permission to user, all permission to group, and all permission to others for <file-name>"," chmod 577 <file-name>"
-"set permissions to read and write for owner, none for group members, and none for others on <file-name>"," chmod 600 <file-name>"
-"assign read and write permission to user, none permission to group, and execute permission to others for <file-name>"," chmod 601 <file-name>"
-"allow read and write for user, none for group, and write for others on file <file-name>"," chmod 602 <file-name>"
-"grant read and write access for user, none for group, and write and execute to others for <file-name>"," chmod 603 <file-name>"
-"allow read and write for user, none for group, and read for others on file <file-name>"," chmod 604 <file-name>"
-"assign read and write permission to user, none permission to group, and read and execute permission to others for <file-name>"," chmod 605 <file-name>"
-"grant read and write access for user, none for group, and read and write to others for <file-name>"," chmod 606 <file-name>"
-"assign read and write permission to user, none permission to group, and all permission to others for <file-name>"," chmod 607 <file-name>"
-"provide read and write for user, execute to group, and none to others for <file-name>"," chmod 610 <file-name>"
-"assign read and write permission to user, execute permission to group, and execute permission to others for <file-name>"," chmod 611 <file-name>"
-"allow read and write for user, execute for group, and write for others on file <file-name>"," chmod 612 <file-name>"
-"set permissions to read and write for owner, execute for group members, and write and execute for others on <file-name>"," chmod 613 <file-name>"
-"grant read and write access for user, execute for group, and read to others for <file-name>"," chmod 614 <file-name>"
-"set permissions to read and write for owner, execute for group members, and read and execute for others on <file-name>"," chmod 615 <file-name>"
-"grant read and write access for user, execute for group, and read and write to others for <file-name>"," chmod 616 <file-name>"
-"set permissions to read and write for owner, execute for group members, and all for others on <file-name>"," chmod 617 <file-name>"
-"set permissions to read and write for owner, write for group members, and none for others on <file-name>"," chmod 620 <file-name>"
-"allow read and write for user, write for group, and execute for others on file <file-name>"," chmod 621 <file-name>"
-"assign read and write permission to user, write permission to group, and write permission to others for <file-name>"," chmod 622 <file-name>"
-"grant read and write access for user, write for group, and write and execute to others for <file-name>"," chmod 623 <file-name>"
-"allow read and write for user, write for group, and read for others on file <file-name>"," chmod 624 <file-name>"
-"set permissions to read and write for owner, write for group members, and read and execute for others on <file-name>"," chmod 625 <file-name>"
-"grant read and write access for user, write for group, and read and write to others for <file-name>"," chmod 626 <file-name>"
-"allow read and write for user, write for group, and all for others on file <file-name>"," chmod 627 <file-name>"
-"grant read and write access for user, write and execute for group, and none to others for <file-name>"," chmod 630 <file-name>"
-"provide read and write for user, write and execute to group, and execute to others for <file-name>"," chmod 631 <file-name>"
-"provide read and write for user, write and execute to group, and write to others for <file-name>"," chmod 632 <file-name>"
-"grant read and write access for user, write and execute for group, and write and execute to others for <file-name>"," chmod 633 <file-name>"
-"allow read and write for user, write and execute for group, and read for others on file <file-name>"," chmod 634 <file-name>"
-"set permissions to read and write for owner, write and execute for group members, and read and execute for others on <file-name>"," chmod 635 <file-name>"
-"provide read and write for user, write and execute to group, and read and write to others for <file-name>"," chmod 636 <file-name>"
-"assign read and write permission to user, write and execute permission to group, and all permission to others for <file-name>"," chmod 637 <file-name>"
-"set permissions to read and write for owner, read for group members, and none for others on <file-name>"," chmod 640 <file-name>"
-"grant read and write access for user, read for group, and execute to others for <file-name>"," chmod 641 <file-name>"
-"assign read and write permission to user, read permission to group, and write permission to others for <file-name>"," chmod 642 <file-name>"
-"set permissions to read and write for owner, read for group members, and write and execute for others on <file-name>"," chmod 643 <file-name>"
-"provide read and write for user, read to group, and read to others for <file-name>"," chmod 644 <file-name>"
-"assign read and write permission to user, read permission to group, and read and execute permission to others for <file-name>"," chmod 645 <file-name>"
-"provide read and write for user, read to group, and read and write to others for <file-name>"," chmod 646 <file-name>"
-"assign read and write permission to user, read permission to group, and all permission to others for <file-name>"," chmod 647 <file-name>"
-"assign read and write permission to user, read and execute permission to group, and none permission to others for <file-name>"," chmod 650 <file-name>"
-"allow read and write for user, read and execute for group, and execute for others on file <file-name>"," chmod 651 <file-name>"
-"set permissions to read and write for owner, read and execute for group members, and write for others on <file-name>"," chmod 652 <file-name>"
-"assign read and write permission to user, read and execute permission to group, and write and execute permission to others for <file-name>"," chmod 653 <file-name>"
-"set permissions to read and write for owner, read and execute for group members, and read for others on <file-name>"," chmod 654 <file-name>"
-"assign read and write permission to user, read and execute permission to group, and read and execute permission to others for <file-name>"," chmod 655 <file-name>"
-"provide read and write for user, read and execute to group, and read and write to others for <file-name>"," chmod 656 <file-name>"
-"provide read and write for user, read and execute to group, and all to others for <file-name>"," chmod 657 <file-name>"
-"grant read and write access for user, read and write for group, and none to others for <file-name>"," chmod 660 <file-name>"
-"provide read and write for user, read and write to group, and execute to others for <file-name>"," chmod 661 <file-name>"
-"provide read and write for user, read and write to group, and write to others for <file-name>"," chmod 662 <file-name>"
-"allow read and write for user, read and write for group, and write and execute for others on file <file-name>"," chmod 663 <file-name>"
-"allow read and write for user, read and write for group, and read for others on file <file-name>"," chmod 664 <file-name>"
-"assign read and write permission to user, read and write permission to group, and read and execute permission to others for <file-name>"," chmod 665 <file-name>"
-"grant read and write access for user, read and write for group, and read and write to others for <file-name>"," chmod 666 <file-name>"
-"provide read and write for user, read and write to group, and all to others for <file-name>"," chmod 667 <file-name>"
-"assign read and write permission to user, all permission to group, and none permission to others for <file-name>"," chmod 670 <file-name>"
-"allow read and write for user, all for group, and execute for others on file <file-name>"," chmod 671 <file-name>"
-"set permissions to read and write for owner, all for group members, and write for others on <file-name>"," chmod 672 <file-name>"
-"grant read and write access for user, all for group, and write and execute to others for <file-name>"," chmod 673 <file-name>"
-"assign read and write permission to user, all permission to group, and read permission to others for <file-name>"," chmod 674 <file-name>"
-"assign read and write permission to user, all permission to group, and read and execute permission to others for <file-name>"," chmod 675 <file-name>"
-"grant read and write access for user, all for group, and read and write to others for <file-name>"," chmod 676 <file-name>"
-"assign read and write permission to user, all permission to group, and all permission to others for <file-name>"," chmod 677 <file-name>"
-"provide all for user, none to group, and none to others for <file-name>"," chmod 700 <file-name>"
-"assign all permission to user, none permission to group, and execute permission to others for <file-name>"," chmod 701 <file-name>"
-"provide all for user, none to group, and write to others for <file-name>"," chmod 702 <file-name>"
-"assign all permission to user, none permission to group, and write and execute permission to others for <file-name>"," chmod 703 <file-name>"
-"set permissions to all for owner, none for group members, and read for others on <file-name>"," chmod 704 <file-name>"
-"grant all access for user, none for group, and read and execute to others for <file-name>"," chmod 705 <file-name>"
-"set permissions to all for owner, none for group members, and read and write for others on <file-name>"," chmod 706 <file-name>"
-"allow all for user, none for group, and all for others on file <file-name>"," chmod 707 <file-name>"
-"provide all for user, execute to group, and none to others for <file-name>"," chmod 710 <file-name>"
-"provide all for user, execute to group, and execute to others for <file-name>"," chmod 711 <file-name>"
-"set permissions to all for owner, execute for group members, and write for others on <file-name>"," chmod 712 <file-name>"
-"assign all permission to user, execute permission to group, and write and execute permission to others for <file-name>"," chmod 713 <file-name>"
-"grant all access for user, execute for group, and read to others for <file-name>"," chmod 714 <file-name>"
-"assign all permission to user, execute permission to group, and read and execute permission to others for <file-name>"," chmod 715 <file-name>"
-"set permissions to all for owner, execute for group members, and read and write for others on <file-name>"," chmod 716 <file-name>"
-"allow all for user, execute for group, and all for others on file <file-name>"," chmod 717 <file-name>"
-"set permissions to all for owner, write for group members, and none for others on <file-name>"," chmod 720 <file-name>"
-"grant all access for user, write for group, and execute to others for <file-name>"," chmod 721 <file-name>"
-"set permissions to all for owner, write for group members, and write for others on <file-name>"," chmod 722 <file-name>"
-"allow all for user, write for group, and write and execute for others on file <file-name>"," chmod 723 <file-name>"
-"grant all access for user, write for group, and read to others for <file-name>"," chmod 724 <file-name>"
-"allow all for user, write for group, and read and execute for others on file <file-name>"," chmod 725 <file-name>"
-"set permissions to all for owner, write for group members, and read and write for others on <file-name>"," chmod 726 <file-name>"
-"grant all access for user, write for group, and all to others for <file-name>"," chmod 727 <file-name>"
-"set permissions to all for owner, write and execute for group members, and none for others on <file-name>"," chmod 730 <file-name>"
-"set permissions to all for owner, write and execute for group members, and execute for others on <file-name>"," chmod 731 <file-name>"
-"set permissions to all for owner, write and execute for group members, and write for others on <file-name>"," chmod 732 <file-name>"
-"set permissions to all for owner, write and execute for group members, and write and execute for others on <file-name>"," chmod 733 <file-name>"
-"allow all for user, write and execute for group, and read for others on file <file-name>"," chmod 734 <file-name>"
-"allow all for user, write and execute for group, and read and execute for others on file <file-name>"," chmod 735 <file-name>"
-"assign all permission to user, write and execute permission to group, and read and write permission to others for <file-name>"," chmod 736 <file-name>"
-"grant all access for user, write and execute for group, and all to others for <file-name>"," chmod 737 <file-name>"
-"assign all permission to user, read permission to group, and none permission to others for <file-name>"," chmod 740 <file-name>"
-"assign all permission to user, read permission to group, and execute permission to others for <file-name>"," chmod 741 <file-name>"
-"provide all for user, read to group, and write to others for <file-name>"," chmod 742 <file-name>"
-"set permissions to all for owner, read for group members, and write and execute for others on <file-name>"," chmod 743 <file-name>"
-"assign all permission to user, read permission to group, and read permission to others for <file-name>"," chmod 744 <file-name>"
-"provide all for user, read to group, and read and execute to others for <file-name>"," chmod 745 <file-name>"
-"provide all for user, read to group, and read and write to others for <file-name>"," chmod 746 <file-name>"
-"allow all for user, read for group, and all for others on file <file-name>"," chmod 747 <file-name>"
-"provide all for user, read and execute to group, and none to others for <file-name>"," chmod 750 <file-name>"
-"provide all for user, read and execute to group, and execute to others for <file-name>"," chmod 751 <file-name>"
-"assign all permission to user, read and execute permission to group, and write permission to others for <file-name>"," chmod 752 <file-name>"
-"set permissions to all for owner, read and execute for group members, and write and execute for others on <file-name>"," chmod 753 <file-name>"
-"set permissions to all for owner, read and execute for group members, and read for others on <file-name>"," chmod 754 <file-name>"
-"assign all permission to user, read and execute permission to group, and read and execute permission to others for <file-name>"," chmod 755 <file-name>"
-"provide all for user, read and execute to group, and read and write to others for <file-name>"," chmod 756 <file-name>"
-"assign all permission to user, read and execute permission to group, and all permission to others for <file-name>"," chmod 757 <file-name>"
-"assign all permission to user, read and write permission to group, and none permission to others for <file-name>"," chmod 760 <file-name>"
-"grant all access for user, read and write for group, and execute to others for <file-name>"," chmod 761 <file-name>"
-"grant all access for user, read and write for group, and write to others for <file-name>"," chmod 762 <file-name>"
-"provide all for user, read and write to group, and write and execute to others for <file-name>"," chmod 763 <file-name>"
-"allow all for user, read and write for group, and read for others on file <file-name>"," chmod 764 <file-name>"
-"grant all access for user, read and write for group, and read and execute to others for <file-name>"," chmod 765 <file-name>"
-"provide all for user, read and write to group, and read and write to others for <file-name>"," chmod 766 <file-name>"
-"grant all access for user, read and write for group, and all to others for <file-name>"," chmod 767 <file-name>"
-"provide all for user, all to group, and none to others for <file-name>"," chmod 770 <file-name>"
-"assign all permission to user, all permission to group, and execute permission to others for <file-name>"," chmod 771 <file-name>"
-"assign all permission to user, all permission to group, and write permission to others for <file-name>"," chmod 772 <file-name>"
-"provide all for user, all to group, and write and execute to others for <file-name>"," chmod 773 <file-name>"
-"allow all for user, all for group, and read for others on file <file-name>"," chmod 774 <file-name>"
-"grant all access for user, all for group, and read and execute to others for <file-name>"," chmod 775 <file-name>"
-"set permissions to all for owner, all for group members, and read and write for others on <file-name>"," chmod 776 <file-name>"
-"assign all permission to user, all permission to group, and all permission to others for <file-name>"," chmod 777 <file-name>"
-
+show disk usage of lambda_datasets,du -sh lambda_datasets  
+get size of folder mu_logs,du -sh mu_logs  
+copy the file from /srv/configs to /opt/configs,cp /srv/configs /opt/configs  
+make a copy of backup.py from /etc/scripts to /var/scripts,cp /etc/scripts/backup.py /var/scripts/backup.py  
+create a copy of file system.log at /mnt/logs,cp system.log /mnt/logs/system.log  
+copy the folder from /usr/share/icons to /home/user/icons,cp -r /usr/share/icons /home/user/icons  
+make a copy of /media/usb <source-location> to /mnt/storage and view it,cp -rv /media/usb /mnt/storage  
+create a full copy of /opt/cache in /srv/cache forcefully,cp -rf /opt/cache /srv/cache  
+copy the directory /root/configs at /home/user/configs forcefully and display it,cp -rvf /root/configs /home/user/configs  
+move file /usr/bin/vim to /opt/editors,mv /usr/bin/vim /opt/editors  
+move the folder from /mnt/backups to /var/backups,mv -r /mnt/backups /var/backups  
+cut the /etc/network in /usr/share and paste it to /var/network and view it,mv -rv /usr/share/network /var/network  
+move the folder /media/usb in /mnt/external forcefully,mv -rf /media/usb /mnt/external  
+move the directory /sys/firmware at /root/firmware forcefully and display it,mv -rvf /sys/firmware /root/firmware  
+rename the backup directory /etc/backup to /etc/old_backup,mv /etc/backup /etc/old_backup  
+alter the log folder name /var/log/apache2 to /var/log/httpd,mv /var/log/apache2 /var/log/httpd  
+rename the documentation folder /usr/share/doc to /usr/share/documentation,mv /usr/share/doc /usr/share/documentation  
+make a tar archive with name documents_backup.tar for /home/user/docs/resume.pdf,tar -cvf documents_backup.tar /home/user/docs/resume.pdf  
+create a tar archive named images_archive.tar for /home/user/pictures/photo.jpg,tar -cvf images_archive.tar /home/user/pictures/photo.jpg  
+restore files from file_tar.tar,tar -xvf file_tar.tar
+extract data from compressed_data.tar,tar -xvf compressed_data.tar
+delete file confidential.txt,rm confidential.txt  
+remove data.csv under /home/user/documents,rm /home/user/documents/data.csv  
+delete folder unused_plugins,rm -r unused_plugins  
+remove backups under /var/data forcefully,rm -rf /var/data/backups  
+change the owner of app.py to quincy,chown quincy app.py  
+make error.log owned by rachel,chown rachel error.log  
+make /usr/bin owned by samuel,chown samuel /usr/bin  
+change /home/shared ownership recursively to thomas,chown -R thomas /home/shared  
+make /tmp/debug.log belong to group engineers,chgrp engineers /tmp/debug.log  
+set /usr/local/bin/custom_script.sh group to devops,chgrp devops /usr/local/bin/custom_script.sh  
+make /usr/share/fonts belong to group graphics,chgrp graphics /usr/share/fonts  
+assign /opt/app/config directory to ops group recursively,chgrp -R ops /opt/app/config  
+set ownership for daniel and engineers on the /tmp/error.log,chown daniel:engineers /tmp/error.log  
+set eve and testers ownership for the /etc/ssh/sshd_config,chown eve:testers /etc/ssh/sshd_config  
+assign ownership of /opt/app/config and its contents to maya and ops,chown -R maya:ops /opt/app/config  
+assign read permission to user for /home/user/Documents/notes.txt,chmod u+r /home/user/Documents/notes.txt
+assign write permission to user for /etc/systemd/system/custom.service,chmod u+w /etc/systemd/system/custom.service
+assign execute permission to user for /usr/local/bin/script.sh,chmod u+x /usr/local/bin/script.sh
+assign read and write permissions to user for /var/log/syslog,chmod u+rw /var/log/syslog
+assign read and execute permissions to user for /home/user/Scripts/deploy.sh,chmod u+rx /home/user/Scripts/deploy.sh
+assign write and execute permissions to user for /opt/tools/setup.sh,chmod u+wx /opt/tools/setup.sh
+assign all permissions to user for /mnt/external/backup.tar.gz,chmod u+rwx /mnt/external/backup.tar.gz
+assign read permission to group for /etc/ssh/sshd_config,chmod g+r /etc/ssh/sshd_config
+assign write permission to group for /var/spool/mail/root,chmod g+w /var/spool/mail/root
+assign execute permission to group for /home/user/bin/cleanup.sh,chmod g+x /home/user/bin/cleanup.sh
+assign read and write permissions to group for /usr/local/etc/config.json,chmod g+rw /usr/local/etc/config.json
+assign read and execute permissions to group for /var/www/html/index.php,chmod g+rx /var/www/html/index.php
+assign write and execute permissions to group for /srv/data/sync.sh,chmod g+wx /srv/data/sync.sh
+assign all permissions to group for /home/shared/projects,chmod g+rwx /home/shared/projects
+assign read permission to others for /etc/profile,chmod o+r /etc/profile
+assign write permission to others for /var/tmp/public.log,chmod o+w /var/tmp/public.log
+assign execute permission to others for /usr/games/chess,chmod o+x /usr/games/chess
+assign read and write permissions to others for /srv/ftp/upload.txt,chmod o+rw /srv/ftp/upload.txt
+assign read and execute permissions to others for /home/user/Public/hello.py,chmod o+rx /home/user/Public/hello.py
+assign write and execute permissions to others for /usr/local/games/launcher,chmod o+wx /usr/local/games/launcher
+assign all permissions to others for /opt/public/docs.pdf,chmod o+rwx /opt/public/docs.pdf
+assign permissions recursively to user for /home/user/Projects,chmod -R u+rwx /home/user/Projects
+grant recursive read write and execute access to group for /var/lib/docker,chmod -R g+rwx /var/lib/docker
+set all permissions for others on directory and its contents /mnt/share,chmod -R o+rwx /mnt/share
+remove read permission from group for /etc/hosts,chmod g-r /etc/hosts
+deny write permission to others for /var/log/auth.log,chmod o-w /var/log/auth.log
+remove all permissions recursively for user from /srv/private,chmod -R u-rwx /srv/private
+change the access of /home/user/.bashrc to 644,chmod 644 /home/user/.bashrc
+apply 755 permissions to the folder /usr/local/lib,chmod 755 /usr/local/lib
+apply 700 recursively to the directory /home/user/.config and its contents,chmod -R 700 /home/user/.config
+"grant none access for user, none for group, and none to others for /home/user/projects/project_230.cfg", chmod 000 /home/user/projects/project_230.cfg
+"provide none for user, none to group, and execute to others for /home/user/projects/project_209.cfg", chmod 001 /home/user/projects/project_209.cfg
+"grant none access for user, none for group, and write to others for /home/user/projects/project_258.cfg", chmod 002 /home/user/projects/project_258.cfg
+"allow none for user, none for group, and write and execute for others on file /home/user/projects/project_366.cfg", chmod 003 /home/user/projects/project_366.cfg
+"assign none permission to user, none permission to group, and read permission to others for /home/user/projects/project_511.cfg", chmod 004 /home/user/projects/project_511.cfg
+"provide none for user, none to group, and read and execute to others for /home/user/projects/project_337.cfg", chmod 005 /home/user/projects/project_337.cfg
+"assign none permission to user, none permission to group, and read and write permission to others for /home/user/projects/project_170.cfg", chmod 006 /home/user/projects/project_170.cfg
+"grant none access for user, none for group, and all to others for /home/user/projects/project_186.cfg", chmod 007 /home/user/projects/project_186.cfg
+"grant none access for user, execute for group, and none to others for /home/user/projects/project_340.cfg", chmod 010 /home/user/projects/project_340.cfg
+"allow none for user, execute for group, and execute for others on file /home/user/projects/project_373.cfg", chmod 011 /home/user/projects/project_373.cfg
+"allow none for user, execute for group, and write for others on file /home/user/projects/project_374.cfg", chmod 012 /home/user/projects/project_374.cfg
+"set permissions to none for owner, execute for group members, and write and execute for others on /home/user/projects/project_256.cfg", chmod 013 /home/user/projects/project_256.cfg
+"grant none access for user, execute for group, and read to others for /home/user/projects/project_335.cfg", chmod 014 /home/user/projects/project_335.cfg
+"set permissions to none for owner, execute for group members, and read and execute for others on /home/user/projects/project_144.cfg", chmod 015 /home/user/projects/project_144.cfg
+"grant none access for user, execute for group, and read and write to others for /home/user/projects/project_283.cfg", chmod 016 /home/user/projects/project_283.cfg
+"provide none for user, execute to group, and all to others for /home/user/projects/project_488.cfg", chmod 017 /home/user/projects/project_488.cfg
+"set permissions to none for owner, write for group members, and none for others on /home/user/projects/project_192.cfg", chmod 020 /home/user/projects/project_192.cfg
+"set permissions to none for owner, write for group members, and execute for others on /home/user/projects/project_176.cfg", chmod 021 /home/user/projects/project_176.cfg
+"provide none for user, write to group, and write to others for /home/user/projects/project_213.cfg", chmod 022 /home/user/projects/project_213.cfg
+"assign none permission to user, write permission to group, and write and execute permission to others for /home/user/projects/project_378.cfg", chmod 023 /home/user/projects/project_378.cfg
+"assign none permission to user, write permission to group, and read permission to others for /home/user/projects/project_234.cfg", chmod 024 /home/user/projects/project_234.cfg
+"provide none for user, write to group, and read and execute to others for /home/user/projects/project_135.cfg", chmod 025 /home/user/projects/project_135.cfg
+"assign none permission to user, write permission to group, and read and write permission to others for /home/user/projects/project_249.cfg", chmod 026 /home/user/projects/project_249.cfg
+"provide none for user, write to group, and all to others for /home/user/projects/project_85.cfg", chmod 027 /home/user/projects/project_85.cfg
+"provide none for user, write and execute to group, and none to others for /home/user/projects/project_507.cfg", chmod 030 /home/user/projects/project_507.cfg
+"set permissions to none for owner, write and execute for group members, and execute for others on /home/user/projects/project_136.cfg", chmod 031 /home/user/projects/project_136.cfg
+"set permissions to none for owner, write and execute for group members, and write for others on /home/user/projects/project_326.cfg", chmod 032 /home/user/projects/project_326.cfg
+"assign none permission to user, write and execute permission to group, and write and execute permission to others for /home/user/projects/project_308.cfg", chmod 033 /home/user/projects/project_308.cfg
+"allow none for user, write and execute for group, and read for others on file /home/user/projects/project_127.cfg", chmod 034 /home/user/projects/project_127.cfg
+"assign none permission to user, write and execute permission to group, and read and execute permission to others for /home/user/projects/project_151.cfg", chmod 035 /home/user/projects/project_151.cfg
+"set permissions to none for owner, write and execute for group members, and read and write for others on /home/user/projects/project_382.cfg", chmod 036 /home/user/projects/project_382.cfg
+"allow none for user, write and execute for group, and all for others on file /home/user/projects/project_126.cfg", chmod 037 /home/user/projects/project_126.cfg
+"grant none access for user, read for group, and none to others for /home/user/projects/project_439.cfg", chmod 040 /home/user/projects/project_439.cfg
+"assign none permission to user, read permission to group, and execute permission to others for /home/user/projects/project_440.cfg", chmod 041 /home/user/projects/project_440.cfg
+"set permissions to none for owner, read for group members, and write for others on /home/user/projects/project_483.cfg", chmod 042 /home/user/projects/project_483.cfg
+"provide none for user, read to group, and write and execute to others for /home/user/projects/project_63.cfg", chmod 043 /home/user/projects/project_63.cfg
+"provide none for user, read to group, and read to others for /home/user/projects/project_197.cfg", chmod 044 /home/user/projects/project_197.cfg
+"allow none for user, read for group, and read and execute for others on file /home/user/projects/project_365.cfg", chmod 045 /home/user/projects/project_365.cfg
+"provide none for user, read to group, and read and write to others for /home/user/projects/project_351.cfg", chmod 046 /home/user/projects/project_351.cfg
+"provide none for user, read to group, and all to others for /home/user/projects/project_49.cfg", chmod 047 /home/user/projects/project_49.cfg
+"provide none for user, read and execute to group, and none to others for /home/user/projects/project_89.cfg", chmod 050 /home/user/projects/project_89.cfg
+"assign none permission to user, read and execute permission to group, and execute permission to others for /home/user/projects/project_240.cfg", chmod 051 /home/user/projects/project_240.cfg
+"provide none for user, read and execute to group, and write to others for /home/user/projects/project_396.cfg", chmod 052 /home/user/projects/project_396.cfg
+"grant none access for user, read and execute for group, and write and execute to others for /home/user/projects/project_169.cfg", chmod 053 /home/user/projects/project_169.cfg
+"set permissions to none for owner, read and execute for group members, and read for others on /home/user/projects/project_125.cfg", chmod 054 /home/user/projects/project_125.cfg
+"grant none access for user, read and execute for group, and read and execute to others for /home/user/projects/project_190.cfg", chmod 055 /home/user/projects/project_190.cfg
+"set permissions to none for owner, read and execute for group members, and read and write for others on /home/user/projects/project_174.cfg", chmod 056 /home/user/projects/project_174.cfg
+"allow none for user, read and execute for group, and all for others on file /home/user/projects/project_172.cfg", chmod 057 /home/user/projects/project_172.cfg
+"allow none for user, read and write for group, and none for others on file /home/user/projects/project_510.cfg", chmod 060 /home/user/projects/project_510.cfg
+"allow none for user, read and write for group, and execute for others on file /home/user/projects/project_188.cfg", chmod 061 /home/user/projects/project_188.cfg
+"set permissions to none for owner, read and write for group members, and write for others on /home/user/projects/project_133.cfg", chmod 062 /home/user/projects/project_133.cfg
+"provide none for user, read and write to group, and write and execute to others for /home/user/projects/project_91.cfg", chmod 063 /home/user/projects/project_91.cfg
+"provide none for user, read and write to group, and read to others for /home/user/projects/project_329.cfg", chmod 064 /home/user/projects/project_329.cfg
+"grant none access for user, read and write for group, and read and execute to others for /home/user/Videos/tutorial.mp4", chmod 065 /home/user/Videos/tutorial.mp4
+"set permissions to none for owner, read and write for group members, and read and write for others on /proc/stat", chmod 066 /proc/stat
+"assign none permission to user, read and write permission to group, and all permission to others for /home/user/projects/project_369.cfg", chmod 067 /home/user/projects/project_369.cfg
+"grant none access for user, all for group, and none to others for /home/user/projects/project_241.cfg", chmod 070 /home/user/projects/project_241.cfg
+"assign none permission to user, all permission to group, and execute permission to others for /home/user/projects/project_403.cfg", chmod 071 /home/user/projects/project_403.cfg
+"assign none permission to user, all permission to group, and write permission to others for /home/user/projects/project_117.cfg", chmod 072 /home/user/projects/project_117.cfg
+"set permissions to none for owner, all for group members, and write and execute for others on /home/user/projects/project_386.cfg", chmod 073 /home/user/projects/project_386.cfg
+"assign none permission to user, all permission to group, and read permission to others for /home/user/projects/project_248.cfg", chmod 074 /home/user/projects/project_248.cfg
+"assign none permission to user, all permission to group, and read and execute permission to others for /home/user/projects/project_320.cfg", chmod 075 /home/user/projects/project_320.cfg
+"set permissions to none for owner, all for group members, and read and write for others on /home/user/projects/project_412.cfg", chmod 076 /home/user/projects/project_412.cfg
+"set permissions to none for owner, all for group members, and all for others on /home/user/projects/project_383.cfg", chmod 077 /home/user/projects/project_383.cfg
+"allow execute for user, none for group, and none for others on file /home/user/projects/project_32.cfg", chmod 100 /home/user/projects/project_32.cfg
+"allow execute for user, none for group, and execute for others on file /home/user/projects/project_370.cfg", chmod 101 /home/user/projects/project_370.cfg
+"allow execute for user, none for group, and write for others on file /home/user/projects/project_291.cfg", chmod 102 /home/user/projects/project_291.cfg
+"assign execute permission to user, none permission to group, and write and execute permission to others for /home/user/projects/project_93.cfg", chmod 103 /home/user/projects/project_93.cfg
+"set permissions to execute for owner, none for group members, and read for others on /var/log/dmesg", chmod 104 /var/log/dmesg
+"provide execute for user, none to group, and read and execute to others for /home/user/projects/project_456.cfg", chmod 105 /home/user/projects/project_456.cfg
+"assign execute permission to user, none permission to group, and read and write permission to others for /home/user/projects/project_84.cfg", chmod 106 /home/user/projects/project_84.cfg
+"provide execute for user, none to group, and all to others for /home/user/projects/project_416.cfg", chmod 107 /home/user/projects/project_416.cfg
+"provide execute for user, execute to group, and none to others for /home/user/projects/project_266.cfg", chmod 110 /home/user/projects/project_266.cfg
+"set permissions to execute for owner, execute for group members, and execute for others on /home/user/projects/project_500.cfg", chmod 111 /home/user/projects/project_500.cfg
+"assign execute permission to user, execute permission to group, and write permission to others for /home/user/projects/project_81.cfg", chmod 112 /home/user/projects/project_81.cfg
+"provide execute for user, execute to group, and write and execute to others for /home/user/projects/project_339.cfg", chmod 113 /home/user/projects/project_339.cfg
+"set permissions to execute for owner, execute for group members, and read for others on /usr/local/share/doc/readme.txt", chmod 114 /usr/local/share/doc/readme.txt
+"allow execute for user, execute for group, and read and execute for others on file /home/user/projects/project_435.cfg", chmod 115 /home/user/projects/project_435.cfg
+"assign execute permission to user, execute permission to group, and read and write permission to others for /home/user/projects/project_276.cfg", chmod 116 /home/user/projects/project_276.cfg
+"provide execute for user, execute to group, and all to others for /home/user/projects/project_493.cfg", chmod 117 /home/user/projects/project_493.cfg
+"provide execute for user, write to group, and none to others for /home/user/projects/project_420.cfg", chmod 120 /home/user/projects/project_420.cfg
+"set permissions to execute for owner, write for group members, and execute for others on /home/user/projects/project_449.cfg", chmod 121 /home/user/projects/project_449.cfg
+"set permissions to execute for owner, write for group members, and write for others on /home/user/projects/project_220.cfg", chmod 122 /home/user/projects/project_220.cfg
+"provide execute for user, write to group, and write and execute to others for /home/user/projects/project_61.cfg", chmod 123 /home/user/projects/project_61.cfg
+"allow execute for user, write for group, and read for others on file /home/user/projects/project_287.cfg", chmod 124 /home/user/projects/project_287.cfg
+"assign execute permission to user, write permission to group, and read and execute permission to others for /home/user/projects/project_411.cfg", chmod 125 /home/user/projects/project_411.cfg
+"set permissions to execute for owner, write for group members, and read and write for others on /home/user/projects/project_252.cfg", chmod 126 /home/user/projects/project_252.cfg
+"assign execute permission to user, write permission to group, and all permission to others for /home/user/projects/project_225.cfg", chmod 127 /home/user/projects/project_225.cfg
+"assign execute permission to user, write and execute permission to group, and none permission to others for /dev/random", chmod 130 /dev/random
+"set permissions to execute for owner, write and execute for group members, and execute for others on /home/user/projects/project_114.cfg", chmod 131 /home/user/projects/project_114.cfg
+"grant execute access for user, write and execute for group, and write to others for /home/user/projects/project_141.cfg", chmod 132 /home/user/projects/project_141.cfg
+"assign execute permission to user, write and execute permission to group, and write and execute permission to others for /home/user/projects/project_436.cfg", chmod 133 /home/user/projects/project_436.cfg
+"provide execute for user, write and execute to group, and read to others for /home/user/projects/project_501.cfg", chmod 134 /home/user/projects/project_501.cfg
+"assign execute permission to user, write and execute permission to group, and read and execute permission to others for /home/user/projects/project_134.cfg", chmod 135 /home/user/projects/project_134.cfg
+"provide execute for user, write and execute to group, and read and write to others for /home/user/projects/project_96.cfg", chmod 136 /home/user/projects/project_96.cfg
+"assign execute permission to user, write and execute permission to group, and all permission to others for /home/user/projects/project_167.cfg", chmod 137 /home/user/projects/project_167.cfg
+"grant execute access for user, read for group, and none to others for /home/user/projects/project_509.cfg", chmod 140 /home/user/projects/project_509.cfg
+"allow execute for user, read for group, and execute for others on file /home/user/projects/project_184.cfg", chmod 141 /home/user/projects/project_184.cfg
+"assign execute permission to user, read permission to group, and write permission to others for /home/user/projects/project_36.cfg", chmod 142 /home/user/projects/project_36.cfg
+"provide execute for user, read to group, and write and execute to others for /home/user/projects/project_447.cfg", chmod 143 /home/user/projects/project_447.cfg
+"allow execute for user, read for group, and read for others on file /home/user/projects/project_277.cfg", chmod 144 /home/user/projects/project_277.cfg
+"assign execute permission to user, read permission to group, and read and execute permission to others for /home/user/projects/project_363.cfg", chmod 145 /home/user/projects/project_363.cfg
+"allow execute for user, read for group, and read and write for others on file /home/user/projects/project_355.cfg", chmod 146 /home/user/projects/project_355.cfg
+"assign execute permission to user, read permission to group, and all permission to others for /home/user/projects/project_128.cfg", chmod 147 /home/user/projects/project_128.cfg
+"set permissions to execute for owner, read and execute for group members, and none for others on /home/user/projects/project_79.cfg", chmod 150 /home/user/projects/project_79.cfg
+"grant execute access for user, read and execute for group, and execute to others for /home/user/projects/project_110.cfg", chmod 151 /home/user/projects/project_110.cfg
+"set permissions to execute for owner, read and execute for group members, and write for others on /home/user/projects/project_490.cfg", chmod 152 /home/user/projects/project_490.cfg
+"allow execute for user, read and execute for group, and write and execute for others on file /home/user/projects/project_427.cfg", chmod 153 /home/user/projects/project_427.cfg
+"allow execute for user, read and execute for group, and read for others on file /home/user/projects/project_391.cfg", chmod 154 /home/user/projects/project_391.cfg
+"assign execute permission to user, read and execute permission to group, and read and execute permission to others for /home/user/projects/project_265.cfg", chmod 155 /home/user/projects/project_265.cfg
+"set permissions to execute for owner, read and execute for group members, and read and write for others on /home/user/projects/project_246.cfg", chmod 156 /home/user/projects/project_246.cfg
+"grant execute access for user, read and execute for group, and all to others for /home/user/projects/project_479.cfg", chmod 157 /home/user/projects/project_479.cfg
+"grant execute access for user, read and write for group, and none to others for /home/user/projects/project_492.cfg", chmod 160 /home/user/projects/project_492.cfg
+"allow execute for user, read and write for group, and execute for others on file /home/user/projects/project_111.cfg", chmod 161 /home/user/projects/project_111.cfg
+"assign execute permission to user, read and write permission to group, and write permission to others for /home/user/projects/project_301.cfg", chmod 162 /home/user/projects/project_301.cfg
+"set permissions to execute for owner, read and write for group members, and write and execute for others on /home/user/projects/project_139.cfg", chmod 163 /home/user/projects/project_139.cfg
+"set permissions to execute for owner, read and write for group members, and read for others on /home/user/projects/project_497.cfg", chmod 164 /home/user/projects/project_497.cfg
+"allow execute for user, read and write for group, and read and execute for others on file /home/user/projects/project_145.cfg", chmod 165 /home/user/projects/project_145.cfg
+"allow execute for user, read and write for group, and read and write for others on file /home/user/projects/project_264.cfg", chmod 166 /home/user/projects/project_264.cfg
+"set permissions to execute for owner, read and write for group members, and all for others on /home/user/projects/project_65.cfg", chmod 167 /home/user/projects/project_65.cfg
+"set permissions to execute for owner, all for group members, and none for others on /home/user/projects/project_245.cfg", chmod 170 /home/user/projects/project_245.cfg
+"provide execute for user, all to group, and execute to others for /home/user/projects/project_83.cfg", chmod 171 /home/user/projects/project_83.cfg
+"assign execute permission to user, all permission to group, and write permission to others for /home/user/projects/project_69.cfg", chmod 172 /home/user/projects/project_69.cfg
+"provide execute for user, all to group, and write and execute to others for /home/user/projects/project_454.cfg", chmod 173 /home/user/projects/project_454.cfg
+"set permissions to execute for owner, all for group members, and read for others on /home/user/projects/project_196.cfg", chmod 174 /home/user/projects/project_196.cfg
+"assign execute permission to user, all permission to group, and read and execute permission to others for /home/user/projects/project_314.cfg", chmod 175 /home/user/projects/project_314.cfg
+"grant execute access for user, all for group, and read and write to others for /home/user/projects/project_162.cfg", chmod 176 /home/user/projects/project_162.cfg
+"grant execute access for user, all for group, and all to others for /home/user/projects/project_293.cfg", chmod 177 /home/user/projects/project_293.cfg
+"grant write access for user, none for group, and none to others for /home/user/projects/project_344.cfg", chmod 200 /home/user/projects/project_344.cfg
+"set permissions to write for owner, none for group members, and execute for others on /home/user/projects/project_485.cfg", chmod 201 /home/user/projects/project_485.cfg
+"set permissions to write for owner, none for group members, and write for others on /home/user/projects/project_100.cfg", chmod 202 /home/user/projects/project_100.cfg
+"assign write permission to user, none permission to group, and write and execute permission to others for /home/user/projects/project_52.cfg", chmod 203 /home/user/projects/project_52.cfg
+"allow write for user, none for group, and read for others on file /home/user/projects/project_47.cfg", chmod 204 /home/user/projects/project_47.cfg
+"allow write for user, none for group, and read and execute for others on file /home/user/projects/project_115.cfg", chmod 205 /home/user/projects/project_115.cfg
+"assign write permission to user, none permission to group, and read and write permission to others for /home/user/projects/project_461.cfg", chmod 206 /home/user/projects/project_461.cfg
+"set permissions to write for owner, none for group members, and all for others on /home/user/projects/project_103.cfg", chmod 207 /home/user/projects/project_103.cfg
+"assign write permission to user, execute permission to group, and none permission to others for /home/user/projects/project_70.cfg", chmod 210 /home/user/projects/project_70.cfg
+"set permissions to write for owner, execute for group members, and execute for others on /home/user/projects/project_56.cfg", chmod 211 /home/user/projects/project_56.cfg
+"provide write for user, execute to group, and write to others for /home/user/projects/project_77.cfg", chmod 212 /home/user/projects/project_77.cfg
+"allow write for user, execute for group, and write and execute for others on file /home/user/projects/project_298.cfg", chmod 213 /home/user/projects/project_298.cfg
+"grant write access for user, execute for group, and read to others for /home/user/projects/project_360.cfg", chmod 214 /home/user/projects/project_360.cfg
+"set permissions to write for owner, execute for group members, and read and execute for others on /home/user/projects/project_101.cfg", chmod 215 /home/user/projects/project_101.cfg
+"allow write for user, execute for group, and read and write for others on file /home/user/projects/project_280.cfg", chmod 216 /home/user/projects/project_280.cfg
+"provide write for user, execute to group, and all to others for /home/user/projects/project_359.cfg", chmod 217 /home/user/projects/project_359.cfg
+"allow write for user, write for group, and none for others on file /home/user/projects/project_304.cfg", chmod 220 /home/user/projects/project_304.cfg
+"assign write permission to user, write permission to group, and execute permission to others for /home/user/projects/project_207.cfg", chmod 221 /home/user/projects/project_207.cfg
+"provide write for user, write to group, and write to others for /home/user/projects/project_268.cfg", chmod 222 /home/user/projects/project_268.cfg
+"grant write access for user, write for group, and write and execute to others for /proc/uptime", chmod 223 /proc/uptime
+"grant write access for user, write for group, and read to others for /home/user/projects/project_215.cfg", chmod 224 /home/user/projects/project_215.cfg
+"assign write permission to user, write permission to group, and read and execute permission to others for /dev/null", chmod 225 /dev/null
+"grant write access for user, write for group, and read and write to others for /home/user/projects/project_138.cfg", chmod 226 /home/user/projects/project_138.cfg
+"allow write for user, write for group, and all for others on file /home/user/projects/project_173.cfg", chmod 227 /home/user/projects/project_173.cfg
+"allow write for user, write and execute for group, and none for others on file /home/user/projects/project_286.cfg", chmod 230 /home/user/projects/project_286.cfg
+"assign write permission to user, write and execute permission to group, and execute permission to others for /home/user/projects/project_472.cfg", chmod 231 /home/user/projects/project_472.cfg
+"provide write for user, write and execute to group, and write to others for /home/user/projects/project_31.cfg", chmod 232 /home/user/projects/project_31.cfg
+"grant write access for user, write and execute for group, and write and execute to others for /home/user/projects/project_229.cfg", chmod 233 /home/user/projects/project_229.cfg
+"provide write for user, write and execute to group, and read to others for /home/user/projects/project_51.cfg", chmod 234 /home/user/projects/project_51.cfg
+"assign write permission to user, write and execute permission to group, and read and execute permission to others for /home/user/projects/project_41.cfg", chmod 235 /home/user/projects/project_41.cfg
+"assign write permission to user, write and execute permission to group, and read and write permission to others for /home/user/projects/project_30.cfg", chmod 236 /home/user/projects/project_30.cfg
+"allow write for user, write and execute for group, and all for others on file /home/user/projects/project_313.cfg", chmod 237 /home/user/projects/project_313.cfg
+"grant write access for user, read for group, and none to others for /home/user/projects/project_237.cfg", chmod 240 /home/user/projects/project_237.cfg
+"assign write permission to user, read permission to group, and execute permission to others for /home/user/Downloads/appimage.run", chmod 241 /home/user/Downloads/appimage.run
+"set permissions to write for owner, read for group members, and write for others on /home/user/projects/project_156.cfg", chmod 242 /home/user/projects/project_156.cfg
+"set permissions to write for owner, read for group members, and write and execute for others on /home/user/projects/project_282.cfg", chmod 243 /home/user/projects/project_282.cfg
+"grant write access for user, read for group, and read to others for /home/user/projects/project_123.cfg", chmod 244 /home/user/projects/project_123.cfg
+"allow write for user, read for group, and read and execute for others on file /home/user/projects/project_482.cfg", chmod 245 /home/user/projects/project_482.cfg
+"grant write access for user, read for group, and read and write to others for /home/user/projects/project_59.cfg", chmod 246 /home/user/projects/project_59.cfg
+"provide write for user, read to group, and all to others for /home/user/projects/project_78.cfg", chmod 247 /home/user/projects/project_78.cfg
+"provide write for user, read and execute to group, and none to others for /home/user/projects/project_112.cfg", chmod 250 /home/user/projects/project_112.cfg
+"assign write permission to user, read and execute permission to group, and execute permission to others for /home/user/projects/project_203.cfg", chmod 251 /home/user/projects/project_203.cfg
+"grant write access for user, read and execute for group, and write to others for /home/user/projects/project_147.cfg", chmod 252 /home/user/projects/project_147.cfg
+"grant write access for user, read and execute for group, and write and execute to others for /home/user/projects/project_178.cfg", chmod 253 /home/user/projects/project_178.cfg
+"provide write for user, read and execute to group, and read to others for /home/user/projects/project_324.cfg", chmod 254 /home/user/projects/project_324.cfg
+"allow write for user, read and execute for group, and read and execute for others on file /home/user/projects/project_34.cfg", chmod 255 /home/user/projects/project_34.cfg
+"grant write access for user, read and execute for group, and read and write to others for /home/user/projects/project_459.cfg", chmod 256 /home/user/projects/project_459.cfg
+"allow write for user, read and execute for group, and all for others on file /home/user/projects/project_236.cfg", chmod 257 /home/user/projects/project_236.cfg
+"allow write for user, read and write for group, and none for others on file /home/user/projects/project_118.cfg", chmod 260 /home/user/projects/project_118.cfg
+"provide write for user, read and write to group, and execute to others for /home/user/projects/project_452.cfg", chmod 261 /home/user/projects/project_452.cfg
+"assign write permission to user, read and write permission to group, and write permission to others for /home/user/projects/project_467.cfg", chmod 262 /home/user/projects/project_467.cfg
+"grant write access for user, read and write for group, and write and execute to others for /home/user/projects/project_354.cfg", chmod 263 /home/user/projects/project_354.cfg
+"set permissions to write for owner, read and write for group members, and read for others on /home/user/projects/project_328.cfg", chmod 264 /home/user/projects/project_328.cfg
+"allow write for user, read and write for group, and read and execute for others on file /home/user/projects/project_453.cfg", chmod 265 /home/user/projects/project_453.cfg
+"grant write access for user, read and write for group, and read and write to others for /home/user/projects/project_179.cfg", chmod 266 /home/user/projects/project_179.cfg
+"allow write for user, read and write for group, and all for others on file /home/user/projects/project_279.cfg", chmod 267 /home/user/projects/project_279.cfg
+"provide write for user, all to group, and none to others for /home/user/projects/project_259.cfg", chmod 270 /home/user/projects/project_259.cfg
+"provide write for user, all to group, and execute to others for /home/user/projects/project_281.cfg", chmod 271 /home/user/projects/project_281.cfg
+"provide write for user, all to group, and write to others for /home/user/projects/project_116.cfg", chmod 272 /home/user/projects/project_116.cfg
+"grant write access for user, all for group, and write and execute to others for /home/user/projects/project_494.cfg", chmod 273 /home/user/projects/project_494.cfg
+"grant write access for user, all for group, and read to others for /home/user/projects/project_350.cfg", chmod 274 /home/user/projects/project_350.cfg
+"allow write for user, all for group, and read and execute for others on file /home/user/projects/project_95.cfg", chmod 275 /home/user/projects/project_95.cfg
+"allow write for user, all for group, and read and write for others on file /home/user/projects/project_57.cfg", chmod 276 /home/user/projects/project_57.cfg
+"grant write access for user, all for group, and all to others for /home/user/projects/project_448.cfg", chmod 277 /home/user/projects/project_448.cfg
+"allow write and execute for user, none for group, and none for others on file /home/user/projects/project_424.cfg", chmod 300 /home/user/projects/project_424.cfg
+"assign write and execute permission to user, none permission to group, and execute permission to others for /home/user/projects/project_206.cfg", chmod 301 /home/user/projects/project_206.cfg
+"provide write and execute for user, none to group, and write to others for /home/user/projects/project_257.cfg", chmod 302 /home/user/projects/project_257.cfg
+"assign write and execute permission to user, none permission to group, and write and execute permission to others for /home/user/projects/project_181.cfg", chmod 303 /home/user/projects/project_181.cfg
+"set permissions to write and execute for owner, none for group members, and read for others on /home/user/projects/project_489.cfg", chmod 304 /home/user/projects/project_489.cfg
+"grant write and execute access for user, none for group, and read and execute to others for /home/user/projects/project_239.cfg", chmod 305 /home/user/projects/project_239.cfg
+"grant write and execute access for user, none for group, and read and write to others for /opt/software/license.key", chmod 306 /opt/software/license.key
+"assign write and execute permission to user, none permission to group, and all permission to others for /home/user/projects/project_310.cfg", chmod 307 /home/user/projects/project_310.cfg
+"assign write and execute permission to user, execute permission to group, and none permission to others for /home/user/projects/project_62.cfg", chmod 310 /home/user/projects/project_62.cfg
+"set permissions to write and execute for owner, execute for group members, and execute for others on /home/user/projects/project_212.cfg", chmod 311 /home/user/projects/project_212.cfg
+"assign write and execute permission to user, execute permission to group, and write permission to others for /home/user/projects/project_300.cfg", chmod 312 /home/user/projects/project_300.cfg
+"allow write and execute for user, execute for group, and write and execute for others on file /home/user/projects/project_393.cfg", chmod 313 /home/user/projects/project_393.cfg
+"allow write and execute for user, execute for group, and read for others on file /home/user/projects/project_303.cfg", chmod 314 /home/user/projects/project_303.cfg
+"grant write and execute access for user, execute for group, and read and execute to others for /home/user/projects/project_486.cfg", chmod 315 /home/user/projects/project_486.cfg
+"set permissions to write and execute for owner, execute for group members, and read and write for others on /home/user/projects/project_143.cfg", chmod 316 /home/user/projects/project_143.cfg
+"assign write and execute permission to user, execute permission to group, and all permission to others for /home/user/projects/project_262.cfg", chmod 317 /home/user/projects/project_262.cfg
+"allow write and execute for user, write for group, and none for others on file /home/user/projects/project_288.cfg", chmod 320 /home/user/projects/project_288.cfg
+"grant write and execute access for user, write for group, and execute to others for /home/user/projects/project_171.cfg", chmod 321 /home/user/projects/project_171.cfg
+"provide write and execute for user, write to group, and write to others for /home/user/projects/project_455.cfg", chmod 322 /home/user/projects/project_455.cfg
+"set permissions to write and execute for owner, write for group members, and write and execute for others on /home/user/projects/project_428.cfg", chmod 323 /home/user/projects/project_428.cfg
+"provide write and execute for user, write to group, and read to others for /home/user/projects/project_296.cfg", chmod 324 /home/user/projects/project_296.cfg
+"assign write and execute permission to user, write permission to group, and read and execute permission to others for /home/user/projects/project_105.cfg", chmod 325 /home/user/projects/project_105.cfg
+"set permissions to write and execute for owner, write for group members, and read and write for others on /home/user/projects/project_46.cfg", chmod 326 /home/user/projects/project_46.cfg
+"set permissions to write and execute for owner, write for group members, and all for others on /home/user/projects/project_321.cfg", chmod 327 /home/user/projects/project_321.cfg
+"allow write and execute for user, write and execute for group, and none for others on file /home/user/projects/project_97.cfg", chmod 330 /home/user/projects/project_97.cfg
+"allow write and execute for user, write and execute for group, and execute for others on file /etc/network/interfaces", chmod 331 /etc/network/interfaces
+"grant write and execute access for user, write and execute for group, and write to others for /home/user/projects/project_108.cfg", chmod 332 /home/user/projects/project_108.cfg
+"assign write and execute permission to user, write and execute permission to group, and write and execute permission to others for /home/user/projects/project_410.cfg", chmod 333 /home/user/projects/project_410.cfg
+"provide write and execute for user, write and execute to group, and read to others for /home/user/projects/project_194.cfg", chmod 334 /home/user/projects/project_194.cfg
+"assign write and execute permission to user, write and execute permission to group, and read and execute permission to others for /home/user/projects/project_146.cfg", chmod 335 /home/user/projects/project_146.cfg
+"assign write and execute permission to user, write and execute permission to group, and read and write permission to others for /home/user/projects/project_233.cfg", chmod 336 /home/user/projects/project_233.cfg
+"allow write and execute for user, write and execute for group, and all for others on file /home/user/projects/project_409.cfg", chmod 337 /home/user/projects/project_409.cfg
+"grant write and execute access for user, read for group, and none to others for /home/user/projects/project_390.cfg", chmod 340 /home/user/projects/project_390.cfg
+"allow write and execute for user, read for group, and execute for others on file /home/user/projects/project_54.cfg", chmod 341 /home/user/projects/project_54.cfg
+"set permissions to write and execute for owner, read for group members, and write for others on /home/user/projects/project_334.cfg", chmod 342 /home/user/projects/project_334.cfg
+"assign write and execute permission to user, read permission to group, and write and execute permission to others for /home/user/projects/project_106.cfg", chmod 343 /home/user/projects/project_106.cfg
+"grant write and execute access for user, read for group, and read to others for /home/user/projects/project_255.cfg", chmod 344 /home/user/projects/project_255.cfg
+"set permissions to write and execute for owner, read for group members, and read and execute for others on /home/user/projects/project_348.cfg", chmod 345 /home/user/projects/project_348.cfg
+"set permissions to write and execute for owner, read for group members, and read and write for others on /home/user/projects/project_341.cfg", chmod 346 /home/user/projects/project_341.cfg
+"allow write and execute for user, read for group, and all for others on file /home/user/projects/project_316.cfg", chmod 347 /home/user/projects/project_316.cfg
+"grant write and execute access for user, read and execute for group, and none to others for /home/user/projects/project_311.cfg", chmod 350 /home/user/projects/project_311.cfg
+"set permissions to write and execute for owner, read and execute for group members, and execute for others on /home/user/projects/project_400.cfg", chmod 351 /home/user/projects/project_400.cfg
+"allow write and execute for user, read and execute for group, and write for others on file /home/user/projects/project_418.cfg", chmod 352 /home/user/projects/project_418.cfg
+"set permissions to write and execute for owner, read and execute for group members, and write and execute for others on /home/user/projects/project_442.cfg", chmod 353 /home/user/projects/project_442.cfg
+"grant write and execute access for user, read and execute for group, and read to others for /home/user/projects/project_120.cfg", chmod 354 /home/user/projects/project_120.cfg
+"allow write and execute for user, read and execute for group, and read and execute for others on file /home/user/projects/project_44.cfg", chmod 355 /home/user/projects/project_44.cfg
+"provide write and execute for user, read and execute to group, and read and write to others for /home/user/projects/project_357.cfg", chmod 356 /home/user/projects/project_357.cfg
+"set permissions to write and execute for owner, read and execute for group members, and all for others on /home/user/projects/project_74.cfg", chmod 357 /home/user/projects/project_74.cfg
+"set permissions to write and execute for owner, read and write for group members, and none for others on /home/user/projects/project_201.cfg", chmod 360 /home/user/projects/project_201.cfg
+"grant write and execute access for user, read and write for group, and execute to others for /home/user/projects/project_399.cfg", chmod 361 /home/user/projects/project_399.cfg
+"allow write and execute for user, read and write for group, and write for others on file /home/user/projects/project_387.cfg", chmod 362 /home/user/projects/project_387.cfg
+"set permissions to write and execute for owner, read and write for group members, and write and execute for others on /home/user/projects/project_506.cfg", chmod 363 /home/user/projects/project_506.cfg
+"assign write and execute permission to user, read and write permission to group, and read permission to others for /usr/share/themes/theme.css", chmod 364 /usr/share/themes/theme.css
+"provide write and execute for user, read and write to group, and read and execute to others for /var/spool/mail/root", chmod 365 /var/spool/mail/root
+"provide write and execute for user, read and write to group, and read and write to others for /home/user/projects/project_290.cfg", chmod 366 /home/user/projects/project_290.cfg
+"provide write and execute for user, read and write to group, and all to others for /home/user/projects/project_405.cfg", chmod 367 /home/user/projects/project_405.cfg
+"allow write and execute for user, all for group, and none for others on file /home/user/projects/project_200.cfg", chmod 370 /home/user/projects/project_200.cfg
+"set permissions to write and execute for owner, all for group members, and execute for others on /home/user/projects/project_165.cfg", chmod 371 /home/user/projects/project_165.cfg
+"assign write and execute permission to user, all permission to group, and write permission to others for /home/user/projects/project_38.cfg", chmod 372 /home/user/projects/project_38.cfg
+"set permissions to write and execute for owner, all for group members, and write and execute for others on /home/user/projects/project_429.cfg", chmod 373 /home/user/projects/project_429.cfg
+"grant write and execute access for user, all for group, and read to others for /home/user/projects/project_375.cfg", chmod 374 /home/user/projects/project_375.cfg
+"set permissions to write and execute for owner, all for group members, and read and execute for others on /home/user/projects/project_202.cfg", chmod 375 /home/user/projects/project_202.cfg
+"assign write and execute permission to user, all permission to group, and read and write permission to others for /home/user/projects/project_499.cfg", chmod 376 /home/user/projects/project_499.cfg
+"set permissions to write and execute for owner, all for group members, and all for others on /home/user/projects/project_274.cfg", chmod 377 /home/user/projects/project_274.cfg
+"assign read permission to user, none permission to group, and none permission to others for /home/user/projects/project_415.cfg", chmod 400 /home/user/projects/project_415.cfg
+"provide read for user, none to group, and execute to others for /home/user/projects/project_204.cfg", chmod 401 /home/user/projects/project_204.cfg
+"assign read permission to user, none permission to group, and write permission to others for /home/user/projects/project_315.cfg", chmod 402 /home/user/projects/project_315.cfg
+"set permissions to read for owner, none for group members, and write and execute for others on /home/user/projects/project_505.cfg", chmod 403 /home/user/projects/project_505.cfg
+"provide read for user, none to group, and read to others for /home/user/projects/project_260.cfg", chmod 404 /home/user/projects/project_260.cfg
+"set permissions to read for owner, none for group members, and read and execute for others on /home/user/projects/project_462.cfg", chmod 405 /home/user/projects/project_462.cfg
+"grant read access for user, none for group, and read and write to others for /home/user/projects/project_48.cfg", chmod 406 /home/user/projects/project_48.cfg
+"allow read for user, none for group, and all for others on file /home/user/projects/project_319.cfg", chmod 407 /home/user/projects/project_319.cfg
+"provide read for user, execute to group, and none to others for /home/user/projects/project_389.cfg", chmod 410 /home/user/projects/project_389.cfg
+"grant read access for user, execute for group, and execute to others for /home/user/projects/project_484.cfg", chmod 411 /home/user/projects/project_484.cfg
+"assign read permission to user, execute permission to group, and write permission to others for /home/user/projects/project_272.cfg", chmod 412 /home/user/projects/project_272.cfg
+"set permissions to read for owner, execute for group members, and write and execute for others on /home/user/projects/project_161.cfg", chmod 413 /home/user/projects/project_161.cfg
+"provide read for user, execute to group, and read to others for /home/user/projects/project_353.cfg", chmod 414 /home/user/projects/project_353.cfg
+"grant read access for user, execute for group, and read and execute to others for /home/user/projects/project_43.cfg", chmod 415 /home/user/projects/project_43.cfg
+"grant read access for user, execute for group, and read and write to others for /home/user/projects/project_168.cfg", chmod 416 /home/user/projects/project_168.cfg
+"grant read access for user, execute for group, and all to others for /home/user/projects/project_154.cfg", chmod 417 /home/user/projects/project_154.cfg
+"allow read for user, write for group, and none for others on file /home/user/projects/project_423.cfg", chmod 420 /home/user/projects/project_423.cfg
+"grant read access for user, write for group, and execute to others for /home/user/projects/project_205.cfg", chmod 421 /home/user/projects/project_205.cfg
+"allow read for user, write for group, and write for others on file /home/user/projects/project_466.cfg", chmod 422 /home/user/projects/project_466.cfg
+"assign read permission to user, write permission to group, and write and execute permission to others for /home/user/projects/project_312.cfg", chmod 423 /home/user/projects/project_312.cfg
+"provide read for user, write to group, and read to others for /home/user/projects/project_58.cfg", chmod 424 /home/user/projects/project_58.cfg
+"provide read for user, write to group, and read and execute to others for /home/user/projects/project_474.cfg", chmod 425 /home/user/projects/project_474.cfg
+"set permissions to read for owner, write for group members, and read and write for others on /home/user/projects/project_417.cfg", chmod 426 /home/user/projects/project_417.cfg
+"allow read for user, write for group, and all for others on file /home/user/projects/project_476.cfg", chmod 427 /home/user/projects/project_476.cfg
+"allow read for user, write and execute for group, and none for others on file /home/user/projects/project_458.cfg", chmod 430 /home/user/projects/project_458.cfg
+"allow read for user, write and execute for group, and execute for others on file /home/user/projects/project_187.cfg", chmod 431 /home/user/projects/project_187.cfg
+"grant read access for user, write and execute for group, and write to others for /home/user/projects/project_224.cfg", chmod 432 /home/user/projects/project_224.cfg
+"assign read permission to user, write and execute permission to group, and write and execute permission to others for /home/user/projects/project_129.cfg", chmod 433 /home/user/projects/project_129.cfg
+"provide read for user, write and execute to group, and read to others for /home/user/projects/project_177.cfg", chmod 434 /home/user/projects/project_177.cfg
+"set permissions to read for owner, write and execute for group members, and read and execute for others on /home/user/projects/project_379.cfg", chmod 435 /home/user/projects/project_379.cfg
+"assign read permission to user, write and execute permission to group, and read and write permission to others for /home/user/projects/project_356.cfg", chmod 436 /home/user/projects/project_356.cfg
+"provide read for user, write and execute to group, and all to others for /home/user/projects/project_142.cfg", chmod 437 /home/user/projects/project_142.cfg
+"grant read access for user, read for group, and none to others for /home/user/projects/project_327.cfg", chmod 440 /home/user/projects/project_327.cfg
+"grant read access for user, read for group, and execute to others for /home/user/projects/project_152.cfg", chmod 441 /home/user/projects/project_152.cfg
+"set permissions to read for owner, read for group members, and write for others on /usr/bin/grep", chmod 442 /usr/bin/grep
+"set permissions to read for owner, read for group members, and write and execute for others on /home/user/projects/project_307.cfg", chmod 443 /home/user/projects/project_307.cfg
+"assign read permission to user, read permission to group, and read permission to others for /home/user/projects/project_468.cfg", chmod 444 /home/user/projects/project_468.cfg
+"provide read for user, read to group, and read and execute to others for /home/user/projects/project_333.cfg", chmod 445 /home/user/projects/project_333.cfg
+"allow read for user, read for group, and read and write for others on file /home/user/projects/project_331.cfg", chmod 446 /home/user/projects/project_331.cfg
+"provide read for user, read to group, and all to others for /home/user/projects/project_394.cfg", chmod 447 /home/user/projects/project_394.cfg
+"grant read access for user, read and execute for group, and none to others for /home/user/projects/project_457.cfg", chmod 450 /home/user/projects/project_457.cfg
+"allow read for user, read and execute for group, and execute for others on file /home/user/projects/project_464.cfg", chmod 451 /home/user/projects/project_464.cfg
+"allow read for user, read and execute for group, and write for others on file /home/user/projects/project_90.cfg", chmod 452 /home/user/projects/project_90.cfg
+"grant read access for user, read and execute for group, and write and execute to others for /home/user/projects/project_92.cfg", chmod 453 /home/user/projects/project_92.cfg
+"set permissions to read for owner, read and execute for group members, and read for others on /tmp/debug.log", chmod 454 /tmp/debug.log
+"allow read for user, read and execute for group, and read and execute for others on file /home/user/projects/project_273.cfg", chmod 455 /home/user/projects/project_273.cfg
+"set permissions to read for owner, read and execute for group members, and read and write for others on /home/user/projects/project_87.cfg", chmod 456 /home/user/projects/project_87.cfg
+"provide read for user, read and execute to group, and all to others for /home/user/projects/project_195.cfg", chmod 457 /home/user/projects/project_195.cfg
+"allow read for user, read and write for group, and none for others on file /home/user/projects/project_121.cfg", chmod 460 /home/user/projects/project_121.cfg
+"provide read for user, read and write to group, and execute to others for /home/user/projects/project_263.cfg", chmod 461 /home/user/projects/project_263.cfg
+"provide read for user, read and write to group, and write to others for /sys/block/sda/size", chmod 462 /sys/block/sda/size
+"set permissions to read for owner, read and write for group members, and write and execute for others on /home/user/projects/project_107.cfg", chmod 463 /home/user/projects/project_107.cfg
+"assign read permission to user, read and write permission to group, and read permission to others for /usr/bin/wget", chmod 464 /usr/bin/wget
+"grant read access for user, read and write for group, and read and execute to others for /opt/software/logs/debug.log", chmod 465 /opt/software/logs/debug.log
+"allow read for user, read and write for group, and read and write for others on file /home/user/projects/project_425.cfg", chmod 466 /home/user/projects/project_425.cfg
+"set permissions to read for owner, read and write for group members, and all for others on /home/user/projects/project_473.cfg", chmod 467 /home/user/projects/project_473.cfg
+"set permissions to read for owner, all for group members, and none for others on /home/user/projects/project_437.cfg", chmod 470 /home/user/projects/project_437.cfg
+"assign read permission to user, all permission to group, and execute permission to others for /home/user/projects/project_438.cfg", chmod 471 /home/user/projects/project_438.cfg
+"allow read for user, all for group, and write for others on file /home/user/projects/project_323.cfg", chmod 472 /home/user/projects/project_323.cfg
+"provide read for user, all to group, and write and execute to others for /home/user/projects/project_80.cfg", chmod 473 /home/user/projects/project_80.cfg
+"allow read for user, all for group, and read for others on file /home/user/projects/project_208.cfg", chmod 474 /home/user/projects/project_208.cfg
+"assign read permission to user, all permission to group, and read and execute permission to others for /home/user/projects/project_150.cfg", chmod 475 /home/user/projects/project_150.cfg
+"provide read for user, all to group, and read and write to others for /home/user/projects/project_214.cfg", chmod 476 /home/user/projects/project_214.cfg
+"grant read access for user, all for group, and all to others for /home/user/projects/project_309.cfg", chmod 477 /home/user/projects/project_309.cfg
+"assign read and execute permission to user, none permission to group, and none permission to others for /home/user/projects/project_471.cfg", chmod 500 /home/user/projects/project_471.cfg
+"allow read and execute for user, none for group, and execute for others on file /home/user/projects/project_413.cfg", chmod 501 /home/user/projects/project_413.cfg
+"assign read and execute permission to user, none permission to group, and write permission to others for /home/user/projects/project_86.cfg", chmod 502 /home/user/projects/project_86.cfg
+"grant read and execute access for user, none for group, and write and execute to others for /home/user/projects/project_289.cfg", chmod 503 /home/user/projects/project_289.cfg
+"provide read and execute for user, none to group, and read to others for /home/user/projects/project_222.cfg", chmod 504 /home/user/projects/project_222.cfg
+"provide read and execute for user, none to group, and read and execute to others for /home/user/projects/project_408.cfg", chmod 505 /home/user/projects/project_408.cfg
+"grant read and execute access for user, none for group, and read and write to others for /tmp/session.lock", chmod 506 /tmp/session.lock
+"set permissions to read and execute for owner, none for group members, and all for others on /home/user/projects/project_251.cfg", chmod 507 /home/user/projects/project_251.cfg
+"grant read and execute access for user, execute for group, and none to others for /home/user/projects/project_60.cfg", chmod 510 /home/user/projects/project_60.cfg
+"assign read and execute permission to user, execute permission to group, and execute permission to others for /home/user/.ssh/id_rsa", chmod 511 /home/user/.ssh/id_rsa
+"allow read and execute for user, execute for group, and write for others on file /home/user/projects/project_153.cfg", chmod 512 /home/user/projects/project_153.cfg
+"assign read and execute permission to user, execute permission to group, and write and execute permission to others for /home/user/projects/project_451.cfg", chmod 513 /home/user/projects/project_451.cfg
+"set permissions to read and execute for owner, execute for group members, and read for others on /home/user/projects/project_223.cfg", chmod 514 /home/user/projects/project_223.cfg
+"allow read and execute for user, execute for group, and read and execute for others on file /home/user/projects/project_385.cfg", chmod 515 /home/user/projects/project_385.cfg
+"set permissions to read and execute for owner, execute for group members, and read and write for others on /home/user/projects/project_368.cfg", chmod 516 /home/user/projects/project_368.cfg
+"set permissions to read and execute for owner, execute for group members, and all for others on /home/user/projects/project_352.cfg", chmod 517 /home/user/projects/project_352.cfg
+"grant read and execute access for user, write for group, and none to others for /home/user/projects/project_109.cfg", chmod 520 /home/user/projects/project_109.cfg
+"grant read and execute access for user, write for group, and execute to others for /home/user/projects/project_270.cfg", chmod 521 /home/user/projects/project_270.cfg
+"set permissions to read and execute for owner, write for group members, and write for others on /home/user/projects/project_367.cfg", chmod 522 /home/user/projects/project_367.cfg
+"set permissions to read and execute for owner, write for group members, and write and execute for others on /home/user/projects/project_271.cfg", chmod 523 /home/user/projects/project_271.cfg
+"set permissions to read and execute for owner, write for group members, and read for others on /home/user/projects/project_99.cfg", chmod 524 /home/user/projects/project_99.cfg
+"allow read and execute for user, write for group, and read and execute for others on file /home/user/projects/project_388.cfg", chmod 525 /home/user/projects/project_388.cfg
+"assign read and execute permission to user, write permission to group, and read and write permission to others for /home/user/projects/project_380.cfg", chmod 526 /home/user/projects/project_380.cfg
+"grant read and execute access for user, write for group, and all to others for /home/user/projects/project_137.cfg", chmod 527 /home/user/projects/project_137.cfg
+"set permissions to read and execute for owner, write and execute for group members, and none for others on /home/user/projects/project_71.cfg", chmod 530 /home/user/projects/project_71.cfg
+"set permissions to read and execute for owner, write and execute for group members, and execute for others on /home/user/projects/project_392.cfg", chmod 531 /home/user/projects/project_392.cfg
+"set permissions to read and execute for owner, write and execute for group members, and write for others on /home/user/projects/project_431.cfg", chmod 532 /home/user/projects/project_431.cfg
+"allow read and execute for user, write and execute for group, and write and execute for others on file /home/user/projects/project_221.cfg", chmod 533 /home/user/projects/project_221.cfg
+"assign read and execute permission to user, write and execute permission to group, and read permission to others for /home/user/projects/project_430.cfg", chmod 534 /home/user/projects/project_430.cfg
+"allow read and execute for user, write and execute for group, and read and execute for others on file /home/user/projects/project_140.cfg", chmod 535 /home/user/projects/project_140.cfg
+"allow read and execute for user, write and execute for group, and read and write for others on file /home/user/projects/project_33.cfg", chmod 536 /home/user/projects/project_33.cfg
+"allow read and execute for user, write and execute for group, and all for others on file /home/user/projects/project_231.cfg", chmod 537 /home/user/projects/project_231.cfg
+"grant read and execute access for user, read for group, and none to others for /home/user/projects/project_362.cfg", chmod 540 /home/user/projects/project_362.cfg
+"allow read and execute for user, read for group, and execute for others on file /home/user/projects/project_398.cfg", chmod 541 /home/user/projects/project_398.cfg
+"set permissions to read and execute for owner, read for group members, and write for others on /home/user/projects/project_491.cfg", chmod 542 /home/user/projects/project_491.cfg
+"provide read and execute for user, read to group, and write and execute to others for /home/user/.npmrc", chmod 543 /home/user/.npmrc
+"assign read and execute permission to user, read permission to group, and read permission to others for /home/user/projects/project_131.cfg", chmod 544 /home/user/projects/project_131.cfg
+"allow read and execute for user, read for group, and read and execute for others on file /home/user/projects/project_358.cfg", chmod 545 /home/user/projects/project_358.cfg
+"allow read and execute for user, read for group, and read and write for others on file /home/user/projects/project_113.cfg", chmod 546 /home/user/projects/project_113.cfg
+"allow read and execute for user, read for group, and all for others on file /home/user/projects/project_372.cfg", chmod 547 /home/user/projects/project_372.cfg
+"assign read and execute permission to user, read and execute permission to group, and none permission to others for /home/user/projects/project_166.cfg", chmod 550 /home/user/projects/project_166.cfg
+"set permissions to read and execute for owner, read and execute for group members, and execute for others on /home/user/projects/project_75.cfg", chmod 551 /home/user/projects/project_75.cfg
+"provide read and execute for user, read and execute to group, and write to others for /home/user/projects/project_191.cfg", chmod 552 /home/user/projects/project_191.cfg
+"assign read and execute permission to user, read and execute permission to group, and write and execute permission to others for /home/user/projects/project_227.cfg", chmod 553 /home/user/projects/project_227.cfg
+"provide read and execute for user, read and execute to group, and read to others for /home/user/projects/project_37.cfg", chmod 554 /home/user/projects/project_37.cfg
+"allow read and execute for user, read and execute for group, and read and execute for others on file /home/user/projects/project_104.cfg", chmod 555 /home/user/projects/project_104.cfg
+"grant read and execute access for user, read and execute for group, and read and write to others for /home/user/projects/project_198.cfg", chmod 556 /home/user/projects/project_198.cfg
+"set permissions to read and execute for owner, read and execute for group members, and all for others on /home/user/projects/project_465.cfg", chmod 557 /home/user/projects/project_465.cfg
+"assign read and execute permission to user, read and write permission to group, and none permission to others for /home/user/projects/project_159.cfg", chmod 560 /home/user/projects/project_159.cfg
+"allow read and execute for user, read and write for group, and execute for others on file /home/user/projects/project_381.cfg", chmod 561 /home/user/projects/project_381.cfg
+"grant read and execute access for user, read and write for group, and write to others for /home/user/projects/project_478.cfg", chmod 562 /home/user/projects/project_478.cfg
+"allow read and execute for user, read and write for group, and write and execute for others on file /home/user/projects/project_55.cfg", chmod 563 /home/user/projects/project_55.cfg
+"assign read and execute permission to user, read and write permission to group, and read permission to others for /home/user/projects/project_305.cfg", chmod 564 /home/user/projects/project_305.cfg
+"grant read and execute access for user, read and write for group, and read and execute to others for /home/user/projects/project_210.cfg", chmod 565 /home/user/projects/project_210.cfg
+"grant read and execute access for user, read and write for group, and read and write to others for /home/user/projects/project_487.cfg", chmod 566 /home/user/projects/project_487.cfg
+"set permissions to read and execute for owner, read and write for group members, and all for others on /home/user/projects/project_322.cfg", chmod 567 /home/user/projects/project_322.cfg
+"provide read and execute for user, all to group, and none to others for /home/user/projects/project_285.cfg", chmod 570 /home/user/projects/project_285.cfg
+"set permissions to read and execute for owner, all for group members, and execute for others on /home/user/projects/project_294.cfg", chmod 571 /home/user/projects/project_294.cfg
+"assign read and execute permission to user, all permission to group, and write permission to others for /home/user/projects/project_180.cfg", chmod 572 /home/user/projects/project_180.cfg
+"provide read and execute for user, all to group, and write and execute to others for /home/user/projects/project_343.cfg", chmod 573 /home/user/projects/project_343.cfg
+"assign read and execute permission to user, all permission to group, and read permission to others for /home/user/projects/project_216.cfg", chmod 574 /home/user/projects/project_216.cfg
+"set permissions to read and execute for owner, all for group members, and read and execute for others on /home/user/projects/project_94.cfg", chmod 575 /home/user/projects/project_94.cfg
+"grant read and execute access for user, all for group, and read and write to others for /home/user/.config/fontconfig/fonts.conf", chmod 576 /home/user/.config/fontconfig/fonts.conf
+"assign read and execute permission to user, all permission to group, and all permission to others for /home/user/projects/project_76.cfg", chmod 577 /home/user/projects/project_76.cfg
+"set permissions to read and write for owner, none for group members, and none for others on /home/user/projects/project_219.cfg", chmod 600 /home/user/projects/project_219.cfg
+"assign read and write permission to user, none permission to group, and execute permission to others for /home/user/projects/project_244.cfg", chmod 601 /home/user/projects/project_244.cfg
+"allow read and write for user, none for group, and write for others on file /home/user/projects/project_433.cfg", chmod 602 /home/user/projects/project_433.cfg
+"grant read and write access for user, none for group, and write and execute to others for /home/user/projects/project_330.cfg", chmod 603 /home/user/projects/project_330.cfg
+"allow read and write for user, none for group, and read for others on file /home/user/projects/project_469.cfg", chmod 604 /home/user/projects/project_469.cfg
+"assign read and write permission to user, none permission to group, and read and execute permission to others for /home/user/projects/project_480.cfg", chmod 605 /home/user/projects/project_480.cfg
+"grant read and write access for user, none for group, and read and write to others for /home/user/projects/project_235.cfg", chmod 606 /home/user/projects/project_235.cfg
+"assign read and write permission to user, none permission to group, and all permission to others for /home/user/projects/project_364.cfg", chmod 607 /home/user/projects/project_364.cfg
+"provide read and write for user, execute to group, and none to others for /home/user/projects/project_407.cfg", chmod 610 /home/user/projects/project_407.cfg
+"assign read and write permission to user, execute permission to group, and execute permission to others for /home/user/projects/project_211.cfg", chmod 611 /home/user/projects/project_211.cfg
+"allow read and write for user, execute for group, and write for others on file /home/user/projects/project_243.cfg", chmod 612 /home/user/projects/project_243.cfg
+"set permissions to read and write for owner, execute for group members, and write and execute for others on /home/user/projects/project_496.cfg", chmod 613 /home/user/projects/project_496.cfg
+"grant read and write access for user, execute for group, and read to others for /home/user/projects/project_40.cfg", chmod 614 /home/user/projects/project_40.cfg
+"set permissions to read and write for owner, execute for group members, and read and execute for others on /home/user/projects/project_346.cfg", chmod 615 /home/user/projects/project_346.cfg
+"grant read and write access for user, execute for group, and read and write to others for /home/user/projects/project_29.cfg", chmod 616 /home/user/projects/project_29.cfg
+"set permissions to read and write for owner, execute for group members, and all for others on /home/user/projects/project_73.cfg", chmod 617 /home/user/projects/project_73.cfg
+"set permissions to read and write for owner, write for group members, and none for others on /home/user/projects/project_132.cfg", chmod 620 /home/user/projects/project_132.cfg
+"allow read and write for user, write for group, and execute for others on file /home/user/projects/project_384.cfg", chmod 621 /home/user/projects/project_384.cfg
+"assign read and write permission to user, write permission to group, and write permission to others for /home/user/projects/project_164.cfg", chmod 622 /home/user/projects/project_164.cfg
+"grant read and write access for user, write for group, and write and execute to others for /home/user/projects/project_475.cfg", chmod 623 /home/user/projects/project_475.cfg
+"allow read and write for user, write for group, and read for others on file /home/user/projects/project_376.cfg", chmod 624 /home/user/projects/project_376.cfg
+"set permissions to read and write for owner, write for group members, and read and execute for others on /home/user/projects/project_299.cfg", chmod 625 /home/user/projects/project_299.cfg
+"grant read and write access for user, write for group, and read and write to others for /home/user/projects/project_338.cfg", chmod 626 /home/user/projects/project_338.cfg
+"allow read and write for user, write for group, and all for others on file /home/user/projects/project_498.cfg", chmod 627 /home/user/projects/project_498.cfg
+"grant read and write access for user, write and execute for group, and none to others for /home/user/projects/project_175.cfg", chmod 630 /home/user/projects/project_175.cfg
+"provide read and write for user, write and execute to group, and execute to others for /home/user/projects/project_72.cfg", chmod 631 /home/user/projects/project_72.cfg
+"provide read and write for user, write and execute to group, and write to others for /home/user/projects/project_504.cfg", chmod 632 /home/user/projects/project_504.cfg
+"grant read and write access for user, write and execute for group, and write and execute to others for /home/user/projects/project_432.cfg", chmod 633 /home/user/projects/project_432.cfg
+"allow read and write for user, write and execute for group, and read for others on file /home/user/projects/project_149.cfg", chmod 634 /home/user/projects/project_149.cfg
+"set permissions to read and write for owner, write and execute for group members, and read and execute for others on /home/user/projects/project_269.cfg", chmod 635 /home/user/projects/project_269.cfg
+"provide read and write for user, write and execute to group, and read and write to others for /home/user/projects/project_397.cfg", chmod 636 /home/user/projects/project_397.cfg
+"assign read and write permission to user, write and execute permission to group, and all permission to others for /home/user/projects/project_443.cfg", chmod 637 /home/user/projects/project_443.cfg
+"set permissions to read and write for owner, read for group members, and none for others on /home/user/projects/project_275.cfg", chmod 640 /home/user/projects/project_275.cfg
+"grant read and write access for user, read for group, and execute to others for /home/user/projects/project_238.cfg", chmod 641 /home/user/projects/project_238.cfg
+"assign read and write permission to user, read permission to group, and write permission to others for /home/user/projects/project_88.cfg", chmod 642 /home/user/projects/project_88.cfg
+"set permissions to read and write for owner, read for group members, and write and execute for others on /home/user/projects/project_98.cfg", chmod 643 /home/user/projects/project_98.cfg
+"provide read and write for user, read to group, and read to others for /home/user/projects/project_267.cfg", chmod 644 /home/user/projects/project_267.cfg
+"assign read and write permission to user, read permission to group, and read and execute permission to others for /home/user/projects/project_160.cfg", chmod 645 /home/user/projects/project_160.cfg
+"provide read and write for user, read to group, and read and write to others for /home/user/projects/project_302.cfg", chmod 646 /home/user/projects/project_302.cfg
+"assign read and write permission to user, read permission to group, and all permission to others for /home/user/projects/project_292.cfg", chmod 647 /home/user/projects/project_292.cfg
+"assign read and write permission to user, read and execute permission to group, and none permission to others for /usr/bin/sed", chmod 650 /usr/bin/sed
+"allow read and write for user, read and execute for group, and execute for others on file /home/user/projects/project_158.cfg", chmod 651 /home/user/projects/project_158.cfg
+"set permissions to read and write for owner, read and execute for group members, and write for others on /home/user/projects/project_495.cfg", chmod 652 /home/user/projects/project_495.cfg
+"assign read and write permission to user, read and execute permission to group, and write and execute permission to others for /home/user/projects/project_185.cfg", chmod 653 /home/user/projects/project_185.cfg
+"set permissions to read and write for owner, read and execute for group members, and read for others on /home/user/projects/project_284.cfg", chmod 654 /home/user/projects/project_284.cfg
+"assign read and write permission to user, read and execute permission to group, and read and execute permission to others for /home/user/projects/project_182.cfg", chmod 655 /home/user/projects/project_182.cfg
+"provide read and write for user, read and execute to group, and read and write to others for /home/user/projects/project_254.cfg", chmod 656 /home/user/projects/project_254.cfg
+"provide read and write for user, read and execute to group, and all to others for /home/user/projects/project_401.cfg", chmod 657 /home/user/projects/project_401.cfg
+"grant read and write access for user, read and write for group, and none to others for /home/user/projects/project_345.cfg", chmod 660 /home/user/projects/project_345.cfg
+"provide read and write for user, read and write to group, and execute to others for /home/user/projects/project_53.cfg", chmod 661 /home/user/projects/project_53.cfg
+"provide read and write for user, read and write to group, and write to others for /home/user/projects/project_445.cfg", chmod 662 /home/user/projects/project_445.cfg
+"allow read and write for user, read and write for group, and write and execute for others on file /home/user/projects/project_226.cfg", chmod 663 /home/user/projects/project_226.cfg
+"allow read and write for user, read and write for group, and read for others on file /home/user/projects/project_336.cfg", chmod 664 /home/user/projects/project_336.cfg
+"assign read and write permission to user, read and write permission to group, and read and execute permission to others for /home/user/projects/project_250.cfg", chmod 665 /home/user/projects/project_250.cfg
+"grant read and write access for user, read and write for group, and read and write to others for /home/user/projects/project_247.cfg", chmod 666 /home/user/projects/project_247.cfg
+"provide read and write for user, read and write to group, and all to others for /home/user/projects/project_122.cfg", chmod 667 /home/user/projects/project_122.cfg
+"assign read and write permission to user, all permission to group, and none permission to others for /home/user/projects/project_371.cfg", chmod 670 /home/user/projects/project_371.cfg
+"allow read and write for user, all for group, and execute for others on file /home/user/projects/project_130.cfg", chmod 671 /home/user/projects/project_130.cfg
+"set permissions to read and write for owner, all for group members, and write for others on /home/user/projects/project_261.cfg", chmod 672 /home/user/projects/project_261.cfg
+"grant read and write access for user, all for group, and write and execute to others for /home/user/projects/project_404.cfg", chmod 673 /home/user/projects/project_404.cfg
+"assign read and write permission to user, all permission to group, and read permission to others for /home/user/projects/project_406.cfg", chmod 674 /home/user/projects/project_406.cfg
+"assign read and write permission to user, all permission to group, and read and execute permission to others for /home/user/projects/project_68.cfg", chmod 675 /home/user/projects/project_68.cfg
+"grant read and write access for user, all for group, and read and write to others for /home/user/projects/project_218.cfg", chmod 676 /home/user/projects/project_218.cfg
+"assign read and write permission to user, all permission to group, and all permission to others for /home/user/projects/project_317.cfg", chmod 677 /home/user/projects/project_317.cfg
+"provide all for user, none to group, and none to others for /home/user/projects/project_477.cfg", chmod 700 /home/user/projects/project_477.cfg
+"assign all permission to user, none permission to group, and execute permission to others for /home/user/projects/project_199.cfg", chmod 701 /home/user/projects/project_199.cfg
+"provide all for user, none to group, and write to others for /home/user/projects/project_325.cfg", chmod 702 /home/user/projects/project_325.cfg
+"assign all permission to user, none permission to group, and write and execute permission to others for /home/user/projects/project_189.cfg", chmod 703 /home/user/projects/project_189.cfg
+"set permissions to all for owner, none for group members, and read for others on /home/user/projects/project_419.cfg", chmod 704 /home/user/projects/project_419.cfg
+"grant all access for user, none for group, and read and execute to others for /home/user/projects/project_361.cfg", chmod 705 /home/user/projects/project_361.cfg
+"set permissions to all for owner, none for group members, and read and write for others on /home/user/projects/project_503.cfg", chmod 706 /home/user/projects/project_503.cfg
+"allow all for user, none for group, and all for others on file /home/user/projects/project_395.cfg", chmod 707 /home/user/projects/project_395.cfg
+"provide all for user, execute to group, and none to others for /home/user/projects/project_450.cfg", chmod 710 /home/user/projects/project_450.cfg
+"provide all for user, execute to group, and execute to others for /home/user/projects/project_421.cfg", chmod 711 /home/user/projects/project_421.cfg
+"set permissions to all for owner, execute for group members, and write for others on /home/user/projects/project_124.cfg", chmod 712 /home/user/projects/project_124.cfg
+"assign all permission to user, execute permission to group, and write and execute permission to others for /home/user/projects/project_414.cfg", chmod 713 /home/user/projects/project_414.cfg
+"grant all access for user, execute for group, and read to others for /home/user/projects/project_508.cfg", chmod 714 /home/user/projects/project_508.cfg
+"assign all permission to user, execute permission to group, and read and execute permission to others for /home/user/projects/project_295.cfg", chmod 715 /home/user/projects/project_295.cfg
+"set permissions to all for owner, execute for group members, and read and write for others on /home/user/projects/project_155.cfg", chmod 716 /home/user/projects/project_155.cfg
+"allow all for user, execute for group, and all for others on file /home/user/projects/project_463.cfg", chmod 717 /home/user/projects/project_463.cfg
+"set permissions to all for owner, write for group members, and none for others on /home/user/Pictures/wallpaper.png", chmod 720 /home/user/Pictures/wallpaper.png
+"grant all access for user, write for group, and execute to others for /etc/environment", chmod 721 /etc/environment
+"set permissions to all for owner, write for group members, and write for others on /home/user/projects/project_470.cfg", chmod 722 /home/user/projects/project_470.cfg
+"allow all for user, write for group, and write and execute for others on file /etc/shadow", chmod 723 /etc/shadow
+"grant all access for user, write for group, and read to others for /home/user/projects/project_441.cfg", chmod 724 /home/user/projects/project_441.cfg
+"allow all for user, write for group, and read and execute for others on file /home/user/projects/project_318.cfg", chmod 725 /home/user/projects/project_318.cfg
+"set permissions to all for owner, write for group members, and read and write for others on /home/user/projects/project_42.cfg", chmod 726 /home/user/projects/project_42.cfg
+"grant all access for user, write for group, and all to others for /home/user/projects/project_297.cfg", chmod 727 /home/user/projects/project_297.cfg
+"set permissions to all for owner, write and execute for group members, and none for others on /home/user/projects/project_253.cfg", chmod 730 /home/user/projects/project_253.cfg
+"set permissions to all for owner, write and execute for group members, and execute for others on /home/user/projects/project_242.cfg", chmod 731 /home/user/projects/project_242.cfg
+"set permissions to all for owner, write and execute for group members, and write for others on /home/user/projects/project_426.cfg", chmod 732 /home/user/projects/project_426.cfg
+"set permissions to all for owner, write and execute for group members, and write and execute for others on /home/user/projects/project_35.cfg", chmod 733 /home/user/projects/project_35.cfg
+"allow all for user, write and execute for group, and read for others on file /home/user/projects/project_217.cfg", chmod 734 /home/user/projects/project_217.cfg
+"allow all for user, write and execute for group, and read and execute for others on file /home/user/projects/project_45.cfg", chmod 735 /home/user/projects/project_45.cfg
+"assign all permission to user, write and execute permission to group, and read and write permission to others for /home/user/projects/project_119.cfg", chmod 736 /home/user/projects/project_119.cfg
+"grant all access for user, write and execute for group, and all to others for /home/user/projects/project_183.cfg", chmod 737 /home/user/projects/project_183.cfg
+"assign all permission to user, read permission to group, and none permission to others for /home/user/projects/project_67.cfg", chmod 740 /home/user/projects/project_67.cfg
+"assign all permission to user, read permission to group, and execute permission to others for /home/user/projects/project_82.cfg", chmod 741 /home/user/projects/project_82.cfg
+"provide all for user, read to group, and write to others for /home/user/projects/project_502.cfg", chmod 742 /home/user/projects/project_502.cfg
+"set permissions to all for owner, read for group members, and write and execute for others on /home/user/projects/project_66.cfg", chmod 743 /home/user/projects/project_66.cfg
+"assign all permission to user, read permission to group, and read permission to others for /home/user/projects/project_148.cfg", chmod 744 /home/user/projects/project_148.cfg
+"provide all for user, read to group, and read and execute to others for /home/user/projects/project_278.cfg", chmod 745 /home/user/projects/project_278.cfg
+"provide all for user, read to group, and read and write to others for /home/user/projects/project_377.cfg", chmod 746 /home/user/projects/project_377.cfg
+"allow all for user, read for group, and all for others on file /home/user/projects/project_64.cfg", chmod 747 /home/user/projects/project_64.cfg
+"provide all for user, read and execute to group, and none to others for /home/user/projects/project_232.cfg", chmod 750 /home/user/projects/project_232.cfg
+"provide all for user, read and execute to group, and execute to others for /home/user/projects/project_446.cfg", chmod 751 /home/user/projects/project_446.cfg
+"assign all permission to user, read and execute permission to group, and write permission to others for /home/user/projects/project_460.cfg", chmod 752 /home/user/projects/project_460.cfg
+"set permissions to all for owner, read and execute for group members, and write and execute for others on /home/user/projects/project_228.cfg", chmod 753 /home/user/projects/project_228.cfg
+"set permissions to all for owner, read and execute for group members, and read for others on /home/user/projects/project_306.cfg", chmod 754 /home/user/projects/project_306.cfg
+"assign all permission to user, read and execute permission to group, and read and execute permission to others for /home/user/projects/project_402.cfg", chmod 755 /home/user/projects/project_402.cfg
+"provide all for user, read and execute to group, and read and write to others for /usr/bin/awk", chmod 756 /usr/bin/awk
+"assign all permission to user, read and execute permission to group, and all permission to others for /home/user/projects/project_50.cfg", chmod 757 /home/user/projects/project_50.cfg
+"assign all permission to user, read and write permission to group, and none permission to others for /home/user/projects/project_444.cfg", chmod 760 /home/user/projects/project_444.cfg
+"grant all access for user, read and write for group, and execute to others for /var/log/kern.log", chmod 761 /var/log/kern.log
+"grant all access for user, read and write for group, and write to others for /home/user/projects/project_163.cfg", chmod 762 /home/user/projects/project_163.cfg
+"provide all for user, read and write to group, and write and execute to others for /home/user/projects/project_422.cfg", chmod 763 /home/user/projects/project_422.cfg
+"allow all for user, read and write for group, and read for others on file /home/user/projects/project_332.cfg", chmod 764 /home/user/projects/project_332.cfg
+"grant all access for user, read and write for group, and read and execute to others for /home/user/projects/project_347.cfg", chmod 765 /home/user/projects/project_347.cfg
+"provide all for user, read and write to group, and read and write to others for /home/user/projects/project_102.cfg", chmod 766 /home/user/projects/project_102.cfg
+"grant all access for user, read and write for group, and all to others for /home/user/projects/project_481.cfg", chmod 767 /home/user/projects/project_481.cfg
+"provide all for user, all to group, and none to others for /etc/group", chmod 770 /etc/group
+"assign all permission to user, all permission to group, and execute permission to others for /home/user/Documents/thesis.pdf", chmod 771 /home/user/Documents/thesis.pdf
+"assign all permission to user, all permission to group, and write permission to others for /home/user/projects/project_434.cfg", chmod 772 /home/user/projects/project_434.cfg
+"provide all for user, all to group, and write and execute to others for /home/user/projects/project_39.cfg", chmod 773 /home/user/projects/project_39.cfg
+"allow all for user, all for group, and read for others on file /home/user/projects/project_157.cfg", chmod 774 /home/user/projects/project_157.cfg
+"grant all access for user, all for group, and read and execute to others for /home/user/projects/project_349.cfg", chmod 775 /home/user/projects/project_349.cfg
+"set permissions to all for owner, all for group members, and read and write for others on /home/user/projects/project_342.cfg", chmod 776 /home/user/projects/project_342.cfg
+"assign all permission to user, all permission to group, and all permission to others for /home/user/projects/project_193.cfg", chmod 777 /home/user/projects/project_193.cfg

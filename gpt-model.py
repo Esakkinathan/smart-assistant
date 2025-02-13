@@ -1,5 +1,5 @@
 import pandas as pd
-from transformers import T5Tokenizer, T5ForConditionalGeneration, Trainer, TrainingArguments
+from transformers import T5ForConditionalGeneration, Trainer, TrainingArguments, EarlyStoppingCallback, RobertaTokenizer
 from datasets import Dataset
 import torch
 
@@ -17,9 +17,9 @@ val_df = pd.read_csv(val_data_path)
 train_dataset = Dataset.from_pandas(train_df)
 val_dataset = Dataset.from_pandas(val_df)
 
-# Load T5 tokenizer and model
-model_name = 't5-small'
-tokenizer = T5Tokenizer.from_pretrained(model_name, legacy=False)
+# Load T5 tokenizer and mkodel
+model_name = 'Salesforce/codet5-small'  
+tokenizer = RobertaTokenizer.from_pretrained(model_name, legacy=False)
 model = T5ForConditionalGeneration.from_pretrained(model_name)
 
 # Move model to GPU
@@ -27,7 +27,7 @@ model = model.to(device)
 
 # Tokenize the dataset
 def tokenize_function(example):
-    source = example['nl_cmd']
+    source = ["translate english to bash: " + line for line in example['nl_cmd']]
     target = example['bash_cmd']
     model_inputs = tokenizer(source, max_length=128, truncation=True, padding='max_length')
     labels = tokenizer(target, max_length=128, truncation=True, padding='max_length')
@@ -45,12 +45,16 @@ training_args = TrainingArguments(
     learning_rate=5e-5,
     per_device_train_batch_size=8,
     per_device_eval_batch_size=8,
-    num_train_epochs=30,
+    num_train_epochs=20,
     weight_decay=0.01,
     logging_dir='./logs',
     save_total_limit=3,
     # Enable GPU if available
     fp16=torch.cuda.is_available(),
+    load_best_model_at_end=True,  # Load the best model after early stopping
+    metric_for_best_model="eval_loss",  # Metric to monitor
+    greater_is_better=False,  # Lower eval_loss is better
+
 )
 
 # Initialize the Trainer
@@ -60,6 +64,7 @@ trainer = Trainer(
     train_dataset=tokenized_train,
     eval_dataset=tokenized_val,
     tokenizer=tokenizer,
+    callbacks=[EarlyStoppingCallback(early_stopping_patience=3)],  
 )
 
 # Train the model

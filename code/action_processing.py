@@ -69,7 +69,7 @@ class ActionProcessor:
         "brightness-down": self.brightness_down,
         "brightness-maximum": self.maximum_brightness,
         "lock-screen": self.lock_system,
-        "minimize-all-window": self.minimize_all_window,
+        "minimize": self.minimize_all_window,
         "restart": self.restart_system,
         "shutdown": self.shutdown_system,
         "set-theme-dark": self.set_theme_dark,
