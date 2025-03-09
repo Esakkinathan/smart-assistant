@@ -3113,78 +3113,61 @@ get size of folder archives,bash: du -sh archives
 display size of theta_reports,bash: du -sh ~/project/theta_reports  
 how much storage is used in iota_temp,bash: du -sh iota_temp  
 check the size of kappa_snapshots,bash: du -sh kappa_snapshots  
-copy a file from /etc to /var/backups,bash: cp /etc /var/backups  
-can you copy the file from /usr/local/bin to /opt,bash: cp /usr/local/bin /opt  
-i want to copy /home/user/documents file to /mnt/shared,bash: cp /home/user/documents /mnt/shared  
-create a copy of /tmp/logs in /var/tmp,bash: cp /tmp/logs /var/tmp  
 please copy the config.txt from /etc to /var/configs,bash: cp /etc/config.txt /var/configs/config.txt  
-can you copy this notes.txt from /home/user to /media/usb,bash: cp /home/user/notes.txt /media/usb/notes.txt  
+can you copy this notes.csv from /home/user to /media/usb,bash: cp /home/user/notes.csv /media/usb/notes.csv  
 copy the index.html in /var/www and paste it to /srv/http,bash: cp /var/www/index.html /srv/http/index.html  
 make a copy of style.css in /home/user/website to /var/www/html,bash: cp /home/user/website/style.css /var/www/html/style.css  
 could you copy script.py to /opt/scripts,bash: cp script.py /opt/scripts/script.py  
-please make a copy of Main.java in /usr/src directory,bash: cp Main.java /usr/src/Main.java  
-i want to create a copy of README.md in /mnt/backup,bash: cp README.md /mnt/backup/README.md  
+please make a copy of Main.java to /usr/src directory,bash: cp Main.java /usr/src/Main.java  
+i want to create a copy of README.md to /mnt/backup,bash: cp README.md /mnt/backup/README.md  
 copy the app.kt file to the /srv/projects folder,bash: cp app.kt /srv/projects/app.kt  
-copy a directory from /usr/share to /var/local,bash: cp -r /usr/share /var/local  
-copy the /etc/nginx folder in /usr/local and paste it to /opt/nginx,bash: cp -r /usr/local/etc/nginx /opt/nginx  
-please make a copy of directory /usr/lib in /mnt/external directory,bash: cp -r /usr/lib /mnt/external/usr_lib  
-i want to view the copy of contents from /boot directory to /media/storage,bash: cp -rv /boot /media/storage  
-make a copy of /lib/modules directory in /usr/lib to /mnt/hdd and display the contents,bash: cp -rv /usr/lib/modules /mnt/hdd/modules  
-could you copy and view the contents while copying the /proc to /media/disk,bash: cp -rv /proc /media/disk/proc  
-can you copy the folder from /run to /srv forcefully,bash: cp -rf /run /srv  
-can you copy this directory /dev from /root to /mnt forcefully,bash: cp -rf /root/dev /mnt/dev  
-i want to create a copy of /snap in /opt forcefully,bash: cp -rf /snap /opt/snap  
-create a copy of /var/log folder in /mnt/backups forcefully and view the contents,bash: cp -rvf /var/log /mnt/backups  
-please copy the /sys folder from /media to /opt forcefully and view the contents,bash: cp -rvf /media/sys /opt/sys  
-copy the /sbin folder to the /root folder forcefully and display the contents,bash: cp -rvf /sbin /root/sbin  
 copy the file a.txt to downloads,bash:  cp a.txt ~/Downloads/a.txt
 i want to copy the file from mypic.jpg in downloads to pictures folder,bash: cp ~/Downloads/mypic.jpg ~/Pictures/mypic.jpg
 please create a copy of document.pdf from document folder to desktop directory,bash: cp ~/Documents/document.pdf ~/Desktop/document.pdf
-copy the python program processor.py in to code folder,bash: cp processor.py to code/processor.py
+copy the python program processor.py in to code folder,bash: cp processor.py  code/processor.py
 would you please copy the music song.mp3 from newfolder and paste it here,bash: cp newfolder/song.mp3 song.mp3
 hey copy the movie avengers.mp4 from new and paste it to movies folder,bash: cp new/avengers.mp4 movies/avengers.mp4
 copy the photo.jpg from downloads to pictures,bash: cp ~/Downloads/photo.jpg ~/Pictures/photo.jpg
-could you copy the project folder to workspace,bash: cp -r project ~/workspace/project
-create a copy of song.mp3 from music to newfolder,bash: cp ~/music/song.mp3 ~/newfolder/song.mp3
+create a copy of song.mp3 from music to newfolder,bash: cp music/song.mp3 newfolder/song.mp3
 copy mypic.png to pictures folder,bash: cp mypic.png ~/Pictures/mypic.png
-can you please copy the backup.zip to external drive,bash: cp backup.zip /mnt/usb/backup.zip
-copy report.pdf from documents folder to desktop directory,bash: cp ~/Documents/report.pdf ~/Desktop/report.pdf
-make a duplicate of wallpaper.jpg to wallpapers folder,bash: cp wallpaper.jpg ~/Pictures/wallpapers/wallpaper.jpg
-could you transfer the folder docs to backup,bash: cp -r docs ~/backup/docs
-copy the research folder to documents,bash: cp -r research ~/Documents/research
+can you please copy the backup.zip to external_drive,bash: cp backup.zip /external_drive/backup.zip
+make a copy of wallpaper.jpg to wallpapers folder in pictures,bash: cp wallpaper.jpg ~/Pictures/wallpapers/wallpaper.jpg
 copy the image sunset.png to photos folder,bash: cp sunset.png ~/Pictures/photos/sunset.png
 take the file example.txt from downloads and paste it to documents,bash: cp ~/Downloads/example.txt ~/Documents/example.txt
-can you copy the whole folder projects into workspace,bash: cp -r projects ~/workspace/projects
-duplicate the program.py from code folder to backup folder,bash: cp ~/code/program.py ~/backup/program.py
-copy the file source is /home/user/file.txt and destination is /home/user/Documents/,bash: cp /home/user/file.txt /home/user/Documents/
-copy this folder source is /home/user/Music and destination is /mnt/backup/,bash: cp -r /home/user/Music /mnt/backup/
-duplicate the document source is /var/logs/syslog and destination is /home/user/backup/,bash: cp /var/logs/syslog /home/user/backup/
-create a copy of a file source is /home/user/Desktop/note.txt and destination is /home/user/Documents/,bash: cp /home/user/Desktop/note.txt /home/user/Documents/
-backup a folder source is /etc/configs and destination is /backup/configs/,bash: cp -r /etc/configs /backup/configs/
-save a copy of my image source is /home/user/Pictures/image.jpg and destination is /media/usb/,bash: cp /home/user/Pictures/image.jpg /media/usb/
-transfer a video file source is /home/user/Videos/movie.mp4 and destination is /mnt/external_drive/,bash: cp /home/user/Videos/movie.mp4 /mnt/external_drive/
+duplicate the program.py from code folder to backup folder under home directory,bash: cp ~/code/program.py ~/backup/program.py
+save a copy of my image source is image.jpg and destination is /media/usb/,bash: cp image.jpg /media/usb/image.jpg
+transfer a video file source is movie.mp4 and destination is /mnt/external_drive/,bash: cp movie.mp4 /mnt/external_drive/movie.mp4
 copy a pdf source is /home/user/Documents/manual.pdf and destination is /home/user/Backups/,bash: cp /home/user/Documents/manual.pdf /home/user/Backups/
-create a copy of the archive source is /home/user/Downloads/data.zip and destination is /home/user/Desktop/,bash: cp /home/user/Downloads/data.zip /home/user/Desktop/
-create a backup source is /var/www/html and destination is /backup/website/,bash: cp -r /var/www/html /backup/website/
-copy the file source is documents/report.pdf and destination is backup files/,"bash: cp documents/report.pdf ""backup files/"""
-create a copy of the folder source is downloads and destination is external drive/,"bash: cp -r downloads ""external drive/"""
-duplicate the file source is notes and destination is archive/,bash: cp notes archive/
-backup my images source is pictures and destination is usb drive/,"bash: cp -r pictures ""usb drive/"""
-transfer my music source is songs and destination is sd card/,"bash: cp -r songs ""sd card/"""
-copy the document source is work files and destination is new folder/,"bash: cp -r ""work files"" ""new folder/"""
-save a copy of the video source is movies and destination is media storage/,"bash: cp -r movies ""media storage/"""
-create a copy of the project files source is coding projects and destination is github folder/,"bash: cp -r ""coding projects"" ""github folder/"""
-duplicate the pdf source is financial report and destination is accountant folder/,"bash: cp ""financial report"" ""accountant folder/"""
-create a backup source is website data and destination is cloud storage/,"bash: cp -r ""website data"" ""cloud storage/"""
+duplicate the file source file is notes.pdf and destination folder is archive,bash: cp notes.pdf archive/notes.pdf
+copy the file source file is myfile.txt and destination directory is documents,bash: cp myfile.txt ~/Documents/myfile.txt
+
+copy the entire Music directory to Media,cp -r Music Media/
+copy the /etc/nginx folder in /usr/local and paste it to /opt/nginx,bash: cp -r /usr/local/etc/nginx /opt/nginx  
+please make a copy of directory /usr/lib in /mnt/external directory,bash: cp -r /usr/lib /mnt/external/usr/lib  
+could you copy the project folder to workspace,bash: cp -r project ~/workspace/project
+could you transfer the folder docs to backup,bash: cp -r docs backup/docs
+copy the research folder to documents,bash: cp -r research ~/Documents/research
+can you copy the whole folder projects into workspace under home directory,bash: cp -r projects ~/workspace/projects
+backup my images source directory is pictures and destination directory is usb_drive/,"bash: cp -r pictures usb_drive/
+transfer my music source folder is songs and destination directory is sd_card/,"bash: cp -r songs sd_card/
+save a copy of the video source directory is movies and destination folder is media_storage/,"bash: cp -r movies media_storage/
+create a copy of the project files source folder is coding-projects and destination folder is github_folder/,"bash: cp -r coding-projects github_folder/
+copy this folder source is Music folder and destination is documents,bash: cp -r Music ~/Documents
+create a copy of the folder source is project and destination is new-folder/,bash: cp -r project new-folder/
+can you copy the folder from /run to /srv forcefully,bash: cp -rf /run /srv  
+can you copy this directory /dev from /root to /mnt forcefully,bash: cp -rf /root/dev /mnt/dev  
+i want to create a copy of /snap in /opt forcefully,bash: cp -rf /snap /opt/snap  
+please copy the /sys folder from /media to /opt forcefully and view the contents,bash: cp -rvf /media/sys /opt/sys  
+copy the /sbin folder to the /root folder forcefully and display the contents,bash: cp -rvf /sbin /root/sbin  
 please move the document.txt to desktop directory,bash: mv document.txt ~/Desktop/document.txt
 move the file book.pdf from downloads folder to documents,bash: mv ~/Downloads/book.pdf ~/Documents/book.pdf
-move the presentation.pptx from docs to desktop,bash: mv ~/docs/presentation.pptx ~/Desktop/presentation.pptx
+move the presentation.pptx from docs to desktop,bash: mv docs/presentation.pptx ~/Desktop/presentation.pptx
 transfer the video movie.mp4 to movies folder,bash: mv movie.mp4 ~/Movies/movie.mp4
-please move the code.py from project folder to scripts,bash: mv ~/project/code.py ~/scripts/code.py
+please move the code.py from project folder to scripts under home directory,bash: mv project/code.py ~/scripts/code.py
 shift the audio.mp3 from downloads to music,bash: mv ~/Downloads/audio.mp3 ~/Music/audio.mp3
-move the backup.zip to usb folder,bash: mv backup.zip /mnt/usb/backup.zip
-i want to move the script.sh from bin to scripts folder,bash: mv ~/bin/script.sh ~/scripts/script.sh
-move the file myphoto.jpg from pictures to newfolder,bash: mv ~/Pictures/myphoto.jpg ~/newfolder/myphoto.jpg
+move the backup.zip to usb folder,bash: mv backup.zip usb/backup.zip
+i want to move the script.sh from bin to scripts folder,bash: mv bin/script.sh scripts/script.sh
+move the file myphoto.jpg from pictures to newfolder in home directory,bash: mv ~/Pictures/myphoto.jpg ~/newfolder/myphoto.jpg
 please move the file data.csv from downloads to desktop,bash: mv ~/Downloads/data.csv ~/Desktop/data.csv
 move the pdf resume.pdf from documents to desktop,bash: mv ~/Documents/resume.pdf ~/Desktop/resume.pdf
 move the file from /etc/hosts to /var/backups,bash: mv /etc/hosts /var/backups  
@@ -3197,34 +3180,20 @@ copy the file error.log and delete it in /var/log and paste it in /mnt/logs,bash
 could you move settings.json to /root/config,bash: mv settings.json /root/config/settings.json  
 move the file app.js and paste it in /var/www/scripts,bash: mv app.js /var/www/scripts/app.js  
 change location of backup.tar.gz to /media/backup,bash: mv backup.tar.gz /media/backup/backup.tar.gz  
-move the directory from /usr/local/share to /mnt/external,bash: mv -r /usr/local/share /mnt/external  
-copy the folder /etc/apache2 and delete it in /usr/local and paste it in /opt/web,bash: mv -r /usr/local/etc/apache2 /opt/web/apache2  
 move the directory /var/lib/mysql to and paste it in /mnt/storage,bash: mv -r /var/lib/mysql /mnt/storage/mysql  
-cut and copy the directory from /opt/caches to /var/tmp and view the contents while pasting,bash: mv -rv /opt/caches /var/tmp  
-cut the program folder /usr/lib/jvm in /opt/java and store in /mnt/java and show the contents,bash: mv -rv /opt/java/jvm /mnt/java/jvm  
-change location of /dev/usb to /media/usb and view it,bash: mv -rv /dev/usb /media/usb  
+cut and copy the directory from /opt/caches to /var/tmp ,bash: mv -r /opt/caches /var/tmp  
+cut the program folder /jvm in /opt/java and store in /mnt/java,bash: mv -r /opt/java/jvm /mnt/java/jvm  
 can you move a folder from /boot/grub to /root/grub for me forcefully,bash: mv -rf /boot/grub /root/grub  
-i want to move the /proc/sys in /sys/kernel to /var/kernel forcefully,bash: mv -rf /sys/kernel/sys /var/kernel/sys  
-move all the contents of the /opt/data forcefully to /mnt/backup,bash: mv -rf /opt/data /mnt/backup  
-cut the directory in /var/www/html and paste it forcefully to /srv/http and view the contents,bash: mv -rvf /var/www/html /srv/http  
-move the folder /usr/games forcefully from /opt/games to /home/user/games and view it,bash: mv -rvf /opt/games /home/user/games  
+i want to move the sys in /sys/kernel to /var/kernel forcefully,bash: mv -rf /sys/kernel/sys /var/kernel/sys  
+move all the contents of the data directory forcefully to /mnt/backup,bash: mv -rf data/ /mnt/backup  
+cut the directory in dimmer and paste it forcefully to new-data and view the contents,bash: mv -rvf dimmer/ new-dimmer/  
+move the folder  forcefully from /opt/games to /home/user/games and view it,bash: mv -rvf /opt/games/usr/games /home/user/games  
 could you move /etc/profile.d to /usr/profile forcefully and display the content,bash: mv -rvf /etc/profile.d /usr/profile  
-move the file a.txt to downloads,bash:  cp a.txt ~/Downloads/a.txt
-i want to move the file from mypic.jpg in downloads to pictures folder,bash: mv ~/Downloads/mypic.jpg ~/Pictures/mypic.jpg
-please move the document.pdf from document folder to desktop directory,bash: mv ~/Documents/document.pdf ~/Desktop/document.pdf
-cut the python program processor.py in and move to code folder,bash: mv processor.py to code/processor.py
-would you please move the music song.mp3 from newfolder and paste it here,bash: mv newfolder/song.mp3 song.mp3
-hey move the movie avengers.mp4 from new and paste it to movies folder,bash: mv new/avengers.mp4 movies/avengers.mp4
-move the file source is documents/report.pdf and destination is backup files/,"bash: mv documents/report.pdf ""backup files/"""
-relocate the folder source is downloads and destination is external_drive/,"bash: mv downloads ""external_drive/"""
-shift the file source is notes and destination is archive/,bash: mv notes archive/
-transfer my images source is pictures and destination is usb_drive/,"bash: mv pictures ""usb_drive/"""
-move my music source is songs and destination is sd card/,"bash: mv songs ""sd card/"""
-rearrange the document source is work files and destination is new folder/,"bash: mv ""work files"" ""new folder/"""
-send the video source is movies and destination is media storage/,"bash: mv movies ""media storage/"""
-shift the project files source is coding projects and destination is github folder/,"bash: mv ""coding projects"" ""github folder/"""
-relocate the pdf source is financial report and destination is accountant folder/,"bash: mv ""financial report"" ""accountant folder/"""
-migrate source is website data and destination is cloud storage/,"bash: mv ""website data"" ""cloud storage/"""
+move the file source is report.pdf in documents and destination is backup-files,bash: mv ~/Documents/report.pdf backup-files/
+relocate the folder source is downloads directory and destination folder is external_drive,bash: mv ~/Downloads external_drive/
+shift the file source folder is notes and destination directory is archive/,bash: mv notes archive/
+transfer my images files source folder is pictures and destination fplder is usb-drive,bash: mv pictures usb-drive/
+move my music source directory is songs and destination directory is sd_card,bash: mv songs sd_card/
 rename the file from /etc/passwd to /etc/userlist,bash: mv /etc/passwd /etc/userlist  
 i want to rename this /var/log/syslog to /var/log/system.log,bash: mv /var/log/syslog /var/log/system.log  
 alter the name of the /home/user/document.txt file to /home/user/my_notes.txt,bash: mv /home/user/document.txt /home/user/my_notes.txt  
@@ -5597,46 +5566,46 @@ backup a file to another location,response: what is the source and destination l
 i need to copy a folder somewhere else,response: what is the source and destination location
 save a copy of this file to another directory,response: what is the source and destination location
 transfer a file to another folder,response: what is the source and destination location
-copy file1,response: what is the destination location
-duplicate folder1,response: what is the destination location
-copy a copy of test.txt,response: what is the destination location
-backup myfile.doc,response: what is the destination location
-save a copy of notes.pdf,response: what is the destination location
-transfer songs folder,response: what is the destination location
-make a duplicate of project.zip,response: what is the destination location
-create a backup of report.docx,response: what is the destination location
-copy this video.mp4,response: what is the destination location
-i want to copy a copy of image.png,response: what is the destination location
-copy to downloads,response: what is the source location
-duplicate into documents,response: what is the source location
-copy a file to desktop,response: what is the source location
-backup to external drive,response: what is the source location
-save a file to the new_folder directory,response: what is the source location
-transfer a folder to backup copy,response: what is the source location
-make a copy in shared_drive,response: what is the source location
-create a backup copy to archive folder,response: what is the source location
-copy a document to work directory,response: what is the source location
-i want to make a copy into reports folder,response: what is the source location
-move this somewhere,response: what is the source and destination location
+move this file somewhere,response: what is the source and destination location
 shift a file to another location,response: what is the source and destination location
-relocate something for me,response: what is the source and destination location
-transfer a document,response: what is the source and destination location
-move an item to another place,response: what is the source and destination location
+relocate the folder for me,response: what is the source and destination location
+transfer a document file,response: what is the source and destination location
+move a directory  to another place,response: what is the source and destination location
 i want to move the files,response: what is the source and destination location
 send a folder elsewhere,response: what is the source and destination location
 move a file from one place to another,response: what is the source and destination location
 shift this to a different location,response: what is the source and destination location
 transfer my data to another place,response: what is the source and destination location
-move my downloads folder,response: what is the destination location
-shift report.pdf,response: what is the destination location
+copy file file1.sh,response: what is the destination location
+can you make a copy of folder1,response: what is the destination location
+create a copy of test.txt,response: what is the destination location
+copy the file named myfile.doc,response: what is the destination location
+save a copy of notes.pdf,response: what is the destination location
 transfer the songs folder,response: what is the destination location
-relocate my notes file,response: what is the destination location
+make a duplicate of project.zip,response: what is the destination location
+create a backup of report.docx,response: what is the destination location
+copy this video.mp4,response: what is the destination location
+i want to copy a copy of image.png,response: what is the destination location
+move my downloads folder,response: what is the destination location
+i need to move the file report.pdf,response: what is the destination location
+transfer the songs folder,response: what is the destination location
+can you move the mynotes.doc file,response: what is the destination location
 move the work folder somewhere else,response: what is the destination location
-send this excel file,response: what is the destination location
-move my photos,response: what is the destination location
+send this excel file named book.xlsx,response: what is the destination location
+move my-photos folder,response: what is the destination location
 shift the slides folder,response: what is the destination location
 relocate the invoices document,response: what is the destination location
-move this backup file,response: what is the destination location
+move this backup.json file,response: what is the destination location
+copy the files to downloads,response: what is the source location
+duplicate the folders into documents,response: what is the source location
+copy a file to desktop,response: what is the source location
+backup to external drive,response: what is the source location
+save a file to the new_folder directory,response: what is the source location
+transfer a folder to backup-copy,response: what is the source location
+make a copy in shared_drive,response: what is the source location
+create a backup copy to archive folder,response: what is the source location
+copy a document to work directory,response: what is the source location
+i want to make a copy into reports folder,response: what is the source location
 move a file to my_backup folder,response: what is the source location
 relocate something to my_external directory,response: what is the source location
 transfer this to cloud folder ,response: what is the source location

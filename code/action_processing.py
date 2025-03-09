@@ -339,47 +339,46 @@ class ActionProcessor:
         command = f"sleep {time_second} && {selected_template}"
         subprocess.run(['/usr/bin/gnome-terminal', '--', 'bash', '-c', f'echo "timer set for {time_second} seconds"; {command}; exec bash'])
         return 'Your timer has been set up.'
-    
-    def check_terminal_process(self):
-        """Checks if the terminal process is still running."""
-        try:
-            # Get all running processes
-            for proc in psutil.process_iter(['pid', 'name', 'cmdline']):
-                # Check if any process matches terminal-related names like 'gnome-terminal', 'xterm', etc.
-                if any(cmd for cmd in proc.info['cmdline'] if 'gnome-terminal' in cmd or 'xterm' in cmd or 'konsole' in cmd):
-                    return True
-            return False
-        except psutil.NoSuchProcess:
-            return False
-
     def command_execute(self,command):
-        if not self.terminal_running() or not os.path.exists(self.pipe_file):
-            if os.path.exists(self.pipe_file):
-                os.remove(self.pipe_file)
-            os.mkfifo(self.pipe_file)
-            subprocess.Popen(
-                ['gnome-terminal', '--', 'bash', '-c', 
-                f"tail -f {self.pipe_file} | bash"]
-            )
-            print("Terminal window opened.")
-            time.sleep(1)
-        else:
-            print("Reusing existing terminal.")
-        with open(self.pipe_file, 'w') as pipe:
-            pipe.write(f'echo "The command is {command}"; {command};' + '\n')
-            print(f"Command sent: {command}")
-    def terminal_running(self):
-        try:
-            result = subprocess.check_output(['ps', '-A', '-o', 'pid,command'])
-            if 'tail -f /tmp/terminal_pipe' in result.decode('utf-8'):
-                return True
-            return False
-        except subprocess.CalledProcessError:
-            return False
+        subprocess.run(['/usr/bin/gnome-terminal', '--', 'bash', '-c', f'echo "The command is {command}"; {command}; exec bash'])
 
-    def cleanup_pipe(self):
-        if os.path.exists(self.pipe_file):
-            os.remove(self.pipe_file)
+    # def check_terminal_process(self):
+    #     try:
+    #         # Get all running processes
+    #         for proc in psutil.process_iter(['pid', 'name', 'cmdline']):
+    #             # Check if any process matches terminal-related names like 'gnome-terminal', 'xterm', etc.
+    #             if any(cmd for cmd in proc.info['cmdline'] if 'gnome-terminal' in cmd or 'xterm' in cmd or 'konsole' in cmd):
+    #                 return True
+    #         return False
+    #     except psutil.NoSuchProcess:
+    #         return False
 
-ap=ActionProcessor()
-ap.predict_action("youtube minutes mystery alien")
+    # def command_execute(self,command):
+    #     if not self.terminal_running() or not os.path.exists(self.pipe_file):
+    #         if os.path.exists(self.pipe_file):
+    #             os.remove(self.pipe_file)
+    #         os.mkfifo(self.pipe_file)
+    #         subprocess.Popen(
+    #             ['gnome-terminal', '--', 'bash', '-c', 
+    #             f"tail -f {self.pipe_file} | bash"]
+    #         )
+    #         print("Terminal window opened.")
+    #         time.sleep(1)
+    #     else:
+    #         print("Reusing existing terminal.")
+    #     with open(self.pipe_file, 'w') as pipe:
+    #         pipe.write(f'unbuffer echo "The command is {command}"; unbuffer {command};' + '\n')
+    #         print(f"Command sent: {command}")
+    # def terminal_running(self):
+    #     try:
+    #         result = subprocess.check_output(['ps', '-A', '-o', 'pid,command'])
+    #         if 'tail -f /tmp/terminal_pipe' in result.decode('utf-8'):
+    #             return True
+    #         return False
+    #     except subprocess.CalledProcessError:
+    #         return False
+
+    # def cleanup_pipe(self):
+    #     if os.path.exists(self.pipe_file):
+    #         os.remove(self.pipe_file)
+

@@ -42,6 +42,7 @@ tokenized_val = val_dataset.map(tokenize_function, batched=True)
 training_args = TrainingArguments(
     output_dir='./results',
     eval_strategy="epoch",
+    save_strategy="epoch",  # Save model at the end of each epoch
     learning_rate=5e-5,
     per_device_train_batch_size=8,
     per_device_eval_batch_size=8,
