@@ -50,7 +50,7 @@ class SpeechToText:
             # Configure the label
             self.label = ttb.Label(
                 self.root,
-                text="Listening...!",
+                text="Hello there,",
                 font=('Calibri', 16),
                 background='black',
                 foreground='white',
@@ -84,24 +84,23 @@ class SpeechToText:
                 self.recognizer.dynamic_energy_threshold = True
                 
                 # Configure for longer pauses
-                self.recognizer.pause_threshold = 2.0
+                self.recognizer.pause_threshold = 3.0
                 
                 print("Microphone is on, listening...")
                 
                 # Update UI to show listening state
-                self.update_label("Listening...")
+                self.update_label("Listening...!")
                 
                 # Listen with standard parameters
                 audio = self.recognizer.listen(
                     source, 
                     timeout=10,  # Maximum listening time
-                    phrase_time_limit=10  # Maximum phrase duration
                 )
                 
                 print("Audio captured!")
                 
                 # Process the captured audio
-                self.update_label("Processing...")
+                self.update_label("Processing...!")
                 
                 # Attempt to recognize speech with multiple recognition attempts
                 text = self.recognize_speech(audio)
@@ -117,17 +116,17 @@ class SpeechToText:
         except sr.UnknownValueError:
             error_msg = "Sorry, I couldn't understand the audio."
             self.update_label(error_msg)
-            self.captured_text = error_msg
+            #self.captured_text = error_msg
         
         except sr.RequestError as e:
             error_msg = f"Network error: {e}. Please check your internet connection."
             self.update_label(error_msg)
-            self.captured_text = error_msg
+            #self.captured_text = error_msg
         
         except Exception as e:
             error_msg = f"An unexpected error occurred: {e}"
             self.update_label(error_msg)
-            self.captured_text = error_msg
+            #self.captured_text = error_msg
         
         finally:
             # Destroy the UI after 5 seconds
@@ -173,3 +172,4 @@ if __name__ == "__main__":
     stt = SpeechToText()
     c = stt.create_ui()
     print("Captured Text:", c)
+    

@@ -10,6 +10,7 @@ import random
 import requests
 import re
 import psutil
+from audio_processing import TextToSpeech,SpeechToText
 
 class ActionProcessor:
     TIME_TEMPLATES = [
@@ -50,11 +51,12 @@ class ActionProcessor:
     'notify-send "Time Alert" "Your timer has finished!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga',
     'notify-send "Timer Notification" "Time is over, task completed!" && paplay /usr/share/sounds/freedesktop/stereo/complete.oga'
     ]
-    def __init__(self):
+    def __init__(self,audio):
         self.api_token = "aab6c3009986b4f93b84c771da042250"
         self.weather_key = "87c68cff3601c8697c22b25c7f2f6812"
         self.pipe_file = "./terminal_pipe"
-
+        self.TMUX_SESSION = "cmd_executores"
+        self.audio = audio
         self.ACTION_MAP = {
         "weather": self.get_weather,
         "time": self.tell_time,
@@ -79,7 +81,9 @@ class ActionProcessor:
         "turn-night-light-on": self.night_light_on,
         "turn-night-light-off": self.night_light_off,
         }
-
+        if self.audio:
+            self.tts = TextToSpeech(lang="en", tld='co.in', slow=False)
+            self.stt = SpeechToText()
 
     def predict_action(self,query):
         if query in self.ACTION_MAP:
@@ -104,10 +108,34 @@ class ActionProcessor:
         elif "apt install" in query:
             self.command_execute(query + ' -y')
             return "Action executed"
+        elif self.delete_checker(query):
+            if self.audio:
+                self.tts.speak("Are you sure want to delete?")
+                user_request = self.stt.create_ui()
+                if user_request.lower() == 'yes':
+                    self.command_execute(query)
+                    return "Action executed"
+                elif user_request == "no":
+                    return  "Action canceled."
+                else:
+                    return "Could not understand. Action canceled."
+            else:
+                temp = input("Are you sure want to delete? (y/n) ")
+                if temp.lower == 'n':
+                    return  "Action canceled."
+                elif temp.lower == 'y':
+                    self.command_execute(query)
+                    return "Action executed"
+                else:
+                    return "could not understand the input please try again."
+
         else:
             self.command_execute(query)
             return "Action executed"
-
+    def delete_checker(self, command):
+        delete_keywords = ["rm", "userdel", "groupdel", "rmdir", "remove"]
+        command_words = command.split() 
+        return any(cmd in command_words for cmd in delete_keywords)
     def web_search(self,site_name=None):
         site_name=site_name.replace(" ","+")
         web_url=f"https://www.google.com/search?q={site_name}"
@@ -339,46 +367,45 @@ class ActionProcessor:
         command = f"sleep {time_second} && {selected_template}"
         subprocess.run(['/usr/bin/gnome-terminal', '--', 'bash', '-c', f'echo "timer set for {time_second} seconds"; {command}; exec bash'])
         return 'Your timer has been set up.'
-    def command_execute(self,command):
-        subprocess.run(['/usr/bin/gnome-terminal', '--', 'bash', '-c', f'echo "The command is {command}"; {command}; exec bash'])
-
-    # def check_terminal_process(self):
-    #     try:
-    #         # Get all running processes
-    #         for proc in psutil.process_iter(['pid', 'name', 'cmdline']):
-    #             # Check if any process matches terminal-related names like 'gnome-terminal', 'xterm', etc.
-    #             if any(cmd for cmd in proc.info['cmdline'] if 'gnome-terminal' in cmd or 'xterm' in cmd or 'konsole' in cmd):
-    #                 return True
-    #         return False
-    #     except psutil.NoSuchProcess:
-    #         return False
-
     # def command_execute(self,command):
-    #     if not self.terminal_running() or not os.path.exists(self.pipe_file):
-    #         if os.path.exists(self.pipe_file):
-    #             os.remove(self.pipe_file)
-    #         os.mkfifo(self.pipe_file)
-    #         subprocess.Popen(
-    #             ['gnome-terminal', '--', 'bash', '-c', 
-    #             f"tail -f {self.pipe_file} | bash"]
-    #         )
-    #         print("Terminal window opened.")
-    #         time.sleep(1)
-    #     else:
-    #         print("Reusing existing terminal.")
-    #     with open(self.pipe_file, 'w') as pipe:
-    #         pipe.write(f'unbuffer echo "The command is {command}"; unbuffer {command};' + '\n')
-    #         print(f"Command sent: {command}")
-    # def terminal_running(self):
-    #     try:
-    #         result = subprocess.check_output(['ps', '-A', '-o', 'pid,command'])
-    #         if 'tail -f /tmp/terminal_pipe' in result.decode('utf-8'):
-    #             return True
-    #         return False
-    #     except subprocess.CalledProcessError:
-    #         return False
+    #     subprocess.run(['/usr/bin/gnome-terminal', '--', 'bash', '-c', f'echo "The command is {command}"; {command}; exec bash'])
 
-    # def cleanup_pipe(self):
-    #     if os.path.exists(self.pipe_file):
-    #         os.remove(self.pipe_file)
+
+    def is_tmux_session_running(self):
+        """Check if the tmux session is already running."""
+        result = subprocess.run(["tmux", "has-session", "-t", self.TMUX_SESSION], 
+                            capture_output=True, text=True)
+        return result.returncode == 0  # 0 means session exists
+
+    def setup_or_reuse_terminal(self):
+        """Set up a new tmux session in a terminal or reuse an existing one."""
+        if not self.is_tmux_session_running():
+            # Open a new gnome-terminal with a tmux session
+            subprocess.Popen([
+                'gnome-terminal', '--', 'bash', '-c', 
+                f'tmux new-session -s {self.TMUX_SESSION}; exec bash'
+            ])
+            time.sleep(1)  # Wait for the terminal to start
+            print(f"New terminal opened with tmux session '{self.TMUX_SESSION}'.")
+        else:
+            print(f"Reusing existing tmux session '{self.TMUX_SESSION}'.")
+
+    def command_execute(self,command):
+        """Execute a user-provided command in the tmux session."""
+        try:
+            # Ensure the terminal/tmux session is set up
+            self.setup_or_reuse_terminal()
+
+            # Send the command to the tmux session without a prompt
+            subprocess.run(["tmux", "send-keys", "-t", self.TMUX_SESSION, f'echo "The command is {command}"; {command}; ', "ENTER"], check=True)
+            print(f"Command sent to terminal: {command}")
+
+        except subprocess.CalledProcessError as e:
+            print(f"Failed to send command to tmux: {str(e)}")
+        except Exception as e:
+            print(f"An error occurred: {str(e)}")
+
+    def cleanup_tmux_session(self):
+        subprocess.run(["tmux", "kill-session", "-t", self.TMUX_SESSION])
+        print(f"Terminated tmux session '{self.TMUX_SESSION}'.")
 

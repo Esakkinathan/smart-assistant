@@ -16,10 +16,10 @@ WAKEWORD_PATH = r"hey-darla/hey-darla.ppn"
 EXIT_PATH = r"hey-darla/stop-darla.ppn"
 
 class Darla:
-    def __init__(self):
+    def __init__(self,audio):
         self.stt = SpeechToText()
         self.tts = TextToSpeech()
-        self.action = ActionProcessor()
+        self.action = ActionProcessor(audio=audio)
         self.model = ModelProcessor()
         self.is_running = True  # Assistant starts in active mode
         self.is_response = False
@@ -27,17 +27,18 @@ class Darla:
         self.output_text = ""
         self.text_to_speak = ""
         self.exit_flag = False  # New flag to control application exit
-        self.queue = queue.Queue()  
-        # Wake word detection setup
-        self.porcupine = pvporcupine.create(
-            access_key=ACCESS_KEY, 
-            keyword_paths=[WAKEWORD_PATH, EXIT_PATH]
-        )
-        self.recorder = PvRecorder(frame_length=self.porcupine.frame_length, device_index=-1)
+        if audio:
+            self.queue = queue.Queue()  
+            # Wake word detection setup
+            self.porcupine = pvporcupine.create(
+                access_key=ACCESS_KEY, 
+                keyword_paths=[WAKEWORD_PATH, EXIT_PATH]
+            )
+            self.recorder = PvRecorder(frame_length=self.porcupine.frame_length, device_index=-1)
 
-        # Start wake word detection in a separate thread
-        self.wake_thread = threading.Thread(target=self.listen_for_wake_word, daemon=True)
-        self.wake_thread.start()
+            # Start wake word detection in a separate thread
+            self.wake_thread = threading.Thread(target=self.listen_for_wake_word, daemon=True)
+            self.wake_thread.start()
 
     def get_random_variation(self, category):
         """Selects a random variation for responses."""
@@ -113,9 +114,17 @@ class Darla:
 
     def preprocess(self, text):
         """Preprocess user input."""
+
         text = text.lower().strip()
         text = re.sub(r'(?<!\w)\.|(?<=\s)\.|(?<!\w)\.(?!\w)', '', text)  # Removes unnecessary dots
         text = re.sub(r'[^\w\s.-_]', '', text)  # Removes punctuation except dot, hyphen
+        text_arr = text.split()
+        clean_arr = []
+        for i in text_arr:
+            if i not in clean_arr:
+                clean_arr.append(i)
+        text = ' '.join(clean_arr)
+
         return text
 
     def create_ui_and_process(self):
@@ -127,7 +136,7 @@ class Darla:
         while self.is_running:
             try:
                 if self.is_response:
-                    self.user_query += self.stt.create_ui()
+                    self.user_query = self.user_query + " "+ self.stt.create_ui()
                 else:
                     self.user_query = self.stt.create_ui()
 
@@ -138,13 +147,16 @@ class Darla:
                 print(f'User query: {self.user_query}')
                 self.user_query = self.preprocess(self.user_query)
                 self.output_text = self.model.predict_bash_command(self.user_query)
-
+                print(self.output_text)
                 if self.output_text.startswith('response'):
                     response_text = self.output_text.replace("response:", "").strip()
-                    self.tts.speak(response_text)
-                    self.is_response = True
-                    continue
-
+                    if response_text.startswith('what'):
+                        self.tts.speak(response_text)
+                        self.is_response = True
+                        continue
+                    else:
+                        self.tts.speak(response_text)
+                        continue
                 self.is_response = False
                 self.output_text = self.output_text.replace("bash:", "").strip()
                 print(f'Output query: {self.output_text}')
@@ -159,8 +171,6 @@ class Darla:
                 # Go into standby mode
                 self.is_running = False
                 print("DARLA is now in standby mode. Say 'Hey Darla' to wake me up.")
-                # Don't exit or return here - let the function complete naturally
-                # The wake word thread will restart this when needed
 
             except Exception as e:
                 self.error_handling(str(e))
@@ -202,11 +212,10 @@ class Darla:
             self.recorder.stop()
         self.recorder.delete()
         self.porcupine.delete()
-        self.action.cleanup_pipe()
+        self.action.cleanup_tmux_session()
         self.stt.on_close()
         self.tts.speak(self.get_random_variation("exit"))
         print("Assistant has stopped.")
-        # Don't call sys.exit() here - let the main thread handle that
 
     def run(self):
         print("DARLA is starting...")
@@ -229,7 +238,7 @@ class Darla:
 
 
 if __name__ == "__main__":
-    assistant = Darla()
+    assistant = Darla(audio=True)
     try:
         assistant.run()  # Assistant starts when the user clicks the icon
     except KeyboardInterrupt:
