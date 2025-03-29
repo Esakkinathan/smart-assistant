@@ -1,0 +1,605 @@
+weather
+time
+date
+day
+news
+volume up/down - default percentage up/down
+setting volume %
+mute
+unmute
+brightness up/down - default percentage up/down
+setting brightness %
+brightness max
+screenshot
+lock screen
+minimize all windows
+restart
+shutdown
+spotify song search
+youtube search
+dark/light theme
+bluetooth mode on/off
+flight mode on/off
+night light on/off
+set timer upto 8hrs
+system info
+about cpu 
+free space in memory
+free space in disk
+how long the device is running(uptime)
+device name(host)
+ip address
+boot logs
+usb connected devices
+battery level
+cpu usage
+running processes
+drive details
+command history
+all logs include kernel,user(all logs)
+exit
+month 
+drive partition
+clear the terminal
+open application list
+  firefox
+  chromium
+  chrome
+  brave
+  opera
+  vivaldi
+  epiphany
+  falkon
+  tor
+  libre office
+  only office
+  evince
+  okular
+  tusk
+  joplin
+  simplenote
+  thunderbird
+  evolution
+  sublime
+  pycharm
+  vs code
+  notepad plus plus
+  studio
+  anydesk
+  phystorm
+  eclipse
+  pycharm professional
+  intellij idea
+  postman
+  webstorm
+  rubymine
+  netbeans
+  goland
+  slack
+  telegram
+  skype
+  zulip
+  discord
+  signal
+  zenchat
+  zoom
+  whatsapp
+  scrcpy
+  gitkraken
+  microsft teams
+  gimp
+  obs
+  kdenlive
+  virtual box
+  wireshark vpn
+  proton vpn
+  express vpn
+  rstudio
+  calculator
+  settings
+  clock
+  file manager
+application installation list
+  android studio
+  anydesk
+  phystorm
+  eclipse
+  pycharm professional
+  intellij idea
+  pycharm (community)
+  vs code
+  notepad plus plus
+  sublime 
+  postman
+  kubectl
+  webstorm
+  go
+  node js
+  rubymine
+  apache ant
+  netbeans
+  kotlin
+  ruby
+  flutter
+  goland
+  flutter-gallery
+  nginx
+  prometheus
+  slack
+  gradle
+  jenkins
+  telegram
+  skype
+  zulip
+  discord
+  signal
+  zenchat
+  thunder
+  whatsapp
+  zoom
+  brave
+  firefox
+  opera
+  screen copy
+  gitkaren
+  postman
+  teams
+  netbeans
+  kubernetes
+  mysql
+  chrome
+  libreoffice
+  mongodb
+  python
+  java
+  sqlite
+  c compiler
+  vim
+  git
+  ansible
+  gimp
+  obs studio
+  kdenlive
+  virtual box
+  wireshark vpn
+  windscribe vpn
+  proton vpn
+  express vpn
+to get the latest version list
+  andriod studio
+  anydesk
+  phystorm
+  eclipse
+  pycharm professional
+  intellij idea
+  pycharm community
+  vs code
+  notepad ++
+  sublime postman
+  kubectl
+  powershell
+  webstorm
+  go
+  nodejs
+  ruby mine ide
+  apache
+  kotlin
+  ruby
+  flutter
+  goland
+  flutter gallery
+  nginx
+  prometheus
+  slack
+  gradle
+  jenkins
+  telegram
+  skype
+  zulip
+  discord
+  signal
+  zenchat
+  thunder
+  whatsapp
+  zoom
+  brave
+  firefox
+  opera
+  screen copy
+  spotify
+  gitkraken
+  postman
+  teams
+  netbeans
+  kubernetes
+  mysql
+  chrome
+  libreoffice
+  mongdb
+  python
+  java
+  sqlite
+  c compiler
+  vim
+  git
+  ansible
+  gimp
+  obs studio
+  kdenlive
+  virtual box
+  wireshark
+  windscribe
+  proton vpn
+  expressvpn
+uninstall application list
+  android studio
+  anydesk
+  phpstorm
+  eclipse
+  pycharm professional
+  intellij 
+  pycharm community
+  vs code
+  notepad++
+  sublime 
+  postman
+  kubectl
+  powershell
+  webstorm
+  go
+  nodejs
+  apache
+  netbeans
+  kotlin
+  ruby
+  flutter
+  goland
+  flutter gallery
+  nginx
+  prometheus
+  slack
+  gradle
+  jenkins
+  telegram
+  skype
+  zulip
+  discord
+  signal
+  zenchat
+  thunder
+  whatsapp
+  zoom
+  brave
+  firefox
+  opera
+  screen copy
+  spotify
+  gitkraken
+  postman
+  teams
+  netbeans
+  kubernetes
+  mysql
+  chrome
+  libre office
+  mongodb
+  python
+  java
+  sqlite
+  c compiler
+  vim
+  git
+  ansible
+  gimp
+  obs studio
+  kdenlive
+  virtual box
+  wireshark
+  windscribe
+  proton 
+  express vpn
+group add
+user add
+user add with home directory
+user add with user id
+user add and set home directory as we want
+create a new user and add that user to group
+update a password for user
+set new password for me(current user)
+lock a user(disable access)
+unlock a user
+rename a user
+change user name to me (current user)
+set user id
+set user id for me(current user)
+changing the home directory location
+change the home directory location to me(current user)
+set expire date of a user
+add the existing user to a group
+add the existing user to two groups
+add me(current user) to two groups
+change primary group of a user
+change primary group to me(current user)
+give admin access to user
+give admin access to me(current user)
+remove admin access to user
+remove admin access to me(current user)
+changing group name from one to another
+changing the group id of a group
+delete a user 
+delete a user and its id too
+delete a group
+removing a user from a group
+remove me(current user) from a group
+list the number of user
+list the number of groups
+viewing the number of user with admin access
+list all the groups me(current user) joined
+viewing a group info
+show details of a user
+show details of me(current user)
+switch to user
+log in as root user
+who logged in?
+who am i?
+last login details
+view my(current user) login info
+logout
+listing all folders and files on the current directory
+list files and folders from a different directory
+list the temp files
+list files and folders from a different directory with details of each
+hidden files
+hidden files from an different directory
+hidden files in cache
+shows the files and folders with the subfolder
+shows the files and folders with the subfolder in an different directory
+show contents in tree format
+show hidden files in tree format
+create a file 
+  .py
+  .css
+  .html
+  .js
+  .json
+  .php
+  .java
+  .log
+  .bin
+  .sh
+  .yaml
+  .c
+  .cpp
+  .h
+  .kt
+  .dart
+  .env
+  .xml
+  .md
+  .ipynb
+  .doc
+  .ppt
+  .xlsx
+create a file in different directory
+create a hidden file(. file)
+analyze the count of lines words and characters in a file
+read a file
+read a file inside a different directory
+open a file
+  .py
+  .css
+  .html
+  .js
+  .json
+  .php
+  .java
+  .log
+  .bin
+  .sh
+  .yaml
+  .c
+  .cpp
+  .h
+  .kt
+  .dart
+  .env
+  .xml
+  .md
+  .ipynb
+  .doc
+  .ppt
+  .xlsx
+open a file inside a different directory
+  .py
+  .css
+  .html
+  .js
+  .json
+  .php
+  .java
+  .log
+  .bin
+  .sh
+  .yaml
+  .c
+  .cpp
+  .h
+  .kt
+  .dart
+  .env
+  .xml
+  .md
+  .ipynb
+  .doc
+  .ppt
+  .xlsx
+edit a file
+  .py
+  .css
+  .html
+  .js
+  .json
+  .php
+  .java
+  .log
+  .bin
+  .sh
+  .yaml
+  .c
+  .cpp
+  .h
+  .kt
+  .dart
+  .env
+  .xml
+  .md
+  .ipynb
+  .doc
+  .ppt
+  .xlsx
+edit a file inside a different directory
+  .py
+  .css
+  .html
+  .js
+  .json
+  .php
+  .java
+  .log
+  .bin
+  .sh
+  .yaml
+  .c
+  .cpp
+  .h
+  .kt
+  .dart
+  .env
+  .xml
+  .md
+  .ipynb
+  .doc
+  .ppt
+  .xlsx
+make a directory
+make a directory inside a different directory
+create a hidden directory(folder)
+make nested folder structure
+open a image
+  .jpeg
+  .jpg
+  .png
+  .gif
+  .raw
+  .mp4
+  .mov
+  .avi
+  .pdf
+  .docx
+  .pptx
+  .mp3
+  .wav
+open a image inside a different directory
+  .jpeg
+  .jpg
+  .png
+  .gif
+  .raw
+  .mp4
+  .mov
+  .avi
+multimedia content files open(xdg format bash files)
+  .jpeg
+  .jpg
+  .png
+  .gif
+  .raw
+  .mp4
+  .mov
+  .avi
+  .pdf
+  .docx
+  .pptx
+  .mp3
+  .wav
+go to different directory
+go back to parent directory
+go to home directory
+go to root folder
+check storage of a folder
+check the size of a file
+copy a file to a different directory
+copy a folder to different directory
+copy a folder to different directory forcefully
+move a file to a different directory
+move a folder from a directory to another directory
+rename a file from old to new
+compress a file from a directory (4415 line the command: tar -cvf scripts_backup.tar /opt/scripts/cleanup.sh)
+extract a file (4450 line the command: tar -xvf project.tar)
+remove a file 
+remove a file from a directory
+remove a directory
+remove a directory from a directory
+open language files
+  python
+  compile and run java
+  just compile java
+  just compile java from a directory 
+  just run java
+  compile c but don't run
+  compile c from a directory
+  run the c
+  c++
+  sh
+  pl
+  rb
+  go
+  rs
+create a virtual environment
+deactivate the virtual envi
+run servers
+  flask
+  nodejs
+  nodejs with npm
+  nodejs with nodemon
+change a file to user
+set group of file to a group
+assigning ownership to user
+write permission to user
+give read permission to user
+give execute permission to user
+give write and read permission to user
+give read and execute permission to user
+give read, write and execute permission to user
+grand recursively acccess (for all above)
+give write permission to group
+give read permission to group
+give execute permission to group
+give write and read permission to group
+give read and execute permission to group
+give read, write and execute permission to group
+grand recursively acccess (for all above)
+give write permission to others
+give read permission to others
+give execute permission to others
+give read, write and execute permission to others
+grand recursively acccess (for all above)
+remove read to user
+remove write to user
+remove execute to user
+remove read write to user
+remove read execute to user
+remove read write execute to user
+grand recursively acccess (for all above)
+remove read to group
+remove write to group
+remove execute to group
+remove read,write to group
+remove read,execute to group
+remove read,write and execute to group
+grand recursively acccess (for all above)
+remove write permission to others
+remove read permission to others
+remove execute permission to others
+remove read, write and execute permission to others
+remove grand recursively acccess (for all above)
