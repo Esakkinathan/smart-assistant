@@ -27,7 +27,7 @@ model = model.to(device)
 
 # Tokenize the dataset
 def tokenize_function(example):
-    source = ["translate english to bash: " + line for line in example['nl_cmd']]
+    source = ["provide bash command or response(if unrecognized return default): " + line for line in example['nl_cmd']]
     target = example['bash_cmd']
     model_inputs = tokenizer(source, max_length=128, truncation=True, padding='max_length')
     labels = tokenizer(target, max_length=128, truncation=True, padding='max_length')

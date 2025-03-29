@@ -9,7 +9,7 @@ model = T5ForConditionalGeneration.from_pretrained(model_dir)
 
 # Function to make predictions
 def predict_bash_command(nl_command):
-    nl_command = "translate english to bash: " + nl_command
+    nl_command = "provide bash command or response(if unrecognized return default): " + nl_command
     # Preprocess the input command
     input_ids = tokenizer.encode(nl_command, return_tensors="pt", max_length=128, truncation=True)
 
