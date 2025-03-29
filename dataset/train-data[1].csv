@@ -9,7 +9,7 @@ check climate,bash: weather
 weather update,bash: weather
 did you know whats weather today,bash: weather
 check weather,bash: weather
-do you know what toadys weather update,bash: weather
+do you know what todays weather update,bash: weather
 whats the climate report for today,bash: weather
 whats the weather like at the moment,bash: weather
 can you check the weather for me,bash: weather
@@ -49,6 +49,7 @@ whats the current date,bash: date
 can you check the date for me,bash: date
 whats the date on the calendar,bash: date
 i need to know the date,bash: date
+what day right now,bash: day
 what day is it today,bash: day
 do you know what day today,bash: day
 can you tell me the day of the week,bash: day
@@ -61,6 +62,7 @@ what day are we on,bash: day
 can you remind me what day it is,bash: day
 do you know todays day,bash: day
 whats the day today,bash: day
+trending news,bash: news
 whats the latest news,bash: news
 could you know what today news update,bash: news
 would you check the news update,bash: news
@@ -89,7 +91,6 @@ turn the audio up,bash: volume-up
 please increase the volume higher,bash: volume-up
 set maximum volume please,bash: volume-up
 make the volume higher,bash: volume-up
-set full volume,bash: volume-up
 down the volume,bash: volume-down
 can you lower the volume,bash: volume-down
 please turn down the sound,bash: volume-down
@@ -101,6 +102,7 @@ can you down the audio slightly,bash: volume-down
 lower the sound level,bash: volume-down
 please adjust the volume down,bash: volume-down
 can you make it less loud,bash: volume-down
+set full volume,bash: set-volume 100
 max volume,bash: set-volume 100
 maximize the sound,bash: set-volume 100
 increase volume upto 45 %,bash: set-volume 45
@@ -133,6 +135,7 @@ make the volume 28%,bash: set-volume 28
 set the audio to 19%,bash: set-volume 19
 can you set volume at 91%,bash: set-volume 91
 mute speaker,bash: volume-mute
+mute the lap please,bash: volume-mute
 minimize sound,bash: volume-mute
 mute audio,bash: volume-mute
 can you mute the audio,bash: volume-mute
@@ -146,6 +149,8 @@ make it silent,bash: volume-mute
 disable the sound,bash: volume-mute
 i want to mute the please,bash: volume-mute
 can you cut the audio,bash: volume-mute
+unmute the sound,bash: volume-unmute
+unmute the device,bash: volume-unmute
 unmute the sound,bash: volume-unmute
 turn the sound to full again,bash: volume-unmute
 can you unmute the sound,bash: volume-unmute
@@ -796,11 +801,11 @@ give me information about the system memory,bash: free -h
 how much free memory is there,bash: free -h
 what is the swap space usage,bash: free -h
 show me the memory statistics,bash: free -h
-available space,bash: df -h
-free space,bash: df -h
 how much swap space is available,bash: free -h
 what is the total swap space,bash: free -h
 give me details about my RAM,bash: free -h
+available space,bash: df -h
+free space,bash: df -h
 disk space used,bash: df -h
 show me the disk space usage,bash: df -h
 what is the available disk space,bash: df -h
@@ -1002,6 +1007,7 @@ how do i exit the terminal,bash: exit
 end this session,bash: exit
 i want to close this terminal,bash: exit
 log me out of this command line,bash: exit
+see you soon,bash: exit
 leave the terminal session,bash: exit
 stop this command prompt,bash: exit
 can you help me leave this terminal,bash: exit
@@ -1470,10 +1476,10 @@ hey can you start phpstorm,bash: phpstorm
 bring up phpstorm please,bash: phpstorm
 please launch phpstorm for me,bash: phpstorm
 i need you to open phpstorm now,bash: phpstorm
-take me to the php storm app,bash: firefox
-show me the php storm application,bash: firefox
-get me into the php storm app,bash: firefox
-load the php storm app,bash: firefox
+take me to the php storm app,bash: phpstorm
+show me the php storm application,bash: phpstorm
+get me into the php storm app,bash: phpstorm
+load the php storm app,bash: phpstorm
 open php storm,bash: phpstorm
 start php storm,bash: phpstorm
 please open php storm,bash: phpstorm
@@ -2108,6 +2114,7 @@ start an application,response: what application do you want to open
 run an application,response: what application do you want to open
 can you open something,response: what file do you want to open
 open some file,response: what file do you want to open
+
 can you install android studio for me,bash: sudo snap install android-studio 
 want android studio for my pc,bash: sudo snap install android-studio
 download the android studio application,bash: sudo snap install android-studio 
@@ -2366,6 +2373,9 @@ i want the latest pycharm professional how do i update,bash: sudo snap refresh p
 please check for and install any updates for intellij idea,bash: sudo snap refresh intellij-idea-ultimate
 update intellij idea to the latest version,bash: sudo snap refresh intellij-idea-ultimate
 i need to upgrade intellij idea can you help,bash: sudo snap refresh intellij-idea-ultimate
+check for intellij idea ultimate updates,bash: sudo snap refresh intellij-idea-ultimate
+update intellij idea ultimate to the latest version,bash: sudo snap refresh intellij-idea-ultimate
+get the newest intellij idea ultimate update,bash: sudo snap refresh intellij-idea-ultimate
 how do i update pycharm,bash: sudo snap refresh pycharm-community
 can you update pycharm for me,bash: sudo snap refresh pycharm-community
 upgrade pycharm to the newest release,bash: sudo snap refresh pycharm-community
@@ -2388,9 +2398,6 @@ can you upgrade kubectl for me,bash: sudo snap refresh kubectl
 can you upgrade powershell for me,bash: sudo snap refresh powershell
 i need the latest powershell update it,bash: sudo snap refresh powershell
 refresh powershell on my system,bash: sudo snap refresh powershell
-check for intellij idea ultimate updates,bash: sudo snap refresh intellij-idea-ultimate
-update intellij idea ultimate to the latest version,bash: sudo snap refresh intellij-idea-ultimate
-get the newest intellij idea ultimate update,bash: sudo snap refresh intellij-idea-ultimate
 how do i update webstrom,bash: sudo snap refresh webstorm
 upgrade my webstorm app,bash: sudo snap refresh webstorm
 can you renew the webstorm for me,bash: sudo snap refresh webstorm
@@ -2556,9 +2563,9 @@ renew the gimp for me,bash: sudo apt-get upgrade gimp
 check for gimp updates and install them,bash: sudo apt-get upgrade gimp 
 i need the newest version of gimp,bash: sudo apt-get upgrade gimp 
 will you update a app in my laptop gimp,bash: sudo apt-get upgrade gimp
-how do i get obs studio running on my machine,bash: sudo apt-get install obs-studio 
-i want to start using obs studio can you install it,bash: sudo apt-get install obs-studio 
-install the latest version of obs studio,bash: sudo apt-get install obs-studio 
+update obs studio running on my machine,bash: sudo snap refresh obs-studio
+i want to start using obs studio can you update it,bash: sudo snap refresh obs-studio
+give the latest version of obs studio,bash: sudo snap refresh obs-studio
 upgrade k denlive to its latest stable release,bash: sudo apt-get upgrade kdenlive 
 update kden live to the latest version,bash: sudo apt-get upgrade kdenlive 
 upgrade my kdenlive installation,bash: sudo apt-get upgrade kdenlive
@@ -2611,6 +2618,9 @@ could you discard pycharm professional from this system,bash: sudo snap remove p
 whats the command to uninstall intellij idea,bash: sudo snap remove intellij-idea-ultimate
 remove intellij idea from my system,bash: sudo snap remove intellij-idea-ultimate
 i want to uninstall intellij idea,bash: sudo snap remove intellij-idea-ultimate
+delete intellij idea ultimate from this machine,bash: sudo snap remove intellij-idea-ultimate
+uninstall intellij idea ultimate from my system,bash: sudo snap remove intellij-idea-ultimate
+remove intellij idea ultimate for me,bash: sudo snap remove intellij-idea-ultimate
 uninstall pycharm for me please,bash: sudo snap remove pycharm-community
 i want to uninstall pycharm,bash: sudo snap remove pycharm-community
 how do i delete pycharm,bash: sudo snap remove pycharm-community
@@ -2635,9 +2645,6 @@ how can i get rid of kubectl,bash: sudo snap remove kubectl
 uninstall the powershell package,bash: sudo snap remove powershell
 help me remove powershell,bash: sudo snap remove powershell
 i need powershell removed can you do that,bash: sudo snap remove powershell
-delete intellij idea ultimate from this machine,bash: sudo snap remove intellij-idea-ultimate
-uninstall intellij idea ultimate from my system,bash: sudo snap remove intellij-idea-ultimate
-remove intellij idea ultimate for me,bash: sudo snap remove intellij-idea-ultimate
 help me remove webstorm,bash: sudo snap remove webstorm
 uninstall the webstorm package,bash: sudo snap remove webstorm
 i dont want webstorm anymore delete it,bash: sudo snap remove webstorm
@@ -3662,7 +3669,7 @@ list the files in the directory,bash: ls
 show the files and folders in the current working directory,bash: ls
 show the file and directories in the working directory,bash: ls
 display files in the dolder,bash: ls
-list the contens of the folder,bash: ls
+list the contents of the folder,bash: ls
 provide all the files of this folder,bash: ls
 where are the files and directories available in this folder,bash: ls
 give me the list of files available in the directory,bash: ls
@@ -3702,8 +3709,8 @@ show me the hidden folders of this folder,bash: ls-a
 display the hidden files in the directory,bash: ls -a
 waht are the files are hidden in this folder,bash: ls -a
 show the files both the visible and hidden files,bash: ls -a
-provide me the hidden file list in the directory,bash: ls-a
-can you able to display all the hidden files in this folder,bash: ls-a
+provide me the hidden file list in the directory,bash: ls -a
+can you able to display all the hidden files in this folder,bash: ls -a
 list the all files including hidden files under downloads directory,bash: ls -a ~/Downloads
 show the files both visisble and hiddent in documents directory,bash: ls -a ~/Documents
 display the hidden files under home directory,bash: ls -a ~
@@ -3716,7 +3723,7 @@ list the all files including hidden files under public directory,bash: ls -a ~/P
 show the files both visible and hidden in the directory /usr/bin,bash: ls -a /usr/bin  
 display the hidden files of document1 under home directory,bash: ls -a ~/document1  
 list all the files including hidden files in cache under current directory,bash: ls -a ./cache  
-list the files in a folder and also the content of subfoler,bash: ls - R 
+list the files in a folder and also the content of subfolder,bash: ls - R 
 display all the files and nested content of the sub directories,bash: ls -R 
 show every files in the directory including subdirectories,bash: ls -R 
 give me the recursive list of files in the folder,bash: ls -R
@@ -3901,6 +3908,7 @@ add a new file,response: what is the file name and file type also where the file
 make a new file,response: what is the file name and file type also where the file is located
 can you generate a file,response: what is the file name and file type also where the file is located
 create a script file,response: what is the file name and file type also where the file is located
+analyze the type of .config,bash: file .config
 
 
 identify the file type of report.txt,bash: file report.txt
@@ -3926,7 +3934,6 @@ find out the type of documentation.md,bash: file documentation.md
 determine the type of the file research.ipynb,bash: file research.ipynb
 check what type of file proposal.doc is,bash: file proposal.doc
 get the file type of inventory.xlsx,bash: file inventory.xlsx
-analyze the type of .config,bash: file .config
 
 
 what is the file type,response: what is the file name to be checked
@@ -4196,7 +4203,7 @@ get disk usage of /temp,bash: du -sh /temp
 display storage usage of gamma_workspace,bash: du -sh gamma_workspace  
 how much space is /var/www using,bash: du -sh /var/www  
 check storage of folder /boot,bash: du -sh /boot  
-show disk usage of media,bash: du -sh zeta_media  
+show disk usage of zeta_media,bash: du -sh zeta_media  
 get size of folder archives,bash: du -sh archives  
 tell the storage that videos folder have,bash: du -sh videos
 display size of theta_reports,bash: du -sh ~/project/theta_reports  
@@ -4248,10 +4255,10 @@ could you copy the project folder to workspace,bash: cp -r project ~/workspace/p
 could you transfer the folder docs to backup,bash: cp -r docs backup/docs
 copy the research folder to documents,bash: cp -r research ~/Documents/research
 can you copy the whole folder projects into workspace under home directory,bash: cp -r projects ~/workspace/projects
-backup my images source directory is pictures and destination directory is usb_drive/,"bash: cp -r pictures usb_drive/
-transfer my music source folder is songs and destination directory is sd_card/,"bash: cp -r songs sd_card/
-save a copy of the video source directory is movies and destination folder is media_storage/,"bash: cp -r movies media_storage/
-create a copy of the project files source folder is coding-projects and destination folder is github_folder/,"bash: cp -r coding-projects github_folder/
+backup my images source directory is pictures and destination directory is usb_drive/,bash: cp -r pictures usb_drive/
+transfer my music source folder is songs and destination directory is sd_card/,bash: cp -r songs sd_card/
+save a copy of the video source directory is movies and destination folder is media_storage/,bash: cp -r movies media_storage/
+create a copy of the project files source folder is coding-projects and destination folder is github_folder/,bash: cp -r coding-projects github_folder/
 copy this folder source is Music folder and destination is documents,bash: cp -r Music ~/Documents
 create a copy of the folder source is project and destination is new-folder/,bash: cp -r project new-folder/
 can you copy the folder from /run to /srv forcefully,bash: cp -rf /run /srv  
@@ -4932,3 +4939,669 @@ revoke full access to other user in my pc for /etc/profile,bash: chmod o-rwx /et
 get read write execute permission to other user for /usr/local/games directory,bash: chmod o-rwx /usr/local/games
 get all permission to other user in this computer for /home/user/private,bash: chmod o-rwx /home/user/private
 remove all permissions for other user on directory and its contents /var/lib/postgresql,bash: chmod -R o-rwx /var/lib/postgresql
+who is the prime minister of india,default: i am not able to provide an answer on that subject
+what is the tallest mountain in the world,default: i am not able to provide an answer on that subject
+how does gravity work,default: i am not able to provide an answer on that subject
+what is the capital of france,default: i am not able to provide an answer on that subject
+what are the seven wonders of the world,default: i am not able to provide an answer on that subject
+what is the speed of light,default: i am not able to provide an answer on that subject
+who discovered electricity,default: i am not able to provide an answer on that subject
+how many planets are in the solar system,default: i am not able to provide an answer on that subject
+what is the formula for force,default: i am not able to provide an answer on that subject
+what is the biggest animal in the world,default: i am not able to provide an answer on that subject
+how do airplanes fly,default: i am not able to provide an answer on that subject
+what is the largest desert on earth,default: i am not able to provide an answer on that subject
+what is the boiling point of water,default: i am not able to provide an answer on that subject
+who wrote the play romeo and juliet,default: i am not able to provide an answer on that subject
+how do vaccines work,default: i am not able to provide an answer on that subject
+what is the smallest country in the world,default: i am not able to provide an answer on that subject
+what is the meaning of photosynthesis,default: i am not able to provide an answer on that subject
+who painted the mona lisa,default: i am not able to provide an answer on that subject
+what is the longest river in the world,default: i am not able to provide an answer on that subject
+what is the square root of 144,default: i am not able to provide an answer on that subject
+who invented the telephone,default: i am not able to provide an answer on that subject
+how does the human heart work,default: i am not able to provide an answer on that subject
+what is the freezing point of water,default: i am not able to provide an answer on that subject
+who was the first man to walk on the moon,default: i am not able to provide an answer on that subject
+how do black holes form,default: i am not able to provide an answer on that subject
+what is the national animal of the usa,default: i am not able to provide an answer on that subject
+how does a microwave oven work,default: i am not able to provide an answer on that subject
+who discovered penicillin,default: i am not able to provide an answer on that subject
+what are the colors of the rainbow,default: i am not able to provide an answer on that subject
+how many bones are in the human body,default: i am not able to provide an answer on that subject
+what is the largest ocean on earth,default: i am not able to provide an answer on that subject
+what is the speed of sound,default: i am not able to provide an answer on that subject
+how does wifi work,default: i am not able to provide an answer on that subject
+what is the national flower of japan,default: i am not able to provide an answer on that subject
+what is the formula for calculating area,default: i am not able to provide an answer on that subject
+who was the first president of the united states,default: i am not able to provide an answer on that subject
+what is the difference between a virus and bacteria,default: i am not able to provide an answer on that subject
+how does an electric motor work,default: i am not able to provide an answer on that subject
+what is the main ingredient in bread,default: i am not able to provide an answer on that subject
+what are the three branches of government,default: i am not able to provide an answer on that subject
+how do plants produce oxygen,default: i am not able to provide an answer on that subject
+what is the hardest natural substance on earth,default: i am not able to provide an answer on that subject
+what is the currency of china,default: i am not able to provide an answer on that subject
+what causes earthquakes,default: i am not able to provide an answer on that subject
+what is the difference between mass and weight,default: i am not able to provide an answer on that subject
+who was albert einstein,default: i am not able to provide an answer on that subject
+how do tides occur,default: i am not able to provide an answer on that subject
+what is the longest bone in the human body,default: i am not able to provide an answer on that subject
+how does a car engine work,default: i am not able to provide an answer on that subject
+what is the national dish of italy,default: i am not able to provide an answer on that subject
+how does a camera work,default: i am not able to provide an answer on that subject
+what are the primary colors,default: i am not able to provide an answer on that subject
+what are newtons laws of motion,default: i am not able to provide an answer on that subject
+who discovered gravity,default: i am not able to provide an answer on that subject
+how does a refrigerator keep food cold,default: i am not able to provide an answer on that subject
+what is the function of the liver,default: i am not able to provide an answer on that subject
+what is a leap year,default: i am not able to provide an answer on that subject
+how do submarines work,default: i am not able to provide an answer on that subject
+what is the pythagorean theorem,default: i am not able to provide an answer on that subject
+what is the main function of the brain,default: i am not able to provide an answer on that subject
+how does an electric bulb produce light,default: i am not able to provide an answer on that subject
+what is the process of evaporation,default: i am not able to provide an answer on that subject
+what is the largest land mammal,default: i am not able to provide an answer on that subject
+who was leonardo da vinci,default: i am not able to provide an answer on that subject
+how do airplanes stay in the air,default: i am not able to provide an answer on that subject
+what is the national bird of the united states,default: i am not able to provide an answer on that subject
+what is the function of the lungs,default: i am not able to provide an answer on that subject
+how does a magnet work,default: i am not able to provide an answer on that subject
+what are the parts of a cell,default: i am not able to provide an answer on that subject
+what is the formula for speed,default: i am not able to provide an answer on that subject
+how does a telescope work,default: i am not able to provide an answer on that subject
+who invented the light bulb,default: i am not able to provide an answer on that subject
+what is the national anthem of the uk,default: i am not able to provide an answer on that subject
+how do clouds form,default: i am not able to provide an answer on that subject
+what is the chemical symbol for gold,default: i am not able to provide an answer on that subject
+how does a parachute work,default: i am not able to provide an answer on that subject
+what is the periodic table,default: i am not able to provide an answer on that subject
+what is the water cycle,default: i am not able to provide an answer on that subject
+how does a compass work,default: i am not able to provide an answer on that subject
+who was marie curie,default: i am not able to provide an answer on that subject
+what is the capital of australia,default: i am not able to provide an answer on that subject
+how does an airplane engine work,default: i am not able to provide an answer on that subject
+what is the greenhouse effect,default: i am not able to provide an answer on that subject
+how does an earthquake happen,default: i am not able to provide an answer on that subject
+what is the biggest island in the world,default: i am not able to provide an answer on that subject
+what is the difference between a comet and an asteroid,default: i am not able to provide an answer on that subject
+how does the internet work,default: i am not able to provide an answer on that subject
+what is the most spoken language in the world,default: i am not able to provide an answer on that subject
+what is the function of the kidneys,default: i am not able to provide an answer on that subject
+what is the national fruit of india,default: i am not able to provide an answer on that subject
+how does a television work,default: i am not able to provide an answer on that subject
+who is known as the father of computers,default: i am not able to provide an answer on that subject
+what is the difference between a crocodile and an alligator,default: i am not able to provide an answer on that subject
+how does a satellite stay in orbit,default: i am not able to provide an answer on that subject
+what is the function of the pancreas,default: i am not able to provide an answer on that subject
+what is the national sport of canada,default: i am not able to provide an answer on that subject
+how does a battery store energy,default: i am not able to provide an answer on that subject
+what is the official language of brazil,default: i am not able to provide an answer on that subject
+what is the fastest land animal,default: i am not able to provide an answer on that subject
+who was the first female astronaut,default: i am not able to provide an answer on that subject
+who is the president of the united states,default: i am not able to provide an answer on that subject
+what is the capital of france,default: i am not able to provide an answer on that subject
+how does a computer work,default: i am not able to provide an answer on that subject
+what is the history of indonesia,default: i am not able to provide an answer on that subject
+what is the area of a triangle,default: i am not able to provide an answer on that subject
+who discovered gravity,default: i am not able to provide an answer on that subject
+what is the largest planet in our solar system,default: i am not able to provide an answer on that subject
+how many continents are there on earth,default: i am not able to provide an answer on that subject
+who wrote the novel 1984,default: i am not able to provide an answer on that subject
+what is the boiling point of water in celsius,default: i am not able to provide an answer on that subject
+which is the longest river in the world,default: i am not able to provide an answer on that subject
+who was the first person to walk on the moon,default: i am not able to provide an answer on that subject
+what is the currency of japan,default: i am not able to provide an answer on that subject
+when was the first world war,default: i am not able to provide an answer on that subject
+who painted the mona lisa,default: i am not able to provide an answer on that subject
+what is the speed of light,default: i am not able to provide an answer on that subject
+what is the chemical symbol for gold,default: i am not able to provide an answer on that subject
+which country has the most population,default: i am not able to provide an answer on that subject
+how do airplanes fly,default: i am not able to provide an answer on that subject
+what is photosynthesis,default: i am not able to provide an answer on that subject
+what is the function of the heart,default: i am not able to provide an answer on that subject
+what is the square root of 144,default: i am not able to provide an answer on that subject
+what causes earthquakes,default: i am not able to provide an answer on that subject
+who is known as the father of computers,default: i am not able to provide an answer on that subject
+what is the largest mammal in the world,default: i am not able to provide an answer on that subject
+what are the primary colors,default: i am not able to provide an answer on that subject
+what is the pythagorean theorem,default: i am not able to provide an answer on that subject
+how does the internet work,default: i am not able to provide an answer on that subject
+what is artificial intelligence,default: i am not able to provide an answer on that subject
+what is the main ingredient in bread,default: i am not able to provide an answer on that subject
+where is mount everest located,default: i am not able to provide an answer on that subject
+which planet is closest to the sun,default: i am not able to provide an answer on that subject
+what is the atomic number of oxygen,default: i am not able to provide an answer on that subject
+how does a microwave oven work,default: i am not able to provide an answer on that subject
+what is the process of evaporation,default: i am not able to provide an answer on that subject
+who invented the telephone,default: i am not able to provide an answer on that subject
+what is the difference between weather and climate,default: i am not able to provide an answer on that subject
+what is the human bodys largest organ,default: i am not able to provide an answer on that subject
+what is the formula for calculating force,default: i am not able to provide an answer on that subject
+which gas do plants use for photosynthesis,default: i am not able to provide an answer on that subject
+what is the capital of canada,default: i am not able to provide an answer on that subject
+how do vaccines work,default: i am not able to provide an answer on that subject
+what is the big bang theory,default: i am not able to provide an answer on that subject
+what is the difference between mass and weight,default: i am not able to provide an answer on that subject
+what is dna made of,default: i am not able to provide an answer on that subject
+what is the water cycle,default: i am not able to provide an answer on that subject
+what is a black hole,default: i am not able to provide an answer on that subject
+what is the tallest building in the world,default: i am not able to provide an answer on that subject
+who was the first president of the united states,default: i am not able to provide an answer on that subject
+what are newtons three laws of motion,default: i am not able to provide an answer on that subject
+what is the function of the liver,default: i am not able to provide an answer on that subject
+what is the powerhouse of the cell,default: i am not able to provide an answer on that subject
+what is the difference between a virus and bacteria,default: i am not able to provide an answer on that subject
+what is the largest desert in the world,default: i am not able to provide an answer on that subject
+which animal is known as the king of the jungle,default: i am not able to provide an answer on that subject
+how do submarines work,default: i am not able to provide an answer on that subject
+what is the main language spoken in brazil,default: i am not able to provide an answer on that subject
+how is coal formed,default: i am not able to provide an answer on that subject
+what is the role of chlorophyll in plants,default: i am not able to provide an answer on that subject
+what is the capital of russia,default: i am not able to provide an answer on that subject
+how do sound waves travel,default: i am not able to provide an answer on that subject
+what is the periodic table,default: i am not able to provide an answer on that subject
+what is an ecosystem,default: i am not able to provide an answer on that subject
+what are the different states of matter,default: i am not able to provide an answer on that subject
+who discovered electricity,default: i am not able to provide an answer on that subject
+how do airplanes stay in the air,default: i am not able to provide an answer on that subject
+what is the main function of the kidneys,default: i am not able to provide an answer on that subject
+what is the greenhouse effect,default: i am not able to provide an answer on that subject
+what is the richter scale,default: i am not able to provide an answer on that subject
+how does gps work,default: i am not able to provide an answer on that subject
+what are the three branches of the u.s. government,default: i am not able to provide an answer on that subject
+what is the great wall of china,default: i am not able to provide an answer on that subject
+what is the difference between a star and a planet,default: i am not able to provide an answer on that subject
+what is a tsunami,default: i am not able to provide an answer on that subject
+how do magnets work,default: i am not able to provide an answer on that subject
+what is the function of the nervous system,default: i am not able to provide an answer on that subject
+what is the deepest ocean in the world,default: i am not able to provide an answer on that subject
+what are the layers of the atmosphere,default: i am not able to provide an answer on that subject
+what is global warming,default: i am not able to provide an answer on that subject
+what is the structure of an atom,default: i am not able to provide an answer on that subject
+what is an eclipse,default: i am not able to provide an answer on that subject
+what is the function of red blood cells,default: i am not able to provide an answer on that subject
+what is the role of the moon in ocean tides,default: i am not able to provide an answer on that subject
+how do rainbows form,default: i am not able to provide an answer on that subject
+what is the fibonacci sequence,default: i am not able to provide an answer on that subject
+what are the different types of energy,default: i am not able to provide an answer on that subject
+who was albert einstein,default: i am not able to provide an answer on that subject
+what is a neuron,default: i am not able to provide an answer on that subject
+what is the function of the ozone layer,default: i am not able to provide an answer on that subject
+what is the capital of australia,default: i am not able to provide an answer on that subject
+what is the hubble space telescope,default: i am not able to provide an answer on that subject
+how does a compass work,default: i am not able to provide an answer on that subject
+what is the meaning of photosynthesis,default: i am not able to provide an answer on that subject
+what is the freezing point of water in fahrenheit,default: i am not able to provide an answer on that subject
+what is the function of the lungs,default: i am not able to provide an answer on that subject
+what is the scientific method,default: i am not able to provide an answer on that subject
+who was nikola tesla,default: i am not able to provide an answer on that subject
+what is a volcano,default: i am not able to provide an answer on that subject
+what is the main source of energy on earth,default: i am not able to provide an answer on that subject
+how do plants grow,default: i am not able to provide an answer on that subject
+what is the difference between a comet and an asteroid,default: i am not able to provide an answer on that subject
+what is the function of the digestive system,default: i am not able to provide an answer on that subject
+what is a solar panel,default: i am not able to provide an answer on that subject
+what is a quantum computer,default: i am not able to provide an answer on that subject
+what is the purpose of the immune system,default: i am not able to provide an answer on that subject
+what is the si unit of pressure,default: i am not able to provide an answer on that subject
+what is the role of gravity in the universe,default: i am not able to provide an answer on that subject
+what is the capital of china,default: i am not able to provide an answer on that subject
+what is a radio wave,default: i am not able to provide an answer on that subject
+how does a jet engine work,default: i am not able to provide an answer on that subject
+what is the lifespan of a human red blood cell,default: i am not able to provide an answer on that subject
+what is the process of mitosis,default: i am not able to provide an answer on that subject
+what is the purpose of the circulatory system,default: i am not able to provide an answer on that subject
+what is the capital of italy,default: i am not able to provide an answer on that subject
+what is an antibiotic,default: i am not able to provide an answer on that subject
+how does a nuclear reactor work,default: i am not able to provide an answer on that subject
+what is the function of the pancreas,default: i am not able to provide an answer on that subject
+what is the purpose of a catalyst in a chemical reaction,default: i am not able to provide an answer on that subject
+how do satellites stay in orbit,default: i am not able to provide an answer on that subject
+what is the difference between a conductor and an insulator,default: i am not able to provide an answer on that subject
+what is the importance of biodiversity,default: i am not able to provide an answer on that subject
+what is a rainforest,default: i am not able to provide an answer on that subject
+what is the function of platelets in the blood,default: i am not able to provide an answer on that subject
+what is the importance of the ozone layer,default: i am not able to provide an answer on that subject
+what are the benefits of renewable energy,default: i am not able to provide an answer on that subject
+what is the capital of germany,default: i am not able to provide an answer on that subject
+what is the role of the skeletal system,default: i am not able to provide an answer on that subject
+what is the composition of the earths core,default: i am not able to provide an answer on that subject
+what is the function of white blood cells,default: i am not able to provide an answer on that subject
+what is the speed of sound in air,default: i am not able to provide an answer on that subject
+what is the principle of buoyancy,default: i am not able to provide an answer on that subject
+what is the capital of spain,default: i am not able to provide an answer on that subject
+what is the function of the endocrine system,default: i am not able to provide an answer on that subject
+what is the principle of conservation of energy,default: i am not able to provide an answer on that subject
+what is the function of the brain,default: i am not able to provide an answer on that subject
+what is the capital of india,default: i am not able to provide an answer on that subject
+what is the structure of a dna molecule,default: i am not able to provide an answer on that subject
+what is the role of mitochondria in a cell,default: i am not able to provide an answer on that subject
+what are the different types of clouds,default: i am not able to provide an answer on that subject
+what is the function of the spleen,default: i am not able to provide an answer on that subject
+what is the principle of archimedes,default: i am not able to provide an answer on that subject
+what is the capital of brazil,default: i am not able to provide an answer on that subject
+what is the function of the lymphatic system,default: i am not able to provide an answer on that subject
+what is the definition of an ecosystem,default: i am not able to provide an answer on that subject
+what is the capital of south africa,default: i am not able to provide an answer on that subject
+what is the function of the pituitary gland,default: i am not able to provide an answer on that subject
+what is the function of the thyroid gland,default: i am not able to provide an answer on that subject
+what is the capital of argentina,default: i am not able to provide an answer on that subject
+what is the function of the adrenal glands,default: i am not able to provide an answer on that subject
+what is the principle of pascals law,default: i am not able to provide an answer on that subject
+what is the capital of mexico,default: i am not able to provide an answer on that subject
+what is the function of the reproductive system,default: i am not able to provide an answer on that subject
+what is the function of the excretory system,default: i am not able to provide an answer on that subject
+what is the capital of egypt,default: i am not able to provide an answer on that subject
+what is the difference between latitude and longitude,default: i am not able to provide an answer on that subject
+what is the capital of saudi arabia,default: i am not able to provide an answer on that subject
+what is the function of the hypothalamus,default: i am not able to provide an answer on that subject
+what is the capital of thailand,default: i am not able to provide an answer on that subject
+what is the function of the gallbladder,default: i am not able to provide an answer on that subject
+what is the capital of turkey,default: i am not able to provide an answer on that subject
+what is the function of the cerebellum,default: i am not able to provide an answer on that subject
+what is the function of the cornea,default: i am not able to provide an answer on that subject
+what is the function of the retina,default: i am not able to provide an answer on that subject
+what is the function of the optic nerve,default: i am not able to provide an answer on that subject
+what is the function of the cochlea,default: i am not able to provide an answer on that subject
+what is the function of the semicircular canals,default: i am not able to provide an answer on that subject
+what is the function of the taste buds,default: i am not able to provide an answer on that subject
+who was the first person to walk on the moon,default: i am not able to provide an answer on that subject
+what is the tallest mountain in the world,default: i am not able to provide an answer on that subject
+how does a refrigerator work,default: i am not able to provide an answer on that subject
+what is the chemical symbol for oxygen,default: i am not able to provide an answer on that subject
+who was the first president of the united states,default: i am not able to provide an answer on that subject
+what is the capital of brazil,default: i am not able to provide an answer on that subject
+how do submarines stay underwater,default: i am not able to provide an answer on that subject
+what is the smallest planet in our solar system,default: i am not able to provide an answer on that subject
+what causes the tides in the ocean,default: i am not able to provide an answer on that subject
+who wrote the odyssey,default: i am not able to provide an answer on that subject
+what is the human bodys largest organ,default: i am not able to provide an answer on that subject
+how do birds fly,default: i am not able to provide an answer on that subject
+what is the capital of australia,default: i am not able to provide an answer on that subject
+what is the difference between a democracy and a dictatorship,default: i am not able to provide an answer on that subject
+what is the function of the pancreas,default: i am not able to provide an answer on that subject
+who invented the light bulb,default: i am not able to provide an answer on that subject
+what is the national flower of japan,default: i am not able to provide an answer on that subject
+how do airplanes generate lift,default: i am not able to provide an answer on that subject
+what is the boiling point of mercury,default: i am not able to provide an answer on that subject
+how does a microwave oven heat food,default: i am not able to provide an answer on that subject
+who discovered penicillin,default: i am not able to provide an answer on that subject
+what is the deepest point in the ocean,default: i am not able to provide an answer on that subject
+how do bats navigate in the dark,default: i am not able to provide an answer on that subject
+what is the function of the kidneys,default: i am not able to provide an answer on that subject
+what is the currency of mexico,default: i am not able to provide an answer on that subject
+how do tornadoes form,default: i am not able to provide an answer on that subject
+what is the process of cell division called,default: i am not able to provide an answer on that subject
+who discovered gravity,default: i am not able to provide an answer on that subject
+how does a car engine work,default: i am not able to provide an answer on that subject
+what is the chemical composition of water,default: i am not able to provide an answer on that subject
+what is the capital of russia,default: i am not able to provide an answer on that subject
+what causes a rainbow to form,default: i am not able to provide an answer on that subject
+how do vaccines work,default: i am not able to provide an answer on that subject
+what is the main ingredient in glass,default: i am not able to provide an answer on that subject
+what is the function of red blood cells,default: i am not able to provide an answer on that subject
+what is the freezing point of ethanol,default: i am not able to provide an answer on that subject
+who painted starry night,default: i am not able to provide an answer on that subject
+how do hot air balloons rise,default: i am not able to provide an answer on that subject
+what is the capital of south africa,default: i am not able to provide an answer on that subject
+what are the phases of the moon,default: i am not able to provide an answer on that subject
+who invented the steam engine,default: i am not able to provide an answer on that subject
+how do solar panels generate electricity,default: i am not able to provide an answer on that subject
+what is the role of the ozone layer,default: i am not able to provide an answer on that subject
+how does a compass work,default: i am not able to provide an answer on that subject
+what is the function of the liver,default: i am not able to provide an answer on that subject
+what is the tallest waterfall in the world,default: i am not able to provide an answer on that subject
+how does an electric motor work,default: i am not able to provide an answer on that subject
+what are the three branches of government,default: i am not able to provide an answer on that subject
+what is the capital of turkey,default: i am not able to provide an answer on that subject
+what is the longest bone in the human body,default: i am not able to provide an answer on that subject
+how does a thermometer measure temperature,default: i am not able to provide an answer on that subject
+what is the purpose of the international space station,default: i am not able to provide an answer on that subject
+what causes the seasons to change,default: i am not able to provide an answer on that subject
+what are the primary components of air,default: i am not able to provide an answer on that subject
+who discovered the electron,default: i am not able to provide an answer on that subject
+what is the capital of argentina,default: i am not able to provide an answer on that subject
+what are the types of rock in geology,default: i am not able to provide an answer on that subject
+how do radio waves transmit sound,default: i am not able to provide an answer on that subject
+what is the function of the human brain,default: i am not able to provide an answer on that subject
+what is the great wall of china made of,default: i am not able to provide an answer on that subject
+what causes a solar eclipse,default: i am not able to provide an answer on that subject
+how do whales communicate,default: i am not able to provide an answer on that subject
+what is the capital of egypt,default: i am not able to provide an answer on that subject
+who discovered the vaccine for smallpox,default: i am not able to provide an answer on that subject
+how does a wind turbine generate electricity,default: i am not able to provide an answer on that subject
+what is the main cause of climate change,default: i am not able to provide an answer on that subject
+what are the five human senses,default: i am not able to provide an answer on that subject
+how do levers work in physics,default: i am not able to provide an answer on that subject
+what is the tallest building in the world,default: i am not able to provide an answer on that subject
+how does a satellite stay in orbit,default: i am not able to provide an answer on that subject
+what is the function of the nervous system,default: i am not able to provide an answer on that subject
+who was the first woman in space,default: i am not able to provide an answer on that subject
+what are the parts of a cell,default: i am not able to provide an answer on that subject
+how does a parachute slow down descent,default: i am not able to provide an answer on that subject
+what is the capital of thailand,default: i am not able to provide an answer on that subject
+what is the function of chlorophyll in plants,default: i am not able to provide an answer on that subject
+how does a battery store energy,default: i am not able to provide an answer on that subject
+what are the different types of energy,default: i am not able to provide an answer on that subject
+what is the largest desert in the world,default: i am not able to provide an answer on that subject
+what causes ocean currents,default: i am not able to provide an answer on that subject
+how does a telescope work,default: i am not able to provide an answer on that subject
+what is the difference between a virus and bacteria,default: i am not able to provide an answer on that subject
+how do magnets attract and repel,default: i am not able to provide an answer on that subject
+what are the layers of the atmosphere,default: i am not able to provide an answer on that subject
+what is the capital of spain,default: i am not able to provide an answer on that subject
+what is the difference between kinetic and potential energy,default: i am not able to provide an answer on that subject
+how does a gps system work,default: i am not able to provide an answer on that subject
+who developed the theory of relativity,default: i am not able to provide an answer on that subject
+what is the deepest lake in the world,default: i am not able to provide an answer on that subject
+how do plants reproduce,default: i am not able to provide an answer on that subject
+what is the function of dna,default: i am not able to provide an answer on that subject
+what are the parts of an atom,default: i am not able to provide an answer on that subject
+how does a nuclear reactor work,default: i am not able to provide an answer on that subject
+what is the largest island in the world,default: i am not able to provide an answer on that subject
+who wrote pride and prejudice,default: i am not able to provide an answer on that subject
+what is the function of insulin,default: i am not able to provide an answer on that subject
+how do glasses correct vision,default: i am not able to provide an answer on that subject
+what are the three states of matter,default: i am not able to provide an answer on that subject
+what is the capital of canada,default: i am not able to provide an answer on that subject
+what is the hardest natural material on earth,default: i am not able to provide an answer on that subject
+what is the primary function of the immune system,default: i am not able to provide an answer on that subject
+what causes wind to blow,default: i am not able to provide an answer on that subject
+how do submarines control their depth,default: i am not able to provide an answer on that subject
+what is the capital of italy,default: i am not able to provide an answer on that subject
+what are newtons three laws of motion,default: i am not able to provide an answer on that subject
+how does a speaker produce sound,default: i am not able to provide an answer on that subject
+what is the function of platelets in blood,default: i am not able to provide an answer on that subject
+what is the largest freshwater lake in the world,default: i am not able to provide an answer on that subject
+how do geysers form,default: i am not able to provide an answer on that subject
+what are the different blood types,default: i am not able to provide an answer on that subject
+what is the largest organ inside the human body,default: i am not able to provide an answer on that subject
+how does a pulley system work,default: i am not able to provide an answer on that subject
+what is the capital of france,default: i am not able to provide an answer on that subject
+what is the difference between aerobic and anaerobic respiration,default: i am not able to provide an answer on that subject
+how do birds migrate,default: i am not able to provide an answer on that subject
+what is the function of the mitochondria,default: i am not able to provide an answer on that subject
+how does a diesel engine work,default: i am not able to provide an answer on that subject
+what is the biggest moon in our solar system,default: i am not able to provide an answer on that subject
+who was the first emperor of china,default: i am not able to provide an answer on that subject
+how do antibiotics work,default: i am not able to provide an answer on that subject
+what is the most abundant gas in earths atmosphere,default: i am not able to provide an answer on that subject
+what is the main function of white blood cells,default: i am not able to provide an answer on that subject
+what is the capital of saudi arabia,default: i am not able to provide an answer on that subject
+how does a compass needle point north,default: i am not able to provide an answer on that subject
+what is the richter scale used for,default: i am not able to provide an answer on that subject
+what are the effects of deforestation,default: i am not able to provide an answer on that subject
+what is the primary function of the skeletal system,default: i am not able to provide an answer on that subject
+how does a microwave oven heat food,default: i am not able to provide an answer on that subject
+what is the smallest country in the world,default: i am not able to provide an answer on that subject
+how do amphibians breathe,default: i am not able to provide an answer on that subject
+what is the difference between a reptile and an amphibian,default: i am not able to provide an answer on that subject
+what are the main greenhouse gases,default: i am not able to provide an answer on that subject
+what is the capital of portugal,default: i am not able to provide an answer on that subject
+what is the purpose of the european union,default: i am not able to provide an answer on that subject
+what is the role of enzymes in digestion,default: i am not able to provide an answer on that subject
+how does a magnet attract metal,default: i am not able to provide an answer on that subject
+what is the function of hemoglobin,default: i am not able to provide an answer on that subject
+what is the capital of south korea,default: i am not able to provide an answer on that subject
+what causes the northern lights,default: i am not able to provide an answer on that subject
+how does an electric generator work,default: i am not able to provide an answer on that subject
+what is the purpose of the heart valves,default: i am not able to provide an answer on that subject
+what is the capital of nigeria,default: i am not able to provide an answer on that subject
+what is the largest animal in the world,default: i am not able to provide an answer on that subject
+how does an led light work,default: i am not able to provide an answer on that subject
+what is the process of fermentation,default: i am not able to provide an answer on that subject
+what is the primary function of the respiratory system,default: i am not able to provide an answer on that subject
+what are the types of chemical bonds,default: i am not able to provide an answer on that subject
+how does a thermometer measure temperature,default: i am not able to provide an answer on that subject
+who developed the first successful airplane,default: i am not able to provide an answer on that subject
+what is the function of the cerebellum,default: i am not able to provide an answer on that subject
+how does a barcode scanner work,default: i am not able to provide an answer on that subject
+what is the capital of indonesia,default: i am not able to provide an answer on that subject
+how do rainbows form,default: i am not able to provide an answer on that subject
+what are the parts of a volcano,default: i am not able to provide an answer on that subject
+what is the function of the large intestine,default: i am not able to provide an answer on that subject
+how do airbags work in cars,default: i am not able to provide an answer on that subject
+what is the capital of chile,default: i am not able to provide an answer on that subject
+how does a camera capture an image,default: i am not able to provide an answer on that subject
+what are the different types of bridges,default: i am not able to provide an answer on that subject
+how do jellyfish move,default: i am not able to provide an answer on that subject
+what is the main ingredient in concrete,default: i am not able to provide an answer on that subject
+what causes earthquakes,default: i am not able to provide an answer on that subject
+what is the capital of malaysia,default: i am not able to provide an answer on that subject
+how do seismographs detect earthquakes,default: i am not able to provide an answer on that subject
+what is the difference between mass and weight,default: i am not able to provide an answer on that subject
+what is the function of the endocrine system,default: i am not able to provide an answer on that subject
+what are the different layers of the earth,default: i am not able to provide an answer on that subject
+how does a pendulum work,default: i am not able to provide an answer on that subject
+what is the capital of vietnam,default: i am not able to provide an answer on that subject
+what is the difference between a comet and an asteroid,default: i am not able to provide an answer on that subject
+how does a radio transmit sound,default: i am not able to provide an answer on that subject
+what are the different parts of a flower,default: i am not able to provide an answer on that subject
+how do dolphins communicate,default: i am not able to provide an answer on that subject
+what is the main function of the skin,default: i am not able to provide an answer on that subject
+how does a windmill generate power,default: i am not able to provide an answer on that subject
+what is the capital of sweden,default: i am not able to provide an answer on that subject
+what is the difference between fusion and fission,default: i am not able to provide an answer on that subject
+how does a touchscreen detect touch,default: i am not able to provide an answer on that subject
+what are the three types of muscle in the human body,default: i am not able to provide an answer on that subject
+what is the longest river in the world,default: i am not able to provide an answer on that subject
+how do solar eclipses occur,default: i am not able to provide an answer on that subject
+what is the function of the pituitary gland,default: i am not able to provide an answer on that subject
+what are the types of precipitation,default: i am not able to provide an answer on that subject
+what is the capital of colombia,default: i am not able to provide an answer on that subject
+how do fireflies produce light,default: i am not able to provide an answer on that subject
+what are the properties of magnets,default: i am not able to provide an answer on that subject
+how does a vending machine work,default: i am not able to provide an answer on that subject
+what is the role of the hypothalamus,default: i am not able to provide an answer on that subject
+what is the capital of norway,default: i am not able to provide an answer on that subject
+what is the difference between evaporation and condensation,default: i am not able to provide an answer on that subject
+how does a clock keep time,default: i am not able to provide an answer on that subject
+what are the main parts of a fish,default: i am not able to provide an answer on that subject
+what is the function of the spleen,default: i am not able to provide an answer on that subject
+how do fiber optic cables work,default: i am not able to provide an answer on that subject
+what is the capital of new zealand,default: i am not able to provide an answer on that subject
+how does an airplane change direction,default: i am not able to provide an answer on that subject
+what is the main component of diamonds,default: i am not able to provide an answer on that subject
+how do frogs breathe,default: i am not able to provide an answer on that subject
+what is the capital of the philippines,default: i am not able to provide an answer on that subject
+what are the properties of water,default: i am not able to provide an answer on that subject
+how do submarines navigate underwater,default: i am not able to provide an answer on that subject
+what is the function of the cornea,default: i am not able to provide an answer on that subject
+how does a magnetized needle work in a compass,default: i am not able to provide an answer on that subject
+what is the capital of peru,default: i am not able to provide an answer on that subject
+how does a parachute slow down a persons fall,default: i am not able to provide an answer on that subject
+what are the different types of clouds,default: i am not able to provide an answer on that subject
+how does a gyroscope maintain balance,default: i am not able to provide an answer on that subject
+what is the capital of finland,default: i am not able to provide an answer on that subject
+how do electric circuits work,default: i am not able to provide an answer on that subject
+what are the three parts of a nucleotide,default: i am not able to provide an answer on that subject
+what is the function of bile in digestion,default: i am not able to provide an answer on that subject
+how do anemometers measure wind speed,default: i am not able to provide an answer on that subject
+what is the capital of poland,default: i am not able to provide an answer on that subject
+how does a plasma tv work,default: i am not able to provide an answer on that subject
+what is the difference between an artery and a vein,default: i am not able to provide an answer on that subject
+what is the function of chloroplasts,default: i am not able to provide an answer on that subject
+how do spiders spin webs,default: i am not able to provide an answer on that subject
+what is the capital of switzerland,default: i am not able to provide an answer on that subject
+how does a steam turbine work,default: i am not able to provide an answer on that subject
+what are the properties of light,default: i am not able to provide an answer on that subject
+what is the function of the cochlea,default: i am not able to provide an answer on that subject
+how do scorpions glow under uv light,default: i am not able to provide an answer on that subject
+what is the capital of austria,default: i am not able to provide an answer on that subject
+how does a rocket launch into space,default: i am not able to provide an answer on that subject
+what are the different types of tides,default: i am not able to provide an answer on that subject
+what is the function of synapses in the brain,default: i am not able to provide an answer on that subject
+how do snakes detect their prey,default: i am not able to provide an answer on that subject
+what is the capital of belgium,default: i am not able to provide an answer on that subject
+what are the functions of the cerebrum,default: i am not able to provide an answer on that subject
+how do hovercrafts float,default: i am not able to provide an answer on that subject
+what is the capital of denmark,default: i am not able to provide an answer on that subject
+how does a tornado form,default: i am not able to provide an answer on that subject
+what is the function of the tympanic membrane,default: i am not able to provide an answer on that subject
+how do lighthouses guide ships,default: i am not able to provide an answer on that subject
+what is the capital of greece,default: i am not able to provide an answer on that subject
+how does a fridge keep food cold,default: i am not able to provide an answer on that subject
+what are the main layers of the sun,default: i am not able to provide an answer on that subject
+how does a lighthouse lens work,default: i am not able to provide an answer on that subject
+what is the capital of czechia,default: i am not able to provide an answer on that subject
+how does an mri scan the body,default: i am not able to provide an answer on that subject
+how do camels store water,default: i am not able to provide an answer on that subject
+what is the capital of hungary,default: i am not able to provide an answer on that subject
+how does a leaf turn sunlight into energy,default: i am not able to provide an answer on that subject
+what is the function of the hippocampus,default: i am not able to provide an answer on that subject
+how do sharks detect movement,default: i am not able to provide an answer on that subject
+what is the capital of ireland,default: i am not able to provide an answer on that subject
+what are the types of camouflage in animals,default: i am not able to provide an answer on that subject
+how do parachutes change direction,default: i am not able to provide an answer on that subject
+what is the capital of romania,default: i am not able to provide an answer on that subject
+how does a thermometer expand and contract,default: i am not able to provide an answer on that subject
+what is the function of mitochondria,default: i am not able to provide an answer on that subject
+how do bees make honey,default: i am not able to provide an answer on that subject
+what is the capital of portugal,default: i am not able to provide an answer on that subject
+how does a microwave oven heat food,default: i am not able to provide an answer on that subject
+what are the three main rock types,default: i am not able to provide an answer on that subject
+how do whales communicate,default: i am not able to provide an answer on that subject
+what is the capital of turkey,default: i am not able to provide an answer on that subject
+what is the difference between speed and velocity,default: i am not able to provide an answer on that subject
+how do geysers erupt,default: i am not able to provide an answer on that subject
+what is the function of the pancreas,default: i am not able to provide an answer on that subject
+how do chameleons change color,default: i am not able to provide an answer on that subject
+what is the capital of saudi arabia,default: i am not able to provide an answer on that subject
+what are the parts of a neuron,default: i am not able to provide an answer on that subject
+how does a periscope work,default: i am not able to provide an answer on that subject
+what is the difference between weather and climate,default: i am not able to provide an answer on that subject
+what is the function of hemoglobin,default: i am not able to provide an answer on that subject
+how do fire extinguishers work,default: i am not able to provide an answer on that subject
+what is the capital of the netherlands,default: i am not able to provide an answer on that subject
+how does sonar detect objects underwater,default: i am not able to provide an answer on that subject
+what is the greenhouse effect,default: i am not able to provide an answer on that subject
+what is the capital of argentina,default: i am not able to provide an answer on that subject
+how do bats navigate in the dark,default: i am not able to provide an answer on that subject
+what is the function of red blood cells,default: i am not able to provide an answer on that subject
+how does a gps system work,default: i am not able to provide an answer on that subject
+what is the capital of ukraine,default: i am not able to provide an answer on that subject
+how do dolphins use echolocation,default: i am not able to provide an answer on that subject
+what is the function of white blood cells,default: i am not able to provide an answer on that subject
+what are the different parts of a tornado,default: i am not able to provide an answer on that subject
+how does a hydraulic press work,default: i am not able to provide an answer on that subject
+what is the capital of south korea,default: i am not able to provide an answer on that subject
+how do airbags prevent injuries,default: i am not able to provide an answer on that subject
+what is the function of the thyroid gland,default: i am not able to provide an answer on that subject
+how do octopuses escape predators,default: i am not able to provide an answer on that subject
+what is the capital of mexico,default: i am not able to provide an answer on that subject
+how does a violin produce sound,default: i am not able to provide an answer on that subject
+what is the function of the immune system,default: i am not able to provide an answer on that subject
+how do thermometers measure temperature,default: i am not able to provide an answer on that subject
+what is the capital of thailand,default: i am not able to provide an answer on that subject
+how do submarines surface and dive,default: i am not able to provide an answer on that subject
+what is the function of platelets in blood clotting,default: i am not able to provide an answer on that subject
+how does a siphon work,default: i am not able to provide an answer on that subject
+what is the capital of south africa,default: i am not able to provide an answer on that subject
+how do peacocks display their feathers,default: i am not able to provide an answer on that subject
+what is the function of dna,default: i am not able to provide an answer on that subject
+how do seahorses reproduce,default: i am not able to provide an answer on that subject
+what is the capital of egypt,default: i am not able to provide an answer on that subject
+how do light bulbs produce light,default: i am not able to provide an answer on that subject
+what are the layers of the atmosphere,default: i am not able to provide an answer on that subject
+how does a car engine generate power,default: i am not able to provide an answer on that subject
+what is the capital of iran,default: i am not able to provide an answer on that subject
+how do satellites stay in orbit,default: i am not able to provide an answer on that subject
+what is the function of the cerebellum,default: i am not able to provide an answer on that subject
+how do jellyfish sting,default: i am not able to provide an answer on that subject
+what is the capital of pakistan,default: i am not able to provide an answer on that subject
+how does a magnifying glass work,default: i am not able to provide an answer on that subject
+what is the function of the liver,default: i am not able to provide an answer on that subject
+how do tornado warnings work,default: i am not able to provide an answer on that subject
+what is the capital of nigeria,default: i am not able to provide an answer on that subject
+how do birds navigate during migration,default: i am not able to provide an answer on that subject
+what are the different types of fossils,default: i am not able to provide an answer on that subject
+how does a volcano erupt,default: i am not able to provide an answer on that subject
+what is the capital of iraq,default: i am not able to provide an answer on that subject
+how does a roller coaster work,default: i am not able to provide an answer on that subject
+what is the function of enzymes,default: i am not able to provide an answer on that subject
+how do penguins stay warm,default: i am not able to provide an answer on that subject
+what is the capital of canada,default: i am not able to provide an answer on that subject
+how does an electric motor work,default: i am not able to provide an answer on that subject
+what is the function of the lymphatic system,default: i am not able to provide an answer on that subject
+how do plants produce oxygen,default: i am not able to provide an answer on that subject
+what is the capital of australia,default: i am not able to provide an answer on that subject
+how does a pressure cooker cook food faster,default: i am not able to provide an answer on that subject
+what are the different types of symmetry in nature,default: i am not able to provide an answer on that subject
+how do electric eels generate electricity,default: i am not able to provide an answer on that subject
+what is the capital of brazil,default: i am not able to provide an answer on that subject
+how does a television screen display images,default: i am not able to provide an answer on that subject
+what is the function of the nervous system,default: i am not able to provide an answer on that subject
+how do bees communicate,default: i am not able to provide an answer on that subject
+what is the capital of spain,default: i am not able to provide an answer on that subject
+how does a parachute create drag,default: i am not able to provide an answer on that subject
+what is the function of the respiratory system,default: i am not able to provide an answer on that subject
+how do trees transport water,default: i am not able to provide an answer on that subject
+what is the capital of france,default: i am not able to provide an answer on that subject
+how does a light sensor work,default: i am not able to provide an answer on that subject
+what is the function of the spinal cord,default: i am not able to provide an answer on that subject
+how do compasses work,default: i am not able to provide an answer on that subject
+what is the capital of germany,default: i am not able to provide an answer on that subject
+how does an echo form,default: i am not able to provide an answer on that subject
+what is the function of the kidney,default: i am not able to provide an answer on that subject
+how do insects walk on water,default: i am not able to provide an answer on that subject
+what is the capital of italy,default: i am not able to provide an answer on that subject
+how does a boomerang return,default: i am not able to provide an answer on that subject
+what is the function of tendons,default: i am not able to provide an answer on that subject
+how do coral reefs form,default: i am not able to provide an answer on that subject
+what is the capital of russia,default: i am not able to provide an answer on that subject
+how does a rainbow form,default: i am not able to provide an answer on that subject
+what is the function of sweat glands,default: i am not able to provide an answer on that subject
+how do woodpeckers avoid brain damage,default: i am not able to provide an answer on that subject
+what is the capital of japan,default: i am not able to provide an answer on that subject
+how does a gyroscope maintain balance,default: i am not able to provide an answer on that subject
+what is the function of the brainstem,default: i am not able to provide an answer on that subject
+how do kangaroos move,default: i am not able to provide an answer on that subject
+what is the capital of singapore,default: i am not able to provide an answer on that subject
+how does an electric fan work,default: i am not able to provide an answer on that subject
+what is the function of the reproductive system,default: i am not able to provide an answer on that subject
+how do camouflaged animals blend in,default: i am not able to provide an answer on that subject
+what is the capital of the united arab emirates,default: i am not able to provide an answer on that subject
+how does a microwave detect motion,default: i am not able to provide an answer on that subject
+what is the function of the adrenal glands,default: i am not able to provide an answer on that subject
+how do parrots mimic human speech,default: i am not able to provide an answer on that subject
+what is the capital of qatar,default: i am not able to provide an answer on that subject
+how does a refrigerator keep food fresh,default: i am not able to provide an answer on that subject
+what is the function of the excretory system,default: i am not able to provide an answer on that subject
+how do owls rotate their heads so much,default: i am not able to provide an answer on that subject
+what is the capital of bahrain,default: i am not able to provide an answer on that subject
+how does an electric circuit complete,default: i am not able to provide an answer on that subject
+what is the function of the stomach,default: i am not able to provide an answer on that subject
+how do elephants use their trunks,default: i am not able to provide an answer on that subject
+what is the capital of bangladesh,default: i am not able to provide an answer on that subject
+how does a laser pointer work,default: i am not able to provide an answer on that subject
+what is the function of the gallbladder,default: i am not able to provide an answer on that subject
+how do tornadoes move,default: i am not able to provide an answer on that subject
+what is the capital of sri lanka,default: i am not able to provide an answer on that subject
+how does a sewing machine work,default: i am not able to provide an answer on that subject
+what is the function of insulin,default: i am not able to provide an answer on that subject
+how do seals stay warm in cold water,default: i am not able to provide an answer on that subject
+what is the capital of myanmar,default: i am not able to provide an answer on that subject
+how does a thermos keep drinks hot or cold,default: i am not able to provide an answer on that subject
+what is the function of the spleen,default: i am not able to provide an answer on that subject
+how do icebergs float,default: i am not able to provide an answer on that subject
+what is the capital of nepal,default: i am not able to provide an answer on that subject
+how does a barcode scanner read barcodes,default: i am not able to provide an answer on that subject
+what is the function of the pituitary gland,default: i am not able to provide an answer on that subject
+how do squids propel themselves,default: i am not able to provide an answer on that subject
+what is the capital of bhutan,default: i am not able to provide an answer on that subject
+how does a battery store and release energy,default: i am not able to provide an answer on that subject
+what is the function of melanin,default: i am not able to provide an answer on that subject
+how do hummingbirds hover,default: i am not able to provide an answer on that subject
+what is the capital of mongolia,default: i am not able to provide an answer on that subject
+how does a steam engine work,default: i am not able to provide an answer on that subject
+what is the function of the bronchi,default: i am not able to provide an answer on that subject
+how do kangaroos keep balance while hopping,default: i am not able to provide an answer on that subject
+what is the capital of kazakhstan,default: i am not able to provide an answer on that subject
+how does a wind turbine produce electricity,default: i am not able to provide an answer on that subject
+what is the function of the bladder,default: i am not able to provide an answer on that subject
+how do birds build nests,default: i am not able to provide an answer on that subject
+what is the capital of afghanistan,default: i am not able to provide an answer on that subject
+how does a digital clock display time,default: i am not able to provide an answer on that subject
+what is the function of the pharynx,default: i am not able to provide an answer on that subject
+how do desert plants survive with little water,default: i am not able to provide an answer on that subject
