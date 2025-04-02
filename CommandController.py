@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 import sys
-import subprocess
-from model_processing import ModelProcessor
-from action_processing import ActionProcessor
-from AudioController import Darla
+from Controller import Darla
 class DarlaCommand(Darla):
     def __init__(self):
         super().__init__(audio = False)
@@ -16,17 +13,19 @@ class DarlaCommand(Darla):
 
 
     def execute_action(self,command):
+        self.running = True
         while self.running: 
             try:
                 command = self.preprocess(command)
-                print("input command is: ",command)
+                #print("input command is: ",command)
                 self.model_output = self.model.predict_bash_command(command)
-                print('model output is: ',self.model_output)
+                #print('model output is: ',self.model_output)
                 if self.model_output.startswith('response'):                            
                     response_text = self.model_output.replace("response:", "").strip()
                     if response_text.startswith('what'):
-                            print(response_text)
-                            self.command = self.command + " " + input(f'{response_text}? :')
+                            #print(response_text)
+                            temp = input(f'{response_text}? :')
+                            command = command + " " + temp
                             continue
                     else:
                         print(response_text)

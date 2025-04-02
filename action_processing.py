@@ -9,8 +9,8 @@ from datetime import datetime
 import random
 import requests
 import re
-import psutil
 from audio_processing import TextToSpeech,SpeechToText
+from function_tools import MessageWindow
 
 class ActionProcessor:
     TIME_TEMPLATES = [
@@ -55,8 +55,9 @@ class ActionProcessor:
         self.api_token = "aab6c3009986b4f93b84c771da042250"
         self.weather_key = "87c68cff3601c8697c22b25c7f2f6812"
         self.pipe_file = "./terminal_pipe"
-        self.TMUX_SESSION = "cmd_executores"
         self.audio = audio
+        self.TMUX_SESSION = 'darla_session'
+        self.win = MessageWindow()
         self.ACTION_MAP = {
         "weather": self.get_weather,
         "time": self.tell_time,
@@ -84,7 +85,6 @@ class ActionProcessor:
         if self.audio:
             self.tts = TextToSpeech(lang="en", tld='co.in', slow=False)
             self.stt = SpeechToText()
-
     def predict_action(self,query):
         if query in self.ACTION_MAP:
             return self.ACTION_MAP[query]()
@@ -113,7 +113,9 @@ class ActionProcessor:
                 self.tts.speak("Are you sure want to delete?")
                 user_request = self.stt.create_ui()
                 if user_request.lower() == 'yes':
-                    self.command_execute(query)
+                    msg = self.command_execute(query)
+                    if msg:
+                        return msg
                     return "Action executed"
                 elif user_request == "no":
                     return  "Action canceled."
@@ -121,21 +123,29 @@ class ActionProcessor:
                     return "Could not understand. Action canceled."
             else:
                 temp = input("Are you sure want to delete? (y/n) ")
-                if temp.lower == 'n':
+                if temp.lower() == 'n':
                     return  "Action canceled."
-                elif temp.lower == 'y':
-                    self.command_execute(query)
+                elif temp.lower() == 'y':
+                    msg = self.command_execute(query)
+                    if msg:
+                        return msg
                     return "Action executed"
                 else:
                     return "could not understand the input please try again."
-
         else:
-            self.command_execute(query)
+            msg = self.command_execute(query)
+            if msg:
+                return msg
             return "Action executed"
     def delete_checker(self, command):
         delete_keywords = ["rm", "userdel", "groupdel", "rmdir", "remove"]
-        command_words = command.split() 
-        return any(cmd in command_words for cmd in delete_keywords)
+        for cmd in delete_keywords:
+            if cmd in command:
+                if "usermod" in command:
+                    continue
+                return True
+        return False
+        #return any(cmd in command for cmd in delete_keywords)
     def web_search(self,site_name=None):
         site_name=site_name.replace(" ","+")
         web_url=f"https://www.google.com/search?q={site_name}"
@@ -170,13 +180,13 @@ class ActionProcessor:
         else:
             key = "87c68cff3601c8697c22b25c7f2f6812"
             url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={long}&appid={key}&units=metric"
+        try:
             response = requests.get(url)
-            if response.status_code == 200:
-                data = response.json()             
-                out = f"Here's the weather report for {data['name']}: Today's temperature is {data['main']['temp']}°C, and the weather is {data['weather'][0]['description']}."
-                return out 
-            else:
-                return "An error occurred, please try again later."
+            response.raise_for_status()
+            data = response.json()
+            return f"Here's the weather report for {data['name']}: Today's temperature is {data['main']['temp']}°C, and the weather is {data['weather'][0]['description']}."
+        except requests.exceptions.RequestException as e:
+            return f"Error fetching weather: {e}"
 
     def get_current_volume(self):
         result = subprocess.run(["amixer", "get", "Master"], capture_output=True, text=True)
@@ -192,7 +202,7 @@ class ActionProcessor:
         return f"{level}% volume. Time to crank it up or chill out—your call!"
 
     def increase_volume(self,step=20):
-        current_volume = self.et_current_volume()
+        current_volume = self.get_current_volume()
         new_volume = current_volume + step
         self.set_volume(new_volume)
         return "All set! The volume is raised to your preference."
@@ -215,7 +225,7 @@ class ActionProcessor:
         subprocess.run(['sudo', 'brightnessctl', 's', f'{level}%'])
         return f"Adjusted the brightness to {level}%."
 
-    def maximum_brightness(self,level):
+    def maximum_brightness(self):
         subprocess.run(['sudo', 'brightnessctl', 's', '100%'])
         return "The screen brightness is on full now."
 
@@ -227,36 +237,29 @@ class ActionProcessor:
         file_path = os.path.join(save_dir, filename)
         screenshot = pyautogui.screenshot()
         screenshot.save(file_path)
-        return "Screenshot successfully taken."
-    
+        return "Screenshot successfully taken."   
     def shutdown_system(self):
         os.system('sudo shutdown')
         return "Your system is shutting down. See you next time."
-
     def restart_system(self):
         os.system('sudo reboot')
         return "The system is restarting. Hang tight!"
-
     def lock_system(self):
         os.system('gnome-screensaver-command -l')
         return "Screen locked. Safe and sound, just like your secrets."
-
-
     def minimize_all_window(self):
         subprocess.run(["wmctrl", "-k", "on"])
         return "Everything’s minimized. Your desktop’s looking sleek now!"
 
     def show_desktop(self):
-        os.system("xdg-open ~/Downloads")
-
+        subprocess.run(["xdotool", "key", "Super+d"])
+        return "Desktop revealed!"
     def set_theme_dark(self):
         subprocess.run(["gsettings", "set", "org.gnome.desktop.interface", "gtk-theme", "Yaru-dark"])
         subprocess.run(["gsettings", "set", "org.gnome.desktop.interface", "icon-theme", "Yaru-dark"])
         subprocess.run(["gsettings", "set", "org.gnome.desktop.interface", "cursor-theme", "Yaru-dark"])
         subprocess.run(["gsettings", "set", "org.gnome.desktop.interface", "color-scheme", "prefer-dark"])
         return "Engaging the dark theme. The shadows have taken over."
-
-
     def set_theme_light(self):
         subprocess.run(["gsettings", "set", "org.gnome.desktop.interface", "gtk-theme", "Yaru-light"])
         subprocess.run(["gsettings", "set", "org.gnome.desktop.interface", "icon-theme", "Yaru-light"])
@@ -370,42 +373,102 @@ class ActionProcessor:
     # def command_execute(self,command):
     #     subprocess.run(['/usr/bin/gnome-terminal', '--', 'bash', '-c', f'echo "The command is {command}"; {command}; exec bash'])
 
-
+    def analyze_error(self, msg):
+        """Analyze error messages and return a user-friendly message."""
+        error_msg = msg.lower()
+        
+        if "no such file or directory" in error_msg:
+            return "The specified file or directory does not exist."
+        elif "permission denied" in error_msg:
+            return "You do not have the necessary permissions."
+        elif "command not found" in error_msg:
+            return "The command is not recognized and there will be any mistake in the command."
+        elif "already installed" in error_msg:
+            return 'the application you want is already installed'
+        elif "could not resolve host" in error_msg or "temporary failure in name resolution" in error_msg or 'network error' in error_msg:
+            if self.audio:
+                self.win.send_message("No internet connection or\n DNS resolution failure.\n Assistant Closes")
+                exit()
+            return "No internet connection or DNS resolution failure. Assistant Closes"
+        elif "syntax error" in error_msg:
+            return "There is a syntax mistake in your command."
+        elif "disk full" in error_msg or "no space left on device" in error_msg:
+            return "The disk is full, free up space."
+        elif "process not found" in error_msg:
+            return "The specified process does not exist."
+        elif "network is unreachable" in error_msg:
+            return "Network is unreachable. Check your connection."
+        elif "authentication failed" in error_msg:
+            return "Authentication failed. Check your credentials."
+        elif "user" in error_msg and "does not exist" in error_msg:
+            return "The user is not exist in this system"
+        elif "group" in error_msg and "does not exist" in error_msg:
+            return "The group is not exist in this system"
+        else:
+            return None
+        
     def is_tmux_session_running(self):
         """Check if the tmux session is already running."""
         result = subprocess.run(["tmux", "has-session", "-t", self.TMUX_SESSION], 
                             capture_output=True, text=True)
-        return result.returncode == 0  # 0 means session exists
+        return result.returncode == 0 
 
     def setup_or_reuse_terminal(self):
         """Set up a new tmux session in a terminal or reuse an existing one."""
         if not self.is_tmux_session_running():
-            # Open a new gnome-terminal with a tmux session
             subprocess.Popen([
                 'gnome-terminal', '--', 'bash', '-c', 
                 f'tmux new-session -s {self.TMUX_SESSION}; exec bash'
             ])
-            time.sleep(1)  # Wait for the terminal to start
+            time.sleep(1)  
             print(f"New terminal opened with tmux session '{self.TMUX_SESSION}'.")
         else:
             print(f"Reusing existing tmux session '{self.TMUX_SESSION}'.")
 
+
     def command_execute(self,command):
         """Execute a user-provided command in the tmux session."""
         try:
-            # Ensure the terminal/tmux session is set up
             self.setup_or_reuse_terminal()
 
             # Send the command to the tmux session without a prompt
-            subprocess.run(["tmux", "send-keys", "-t", self.TMUX_SESSION, f'echo "The command is {command}"; {command}; ', "ENTER"], check=True)
-            print(f"Command sent to terminal: {command}")
+            subprocess.run(["tmux", "send-keys", "-t", self.TMUX_SESSION, command, "ENTER"], check=True)
+            username = os.getlogin()
+            while True:
+                output = subprocess.run(["tmux", "capture-pane", "-t", self.TMUX_SESSION, "-p"], capture_output=True, text=True)
+                #print(f'returncode is {output.returncode}')
+                info = output.stdout.split('\n')
+                #print(f'info is {info}')
+                #print(f'info[-1] is {info[-1]}')
+                while info[-1] == '':
+                    info.pop(-1)
+                if info[-1].startswith(username):
+                    break 
+                time.sleep(1)
+            temp = []
+            i = -2
+            while True:
+                if not info[i].startswith(username):
+                    temp.append(info[i].strip())
+                    i-=1
+                    continue
+                break       
+            error_output = " ".join(temp[::-1])
+            #print(f'error output is {error_output}')
+            error_message = self.analyze_error(error_output)
+            if error_message:
+                return error_message
+            return None
+            #print(f"Command sent to terminal: {command}")
 
         except subprocess.CalledProcessError as e:
             print(f"Failed to send command to tmux: {str(e)}")
         except Exception as e:
             print(f"An error occurred: {str(e)}")
-
+       
     def cleanup_tmux_session(self):
         subprocess.run(["tmux", "kill-session", "-t", self.TMUX_SESSION])
         print(f"Terminated tmux session '{self.TMUX_SESSION}'.")
-
+if __name__ == "__main__":
+    act = ActionProcessor(audio=False)
+    act.predict_action('sudo usermod -L siva')

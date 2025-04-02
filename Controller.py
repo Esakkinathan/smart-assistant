@@ -7,18 +7,16 @@ import random
 from audio_processing import TextToSpeech, SpeechToText
 from model_processing import ModelProcessor
 from action_processing import ActionProcessor
-import sys
 import time
 import queue
-
-ACCESS_KEY = "J120zHFuE4BpX3MgE9LK1XrADoYoUhH+ornTxInbKT5YT9eKHsUqcg=="  # Replace with your API key
-WAKEWORD_PATH = r"hey-darla/hey-darla.ppn"
-EXIT_PATH = r"hey-darla/stop-darla.ppn"
+import subprocess
+from function_tools import MessageWindow
+ACCESS_KEY = "64J//1E0fAbxLU+DlVrLXNcR++HO+K3N5TuHpYPN5M6eJ1k03keHCg=="  # Replace with your API key
+WAKEWORD_PATH = r"./hey-darla/hey-darla.ppn"
+EXIT_PATH = r"./hey-darla/stop-darla.ppn"
 
 class Darla:
     def __init__(self,audio):
-        self.stt = SpeechToText()
-        self.tts = TextToSpeech()
         self.action = ActionProcessor(audio=audio)
         self.model = ModelProcessor()
         self.is_running = True  # Assistant starts in active mode
@@ -27,19 +25,20 @@ class Darla:
         self.output_text = ""
         self.text_to_speak = ""
         self.exit_flag = False  # New flag to control application exit
+        self.audio_count = 0
         if audio:
+            self.message_window = MessageWindow()
+            self.stt = SpeechToText()
+            self.tts = TextToSpeech()
             self.queue = queue.Queue()  
-            # Wake word detection setup
             self.porcupine = pvporcupine.create(
                 access_key=ACCESS_KEY, 
                 keyword_paths=[WAKEWORD_PATH, EXIT_PATH]
             )
             self.recorder = PvRecorder(frame_length=self.porcupine.frame_length, device_index=-1)
-
             # Start wake word detection in a separate thread
             self.wake_thread = threading.Thread(target=self.listen_for_wake_word, daemon=True)
             self.wake_thread.start()
-
     def get_random_variation(self, category):
         """Selects a random variation for responses."""
         variations = {
@@ -127,23 +126,29 @@ class Darla:
 
         return text
 
-    def create_ui_and_process(self):
-        """Handles the main assistant logic."""
+    def main(self):
+        
         greeting = self.get_random_variation("greeting")
         self.tts.speak(greeting)
         print(f"Assistant: {greeting}")
 
         while self.is_running:
+            self.output_text = ""
+            self.text_to_speak = ""
+            self.user_query = ""
+            if self.audio_count >= 2:
+                self.is_running = False
+                self.audio_count = 0
+                continue
             try:
                 if self.is_response:
                     self.user_query = self.user_query + " "+ self.stt.create_ui()
                 else:
                     self.user_query = self.stt.create_ui()
-
                 if not self.user_query:
+                    self.audio_count +=1
                     self.tts.speak(self.get_random_variation("understanding"))
                     continue
-
                 print(f'User query: {self.user_query}')
                 self.user_query = self.preprocess(self.user_query)
                 self.output_text = self.model.predict_bash_command(self.user_query)
@@ -156,6 +161,7 @@ class Darla:
                         continue
                     else:
                         self.tts.speak(response_text)
+                        self.is_response = False
                         continue
                 self.is_response = False
                 self.output_text = self.output_text.replace("bash:", "").strip()
@@ -166,16 +172,13 @@ class Darla:
                     raise ValueError("No action predicted for the output.")
 
                 self.tts.speak(self.text_to_speak)
-                self.tts.speak(self.get_random_variation("standby"))
-
-                # Go into standby mode
                 self.is_running = False
-                print("DARLA is now in standby mode. Say 'Hey Darla' to wake me up.")
-
             except Exception as e:
                 self.error_handling(str(e))
                 continue
-
+        self.tts.speak(self.get_random_variation("standby"))
+        print("DARLA is now in standby mode. Say 'Hey Darla' to wake me up.")
+        
     def listen_for_wake_word(self):
         """Continuously listens for wake words to restart or stop the assistant."""
         print("Listening for wake words...")
@@ -191,10 +194,10 @@ class Darla:
                     self.is_running = True
                     self.queue.put("start_ui")
 
-                elif keyword_index == 1:  # "Stop Darla" at any time
+                elif keyword_index == 1 and not self.is_running:  # "Stop Darla" at any time
                     print("Exit wake word detected: Shutting down assistant...")
                     self.exit_flag = True  # Set exit flag
-                    self.cleanup()
+                    #self.cleanup()
                     break  # Exit the loop
 
         except KeyboardInterrupt:
@@ -208,39 +211,38 @@ class Darla:
     def cleanup(self):
         """Cleans up resources before exiting."""
         print("Cleaning up resources...")
+        self.tts.speak(self.get_random_variation("exit"))
         if self.recorder.is_recording:
             self.recorder.stop()
+        if hasattr(self, "wake_thread") and self.wake_thread.is_alive():
+            self.wake_thread.join(timeout=1)  
         self.recorder.delete()
         self.porcupine.delete()
+        self.message_window.on_close()
         self.action.cleanup_tmux_session()
         self.stt.on_close()
-        self.tts.speak(self.get_random_variation("exit"))
         print("Assistant has stopped.")
 
     def run(self):
         print("DARLA is starting...")
-    
-        # Start the assistant normally
-        self.create_ui_and_process()
+        self.main()
 
         # Keep checking the queue for wake word detection
         while not self.exit_flag:
             try:
                 task = self.queue.get_nowait()
                 if task == "start_ui":
-                    self.create_ui_and_process()  # Now runs in the main thread
+                    self.main()  # Now runs in the main thread
             except queue.Empty:
                 pass  # No tasks yet
             
             time.sleep(0.1)  # Prevent high CPU usage
-
         print("DARLA has exited.")
-
 
 if __name__ == "__main__":
     assistant = Darla(audio=True)
     try:
-        assistant.run()  # Assistant starts when the user clicks the icon
+        assistant.run()  
     except KeyboardInterrupt:
         print("\nProgram interrupted by user")
         assistant.exit_flag = True

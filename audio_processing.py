@@ -1,28 +1,44 @@
 from gtts import gTTS
+import gtts
 import speech_recognition as sr
 import ttkbootstrap as ttb
 from io import BytesIO
 from pydub.playback import play
 from pydub import AudioSegment
 from threading import Thread
-import time
-import tkinter as tk
-
+import requests
+import pyaudio
+from function_tools import wifi_handler,MessageWindow
+import numpy as np
+import noisereduce as nr
+import scipy.io.wavfile as wav
 
 class TextToSpeech:
     def __init__(self, lang="en", tld='co.in', slow=False):
         self.lang = lang
         self.tld = tld
         self.slow = slow
+        self.win = MessageWindow()
 
     def speak(self, text):
-        mp3_fp = BytesIO()
-        tts = gTTS(text=text, lang=self.lang, tld=self.tld, slow=self.slow)
-        tts.write_to_fp(mp3_fp)
-        mp3_fp.seek(0)
-        sound = AudioSegment.from_file(mp3_fp, format="mp3")
-        play(sound)
-
+        try:
+            mp3_fp = BytesIO()
+            tts = gTTS(text=text, lang=self.lang, tld=self.tld, slow=self.slow)
+            tts.write_to_fp(mp3_fp)
+            mp3_fp.seek(0)
+            sound = AudioSegment.from_file(mp3_fp, format="mp3")
+            play(sound)
+        except gtts.tts.gTTSError:
+            wifi_handler()
+            self.speak(text)
+        except requests.ConnectionError:
+            return 2
+        except requests.Timeout:
+            self.win.send_message(message="Connection timed out.\n The assistant will be stopped.\nPlease try again later.")
+            exit()
+        except Exception as e:
+            self.win.send_message(message="An error Occured.\n Please try again later.")
+            exit()                
 
 class SpeechToText:
     def __init__(self):
@@ -30,24 +46,28 @@ class SpeechToText:
         self.root = None
         self.label = None
         self.captured_text = None
+        self.e_flag = False
+
+    def check_microphone(self):
+        p = pyaudio.PyAudio()
+        device_count = p.get_device_count()
+        for i in range(device_count):
+            device_info = p.get_device_info_by_index(i)
+            if device_info["maxInputChannels"] > 0: 
+                return True
+        return False
 
     def create_ui(self):
-        """Create the user interface for speech recognition."""
         try:
-            # Create the UI
             self.root = ttb.Window(themename="cyborg")
             self.root.title("DARLA")
             self.root.geometry("400x250")
             self.root.attributes('-topmost', True)
-
-            # Center the window
             screen_width = self.root.winfo_screenwidth()
             screen_height = self.root.winfo_screenheight()
             x = (screen_width - 400) // 2
             y = (screen_height - 250) // 2
             self.root.geometry(f"400x250+{x}+{y}")
-
-            # Configure the label
             self.label = ttb.Label(
                 self.root,
                 text="Hello there,",
@@ -59,117 +79,74 @@ class SpeechToText:
                 justify='center'
             )
             self.label.pack(expand=True, padx=10, pady=10)
-
-            # Start listening in a new thread
             listen_thread = Thread(target=self.listen, daemon=True)
             listen_thread.start()
-
             self.root.protocol("WM_DELETE_WINDOW", self.on_close)
             self.root.mainloop()
+            if self.e_flag:
+                self.e_flag=False
+                wifi_handler()
+                self.create_ui()
             return self.captured_text
         except Exception as e:
             print(f"UI Creation Error: {e}")
 
     def listen(self):
-        """
-        Listen for audio input with improved error handling.
-        """
+        e_flag=False
         try:
-            # Indicate that the system is listening
+            if not self.check_microphone():
+                self.label.config(text = "No Microphone detected")
+                self.root.after(5000, self.on_close)
+                exit()
             with sr.Microphone() as source:
-                # Adjust for ambient noise
-                self.recognizer.adjust_for_ambient_noise(source, duration=1)
-                
-                # Set dynamic energy threshold
+                self.recognizer.adjust_for_ambient_noise(source, duration=3)
                 self.recognizer.dynamic_energy_threshold = True
-                
-                # Configure for longer pauses
                 self.recognizer.pause_threshold = 3.0
-                
                 print("Microphone is on, listening...")
-                
-                # Update UI to show listening state
-                self.update_label("Listening...!")
-                
-                # Listen with standard parameters
-                audio = self.recognizer.listen(
-                    source, 
-                    timeout=10,  # Maximum listening time
-                )
-                
+                self.label.config(text = "Listening...!")
+                audio = self.recognizer.listen(source,timeout=10,phrase_time_limit=10)
+                #play(audio)
                 print("Audio captured!")
-                
-                # Process the captured audio
-                self.update_label("Processing...!")
-                
-                # Attempt to recognize speech with multiple recognition attempts
+                self.label.config(text = "Processing...!")
+                #sample_rate = audio.sample_rate  # You can adjust this based on your microphone's sampling rate
+                #audio_data = np.frombuffer(audio.frame_data, dtype=np.int16)
+
+                # Apply noise reduction
+                #reduced_noise_audio = nr.reduce_noise(y=audio_data, sr=sample_rate)
+                #cleaned_audio = sr.AudioData(reduced_noise_audio.tobytes(), sample_rate, 2)
                 text = self.recognize_speech(audio)
-                
-                # Update label with recognized text
-                self.update_label(text)
-                
-                # Store captured text
+                self.label.config(text = text)
                 self.captured_text = text
-                
                 return text
-        
-        except sr.UnknownValueError:
-            error_msg = "Sorry, I couldn't understand the audio."
-            self.update_label(error_msg)
-            #self.captured_text = error_msg
-        
-        except sr.RequestError as e:
-            error_msg = f"Network error: {e}. Please check your internet connection."
-            self.update_label(error_msg)
-            #self.captured_text = error_msg
-        
-        except Exception as e:
-            error_msg = f"An unexpected error occurred: {e}"
-            self.update_label(error_msg)
-            #self.captured_text = error_msg
-        
-        finally:
-            # Destroy the UI after 5 seconds
-            if self.root:
-                self.root.after(5000, self.root.destroy)
             
+        except sr.UnknownValueError:
+            self.label.config(text = "Sorry, I couldn't understand the audio.")
+        except sr.RequestError as e:
+            self.e_flag= True
+            self.label.config(text = f"Network error: \nPlease check your internet connection.\n Assistant exits")
+        except sr.WaitTimeoutError as e:
+            self.label.config(text = 'Time exceeds, Are you there?')
+        except Exception as e:
+            self.label.config(text = f"An unexpected error occurred: {e}")
+            
+        finally:
+            if self.root:
+                self.root.after(5000, self.on_close)
             return self.captured_text
 
     def recognize_speech(self, audio):
-        """
-        Attempt speech recognition with multiple services.
-        Provides fallback mechanisms.
-        """
         try:
-            # Try Google Speech Recognition first
             text = self.recognizer.recognize_google(audio)
             return text
         except sr.UnknownValueError:
             try:
-                # Fallback to Sphinx (offline recognition)
                 text = self.recognizer.recognize_sphinx(audio)
                 return text
             except Exception:
                 raise sr.UnknownValueError("Could not recognize speech")
-
-    def update_label(self, text):
-        """
-        Safely update the label text from any thread.
-        """
-        if self.root and self.label:
-            self.root.after(0, self.label.config, {'text': text})
-
     def on_close(self):
-        """
-        Properly close the application.
-        """
         if self.root:
-            self.root.quit()
             self.root.destroy()
+            self.root = None
+            self.label = None
 
-# Example usage
-if __name__ == "__main__":
-    stt = SpeechToText()
-    c = stt.create_ui()
-    print("Captured Text:", c)
-    

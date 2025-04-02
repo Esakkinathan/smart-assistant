@@ -787,7 +787,7 @@ how do I see the processes on my system,ps aux
 give me details of the processes in use,ps aux
 show me the current processes,ps aux
 how many processes are active,ps aux
-what processes are running at the moment,ps aux
+what processes are running at the moment,ps aux 
 tell me which programs are running,ps aux
 give me information about my system hardware,lshw
 show the hardware specs of my machine,lshw
@@ -797,7 +797,7 @@ what are the specifications of my hardware,lshw
 show me the hardware on my system,lshw
 tell me the details about my system's hardware,lshw
 how do I check my system hardware,lshw
-what's the configuration of my hardware,lshw
+what's the configuration of my hardware,lshw 
 give me the system's hardware report,lshw
 show the connected storage devices,lsblk
 how do I list the block devices,lsblk

@@ -7,7 +7,7 @@ from datetime import datetime
 import ttkbootstrap as ttb
 
 class LockPromptWindow:
-    def __init__(self, root, on_response):
+    def __init__(self, root, on_response,message):
         self.window = ttb.Toplevel(root)
         self.window.title("System Lock")
         self.on_response = on_response
@@ -29,7 +29,7 @@ class LockPromptWindow:
         main_frame = ttb.Frame(self.window, padding="20")
         main_frame.pack(fill=tk.BOTH, expand=True)
         
-        ttb.Label(main_frame, text="Do you want to lock the system?",
+        ttb.Label(main_frame, text=message,
                  font=('Cascadia Code', 17, 'bold')).pack(pady=10)
         
         ttb.Label(main_frame, text="1. Click Yes/No\n"
@@ -129,7 +129,7 @@ class SystemMonitor:
         self.lock_system = True
         
         # Create and show prompt window
-        self.prompt_window = LockPromptWindow(self.root, self.handle_response)
+        self.prompt_window = LockPromptWindow(self.root, self.handle_response,message="Do you want to lock the system?")
         
         # Wait for 10 seconds or until user responds
         start_time = time.time()
